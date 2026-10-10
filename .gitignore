@@ -1,0 +1,15 @@
+# Secrets — real API keys live only in .env on your own machine
+.env
+.env.*
+!.env.example
+
+__pycache__/
+*.pyc
+.venv/
+venv/
+output/*.md
+!output/.gitkeep
+.DS_Store
+
+# Evaluation caches (research results, map lookups)
+eval/cache/

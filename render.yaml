@@ -1,0 +1,32 @@
+# Render "Blueprint": tells Render how to build and run TripMind.
+# Render reads this file when you create the service from the GitHub repo.
+services:
+  - type: web
+    name: tripmind-ai
+    runtime: python
+    plan: free                      # sleeps after 15 min idle; first visit then takes ~1 min
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    autoDeploy: true                # every push to GitHub redeploys the site
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.5
+      # Secrets: NOT stored here. Render asks you to paste them when you create the service.
+      - key: GROQ_API_KEY
+        sync: false
+      - key: TAVILY_API_KEY
+        sync: false
+      - key: LLM_PROVIDER
+        value: groq
+      - key: GROQ_MODEL
+        value: openai/gpt-oss-120b
+      # Public-demo protection (free tiers: Groq 200k tokens/day, Tavily 1,000 credits/month)
+      - key: TAVILY_SEARCH_DEPTH
+        value: basic                # 1 credit per search instead of 2
+      - key: PLANS_PER_IP_PER_DAY
+        value: "2"
+      - key: CHATS_PER_IP_PER_DAY
+        value: "10"
+      - key: DAILY_PLAN_LIMIT
+        value: "5"                  # whole site; ~9 Tavily credits per trip

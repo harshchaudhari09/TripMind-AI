@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TripMind AI — Boarding Pass to Anywhere</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0F1B24;
+    --ink-2:#152530;
+    --parchment:#F6EFDD;
+    --parchment-2:#EFE6CE;
+    --brass:#C98A3E;
+    --brass-bright:#E3A554;
+    --teal:#3E7C7A;
+    --teal-bright:#5DA6A3;
+    --line: rgba(246,239,221,0.14);
+    --ink-text: #1B241E;
+    --muted: rgba(246,239,221,0.55);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:
+      radial-gradient(1200px 600px at 15% -10%, rgba(62,124,122,0.18), transparent 60%),
+      radial-gradient(900px 500px at 100% 0%, rgba(201,138,62,0.12), transparent 55%),
+      var(--ink);
+    color: var(--parchment);
+    font-family:'Inter', sans-serif;
+    min-height:100vh;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1180px;margin:0 auto;padding:40px 24px 80px;}
+
+  /* ── Header ── */
+  header{display:flex;align-items:center;justify-content:space-between;margin-bottom:36px;flex-wrap:wrap;gap:14px;}
+  .brand{display:flex;align-items:center;gap:12px;}
+  .brand .mark{
+    width:40px;height:40px;border-radius:50%;
+    border:1.5px dashed var(--brass);
+    display:flex;align-items:center;justify-content:center;
+    font-family:'IBM Plex Mono',monospace;color:var(--brass-bright);font-size:16px;
+    transform:rotate(-8deg);
+  }
+  .brand h1{
+    font-family:'Fraunces',serif;font-weight:600;font-size:26px;letter-spacing:0.2px;margin:0;
+  }
+  .brand h1 span{color:var(--brass-bright);font-style:italic;font-weight:400;}
+  .tagline{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted);letter-spacing:0.06em;text-transform:uppercase;}
+
+  /* ── Layout ── */
+  .grid{display:grid;grid-template-columns:400px 1fr;gap:0;align-items:start;}
+  @media (max-width:920px){.grid{grid-template-columns:1fr;}}
+
+  /* ── Ticket / form panel ── */
+  .ticket{
+    background:var(--ink-2);
+    border:1px solid var(--line);
+    border-radius:16px 0 0 16px;
+    padding:30px 28px 26px;
+    position:relative;
+  }
+  @media (max-width:920px){.ticket{border-radius:16px;}}
+  .ticket::after{
+    content:"";
+    position:absolute; top:0; bottom:0; right:-1px; width:0;
+    border-right:2px dashed rgba(246,239,221,0.18);
+  }
+  @media (max-width:920px){.ticket::after{display:none;}}
+  .stub-label{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--brass-bright);margin-bottom:2px;}
+  .ticket h2{font-family:'Fraunces',serif;font-size:20px;font-weight:600;margin:0 0 22px;color:var(--parchment);}
+
+  .field{margin-bottom:16px;}
+  .field label{display:block;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:6px;}
+  .field input, .field textarea{
+    width:100%;
+    background:rgba(246,239,221,0.05);
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:10px 12px;
+    color:var(--parchment);
+    font-family:'Inter',sans-serif;
+    font-size:14px;
+    outline:none;
+    transition:border-color .15s, background .15s;
+  }
+  .field input:focus, .field textarea:focus{border-color:var(--brass);background:rgba(246,239,221,0.08);}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+
+  .plan-btn{
+    width:100%;margin-top:8px;
+    background:var(--brass);
+    color:var(--ink);
+    border:none;border-radius:8px;
+    padding:13px 16px;
+    font-family:'IBM Plex Mono',monospace;
+    font-weight:600;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;
+    cursor:pointer;
+    transition:background .15s, transform .1s;
+  }
+  .plan-btn:hover{background:var(--brass-bright);}
+  .plan-btn:active{transform:scale(0.99);}
+  .plan-btn:disabled{background:rgba(201,138,62,0.35);cursor:wait;}
+  #examples{margin-top:18px;}
+  .examples-label{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.05em;color:var(--muted);margin-bottom:8px;}
+  .example-list{display:flex;flex-wrap:wrap;gap:8px;}
+  .example-btn{font-family:'Inter',sans-serif;font-size:13px;color:var(--parchment);background:transparent;border:1px solid var(--line);border-radius:20px;padding:6px 12px;cursor:pointer;}
+  .example-btn:hover{border-color:var(--brass);color:var(--brass-bright);}
+  .example-note{font-family:'Inter',sans-serif;font-size:13px;background:rgba(15,27,36,0.06);border-radius:8px;padding:8px 12px;margin-bottom:14px;color:var(--ink-text);}
+
+  .perf{
+    display:flex;gap:6px;justify-content:center;margin:22px 0;opacity:0.5;
+  }
+  .perf span{width:4px;height:4px;border-radius:50%;background:var(--parchment);}
+
+  /* ── Boarding pass / itinerary panel ── */
+  .pass{
+    background:var(--parchment);
+    color:var(--ink-text);
+    border-radius:0 16px 16px 0;
+    min-height:560px;
+    padding:0;
+    position:relative;
+    overflow:hidden;
+    box-shadow: 0 30px 60px -20px rgba(0,0,0,0.5);
+  }
+  @media (max-width:920px){.pass{border-radius:16px;margin-top:20px;}}
+
+  .pass-head{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:20px 28px;border-bottom:1.5px dashed rgba(15,27,36,0.2);
+    background:var(--parchment-2);
+  }
+  .pass-head .route{font-family:'Fraunces',serif;font-weight:600;font-size:19px;}
+  .pass-head .stamp{
+    font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;
+    border:1.5px solid var(--teal);color:var(--teal);
+    padding:5px 10px;border-radius:20px;transform:rotate(-4deg);
+  }
+
+  .pass-body{padding:26px 30px 36px;}
+
+  .empty-state{
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;min-height:480px;color:rgba(27,36,30,0.55);gap:10px;
+  }
+  .empty-state .glyph{font-size:34px;opacity:0.5;}
+  .empty-state h3{font-family:'Fraunces',serif;font-size:20px;margin:6px 0 0;color:var(--ink-text);}
+  .empty-state p{font-family:'Inter',sans-serif;font-size:13.5px;max-width:340px;line-height:1.5;margin:0;}
+
+  .loading-state{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:480px;gap:14px;}
+  .spinner{
+    width:34px;height:34px;border-radius:50%;
+    border:2.5px solid rgba(62,124,122,0.25);border-top-color:var(--teal);
+    animation:spin 0.9s linear infinite;
+  }
+  @keyframes spin{to{transform:rotate(360deg);}}
+  .loading-state p{font-family:'IBM Plex Mono',monospace;font-size:12px;color:rgba(27,36,30,0.6);letter-spacing:0.04em;}
+
+  .itinerary-md{font-family:'Inter',sans-serif;font-size:14.5px;line-height:1.7;}
+  .itinerary-md h1{font-family:'Fraunces',serif;font-size:22px;margin:0 0 10px;}
+  .itinerary-md h2{font-family:'Fraunces',serif;font-size:18px;margin:26px 0 8px;padding-top:14px;border-top:1px dashed rgba(15,27,36,0.18);color:var(--ink);}
+  .itinerary-md h2:first-child{border-top:none;padding-top:0;margin-top:4px;}
+  .itinerary-md h3{font-family:'IBM Plex Mono',monospace;font-size:12.5px;text-transform:uppercase;letter-spacing:0.06em;color:var(--teal);margin:22px 0 8px;padding:7px 12px;background:rgba(62,124,122,0.09);border-left:3px solid var(--teal);border-radius:0 6px 6px 0;}
+  .itinerary-md strong{color:var(--ink);}
+  .itinerary-md ul,.itinerary-md ol{padding-left:20px;margin:8px 0;}
+  .itinerary-md li{margin-bottom:4px;}
+  .itinerary-md blockquote{margin:0 0 16px;padding:10px 14px;background:rgba(201,138,62,0.1);border-left:3px solid var(--brass);border-radius:0 6px 6px 0;font-size:13.5px;}
+  .itinerary-md blockquote p{margin:0;}
+  .itinerary-md a{color:var(--teal);}
+  .itinerary-md table{width:100%;max-width:440px;border-collapse:collapse;margin:10px 0;font-size:14px;}
+  .itinerary-md th,.itinerary-md td{padding:7px 10px;border-bottom:1px dashed rgba(15,27,36,0.18);text-align:left;}
+  .itinerary-md th{font-family:'IBM Plex Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:var(--teal);}
+  .itinerary-md td:last-child,.itinerary-md th:last-child{text-align:right;white-space:nowrap;}
+  .itinerary-md tr:last-child td{border-bottom:none;border-top:1.5px solid rgba(15,27,36,0.35);}
+  .itinerary-md p{margin:8px 0;}
+  .itinerary-md hr{border:none;border-top:1px dashed rgba(15,27,36,0.18);margin:18px 0;}
+  .itinerary-md code{font-family:'IBM Plex Mono',monospace;background:rgba(62,124,122,0.1);padding:1px 5px;border-radius:4px;font-size:13px;}
+
+  .meta-row{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:18px;}
+  .meta-chip{font-family:'IBM Plex Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.06em;color:var(--teal);border:1px solid rgba(62,124,122,0.3);padding:4px 10px;border-radius:20px;}
+
+  .critic-badge{font-family:'Inter',sans-serif;font-size:13px;line-height:1.5;border-radius:10px;padding:10px 14px;margin-bottom:18px;color:var(--ink-text);}
+  .critic-badge.ok{background:rgba(62,124,122,0.1);border:1px solid rgba(62,124,122,0.35);}
+  .critic-badge.warn{background:rgba(201,138,62,0.12);border:1px solid rgba(201,138,62,0.45);}
+  .critic-badge ul{margin:6px 0 0;padding-left:18px;}
+  .critic-badge li{margin-bottom:3px;}
+  .error-box{background:rgba(191,80,60,0.08);border:1px solid rgba(191,80,60,0.35);color:#8a3a2c;border-radius:10px;padding:14px 16px;font-size:13.5px;font-family:'Inter',sans-serif;line-height:1.5;}
+
+  /* ── Chat / refine ── */
+  .chat-wrap{border-top:1.5px dashed rgba(15,27,36,0.2);background:var(--parchment-2);padding:20px 30px 26px;}
+  .chat-wrap .stub-label{color:var(--teal);}
+  .chat-wrap h4{font-family:'Fraunces',serif;font-size:16px;margin:0 0 12px;color:var(--ink-text);}
+  #chatLog{display:flex;flex-direction:column;gap:10px;margin-bottom:14px;max-height:260px;overflow-y:auto;}
+  .msg{font-size:13.5px;line-height:1.55;padding:9px 13px;border-radius:10px;max-width:88%;font-family:'Inter',sans-serif;}
+  .msg.user{align-self:flex-end;background:var(--teal);color:#fff;border-bottom-right-radius:3px;}
+  .msg.bot{align-self:flex-start;background:rgba(15,27,36,0.06);color:var(--ink-text);border-bottom-left-radius:3px;white-space:pre-wrap;}
+  .chat-input-row{display:flex;gap:10px;}
+  .chat-input-row input{
+    flex:1;background:#fff;border:1px solid rgba(15,27,36,0.15);border-radius:8px;
+    padding:11px 14px;font-family:'Inter',sans-serif;font-size:13.5px;outline:none;color:var(--ink-text);
+  }
+  .chat-input-row input:focus{border-color:var(--teal);}
+  .chat-input-row button{
+    background:var(--ink);color:var(--parchment);border:none;border-radius:8px;
+    padding:0 20px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;
+    cursor:pointer;
+  }
+  .chat-input-row button:hover{background:var(--ink-2);}
+  .chat-input-row button:disabled{opacity:0.5;cursor:wait;}
+
+  footer{text-align:center;margin-top:34px;font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted);letter-spacing:0.05em;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">
+      <div class="mark">✈</div>
+      <div>
+        <h1>TripMind <span>AI</span></h1>
+        <div class="tagline">Agentic itinerary planner</div>
+      </div>
+    </div>
+    <div class="tagline" id="healthTag">checking backend…</div>
+  </header>
+
+  <div class="grid">
+
+    <!-- ── Ticket form ── -->
+    <div class="ticket">
+      <div class="stub-label">Passenger Details</div>
+      <h2>Plan your trip</h2>
+
+      <form id="tripForm">
+        <div class="row2">
+          <div class="field">
+            <label for="origin">From</label>
+            <input id="origin" type="text" value="Delhi" required>
+          </div>
+          <div class="field">
+            <label for="destination">To</label>
+            <input id="destination" type="text" value="Manali, Himachal Pradesh" required>
+          </div>
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label for="startDate">Departs</label>
+            <input id="startDate" type="date" required>
+          </div>
+          <div class="field">
+            <label for="endDate">Returns</label>
+            <input id="endDate" type="date" required>
+          </div>
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label for="budget">Budget (INR)</label>
+            <input id="budget" type="number" value="80000" min="1000" step="1000" required>
+          </div>
+          <div class="field">
+            <label for="people">Travellers</label>
+            <input id="people" type="number" value="2" min="1" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="prefs">Interests (comma separated)</label>
+          <input id="prefs" type="text" value="trekking, snow, local food, adventure">
+        </div>
+
+        <button class="plan-btn" type="submit" id="planBtn">Generate itinerary</button>
+
+        <div id="examples" style="display:none;">
+          <div class="examples-label">No time to wait? See an example trip instantly:</div>
+          <div class="example-list"></div>
+        </div>
+      </form>
+
+      <div class="perf">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="tagline" style="text-align:center;">parallel research pipeline · live data</div>
+    </div>
+
+    <!-- ── Boarding pass / result ── -->
+    <div class="pass">
+      <div class="pass-head" id="passHead" style="display:none;">
+        <div class="route" id="passRoute">— → —</div>
+        <div class="stamp" id="passStamp">PENDING</div>
+      </div>
+
+      <div class="pass-body" id="passBody">
+        <div class="empty-state" id="emptyState">
+          <div class="glyph">🧭</div>
+          <h3>No itinerary yet</h3>
+          <p>Fill in the passenger details on the left and generate your first trip — TripMind will pull live flights, hotels, weather and attractions to build a day-by-day plan.</p>
+        </div>
+      </div>
+
+      <div class="chat-wrap" id="chatWrap" style="display:none;">
+        <div class="stub-label">Refine</div>
+        <h4>Ask TripMind to adjust it</h4>
+        <div id="chatLog"></div>
+        <div class="chat-input-row">
+          <input id="chatInput" type="text" placeholder="e.g. make day 2 more budget friendly, add a waterfall visit…">
+          <button id="chatSend">Send</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>TripMind AI — LangGraph · Groq · Tavily · Open-Meteo · Wikipedia · OpenStreetMap</footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/15.0.12/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.2.6/purify.min.js"></script>
+<script>
+const API_BASE = window.location.origin;
+
+// default dates: today+30 to today+35
+const d1 = new Date(); d1.setDate(d1.getDate()+30);
+const d2 = new Date(); d2.setDate(d2.getDate()+35);
+document.getElementById('startDate').value = d1.toISOString().slice(0,10);
+document.getElementById('endDate').value = d2.toISOString().slice(0,10);
+
+// health check
+fetch(API_BASE + '/health').then(r=>r.json()).then(d=>{
+  document.getElementById('healthTag').textContent = 'backend online · v' + (d.version || '2.0.0');
+}).catch(()=>{
+  document.getElementById('healthTag').textContent = 'backend unreachable';
+});
+
+let tripDetails = null;
+let conversationHistory = [];
+let currentItinerary = '';
+
+function escapeHtml(s){
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+// FastAPI errors: a string (our messages) or a list of field errors (validation).
+function errorText(data){
+  if (Array.isArray(data.detail)) return data.detail.map(d => (d.msg || '').replace(/^Value error, /, '')).join(' · ');
+  return data.detail || 'Something went wrong while planning the trip.';
+}
+
+// Renders a plan (live or example) into the boarding pass.
+function showResult(data, trip, isExample){
+  tripDetails = trip;
+  currentItinerary = data.itinerary;
+  conversationHistory = [];
+  chatLog.innerHTML = '';
+  passHead.style.display = 'flex';
+  passRoute.textContent = `${trip.origin} → ${trip.destination}`;
+  passStamp.textContent = isExample ? 'EXAMPLE' : (data.budget_tier ? data.budget_tier.toUpperCase() : 'READY');
+  const people = trip.num_people;
+  passBody.innerHTML = `
+    ${isExample ? '<div class="example-note">📌 Example trip, generated earlier by TripMind and shown instantly. Fill in the form to plan your own.</div>' : ''}
+    <div class="meta-row">
+      <div class="meta-chip">${data.num_days} days</div>
+      <div class="meta-chip">₹${Number(trip.budget_inr).toLocaleString('en-IN')}</div>
+      <div class="meta-chip">${people} traveller${people>1?'s':''}</div>
+      ${isExample ? '' : `<div class="meta-chip">${(data.latency_ms/1000).toFixed(0)} s</div>`}
+    </div>
+    ${criticBadge(data)}
+    <div class="itinerary-md" id="itineraryMd"></div>
+  `;
+  document.getElementById('itineraryMd').innerHTML = renderMarkdown(currentItinerary);
+  chatWrap.style.display = 'block';
+}
+
+// Example trips: pre-generated plans from static/examples.json — instant, no API tokens.
+fetch(API_BASE + '/static/examples.json').then(r => r.ok ? r.json() : []).then(list => {
+  if (!list.length) return;
+  const box = document.getElementById('examples');
+  box.style.display = 'block';
+  for (const ex of list){
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'example-btn';
+    b.textContent = `${ex.trip.destination.split(',')[0]} · ${ex.num_days} days · ₹${Number(ex.trip.budget_inr).toLocaleString('en-IN')}`;
+    b.onclick = () => { showResult(ex, ex.trip, true); document.querySelector('.pass').scrollIntoView({behavior:'smooth'}); };
+    box.querySelector('.example-list').appendChild(b);
+  }
+}).catch(() => {});
+
+// Shows the critic agent's verdict above the itinerary.
+function criticBadge(data){
+  const fixes = data.revisions || 0;
+  const rounds = `${fixes} fix round${fixes===1?'':'s'}`;
+  if (data.critic_passed){
+    return `<div class="critic-badge ok">✅ <strong>Checked by the critic agent</strong> — approved after ${rounds}.</div>`;
+  }
+  const issues = (data.remaining_issues || []).map(i => `<li>${escapeHtml(i)}</li>`).join('');
+  return `<div class="critic-badge warn">⚠️ <strong>The critic still flags ${(data.remaining_issues||[]).length} issue(s)</strong> after ${rounds} — double-check these:<ul>${issues}</ul></div>`;
+}
+
+// Full markdown (tables, numbered lists, quotes, links) via marked, with
+// DOMPurify stripping any unsafe HTML the LLM might produce. If the CDN
+// scripts fail to load, fall back to the small built-in renderer below.
+function renderMarkdown(md){
+  if (window.marked && window.DOMPurify){
+    return DOMPurify.sanitize(marked.parse(md, { gfm: true, breaks: false }));
+  }
+  return renderMarkdownBasic(md);
+}
+
+// very small markdown renderer (headings, bold, lists, hr, paragraphs) — no external deps
+function renderMarkdownBasic(md){
+  const lines = md.split('\n');
+  let html = '';
+  let inList = false;
+  for (let raw of lines){
+    let line = raw;
+    if (/^\s*---+\s*$/.test(line)){ if(inList){html+='</ul>';inList=false;} html += '<hr>'; continue; }
+    let h = line.match(/^(#{1,3})\s+(.*)$/);
+    if (h){
+      if(inList){html+='</ul>';inList=false;}
+      const level = h[1].length;
+      const text = inline(h[2]);
+      html += `<h${Math.min(level+1,3)}>${text}</h${Math.min(level+1,3)}>`;
+      continue;
+    }
+    let li = line.match(/^\s*[-*]\s+(.*)$/);
+    if (li){
+      if(!inList){html+='<ul>';inList=true;}
+      html += `<li>${inline(li[1])}</li>`;
+      continue;
+    }
+    if (line.trim()===''){ if(inList){html+='</ul>';inList=false;} continue; }
+    if(inList){html+='</ul>';inList=false;}
+    html += `<p>${inline(line)}</p>`;
+  }
+  if(inList) html += '</ul>';
+  return html;
+
+  function inline(t){
+    t = escapeHtml(t);
+    t = t.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    t = t.replace(/`(.+?)`/g, '<code>$1</code>');
+    return t;
+  }
+}
+
+const form = document.getElementById('tripForm');
+const planBtn = document.getElementById('planBtn');
+const passBody = document.getElementById('passBody');
+const passHead = document.getElementById('passHead');
+const passRoute = document.getElementById('passRoute');
+const passStamp = document.getElementById('passStamp');
+const chatWrap = document.getElementById('chatWrap');
+const chatLog = document.getElementById('chatLog');
+
+form.addEventListener('submit', async (e)=>{
+  e.preventDefault();
+  const origin = document.getElementById('origin').value.trim();
+  const destination = document.getElementById('destination').value.trim();
+  const start_date = document.getElementById('startDate').value;
+  const end_date = document.getElementById('endDate').value;
+  const budget_inr = parseFloat(document.getElementById('budget').value);
+  const num_people = parseInt(document.getElementById('people').value, 10);
+  const preferences = document.getElementById('prefs').value.split(',').map(s=>s.trim()).filter(Boolean);
+
+  planBtn.disabled = true;
+  planBtn.textContent = 'Planning…';
+  passHead.style.display = 'flex';
+  passRoute.textContent = `${origin} → ${destination}`;
+  passStamp.textContent = 'IN PROGRESS';
+  chatWrap.style.display = 'none';
+
+  passBody.innerHTML = `
+    <div class="loading-state">
+      <div class="spinner"></div>
+      <p>Researching in parallel, then a critic agent checks the plan — this can take 1–2 minutes…</p>
+    </div>`;
+
+  try{
+    const res = await fetch(API_BASE + '/plan', {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({ destination, origin, start_date, end_date, budget_inr, num_people, preferences })
+    });
+    const data = await res.json();
+    if(!res.ok){ const e = new Error(errorText(data)); e.status = res.status; throw e; }
+    showResult(data, { destination, origin, start_date, end_date, budget_inr, num_people, preferences }, false);
+
+  }catch(err){
+    passStamp.textContent = 'ERROR';
+    // 4xx = the request or a usage limit (message says what to do); 5xx = server/API problem.
+    const hint = (err.status && err.status < 500) ? '' :
+      '<br><br>If you are running TripMind yourself: check that the backend has valid <code>GROQ_API_KEY</code> / <code>TAVILY_API_KEY</code> values in <code>.env</code>, and that the terminal running <code>main.py</code> doesn\'t show an error.';
+    passBody.innerHTML = `<div class="error-box"><strong>Couldn't generate the itinerary.</strong><br>${escapeHtml(err.message)}${hint}</div>`;
+  }finally{
+    planBtn.disabled = false;
+    planBtn.textContent = 'Generate itinerary';
+  }
+});
+
+const chatInput = document.getElementById('chatInput');
+const chatSend = document.getElementById('chatSend');
+
+async function sendChat(){
+  const msg = chatInput.value.trim();
+  if(!msg || !tripDetails) return;
+
+  chatLog.innerHTML += `<div class="msg user">${escapeHtml(msg)}</div>`;
+  chatLog.scrollTop = chatLog.scrollHeight;
+  chatInput.value = '';
+  chatSend.disabled = true;
+
+  const thinkingId = 'thinking-'+Date.now();
+  chatLog.innerHTML += `<div class="msg bot" id="${thinkingId}">…</div>`;
+  chatLog.scrollTop = chatLog.scrollHeight;
+
+  try{
+    const res = await fetch(API_BASE + '/chat', {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({
+        message: msg,
+        current_itinerary: currentItinerary,
+        trip_details: tripDetails,
+        conversation_history: conversationHistory
+      })
+    });
+    const data = await res.json();
+    if(!res.ok){ throw new Error(data.detail || 'Chat failed.'); }
+
+    document.getElementById(thinkingId).textContent = data.reply;
+    conversationHistory = data.conversation_history;
+    if (data.updated_itinerary){
+      currentItinerary = data.updated_itinerary;
+      document.getElementById('itineraryMd').innerHTML = renderMarkdown(currentItinerary);
+    }
+  }catch(err){
+    document.getElementById(thinkingId).textContent = 'Error: ' + err.message;
+  }finally{
+    chatSend.disabled = false;
+    chatLog.scrollTop = chatLog.scrollHeight;
+  }
+}
+
+chatSend.addEventListener('click', sendChat);
+chatInput.addEventListener('keydown', (e)=>{ if(e.key==='Enter') sendChat(); });
+</script>
+</body>
+</html>

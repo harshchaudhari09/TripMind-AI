@@ -1,0 +1,191 @@
+{
+ "id": "jaipur-weekend",
+ "trip": {
+  "id": "jaipur-weekend",
+  "destination": "Jaipur, Rajasthan",
+  "origin": "Delhi",
+  "start_date": "2026-11-20",
+  "end_date": "2026-11-22",
+  "budget_inr": 20000,
+  "num_people": 2,
+  "preferences": [
+   "forts",
+   "history",
+   "shopping"
+  ],
+  "note": "short, easy"
+ },
+ "num_days": 3,
+ "seconds": 19.0,
+ "cached_research": true,
+ "critic_passed": true,
+ "fix_rounds": 0,
+ "remaining_issues": [],
+ "first_draft": {
+  "days_ok": true,
+  "days_found": [
+   1,
+   2,
+   3
+  ],
+  "has_budget": true,
+  "budget_total": 14180.0,
+  "adds_up": true,
+  "within_budget": true,
+  "time_order_ok": true,
+  "season_ok": true,
+  "places_total": 15,
+  "places_verified": 14,
+  "places_pct": 93.3,
+  "unverified_places": [
+   "Laxmi Misthan Bhandar (LMB)"
+  ],
+  "places_detail": [
+   {
+    "name": "Hotel Rajasthan Palace",
+    "status": "in_research"
+   },
+   {
+    "name": "Hotel Shikha Jaipur",
+    "status": "in_research"
+   },
+   {
+    "name": "Hotel Kalyan",
+    "status": "on_map"
+   },
+   {
+    "name": "Rawat Misthan Bhandar",
+    "status": "in_research"
+   },
+   {
+    "name": "Hawa Mahal",
+    "status": "in_research"
+   },
+   {
+    "name": "Jantar Mantar",
+    "status": "in_research"
+   },
+   {
+    "name": "Bapu Bazaar",
+    "status": "on_map"
+   },
+   {
+    "name": "Kalkatta Chaat Bhandar",
+    "status": "in_research"
+   },
+   {
+    "name": "Amber Fort",
+    "status": "in_research"
+   },
+   {
+    "name": "Jaigarh Fort",
+    "status": "in_research"
+   },
+   {
+    "name": "City Palace",
+    "status": "in_research"
+   },
+   {
+    "name": "Gulab Ji ki Chai",
+    "status": "in_research"
+   },
+   {
+    "name": "Laxmi Misthan Bhandar (LMB)",
+    "status": "unverified"
+   },
+   {
+    "name": "Johari Bazaar",
+    "status": "in_research"
+   },
+   {
+    "name": "LMB",
+    "status": "on_map"
+   }
+  ]
+ },
+ "final": {
+  "days_ok": true,
+  "days_found": [
+   1,
+   2,
+   3
+  ],
+  "has_budget": true,
+  "budget_total": 14180.0,
+  "adds_up": true,
+  "within_budget": true,
+  "time_order_ok": true,
+  "season_ok": true,
+  "places_total": 15,
+  "places_verified": 14,
+  "places_pct": 93.3,
+  "unverified_places": [
+   "Laxmi Misthan Bhandar (LMB)"
+  ],
+  "places_detail": [
+   {
+    "name": "Hotel Rajasthan Palace",
+    "status": "in_research"
+   },
+   {
+    "name": "Hotel Shikha Jaipur",
+    "status": "in_research"
+   },
+   {
+    "name": "Hotel Kalyan",
+    "status": "on_map"
+   },
+   {
+    "name": "Rawat Misthan Bhandar",
+    "status": "in_research"
+   },
+   {
+    "name": "Hawa Mahal",
+    "status": "in_research"
+   },
+   {
+    "name": "Jantar Mantar",
+    "status": "in_research"
+   },
+   {
+    "name": "Bapu Bazaar",
+    "status": "on_map"
+   },
+   {
+    "name": "Kalkatta Chaat Bhandar",
+    "status": "in_research"
+   },
+   {
+    "name": "Amber Fort",
+    "status": "in_research"
+   },
+   {
+    "name": "Jaigarh Fort",
+    "status": "in_research"
+   },
+   {
+    "name": "City Palace",
+    "status": "in_research"
+   },
+   {
+    "name": "Gulab Ji ki Chai",
+    "status": "in_research"
+   },
+   {
+    "name": "Laxmi Misthan Bhandar (LMB)",
+    "status": "unverified"
+   },
+   {
+    "name": "Johari Bazaar",
+    "status": "in_research"
+   },
+   {
+    "name": "LMB",
+    "status": "on_map"
+   }
+  ]
+ },
+ "itinerary": "# 🌆 Jaipur — 3-Day Trip  \n> **Delhi → Jaipur** · 20 Nov 2026 – 22 Nov 2026 · 2 people · Budget ₹20,000 · Estimated total ₹14,180  \n\n## ✨ At a glance\n- **Getting there:** Delhi → Jaipur — 3A train, 4 h 30 m, ₹510 pp (₹1,020 total)  \n- **Stay:** Hotel Rajasthan Palace – ₹2,930 /night, 3★, free Wi‑Fi & breakfast, book on Booking.com  \n- **Weather:** Pleasant ≈ 22‑28 °C, dry, light sweater for evenings  \n- **Total cost:** ₹14,180 of ₹20,000 budget (₹5,820 left over)\n\n## ✈️ Getting there & back\n- **Go:** 12431 Jaipur Express (Delhi Junction → Jaipur Junction) – ₹510 pp, 4 h 30 m, AC 3A  \n- **Return:** 12432 Jaipur Express (Jaipur Junction → Delhi Junction) – ₹510 pp, 4 h 30 m, AC 3A  \n- **Why this option:** Cheapest comfortable AC option; saves ~₹4,000 vs flight and avoids road traffic.  \n\n## 🏨 Where to stay\n1. **Hotel Rajasthan Palace** — ₹2,930 /night · 3★ · free Wi‑Fi, breakfast, rooftop view · book on Booking.com  \n2. **Hotel Shikha Jaipur** — ₹2,400 /night · 3★ · complimentary breakfast, central location · book on MakeMyTrip  \n3. **Hotel Kalyan** — ₹2,600 /night · 3★ · free Wi‑Fi, garden lounge · book on OYO  \n\n## 🗓️ Day-by-day plan\n### Day 1 — Fri, 20 Nov · Arrival & Old City Intro  \n- **6:30 AM** — Board 12431 train at New Delhi (Platform 4)  \n- **11:00 AM** — Arrive Jaipur Junction, take prepaid auto (₹150) to hotel, check‑in, drop bags  \n- **12:30 PM** — Lunch at **Rawat Misthan Bhandar** — Pyaz Kachori, ₹180 pp  \n- **2:00 PM** — Walk to **Hawa Mahal** (0.5 km, 5 min) – Entry free, photo stop  \n- **3:30 PM** — Explore **Jantar Mantar** (0.3 km, 3 min) – Entry ₹100 pp  \n- **5:00 PM** – Stroll through **Bapu Bazaar** for textiles (2 km, 10 min)  \n- **7:30 PM** — Dinner at **Kalkatta Chaat Bhandar** — Dal Kachori, ₹200 pp  \n- 💡 *Tip:* Carry a small bottle of water; Jaipur’s sun can be strong even in November.  \n\n### Day 2 — Sat, 21 Nov · Forts & Heritage  \n- **8:00 AM** — Breakfast at hotel (included)  \n- **9:00 AM** — Taxi to **Amber Fort** (≈ 11 km, 30 min, ₹300 round) – Entry ₹100 pp, Elephant ride optional (₹300 pp)  \n- **12:30 PM** — Lunch at **1135 AD – The Restaurant** (inside Amber complex) — Dal Bati Churma set, ₹350 pp  \n- **2:00 PM** — Visit **Jaigarh Fort** (2 km, 5 min) – Entry ₹100 pp, enjoy cannon view  \n- **4:00 PM** — Return to city, stop at **City Palace** (3 km, 10 min) – Entry ₹200 pp  \n- **6:30 PM** — Evening tea & snacks at **Gulab Ji ki Chai** — Chai & Bun Makhhan, ₹120 pp  \n- **8:00 PM** — Dinner at **Laxmi Misthan Bhandar (LMB)** — Thali (Dal Bati Churma), ₹300 pp  \n- 💡 *Tip:* Wear comfortable shoes; forts involve uneven steps.  \n\n### Day 3 — Sun, 22 Nov · Shopping & Return  \n- **8:00 AM** — Breakfast at hotel, check‑out, store luggage at reception  \n- **9:00 AM** — Head to **Johari Bazaar** (1 km, 5 min) – shop for jewellery & gems  \n- **11:30 AM** — Light snack at **Gulab Ji ki Chai** – Samosa, ₹100 pp  \n- **12:30 PM** — Return to hotel, collect luggage, take auto to railway station (₹150)  \n- **2:00 PM** — Board 12432 train back to Delhi  \n- **6:30 PM** — Arrive Delhi, end of trip  \n\n## 🍽️ Food to try  \n- **Pyaz Kachori** at **Rawat Misthan Bhandar** — ₹180 pp  \n- **Dal Bati Churma** at **LMB** — ₹300 pp  \n- **Mawa Kachori** at **Rawat Misthan Bhandar** — ₹150 pp  \n- **Chai & Bun Makhhan** at **Gulab Ji ki Chai** — ₹120 pp  \n- **Dal Kachori** at **Kalkatta Chaat Bhandar** — ₹200 pp  \n\n## 💰 Budget breakdown\n| Item | Cost |\n|---|---|\n| Transport (train round‑trip) | ₹1,020 |\n| Stay (2 nights) | ₹5,860 |\n| Food (3 days × 2 people) | ₹5,400 |\n| Local travel + activities | ₹1,400 |\n| Buffer | ₹500 |\n| **Total** | **₹14,180** |\n\n## 🎒 Weather & packing  \n- Daytime 22‑28 °C, clear skies – light cotton shirts & trousers.  \n- Evenings can dip to 15 °C – carry a light sweater or shawl.  \n- Comfortable walking shoes for forts and bazaars.  \n- Sunscreen & sunglasses for midday sun.  \n\n## 🏧 Useful nearby  \n- **ATM:** State Bank of India – Bapu Bazaar, 200 m  \n- **Petrol:** Indian Oil, Jaipur‑Badi Road, 5 km from hotel  \n- **Hospital:** Mahatma Jyotiba Phule Hospital – C‑Road, 3 km, +91‑141‑260 5555  \n- **Bus stand / Railway station:** Jaipur Junction (Junction), 3 km from hotel  \n\n## 💡 Local tips  \n- Carry a photocopy of your ID for entry tickets.  \n- Hire auto‑rickshaws with meter; agree on fare before start.  \n- Indian tourists get lower entry fees (₹100‑200) – show ID.  \n- Bargain politely in markets; start at 50 % of quoted price.  \n- Keep a small bottle of hand sanitizer; many eateries lack hand‑wash facilities.  ",
+ "first_draft_text": "# 🌆 Jaipur — 3-Day Trip  \n> **Delhi → Jaipur** · 20 Nov 2026 – 22 Nov 2026 · 2 people · Budget ₹20,000 · Estimated total ₹14,180  \n\n## ✨ At a glance\n- **Getting there:** Delhi → Jaipur — 3A train, 4 h 30 m, ₹510 pp (₹1,020 total)  \n- **Stay:** Hotel Rajasthan Palace – ₹2,930 /night, 3★, free Wi‑Fi & breakfast, book on Booking.com  \n- **Weather:** Pleasant ≈ 22‑28 °C, dry, light sweater for evenings  \n- **Total cost:** ₹14,180 of ₹20,000 budget (₹5,820 left over)\n\n## ✈️ Getting there & back\n- **Go:** 12431 Jaipur Express (Delhi Junction → Jaipur Junction) – ₹510 pp, 4 h 30 m, AC 3A  \n- **Return:** 12432 Jaipur Express (Jaipur Junction → Delhi Junction) – ₹510 pp, 4 h 30 m, AC 3A  \n- **Why this option:** Cheapest comfortable AC option; saves ~₹4,000 vs flight and avoids road traffic.  \n\n## 🏨 Where to stay\n1. **Hotel Rajasthan Palace** — ₹2,930 /night · 3★ · free Wi‑Fi, breakfast, rooftop view · book on Booking.com  \n2. **Hotel Shikha Jaipur** — ₹2,400 /night · 3★ · complimentary breakfast, central location · book on MakeMyTrip  \n3. **Hotel Kalyan** — ₹2,600 /night · 3★ · free Wi‑Fi, garden lounge · book on OYO  \n\n## 🗓️ Day-by-day plan\n### Day 1 — Fri, 20 Nov · Arrival & Old City Intro  \n- **6:30 AM** — Board 12431 train at New Delhi (Platform 4)  \n- **11:00 AM** — Arrive Jaipur Junction, take prepaid auto (₹150) to hotel, check‑in, drop bags  \n- **12:30 PM** — Lunch at **Rawat Misthan Bhandar** — Pyaz Kachori, ₹180 pp  \n- **2:00 PM** — Walk to **Hawa Mahal** (0.5 km, 5 min) – Entry free, photo stop  \n- **3:30 PM** — Explore **Jantar Mantar** (0.3 km, 3 min) – Entry ₹100 pp  \n- **5:00 PM** – Stroll through **Bapu Bazaar** for textiles (2 km, 10 min)  \n- **7:30 PM** — Dinner at **Kalkatta Chaat Bhandar** — Dal Kachori, ₹200 pp  \n- 💡 *Tip:* Carry a small bottle of water; Jaipur’s sun can be strong even in November.  \n\n### Day 2 — Sat, 21 Nov · Forts & Heritage  \n- **8:00 AM** — Breakfast at hotel (included)  \n- **9:00 AM** — Taxi to **Amber Fort** (≈ 11 km, 30 min, ₹300 round) – Entry ₹100 pp, Elephant ride optional (₹300 pp)  \n- **12:30 PM** — Lunch at **1135 AD – The Restaurant** (inside Amber complex) — Dal Bati Churma set, ₹350 pp  \n- **2:00 PM** — Visit **Jaigarh Fort** (2 km, 5 min) – Entry ₹100 pp, enjoy cannon view  \n- **4:00 PM** — Return to city, stop at **City Palace** (3 km, 10 min) – Entry ₹200 pp  \n- **6:30 PM** — Evening tea & snacks at **Gulab Ji ki Chai** — Chai & Bun Makhhan, ₹120 pp  \n- **8:00 PM** — Dinner at **Laxmi Misthan Bhandar (LMB)** — Thali (Dal Bati Churma), ₹300 pp  \n- 💡 *Tip:* Wear comfortable shoes; forts involve uneven steps.  \n\n### Day 3 — Sun, 22 Nov · Shopping & Return  \n- **8:00 AM** — Breakfast at hotel, check‑out, store luggage at reception  \n- **9:00 AM** — Head to **Johari Bazaar** (1 km, 5 min) – shop for jewellery & gems  \n- **11:30 AM** — Light snack at **Gulab Ji ki Chai** – Samosa, ₹100 pp  \n- **12:30 PM** — Return to hotel, collect luggage, take auto to railway station (₹150)  \n- **2:00 PM** — Board 12432 train back to Delhi  \n- **6:30 PM** — Arrive Delhi, end of trip  \n\n## 🍽️ Food to try  \n- **Pyaz Kachori** at **Rawat Misthan Bhandar** — ₹180 pp  \n- **Dal Bati Churma** at **LMB** — ₹300 pp  \n- **Mawa Kachori** at **Rawat Misthan Bhandar** — ₹150 pp  \n- **Chai & Bun Makhhan** at **Gulab Ji ki Chai** — ₹120 pp  \n- **Dal Kachori** at **Kalkatta Chaat Bhandar** — ₹200 pp  \n\n## 💰 Budget breakdown\n| Item | Cost |\n|---|---|\n| Transport (train round‑trip) | ₹1,020 |\n| Stay (2 nights) | ₹5,860 |\n| Food (3 days × 2 people) | ₹5,400 |\n| Local travel + activities | ₹1,400 |\n| Buffer | ₹500 |\n| **Total** | **₹14,180** |\n\n## 🎒 Weather & packing  \n- Daytime 22‑28 °C, clear skies – light cotton shirts & trousers.  \n- Evenings can dip to 15 °C – carry a light sweater or shawl.  \n- Comfortable walking shoes for forts and bazaars.  \n- Sunscreen & sunglasses for midday sun.  \n\n## 🏧 Useful nearby  \n- **ATM:** State Bank of India – Bapu Bazaar, 200 m  \n- **Petrol:** Indian Oil, Jaipur‑Badi Road, 5 km from hotel  \n- **Hospital:** Mahatma Jyotiba Phule Hospital – C‑Road, 3 km, +91‑141‑260 5555  \n- **Bus stand / Railway station:** Jaipur Junction (Junction), 3 km from hotel  \n\n## 💡 Local tips  \n- Carry a photocopy of your ID for entry tickets.  \n- Hire auto‑rickshaws with meter; agree on fare before start.  \n- Indian tourists get lower entry fees (₹100‑200) – show ID.  \n- Bargain politely in markets; start at 50 % of quoted price.  \n- Keep a small bottle of hand sanitizer; many eateries lack hand‑wash facilities.  ",
+ "finished_at": "2026-10-10T13:43:23.613002"
+}

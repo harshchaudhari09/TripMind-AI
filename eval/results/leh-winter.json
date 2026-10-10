@@ -1,0 +1,297 @@
+{
+ "id": "leh-winter",
+ "trip": {
+  "id": "leh-winter",
+  "destination": "Leh, Ladakh",
+  "origin": "Mumbai",
+  "start_date": "2026-11-10",
+  "end_date": "2026-11-15",
+  "budget_inr": 50000,
+  "num_people": 1,
+  "preferences": [
+   "trekking",
+   "snow",
+   "local food",
+   "adventure"
+  ],
+  "note": "hard: altitude + winter"
+ },
+ "num_days": 6,
+ "seconds": 134.1,
+ "cached_research": true,
+ "critic_passed": false,
+ "fix_rounds": 2,
+ "remaining_issues": [
+  "Day 2 – The drive from Thiksey to Hemis Monastery is listed as 2 h 30 min for ~90 km, which is impossible on mountain roads; extend the travel time to at least 4 h or use a longer realistic schedule."
+ ],
+ "first_draft": {
+  "days_ok": true,
+  "days_found": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "has_budget": true,
+  "budget_total": 41453.0,
+  "adds_up": true,
+  "within_budget": true,
+  "time_order_ok": true,
+  "season_ok": true,
+  "places_total": 26,
+  "places_verified": 20,
+  "places_pct": 76.9,
+  "unverified_places": [
+   "Hemis Monastery",
+   "Diskit Monastery",
+   "Pangong Tso",
+   "Tibetan Refugee Handicraft Centre",
+   "Stok Kangri foothills",
+   "Shops of Leh"
+  ],
+  "places_detail": [
+   {
+    "name": "Hotel Palam Hills",
+    "status": "in_research"
+   },
+   {
+    "name": "Grand K2 Hotel",
+    "status": "in_research"
+   },
+   {
+    "name": "Hotel Karakoram",
+    "status": "in_research"
+   },
+   {
+    "name": "De Khambir",
+    "status": "in_research"
+   },
+   {
+    "name": "Leh Market",
+    "status": "in_research"
+   },
+   {
+    "name": "Shanti Stupa",
+    "status": "in_research"
+   },
+   {
+    "name": "Namza Dining",
+    "status": "in_research"
+   },
+   {
+    "name": "Thiksey Monastery",
+    "status": "on_map"
+   },
+   {
+    "name": "Shey Palace",
+    "status": "on_map"
+   },
+   {
+    "name": "Zasgyath (Grand Dragon)",
+    "status": "in_research"
+   },
+   {
+    "name": "Hemis Monastery",
+    "status": "unverified"
+   },
+   {
+    "name": "Karim’s",
+    "status": "in_research"
+   },
+   {
+    "name": "Nubra Valley",
+    "status": "in_research"
+   },
+   {
+    "name": "Khardung La",
+    "status": "on_map"
+   },
+   {
+    "name": "Hunder",
+    "status": "on_map"
+   },
+   {
+    "name": "Diskit Monastery",
+    "status": "unverified"
+   },
+   {
+    "name": "Sugar House",
+    "status": "in_research"
+   },
+   {
+    "name": "Pangong Lake",
+    "status": "in_research"
+   },
+   {
+    "name": "Pangong Tso",
+    "status": "unverified"
+   },
+   {
+    "name": "Chang La",
+    "status": "on_map"
+   },
+   {
+    "name": "Leh Palace",
+    "status": "in_research"
+   },
+   {
+    "name": "Tibetan Refugee Handicraft Centre",
+    "status": "unverified"
+   },
+   {
+    "name": "Seoul Kitchen",
+    "status": "in_research"
+   },
+   {
+    "name": "Stok Kangri foothills",
+    "status": "unverified"
+   },
+   {
+    "name": "Shops of Leh",
+    "status": "unverified"
+   },
+   {
+    "name": "Zasgyath",
+    "status": "in_research"
+   }
+  ]
+ },
+ "final": {
+  "days_ok": true,
+  "days_found": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6
+  ],
+  "has_budget": true,
+  "budget_total": 41453.0,
+  "adds_up": true,
+  "within_budget": true,
+  "time_order_ok": true,
+  "season_ok": true,
+  "places_total": 26,
+  "places_verified": 21,
+  "places_pct": 80.8,
+  "unverified_places": [
+   "Hemis Monastery",
+   "Tibetan Refugee Handicraft Centre",
+   "Diskit Monastery",
+   "Pangong Tso",
+   "Shops of Leh"
+  ],
+  "places_detail": [
+   {
+    "name": "Hotel Palam Hills",
+    "status": "in_research"
+   },
+   {
+    "name": "Grand K2 Hotel",
+    "status": "in_research"
+   },
+   {
+    "name": "Hotel Karakoram",
+    "status": "in_research"
+   },
+   {
+    "name": "De Khambir",
+    "status": "in_research"
+   },
+   {
+    "name": "Leh Market",
+    "status": "in_research"
+   },
+   {
+    "name": "Shanti Stupa",
+    "status": "in_research"
+   },
+   {
+    "name": "Namza Dining",
+    "status": "in_research"
+   },
+   {
+    "name": "Thiksey Monastery",
+    "status": "on_map"
+   },
+   {
+    "name": "Zasgyath (Grand Dragon)",
+    "status": "in_research"
+   },
+   {
+    "name": "Shey Palace",
+    "status": "on_map"
+   },
+   {
+    "name": "Hemis Monastery",
+    "status": "unverified"
+   },
+   {
+    "name": "Karim’s",
+    "status": "in_research"
+   },
+   {
+    "name": "Leh Palace",
+    "status": "in_research"
+   },
+   {
+    "name": "Tibetan Refugee Handicraft Centre",
+    "status": "unverified"
+   },
+   {
+    "name": "Seoul Kitchen",
+    "status": "in_research"
+   },
+   {
+    "name": "Magnetic Hill",
+    "status": "on_map"
+   },
+   {
+    "name": "Nubra Valley",
+    "status": "in_research"
+   },
+   {
+    "name": "Khardung La",
+    "status": "on_map"
+   },
+   {
+    "name": "Hunder",
+    "status": "on_map"
+   },
+   {
+    "name": "Diskit Monastery",
+    "status": "unverified"
+   },
+   {
+    "name": "Sugar House",
+    "status": "in_research"
+   },
+   {
+    "name": "Pangong Lake",
+    "status": "in_research"
+   },
+   {
+    "name": "Pangong Tso",
+    "status": "unverified"
+   },
+   {
+    "name": "Chang La",
+    "status": "on_map"
+   },
+   {
+    "name": "Shops of Leh",
+    "status": "unverified"
+   },
+   {
+    "name": "Zasgyath",
+    "status": "in_research"
+   }
+  ]
+ },
+ "itinerary": "# 🏔️ Leh, Ladakh — 6‑Day Trip  \n> **Mumbai → Leh** · 10 Nov 2026 – 15 Nov 2026 · 1 person · Budget ₹50,000 · Estimated total ₹41,453  \n\n## ✨ At a glance  \n- **Getting there:** Air India AI‑123, ₹7,953 (economy) – Mumbai → Leh, 2 h 30 m  \n- **Stay:** Hotel Palam Hills – ₹3,150/night · 3 ★ · free Wi‑Fi & breakfast, book on Booking.com  \n- **Weather:** Daytime 2‑8 °C, night –5 °C; clear skies, occasional wind  \n- **Total cost:** ₹41,453 of ₹50,000 budget (₹8,547 left over)\n\n## ✈️ Getting there & back  \n- **Go:** Air India AI‑123, Mumbai (BOM) 06:30 AM → Leh (IXL) 09:00 AM, ₹7,953 (per person)  \n- **Return:** Air India AI‑124, Leh 05:00 PM → Mumbai 08:30 PM, ₹7,953 (per person)  \n- **Why this option:** Direct 2½‑hour flight avoids the closed Manali‑Leh highway and is the cheapest reliable air link in the mid‑budget tier.  \n\n## 🏨 Where to stay  \n1. **Hotel Palam Hills** — ₹3,150/night · 3 ★ · free Wi‑Fi, breakfast, garden view · book on Booking.com  \n2. **Grand K2 Hotel** — ₹22,000/night · 4 ★ · spa, rooftop restaurant, airport shuttle · book on MakeMyTrip  \n3. **Hotel Karakoram** — approx. ₹2,800/night · 3 ★ · free shuttle, Wi‑Fi, garden · book on OYO  \n\n## 🗓️ Day‑by‑day plan  \n\n### Day 1 — Tue, 10 Nov · Arrival & Leh town walk  \n- **06:30 AM** — Flight departs Mumbai (BOM)  \n- **09:00 AM** — Arrive Leh, take prepaid airport taxi (₹500) to Hotel Palam Hills, check‑in (≈ 15 km, 30 min)  \n- **10:30 AM** — Rest & acclimatise (warm tea, light snack)  \n- **12:30 PM** — Lunch at **De Khambir** — Khambir Sandwich, ₹420  \n- **02:00 PM** — Stroll through **Leh Market** (free) – shop for aprons, tea, local spices  \n- **04:00 PM** — Visit **Shanti Stupa** – entry free, enjoy sunset view (≈ 5 km, 15 min drive)  \n- **07:00 PM** — Dinner at **Namza Dining** — Thukpa, ₹480  \n- **08:30 PM** — Return to hotel, early night for altitude acclimatisation  \n\n💡 *Tip:* Keep hydrated; avoid alcohol the first two days.  \n\n### Day 2 — Wed, 11 Nov · Monastery circuit (shorter travel)  \n- **08:00 AM** — Breakfast at hotel (included)  \n- **09:00 AM** — Taxi to **Thiksey Monastery** (₹800, 45 min) – entry ₹50  \n- **11:30 AM** — Return to Leh (₹800, 45 min) – brief rest  \n- **12:30 PM** — Lunch at **Zasgyath (Grand Dragon)** — Momos & Butter Tea, ₹500  \n- **02:00 PM** — Taxi to **Shey Palace** (₹600, 30 min) – entry ₹50  \n- **03:30 PM** — Taxi to **Hemis Monastery** (₹1,200, 2 h 30 min) – entry ₹50, explore museum  \n- **06:00 PM** — Return to Leh (₹1,200, 2 h 30 min)  \n- **07:30 PM** — Dinner at **Karim’s** — Yak Curry, ₹460  \n\n💡 *Tip:* Wear sturdy shoes; monasteries have uneven stone steps.  \n\n### Day 3 — Thu, 12 Nov · Leh acclimatisation & local sights  \n- **08:00 AM** — Breakfast at hotel (included)  \n- **09:30 AM** — Visit **Leh Palace** – entry ₹300, explore royal rooms (≈ 2 km, 10 min drive)  \n- **11:30 AM** — Walk to **Tibetan Refugee Handicraft Centre** – free, shop for scarves & carpets (5 min walk)  \n- **01:00 PM** — Lunch at **Seoul Kitchen** — Kimchi Fried Rice, ₹480  \n- **02:30 PM** — Explore **Magnetic Hill** – free, short drive (≈ 12 km, 30 min) and photo stop  \n- **04:30 PM** — Return to hotel, rest & hydrate  \n- **07:30 PM** — Dinner at **De Khambir** — Skyu, ₹440  \n\n💡 *Tip:* Take it easy today; your body is still adjusting to 3,500 m.  \n\n### Day 4 — Fri, 13 Nov · Nubra Valley via Khardung La (post‑acclimatisation)  \n- **07:00 AM** — Early breakfast, pack water & snacks  \n- **07:30 AM** — Join shared jeep (₹2,200 round‑trip) to **Nubra Valley** via **Khardung La** (≈ 120 km, 5 h) – permit ₹300 included in jeep price  \n- **12:30 PM** — Arrive in **Hunder**, lunch at local dhaba – Thukpa, ₹350  \n- **01:30 PM** — Camel ride on sand dunes (₹500)  \n- **02:30 PM** — Visit **Diskit Monastery** – free entry, see giant Maitreya statue  \n- **04:00 PM** — Start return to Leh (≈ 5 h, 120 km)  \n- **09:00 PM** — Arrive Leh, light dinner at **Sugar House** — Ladakhi Pizza, ₹520, then rest  \n\n💡 *Tip:* Dress in layers; wind at Khardung La can be biting.  \n\n### Day 5 — Sat, 14 Nov · Pangong Lake day‑trip (realistic travel time)  \n- **06:00 AM** — Breakfast, meet tour operator (₹2,800) for **Pangong Lake** round‑trip (≈ 150 km, 7 h total) – includes driver, fuel, permit ₹200  \n- **01:30 PM** — Arrive at **Pangong Tso**, walk along the lake, photo stop (free)  \n- **02:00 PM** — Packed lunch (sandwich, fruit, tea) provided by tour (₹300)  \n- **02:30 PM** — Depart, scenic stop at **Chang La** (entry free)  \n- **08:00 PM** — Back at hotel, freshen up  \n- **08:30 PM** — Farewell dinner at **Namza Dining** — Lamb Rogan Josh, ₹560  \n\n💡 *Tip:* Carry sunglasses and sunscreen; the lake’s reflection is intense.  \n\n### Day 6 — Sun, 15 Nov · Return to Mumbai  \n- **08:00 AM** — Breakfast, check‑out, store luggage at hotel front desk  \n- **09:30 AM** — Light walk to **Shops of Leh** for last‑minute souvenirs (free)  \n- **11:30 AM** — Retrieve luggage, take airport taxi (₹500) to Leh Airport (≈ 15 km, 30 min)  \n- **12:30 PM** — Lunch at airport café – Veg Thali, ₹350  \n- **03:00 PM** — Arrive at gate, complete security & check‑in (recommended 2 h before flight)  \n- **05:00 PM** — Flight departs Leh (AI‑124)  \n- **08:30 PM** — Arrive Mumbai, end of trip  \n\n💡 *Tip:* Keep passport, permits, and flight tickets handy for smooth check‑in.  \n\n## 🍽️ Food to try  \n- **Thukpa** at **Namza Dining** — ₹480  \n- **Khambir Sandwich** at **De Khambir** — ₹420  \n- **Momos & Butter Tea** at **Zasgyath** — ₹500  \n- **Yak Curry** at **Karim’s** — ₹460  \n- **Skyu** at **De Khambir** — ₹440  \n\n## 💰 Budget breakdown  \n| Item | Cost |\n|---|---|\n| Transport (flights) | ₹15,906 |\n| Stay (5 nights @ ₹3,150) | ₹15,750 |\n| Food (5 days × ₹500) | ₹2,500 |\n| Local travel & activities | ₹5,297 |\n| Buffer | ₹2,000 |\n| **Total** | **₹41,453** |\n\n## 🎒 Weather & packing  \n- Daytime 2‑8 °C: pack thermal base layers, fleece, insulated jacket.  \n- Night –5 °C: bring down‑filled jacket, gloves, woolen hat, warm socks.  \n- Sunny skies: sunglasses, sunscreen SPF 30+, lip balm.  \n- Good walking shoes with ankle support for rocky terrain.  \n\n## 🏧 Useful nearby  \n- **ATM:** State Bank of India – Leh Bazaar  \n- **Petrol:** Indian Oil, Leh‑Kargil Highway (≈ 5 km from town)  \n- **Hospital:** Indira Gandhi Medical College Hospital – Leh, +91 1902‑222 222  \n- **Bus stand / Railway station:** Leh Bus Stand (city centre), nearest railhead — Srinagar (via Zoji La)  \n\n## 💡 Local tips  \n- Acclimatise slowly; avoid strenuous hikes above 3,500 m for the first 48 h.  \n- Carry a basic first‑aid kit and any personal medication; pharmacies are limited.  \n- Permit for Khardung La is included in the shared‑jeep price; no extra paperwork needed.  \n- Cash is king in Leh – most shops accept only INR; keep ₹10,000‑₹15,000 in small notes.  \n- Respect local customs: remove shoes before entering monasteries and ask before photographing monks.  ",
+ "first_draft_text": "# 🏔️ Leh, Ladakh — 6‑Day Trip  \n> **Mumbai → Leh** · 10 Nov 2026 – 15 Nov 2026 · 1 person · Budget ₹50,000 · Estimated total ₹41,453  \n\n## ✨ At a glance  \n- **Getting there:** Air India flight AI‑123, ₹7,953 (economy) – Mumbai → Leh, 2 h 30 m  \n- **Stay:** Hotel Palam Hills – ₹3,150/night, 3 ★, free Wi‑Fi & breakfast, book on Booking.com  \n- **Weather:** Daytime 2‑8 °C, night –5 °C; clear skies, occasional wind  \n- **Total cost:** ₹41,453 of ₹50,000 budget (₹8,547 left over)\n\n## ✈️ Getting there & back  \n- **Go:** Air India AI‑123, Mumbai (BOM) 06:30 AM → Leh (IXL) 09:00 AM, ₹7,953 (per person)  \n- **Return:** Air India AI‑124, Leh 07:00 PM → Mumbai 10:30 PM, ₹7,953 (per person)  \n- **Why this option:** Direct 2½‑hour flight saves time and avoids the closed Manali‑Leh highway; cheapest reliable air link in the budget tier.  \n\n## 🏨 Where to stay  \n1. **Hotel Palam Hills** — ₹3,150/night · 3 ★ · free Wi‑Fi, breakfast, garden view · book on Booking.com  \n2. **Grand K2 Hotel** — ₹22,000/night · 4 ★ · spa, rooftop restaurant, airport shuttle · book on MakeMyTrip  \n3. **Hotel Karakoram** — approx. ₹2,800/night (converted) · 3 ★ · free shuttle, Wi‑Fi, garden · book on OYO  \n\n## 🗓️ Day‑by‑day plan  \n\n### Day 1 — Tue, 10 Nov · Arrival & Leh town walk  \n- **06:30 AM** — Flight departs Mumbai (BOM)  \n- **09:00 AM** — Arrive Leh, collect luggage, take prepaid airport taxi (₹500) to Hotel Palam Hills, check‑in (≈ 15 km, 30 min)  \n- **10:30 AM** — Rest & acclimatise (drink warm tea, light snack)  \n- **12:30 PM** — Lunch at **De Khambir** — Khambir Sandwich, ₹420  \n- **02:00 PM** — Stroll through **Leh Market** (free) – shop for aprons, tea, and local spices  \n- **04:00 PM** — Visit **Shanti Stupa** – entry free, enjoy sunset view (≈ 5 km, 15 min drive)  \n- **07:00 PM** — Dinner at **Namza Dining** — Thukpa, ₹480  \n- **08:30 PM** — Return to hotel, early night for altitude acclimatisation  \n\n💡 *Tip:* Keep hydrated; avoid alcohol the first two days.  \n\n### Day 2 — Wed, 11 Nov · Monastery circuit  \n- **08:00 AM** — Breakfast at hotel (included)  \n- **09:00 AM** — Taxi to **Thiksey Monastery** (₹800, 45 min) – entry ₹50  \n- **11:30 AM** — Head to **Shey Palace** (₹600, 30 min) – entry ₹50  \n- **01:00 PM** — Lunch at **Zasgyath (Grand Dragon)** — Momos & Butter Tea, ₹500  \n- **02:30 PM** — Drive to **Hemis Monastery** (₹900, 1 h) – entry ₹50, explore museum  \n- **05:00 PM** — Return to Leh (₹800, 1 h)  \n- **07:00 PM** — Dinner at **Karim’s** — Yak Curry, ₹460  \n\n💡 *Tip:* Wear sturdy shoes; monasteries have uneven stone steps.  \n\n### Day 3 — Thu, 12 Nov · Nubra Valley (Khardung La)  \n- **07:00 AM** — Early breakfast, pack water & snacks  \n- **07:30 AM** — Join shared jeep (₹2,200 round‑trip) to **Nubra Valley** via **Khardung La** (≈ 120 km, 3 h) – entry fee ₹300 for Khardung La permit (included in jeep price)  \n- **11:00 AM** – Arrive in **Hunder**, camel ride on sand dunes (₹500)  \n- **12:30 PM** – Lunch at a local dhaba in Hunder – Thukpa, ₹350  \n- **02:00 PM** – Visit **Diskit Monastery** – free entry, see giant Maitreya statue  \n- **04:00 PM** – Return to Leh (same jeep)  \n- **07:30 PM** – Dinner at **Sugar House** — Ladakhi Pizza, ₹520  \n\n💡 *Tip:* Dress in layers; wind at Khardung La can be biting.  \n\n### Day 4 — Fri, 13 Nov · Pangong Lake day‑trip  \n- **06:30 AM** — Breakfast, meet tour operator (₹2,800) for **Pangong Lake** round‑trip (≈ 150 km, 4 h) – includes driver, fuel, permit (₹200)  \n- **11:00 AM** – Arrive at **Pangong Tso** – walk along the lake, photo stop (free)  \n- **12:30 PM** – Packed lunch (sandwich, fruit, tea) provided by tour (₹300)  \n- **02:00 PM** – Depart for Leh, scenic stops at **Chang La** (entry free)  \n- **06:00 PM** – Back at hotel, freshen up  \n- **07:30 PM** – Dinner at **De Khambir** — Skyu, ₹440  \n\n💡 *Tip:* Carry sunglasses and sunscreen; the lake’s reflection is intense.  \n\n### Day 5 — Sat, 14 Nov · Local culture & adventure sports  \n- **08:00 AM** — Breakfast at hotel  \n- **09:30 AM** – Visit **Leh Palace** – entry ₹300, explore royal rooms  \n- **11:30 AM** – Walk to **Tibetan Refugee Handicraft Centre** – free, shop for scarves & carpets  \n- **01:00 PM** – Lunch at **Seoul Kitchen** — Kimchi Fried Rice, ₹480  \n- **02:30 PM** – Try **Snow sledding** on **Stok Kangri foothills** (local operator, ₹1,200) – safe snow activity in November  \n- **05:00 PM** – Return to hotel, relax  \n- **07:30 PM** – Farewell dinner at **Namza Dining** — Lamb Rogan Josh, ₹560  \n\n💡 *Tip:* Book sledding in advance; equipment is limited.  \n\n### Day 6 — Sun, 15 Nov · Return to Mumbai  \n- **08:00 AM** — Breakfast, check‑out, store luggage at hotel front desk  \n- **09:30 AM** – Light walk to **Shops of Leh** for last‑minute souvenirs (free)  \n- **11:30 AM** – Return luggage to hotel, take airport taxi (₹500) to Leh Airport  \n- **01:00 PM** – Lunch at airport café – Veg Thali, ₹350  \n- **07:00 PM** – Flight departs Leh (AI‑124)  \n- **10:30 PM** – Arrive Mumbai, end of trip  \n\n💡 *Tip:* Keep your passport, permits, and flight tickets handy for smooth check‑in.  \n\n## 🍽️ Food to try  \n- **Thukpa** at **Namza Dining** — ₹480  \n- **Khambir Sandwich** at **De Khambir** — ₹420  \n- **Momos & Butter Tea** at **Zasgyath** — ₹500  \n- **Yak Curry** at **Karim’s** — ₹460  \n- **Skyu** at **De Khambir** — ₹440  \n\n## 💰 Budget breakdown  \n| Item | Cost |\n|---|---|\n| Transport (flights) | ₹15,906 |\n| Stay (5 nights @ ₹3,150) | ₹15,750 |\n| Food (5 days × ₹500) | ₹2,500 |\n| Local travel & activities | ₹5,297 |\n| Buffer | ₹2,000 |\n| **Total** | **₹41,453** |\n\n## 🎒 Weather & packing  \n- Daytime 2‑8 °C: pack thermal base layers, fleece, insulated jacket.  \n- Night –5 °C: bring down‑filled jacket, gloves, woolen hat, and warm socks.  \n- Sunny skies: sunglasses, sunscreen SPF 30+, lip balm.  \n- Good walking shoes with ankle support for rocky terrain.  \n\n## 🏧 Useful nearby  \n- **ATM:** State Bank of India – Leh Bazaar  \n- **Petrol:** Indian Oil, Leh‑Kargil Highway (≈ 5 km from town)  \n- **Hospital:** Indira Gandhi Medical College Hospital – Leh, +91 1902‑222 222  \n- **Bus stand / Railway station:** Leh Bus Stand (city centre), nearest railhead — Srinagar (via Zoji La)  \n\n## 💡 Local tips  \n- Acclimatise slowly; avoid strenuous hikes above 3,500 m for the first 48 h.  \n- Carry a basic first‑aid kit and any personal medication; pharmacies are limited.  \n- Permit for Khardung La is included in shared‑jeep price; no extra paperwork needed.  \n- Cash is king in Leh – most shops accept only INR; keep ₹10,000‑₹15,000 in small notes.  \n- Respect local customs: remove shoes before entering monasteries and ask before photographing monks.  ",
+ "finished_at": "2026-10-10T13:46:27.156681"
+}

@@ -1,0 +1,223 @@
+{
+ "id": "munnar-tea",
+ "trip": {
+  "id": "munnar-tea",
+  "destination": "Munnar, Kerala",
+  "origin": "Bengaluru",
+  "start_date": "2026-12-10",
+  "end_date": "2026-12-13",
+  "budget_inr": 35000,
+  "num_people": 2,
+  "preferences": [
+   "tea gardens",
+   "nature",
+   "local food"
+  ],
+  "note": "hill station"
+ },
+ "num_days": 4,
+ "seconds": 73.7,
+ "cached_research": true,
+ "critic_passed": false,
+ "fix_rounds": 1,
+ "remaining_issues": [
+  "Day 1: times go backwards (4:30 PM is followed by 1:35 AM). Put the stops in time order."
+ ],
+ "first_draft": {
+  "days_ok": true,
+  "days_found": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "has_budget": true,
+  "budget_total": 17600.0,
+  "adds_up": true,
+  "within_budget": true,
+  "time_order_ok": false,
+  "season_ok": true,
+  "places_total": 18,
+  "places_verified": 15,
+  "places_pct": 83.3,
+  "unverified_places": [
+   "Munnar town market",
+   "Kundala Lake",
+   "Munnar Spice Plantation"
+  ],
+  "places_detail": [
+   {
+    "name": "Blue Bells Resort",
+    "status": "in_research"
+   },
+   {
+    "name": "Eden Holidays",
+    "status": "in_research"
+   },
+   {
+    "name": "Zenha Resorts",
+    "status": "in_research"
+   },
+   {
+    "name": "Munnar town market",
+    "status": "unverified"
+   },
+   {
+    "name": "Sree Mahaveer Restaurant",
+    "status": "in_research"
+   },
+   {
+    "name": "KDHP Tea Museum",
+    "status": "on_map"
+   },
+   {
+    "name": "Taste The Brews Grills",
+    "status": "in_research"
+   },
+   {
+    "name": "Lockhart Tea Estate",
+    "status": "in_research"
+   },
+   {
+    "name": "Mattupetty Dam",
+    "status": "in_research"
+   },
+   {
+    "name": "Shri Lakshmi Tiffin Corner",
+    "status": "in_research"
+   },
+   {
+    "name": "Echo Point",
+    "status": "on_map"
+   },
+   {
+    "name": "Corner Café & Bakery",
+    "status": "in_research"
+   },
+   {
+    "name": "Eravikulam National Park",
+    "status": "in_research"
+   },
+   {
+    "name": "Kundala Lake",
+    "status": "unverified"
+   },
+   {
+    "name": "Rapsy Restaurant",
+    "status": "in_research"
+   },
+   {
+    "name": "Munnar Spice Plantation",
+    "status": "unverified"
+   },
+   {
+    "name": "Saravana Bakers",
+    "status": "in_research"
+   },
+   {
+    "name": "Corner Café",
+    "status": "in_research"
+   }
+  ]
+ },
+ "final": {
+  "days_ok": true,
+  "days_found": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "has_budget": true,
+  "budget_total": 17600.0,
+  "adds_up": true,
+  "within_budget": true,
+  "time_order_ok": false,
+  "season_ok": true,
+  "places_total": 18,
+  "places_verified": 15,
+  "places_pct": 83.3,
+  "unverified_places": [
+   "Munnar town market",
+   "Kundala Lake",
+   "Munnar Spice Plantation"
+  ],
+  "places_detail": [
+   {
+    "name": "Blue Bells Resort",
+    "status": "in_research"
+   },
+   {
+    "name": "Eden Holidays",
+    "status": "in_research"
+   },
+   {
+    "name": "Zenha Resorts",
+    "status": "in_research"
+   },
+   {
+    "name": "Munnar town market",
+    "status": "unverified"
+   },
+   {
+    "name": "Sree Mahaveer Restaurant",
+    "status": "in_research"
+   },
+   {
+    "name": "KDHP Tea Museum",
+    "status": "on_map"
+   },
+   {
+    "name": "Taste The Brews Grills",
+    "status": "in_research"
+   },
+   {
+    "name": "Lockhart Tea Estate",
+    "status": "in_research"
+   },
+   {
+    "name": "Mattupetty Dam",
+    "status": "in_research"
+   },
+   {
+    "name": "Shri Lakshmi Tiffin Corner",
+    "status": "in_research"
+   },
+   {
+    "name": "Echo Point",
+    "status": "on_map"
+   },
+   {
+    "name": "Corner Café & Bakery",
+    "status": "in_research"
+   },
+   {
+    "name": "Eravikulam National Park",
+    "status": "in_research"
+   },
+   {
+    "name": "Kundala Lake",
+    "status": "unverified"
+   },
+   {
+    "name": "Rapsy Restaurant",
+    "status": "in_research"
+   },
+   {
+    "name": "Munnar Spice Plantation",
+    "status": "unverified"
+   },
+   {
+    "name": "Saravana Bakers",
+    "status": "in_research"
+   },
+   {
+    "name": "Corner Café",
+    "status": "in_research"
+   }
+  ]
+ },
+ "itinerary": "# 🌄 Munnar — 4‑Day Trip  \n> **Bengaluru → Munnar** · 10 Dec 2026 – 13 Dec 2026 · 2 people · Budget ₹35,000 · Estimated total ₹17,600  \n\n## ✨ At a glance\n- **Getting there:** Volvo AC sleeper bus, ₹1,100 pp, 9 h 05 m  \n- **Stay:** **Blue Bells Resort** – ₹2,600 / night, 3★, breakfast included, book on Booking.com  \n- **Weather:** 12‑15 °C, misty mornings, clear evenings – light woollens & rain‑coat recommended  \n- **Total cost:** ₹17,600 of ₹35,000 budget (₹17,400 left over)\n\n## ✈️ Getting there & back\n- **Go:** RedBus Volvo AC Sleeper, Bus # BGL‑V101, ₹1,100 pp, dep 4:30 PM Bengaluru → arr 1:35 AM Munnar (next day)  \n- **Return:** Same operator, Bus # BGL‑V102, dep 8:00 PM Munnar → arr 5:05 AM Bengaluru (next day)  \n- **Why this option:** Direct overnight service saves a night of accommodation and avoids pricey flights; comfortable seats & blankets keep you warm in December.\n\n## 🏨 Where to stay\n1. **Blue Bells Resort** — ₹2,600 / night · 3★ · Breakfast + Wi‑Fi · book on Booking.com  \n2. **Eden Holidays** — ₹2,750 / night · 3★ · Breakfast + garden view · book on MakeMyTrip  \n3. **Zenha Resorts** — ₹2,900 / night · 3★ · Breakfast + pool access · book on OYO  \n\n## 🗓️ Day-by-day plan\n### Day 1 — Thu, 10 Dec · Journey & Arrival\n- **4:30 PM** — Board Volvo AC sleeper bus at **Bangalore KSRTC Bus Stand** (9 h 05 m travel)  \n- **1:35 AM** (Fri) — Arrive at **Munnar Bus Stand**, take **auto‑rickshaw** (5 km, 15 min, ₹150) to hotel, check‑in, freshen up  \n- **8:00 AM** — Breakfast at **Blue Bells Resort** (included)  \n- **9:30 AM** — Stroll around **Munnar town market** – shop for spices, tea packets (free)  \n- **12:30 PM** — Lunch at **Sree Mahaveer Restaurant** — Kerala Sadya thali, ₹150 pp  \n- **2:00 PM** — Visit **KDHP Tea Museum** – entry ₹50 pp, tea tasting included  \n- **4:30 PM** — Return to hotel, relax  \n- **7:30 PM** — Dinner at **Taste The Brews Grills** — Grilled fish & appam, ₹200 pp  \n- 💡 *Tip:* Carry a small power bank; many hill‑top spots have limited charging points.\n\n### Day 2 — Fri, 11 Dec · Tea Gardens & Lakes\n- **8:00 AM** — Breakfast at hotel (included)  \n- **9:00 AM** — Depart by **shared taxi** to **Lockhart Tea Estate** (12 km, 30 min, ₹300 total) – plantation walk, photo ops (free)  \n- **11:30 AM** — Head to **Mattupetty Dam** (8 km, 20 min, ₹200) – boat ride optional (₹250 pp)  \n- **1:00 PM** — Lunch at **Shri Lakshmi Tiffin Corner** — Chicken fry & parotta, ₹120 pp  \n- **2:30 PM** — Visit **Echo Point** (2 km, 10 min, ₹100 auto) – short hike, great views (free)  \n- **4:30 PM** — Return to hotel, tea tasting session at resort (free)  \n- **7:30 PM** — Dinner at **Corner Café & Bakery** — Malabar parotta with beef curry, ₹150 pp  \n- 💡 *Tip:* Wear sturdy shoes for the dam walk; the path can be slippery.\n\n### Day 3 — Sat, 12 Dec · Wildlife & Panorama\n- **7:30 AM** — Early breakfast (included)  \n- **8:30 AM** — Depart by **private cab** to **Eravikulam National Park** (15 km, 40 min, ₹500 total) – entry ₹300 pp, spot Nilgiri Tahr  \n- **11:30 AM** — Drive to **Top Station** (10 km, 25 min, ₹300) – tea garden vistas, photo stop (free)  \n- **1:00 PM** — Picnic lunch (packed from hotel, ₹200 pp) at Top Station lawn  \n- **2:30 PM** — Return via **Kundala Lake** – optional pedal‑boat (₹150 pp)  \n- **4:30 PM** — Back to hotel, relax in the lounge  \n- **7:30 PM** — Dinner at **Rapsy Restaurant** — Kerala fish curry, rice, ₹180 pp  \n- 💡 *Tip:* Carry a binocular for wildlife spotting; park entry permits are limited, so arrive early.\n\n### Day 4 — Sun, 13 Dec · Local Flavors & Return\n- **8:00 AM** — Breakfast (included) & checkout (store luggage at reception)  \n- **9:30 AM** — Visit **Munnar Spice Plantation** (5 km, 15 min, ₹200) – guided walk, spice tasting (free)  \n- **11:30 AM** — Lunch at **Saravana Bakers** — Appam & stew, ₹130 pp  \n- **1:00 PM** — Return to hotel, collect luggage  \n- **2:00 PM** — Auto‑rickshaw to **Munnar Bus Stand** (5 km, 15 min, ₹150)  \n- **8:00 PM** — Board Volvo AC sleeper bus back to Bengaluru (9 h 05 m)  \n- **5:05 AM** (Mon) — Arrive Bengaluru, end of trip  \n- 💡 *Tip:* Keep your bus ticket handy; night buses sometimes change platform.\n\n## 🍽️ Food to try\n- **Kerala Sadya** at **Sree Mahaveer Restaurant** — ₹150 pp  \n- **Appam & Stew** at **Rapsy Restaurant** — ₹180 pp  \n- **Malabar Parotta with Beef Curry** at **Corner Café** — ₹150 pp  \n- **Fresh Cardamom Tea** at any tea estate — ₹50 pp  \n- **Kothu Parotta** from Munnar night market — ₹120 pp  \n\n## 💰 Budget breakdown\n| Item | Cost |\n|---|---|\n| Transport (bus round‑trip) | ₹2,200 |\n| Stay (3 nights) | ₹7,800 |\n| Food (4 days × 2 people) | ₹2,400 |\n| Local travel + activities | ₹3,000 |\n| Buffer | ₹2,200 |\n| **Total** | **₹17,600** |\n\n## 🎒 Weather & packing\n- Daytime 12‑15 °C, evenings 8‑10 °C – pack light woollens & a warm jacket.  \n- Light rain possible – carry a compact rain‑coat or poncho.  \n- Good walking shoes, sunscreen, and a reusable water bottle.\n\n## 🏧 Useful nearby\n- **ATM:** State Bank of India – Munnar Main Road  \n- **Petrol:** Indian Oil Pump – near Munnar Bus Stand (≈2 km)  \n- **Hospital:** Govt. Hospital, Munnar – Aluva‑Munnar Road, phone 0485‑236 1234  \n- **Bus stand / Railway station:** Munnar Bus Stand (KSRTC) – main arrival/departure point  \n\n## 💡 Local tips\n- Book the **Eravikulam NP** entry online (if possible) to avoid long queues.  \n- Carry cash; many small eateries accept only cash.  \n- Respect tea‑garden rules – no littering, stay on marked paths.  \n- Light woolens are essential; mornings are chilly even in December.  \n- Keep a copy of your bus ticket and hotel confirmation on your phone.",
+ "first_draft_text": "# 🌄 Munnar — 4‑Day Trip  \n> **Bengaluru → Munnar** · 10 Dec 2026 – 13 Dec 2026 · 2 people · Budget ₹35,000 · Estimated total ₹17,600  \n\n## ✨ At a glance\n- **Getting there:** Volvo AC sleeper bus, ₹1,100 pp, 9 h 05 m  \n- **Stay:** **Blue Bells Resort** – ₹2,600 / night, 3★, breakfast included, book on Booking.com  \n- **Weather:** 12‑15 °C, misty mornings, clear evenings – light woollens & rain‑coat recommended  \n- **Total cost:** ₹17,600 of ₹35,000 budget (₹17,400 left over)\n\n## ✈️ Getting there & back\n- **Go:** RedBus Volvo AC Sleeper, Bus # BGL‑V101, ₹1,100 pp, dep 4:30 PM Bengaluru → arr 1:35 AM Munnar (next day)  \n- **Return:** Same operator, Bus # BGL‑V102, dep 8:00 PM Munnar → arr 5:05 AM Bengaluru (next day)  \n- **Why this option:** Direct overnight service saves a night of accommodation and avoids pricey flights; comfortable seats & blankets keep you warm in December.\n\n## 🏨 Where to stay\n1. **Blue Bells Resort** — ₹2,600 / night · 3★ · Breakfast + Wi‑Fi · book on Booking.com  \n2. **Eden Holidays** — ₹2,750 / night · 3★ · Breakfast + garden view · book on MakeMyTrip  \n3. **Zenha Resorts** — ₹2,900 / night · 3★ · Breakfast + pool access · book on OYO  \n\n## 🗓️ Day-by-day plan  \n\n### Day 1 — Thu, 10 Dec · Journey & Arrival  \n- **4:30 PM** — Board Volvo AC sleeper bus at **Bangalore KSRTC Bus Stand** (9 h 05 m travel)  \n- **1:35 AM** (Fri) — Arrive at **Munnar Bus Stand**, take **auto‑rickshaw** (5 km, 15 min, ₹150) to hotel, check‑in, freshen up  \n- **8:00 AM** — Breakfast at **Blue Bells Resort** (included)  \n- **9:30 AM** — Stroll around **Munnar town market** – shop for spices, tea packets (free)  \n- **12:30 PM** — Lunch at **Sree Mahaveer Restaurant** — Kerala Sadya thali, ₹150 pp  \n- **2:00 PM** — Visit **KDHP Tea Museum** – entry ₹50 pp, tea tasting included  \n- **4:30 PM** — Return to hotel, relax  \n- **7:30 PM** — Dinner at **Taste The Brews Grills** — Grilled fish & appam, ₹200 pp  \n- 💡 *Tip:* Carry a small power bank; many hill‑top spots have limited charging points.\n\n### Day 2 — Fri, 11 Dec · Tea Gardens & Lakes  \n- **8:00 AM** — Breakfast at hotel (included)  \n- **9:00 AM** — Depart by **shared taxi** to **Lockhart Tea Estate** (12 km, 30 min, ₹300 total) – plantation walk, photo ops (free)  \n- **11:30 AM** — Head to **Mattupetty Dam** (8 km, 20 min, ₹200) – boat ride optional (₹250 pp)  \n- **1:00 PM** — Lunch at **Shri Lakshmi Tiffin Corner** — Chicken fry & parotta, ₹120 pp  \n- **2:30 PM** — Visit **Echo Point** (2 km, 10 min, ₹100 auto) – short hike, great views (free)  \n- **4:30 PM** — Return to hotel, tea tasting session at resort (free)  \n- **7:30 PM** — Dinner at **Corner Café & Bakery** — Malabar parotta with beef curry, ₹150 pp  \n- 💡 *Tip:* Wear sturdy shoes for the dam walk; the path can be slippery.\n\n### Day 3 — Sat, 12 Dec · Wildlife & Panorama  \n- **7:30 AM** — Early breakfast (included)  \n- **8:30 AM** — Depart by **private cab** to **Eravikulam National Park** (15 km, 40 min, ₹500 total) – entry ₹300 pp, spot Nilgiri Tahr  \n- **11:30 AM** — Drive to **Top Station** (10 km, 25 min, ₹300) – tea garden vistas, photo stop (free)  \n- **1:00 PM** — Picnic lunch (packed from hotel, ₹200 pp) at Top Station lawn  \n- **2:30 PM** — Return via **Kundala Lake** – optional pedal‑boat (₹150 pp)  \n- **4:30 PM** — Back to hotel, relax in the lounge  \n- **7:30 PM** — Dinner at **Rapsy Restaurant** — Kerala fish curry, rice, ₹180 pp  \n- 💡 *Tip:* Carry a binocular for wildlife spotting; park entry permits are limited, so arrive early.\n\n### Day 4 — Sun, 13 Dec · Local Flavors & Return  \n- **8:00 AM** — Breakfast (included) & checkout (store luggage at reception)  \n- **9:30 AM** – Visit **Munnar Spice Plantation** (5 km, 15 min, ₹200) – guided walk, spice tasting (free)  \n- **11:30 AM** – Lunch at **Saravana Bakers** — Appam & stew, ₹130 pp  \n- **1:00 PM** – Return to hotel, collect luggage  \n- **2:00 PM** – Auto‑rickshaw to **Munnar Bus Stand** (5 km, 15 min, ₹150)  \n- **8:00 PM** – Board Volvo AC sleeper bus back to Bengaluru (9 h 05 m)  \n- **5:05 AM** (Mon) – Arrive Bengaluru, end of trip  \n- 💡 *Tip:* Keep your bus ticket handy; night buses sometimes change platform.\n\n## 🍽️ Food to try  \n- **Kerala Sadya** at **Sree Mahaveer Restaurant** — ₹150 pp  \n- **Appam & Stew** at **Rapsy Restaurant** — ₹180 pp  \n- **Malabar Parotta with Beef Curry** at **Corner Café** — ₹150 pp  \n- **Fresh Cardamom Tea** at any tea estate — ₹50 pp  \n- **Kothu Parotta** from Munnar night market — ₹120 pp  \n\n## 💰 Budget breakdown  \n| Item | Cost |\n|---|---|\n| Transport (bus round‑trip) | ₹2,200 |\n| Stay (3 nights) | ₹7,800 |\n| Food (4 days × 2 people) | ₹2,400 |\n| Local travel + activities | ₹3,000 |\n| Buffer | ₹2,200 |\n| **Total** | **₹17,600** |\n\n## 🎒 Weather & packing  \n- Daytime 12‑15 °C, evenings 8‑10 °C – pack light woollens & a warm jacket.  \n- Light rain possible – carry a compact rain‑coat or poncho.  \n- Good walking shoes, sunscreen, and a reusable water bottle.\n\n## 🏧 Useful nearby  \n- **ATM:** State Bank of India – Munnar Main Road  \n- **Petrol:** Indian Oil Pump – near Munnar Bus Stand (≈2 km)  \n- **Hospital:** Govt. Hospital, Munnar – Aluva‑Munnar Road, phone 0485‑236 1234  \n- **Bus stand:** Munnar Bus Stand (KSRTC) – main arrival/departure point  \n\n## 💡 Local tips  \n- Book the **Eravikulam NP** entry online (if possible) to avoid long queues.  \n- Carry cash; many small eateries accept only cash.  \n- Respect tea‑garden rules – no littering, stay on marked paths.  \n- Light woolens are essential; mornings are chilly even in December.  \n- Keep a copy of your bus ticket and hotel confirmation on your phone.  ",
+ "finished_at": "2026-10-10T13:47:47.380399"
+}
