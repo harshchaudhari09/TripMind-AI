@@ -1,245 +1,157 @@
-# ✈ TripMind AI — Self-Checking Travel Planner
+# ✈ TripMind AI — a travel planner that checks its own work
 
-A multi-agent travel planner built with **LangGraph + Groq + Tavily + OpenStreetMap**.
-It researches a trip in parallel, writes a day-by-day plan, and has a **critic agent**
-review and fix that plan before you see it.
+TripMind plans a complete day-by-day trip in India — transport, hotels, food, weather,
+budget and nearby facilities — from a few inputs. What makes it different: **a critic agent
+reviews every plan before you see it, and sends it back to be fixed** when something is wrong.
 
 > This is the part of TripMind that's truly agentic: it judges its own work and decides what to do next.
 
----
-
-## Architecture
-
-```
-User input
-    │
-    ▼
-  init ──┬─► wiki ──────────────┐
-         ├─► weather            │   10 research steps run
-         ├─► flights (⇄ return) │   at the same time
-         ├─► trains / buses     │
-         ├─► hotels             │
-         ├─► attractions / food │
-         └─► ATMs, hospitals,   │
-             stations (OSM) ────┘
-                    │
-                    ▼
-          generate_itinerary  (Groq gpt-oss-120b)
-                    │
-                    ▼
-               ┌─ critic ─┐   rule checks (days, budget maths, time order)
-               │          │   + AI review (timings, season, contradictions)
-     needs fixes          approved / out of retries
-   (max 2 rounds)                   │
-          │                         ▼
-          └──► revise ──► critic   finalize → best draft + critic verdict
-```
-
-**Critic agent** ([agents/critic.py](agents/critic.py))
-- *Rule checks* (plain Python, always right): every day present once, within budget, times
-  within a day go forward (overnight journeys allowed), and nothing planned that's closed that
-  month according to a hand-checked list ([config/seasonal_facts.py](config/seasonal_facts.py)).
-- *AI review* (`gpt-oss-20b`, a separate Groq rate-limit bucket): blocking problems only —
-  impossible travel times, short connections, contradictions, safety. It may not judge
-  seasons itself (it used to invent closures, e.g. "Khardung La is closed in November").
-- Sends the draft back with notes up to `MAX_REVISIONS` times; the writer is told which
-  earlier problems not to reintroduce. Stops early if the same problems repeat. Ties go to
-  the newest draft.
-
-**Code does the maths** ([agents/budget.py](agents/budget.py)): the AI writes the budget line
-items, and Python recalculates every Total — the AI got the sum wrong in 1 of 4 evaluated trips.
+🔗 **Live demo:** _coming soon_ · 💻 Built with LangGraph, Groq, Tavily, OpenStreetMap and FastAPI
 
 ---
 
-## Evaluation
+## What it does
 
-`eval/run_eval.py` runs TripMind on 15 sample trips ([eval/trips.json](eval/trips.json)) — easy
-weekends, tight budgets, winter mountain trips, a 1-day and an 8-day trip — and scores each
-plan **before** and **after** the critic agent:
+You enter where you're going, from where, your dates, budget, group size and interests.
+TripMind then:
 
-| Check | How it's measured (plain Python, no AI) |
+1. **Researches in parallel** — 10 lookups run at the same time: flights (there and back),
+   trains, buses, hotels, attractions, local food, live weather, Wikipedia, and nearby ATMs,
+   hospitals, petrol pumps and stations from OpenStreetMap.
+2. **Writes a plan** — a summary, transport, 3 stays, a timed day-by-day plan, food to try,
+   a budget table, packing tips and local tips.
+3. **Checks the plan** — a critic agent looks for mistakes and, if it finds any, sends the
+   plan back with notes. Up to 2 rounds of fixes.
+4. **Shows the result** with the critic's verdict: ✅ approved, or ⚠️ what to double-check.
+
+You can then ask for changes in a chat box ("make day 2 cheaper", "add a waterfall").
+
+---
+
+## Why a critic agent?
+
+Language models write convincing plans that are often quietly wrong. In testing, first
+drafts included:
+
+| What the first draft said | What was wrong | Caught by |
+|---|---|---|
+| Budget total **₹28,850** of ₹30,000 | The items actually added up to **₹36,950** — over budget | Code |
+| Day trip to **Rohtang Pass** in November | Closed to tourists Nov–Apr | Verified seasonal list |
+| **Ganga Aarti at 1:30 AM** | It happens at sunset | Code (activities after midnight) |
+| Overnight bus arrives 1:35 AM, then a full day of sightseeing under the **same** day | The next day's plans were filed under the travel day | Code (overnight journeys) |
+| Hotel check-out, then 3 hours of driving around South Goa, back by 7:30 PM | Not enough time to cover the distances | AI reviewer |
+
+Fixing these needs two kinds of checking, so the critic has two layers:
+
+- **Rule checks in plain Python** — anything that can be *counted*: every day present,
+  budget within limit, times in order, overnight journeys, enough time before a flight or
+  train, and nothing planned that's closed that month (from a hand-checked list).
+- **An AI reviewer** — judgement calls code can't make: realistic travel times, connections,
+  contradictions between sections, and safety (e.g. going above 3,500 m too soon).
+
+---
+
+## How it works
+
+```
+                   ┌─► flights (there & back) ─┐
+                   ├─► trains / buses          │
+ trip details ─► init ─► hotels                ├─► writer agent ─► critic agent ──► final plan
+                   ├─► attractions / food      │        ▲                │   (✅ or ⚠️ + notes)
+                   ├─► weather · Wikipedia     │        │   needs fixes  │
+                   └─► ATMs · hospitals ·  ────┘        └────────────────┘
+                       stations (OpenStreetMap)          max 2 rounds; stops early
+                                                         if the same problem repeats
+```
+
+- **LangGraph** runs the 10 research steps in parallel and wires the writer ⇄ critic loop.
+- **Writer:** Groq `gpt-oss-120b`. **AI reviewer:** `gpt-oss-20b` (a separate rate-limit
+  allowance, so checking doesn't slow down writing).
+- **Code does the arithmetic:** the writer lists budget items; Python calculates every total.
+- If a fix makes things worse, TripMind keeps the best draft it has seen.
+
+---
+
+## Results
+
+TripMind is tested on **15 sample trips** ([eval/trips.json](eval/trips.json)) — easy weekends,
+tight budgets (₹10,000), winter trips to Manali and Leh, a 1-day and an 8-day trip. Every plan
+is graded automatically by plain Python (no AI), **before** and **after** the critic:
+
+| Check | First draft | After the critic |
+|---|---|---|
+| Correct number of days | 100% | 100% |
+| Within budget | 83% | **100%** |
+| No places closed that season | 100% | 100% |
+| Named places verified (in research data or on OpenStreetMap) | 82% | 84% |
+| **Passes every check** | 67% | **83%** |
+
+_First 6 of 15 trips; the full run is in progress. Details: [eval/results/REPORT.md](eval/results/REPORT.md)._
+
+---
+
+## What I learned building it
+
+- **Use code for anything that can be counted.** The model kept getting sums, dates and
+  time gaps wrong; plain Python never does. The AI is reserved for judgement.
+- **AI critics hallucinate too.** The reviewer once insisted Khardung La is "closed in
+  November" (it's open all year). Season checks now use a verified list instead of the
+  model's memory.
+- **Measure, don't guess.** The evaluation found bugs no single test run showed — including
+  a tie-break that silently discarded the fixed plan.
+- **Search costs more than the AI.** Per trip, web search (~$0.07) costs ~14× the language
+  model (~$0.005) — caching research is the biggest saving.
+
+---
+
+## Tech stack
+
+| Part | Tools |
 |---|---|
-| Correct number of days | every `### Day N` heading present exactly once |
-| Within budget | budget table exists, adds up, and Total ≤ budget |
-| No made-up places | each named stay/restaurant/attraction is in the research data or on OpenStreetMap near the destination |
+| Agent workflow | LangGraph, LangChain |
+| Language models | Groq — `gpt-oss-120b` (writer), `gpt-oss-20b` (reviewer, backup) |
+| Research | Tavily search, OpenStreetMap (Overpass + Nominatim), Open-Meteo, Wikipedia |
+| Backend & UI | FastAPI, single-page HTML/JS |
+| Hosting | Render (free tier), with per-visitor limits and instant example trips |
 
-```bash
-venv/bin/python -m eval.run_eval --limit 3   # quick check
-venv/bin/python -m eval.run_eval             # all 15 (resumable)
+---
+
+## Project structure
+
 ```
-Results: `eval/results/REPORT.md`. Research is cached, so re-runs only cost LLM calls.
+agents/
+  graph.py         LangGraph workflow: parallel research → writer ⇄ critic loop
+  critic.py        Critic agent: rule checks + AI review
+  budget.py        Recalculates budget totals in code
+  chat_agent.py    Chat-based changes to a finished plan
+tools/             Tavily, OpenStreetMap, weather and Wikipedia tools
+config/
+  settings.py      Models, limits, budget tiers
+  seasonal_facts.py  Hand-checked seasonal closures (Rohtang, Khardung La, …)
+eval/              15 test trips, automatic grading, reports
+static/index.html  Web interface
+api.py · main.py   Web server and launcher
+```
 
 ---
 
-## Deploy (Render, free)
+## Run it yourself
 
-The repo includes a [render.yaml](render.yaml) Blueprint:
-
-1. Push this repo to GitHub.
-2. On [render.com](https://render.com): **New → Blueprint** → pick the repo.
-3. Paste `GROQ_API_KEY` and `TAVILY_API_KEY` when Render asks (never commit them).
-
-**Public-demo protection** (free tiers are small — Groq: 200k tokens/day per model,
-Tavily: 1,000 credits/month):
-- Per-visitor and site-wide daily plan limits (`PLANS_PER_IP_PER_DAY`, `DAILY_PLAN_LIMIT`)
-- Automatic switch to a backup model when the main one hits its limit (`FALLBACK_MODEL`)
-- Cheaper "basic" Tavily searches (`TAVILY_SEARCH_DEPTH=basic`)
-- Instant example trips that cost no tokens — published with
-  `python -m eval.run_eval --export-examples <trip ids>` (only critic-approved plans that
-  pass every rule check are exported)
-- Trips are capped at 10 days
-
-The free instance sleeps after 15 minutes idle, so the first visit can take ~1 minute.
-
----
-
-## Budget Tiers (Auto-detected)
-
-| Budget (INR)       | Tier     | Hotel/night         | Flight class |
-|--------------------|----------|---------------------|--------------|
-| ≤ 15,000           | Budget   | ₹500 – ₹1,500       | Economy      |
-| 15,001 – 50,000    | Mid      | ₹2,000 – ₹5,000     | Economy      |
-| 50,001 – 1,00,000  | Comfort  | ₹5,000 – ₹10,000    | Economy      |
-| 1,00,001 – 3,00,000| Premium  | ₹10,000 – ₹25,000   | Business     |
-| > 3,00,000         | Luxury   | ₹25,000 – ₹1,00,000 | Business     |
-
----
-
-## Quick Start
-
-### 1. Get free API keys
-
-| Service   | URL                         | Free tier       |
-|-----------|-----------------------------|-----------------|
-| **Groq**  | https://console.groq.com    | 6K tokens/min   |
-| **Tavily**| https://app.tavily.com      | 1K searches/mo  |
-| **Serper**| https://serper.dev          | 2,500 searches  |
-
-### 2. Setup
+You need free API keys from [Groq](https://console.groq.com) and [Tavily](https://app.tavily.com).
 
 ```bash
-git clone <repo>
-cd travel_planner
-
-python -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
+git clone https://github.com/harshchaudhari09/TripMind-AI.git
+cd TripMind-AI
+python3.11 -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
-
-cp .env.example .env
-# Edit .env and add your API keys
+cp .env.example .env          # then add your two API keys
+python main.py                # opens the web app at http://127.0.0.1:8000
 ```
 
-### 3. Run it
-
-```bash
-python main.py
-```
-
-This starts the server **and opens the web UI in your browser automatically** at `http://localhost:8000` — fill in the trip form, get a generated itinerary, then use the chat box underneath it to ask for changes ("make day 2 cheaper", "add a waterfall visit", etc.), same as before.
-
-Other modes:
-
-```bash
-python main.py --cli              # old terminal-only flow
-python main.py --no-browser       # server only, don't auto-open a tab
-python main.py --port 8080        # run on a different port
-uvicorn api:app --reload --port 8000   # dev mode with hot reload
-```
-
-### 4. Example API call
-
-```bash
-curl -X POST http://localhost:8000/plan \
-  -H "Content-Type: application/json" \
-  -d '{
-    "destination": "Goa, India",
-    "origin": "Delhi, India",
-    "start_date": "2024-12-20",
-    "end_date": "2024-12-25",
-    "budget_inr": 80000,
-    "preferences": ["beaches", "seafood", "nightlife"]
-  }'
-```
+Other options: `python main.py --cli` (terminal version) · `python -m eval.run_eval --limit 3`
+(grade 3 sample trips). Deploying your own copy: [render.yaml](render.yaml) is a ready-made
+Render Blueprint — just add the two keys.
 
 ---
 
-## LLM Options
-
-Edit `.env` → `LLM_PROVIDER`:
-
-```env
-# Option 1: Groq (recommended, free, fast)
-LLM_PROVIDER=groq
-GROQ_API_KEY=gsk_xxx
-GROQ_MODEL=llama3-8b-8192    # or mixtral-8x7b-32768
-
-# Option 2: Ollama (local, fully offline)
-LLM_PROVIDER=ollama
-# run: ollama pull phi3
-
-# Option 3: HuggingFace (auto-fallback, no key needed for public models)
-LLM_PROVIDER=huggingface
-```
-
----
-
-## Stage 2: LLMOps with ELK
-
-```bash
-# Start full stack with Elasticsearch + Kibana
-docker compose up
-
-# Init the ES index
-python -c "from utils.llmops_logger import setup_elk_index; setup_elk_index()"
-
-# Open Kibana dashboard
-open http://localhost:5601
-```
-
-**Or use LangSmith (free, easier):**
-```env
-LANGCHAIN_TRACING_V2=true
-LANGCHAIN_API_KEY=ls__xxx
-LANGCHAIN_PROJECT=travel-planner
-```
-Then visit https://smith.langchain.com to see traces.
-
----
-
-## Project Structure
-
-```
-travel_planner/
-├── main.py              # Launcher — starts the server + opens the UI (or --cli for terminal mode)
-├── api.py               # FastAPI server: serves the UI, /plan, /chat
-├── static/
-│   └── index.html       # Web UI (single file, no build step)
-├── requirements.txt
-├── .env.example
-│
-├── config/
-│   └── settings.py      # Budget tiers, API keys, model config
-│
-├── agents/
-│   ├── graph.py         # LangGraph workflow (the core: init → 10 parallel research nodes → itinerary ⇄ critic loop)
-│   ├── critic.py        # Critic agent: rule checks + LLM review of each draft
-│   └── chat_agent.py    # Conversational refinement of a generated itinerary
-│
-├── tools/
-│   └── search_tools.py  # Tavily tools: flights, trains, hotels, weather
-│
-├── utils/
-│   ├── llm_factory.py   # Groq / Ollama switcher
-│   └── llmops_logger.py # ELK + LangSmith observability
-│
-└── output/              # Itineraries saved here in CLI mode
-```
-
-## Troubleshooting "it worked before, then it didn't"
-
-The most common causes, in order of likelihood:
-
-1. **Expired or rate-limited keys.** Groq and Tavily free tiers expire/rotate. Check `http://localhost:8000/health` — if `groq_configured` or `tavily_configured` is `false`, your `.env` isn't being read (wrong filename, wrong folder, or the key value is empty).
-2. **A committed `.env` with real keys.** If you ever pushed `.env` to a repo, treat those keys as burned and generate new ones — rotate them at console.groq.com and app.tavily.com. `.env` is now in `.gitignore` and a `.env.example` placeholder is included instead.
-3. **Model deprecation.** Groq periodically retires model names. If `/plan` fails with a model-not-found error, check the current model list at console.groq.com and update `GROQ_MODEL` in `.env`.
-4. **Stale `__pycache__`.** Delete any `__pycache__` folders if imports behave strangely after editing files.
+Built by **Harsh Chaudhari**.
