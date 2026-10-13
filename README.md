@@ -6,7 +6,9 @@ reviews every plan before you see it, and sends it back to be fixed** when somet
 
 > This is the part of TripMind that's truly agentic: it judges its own work and decides what to do next.
 
-🔗 **Live demo:** _coming soon_ · 💻 Built with LangGraph, Groq, Tavily, OpenStreetMap and FastAPI
+🔗 **Live demo: [tripmind-ai-y4g3.onrender.com](https://tripmind-ai-y4g3.onrender.com/)** · 💻 Built with LangGraph, Groq, Tavily, OpenStreetMap and FastAPI
+
+_Free hosting: the first visit after a quiet spell takes ~1 minute to wake up. Click an example trip to see a plan instantly; each visitor can plan 2 trips a day._
 
 ---
 
