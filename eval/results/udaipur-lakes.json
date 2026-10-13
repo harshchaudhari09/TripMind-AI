@@ -1,0 +1,195 @@
+{
+ "id": "udaipur-lakes",
+ "trip": {
+  "id": "udaipur-lakes",
+  "destination": "Udaipur, Rajasthan",
+  "origin": "Ahmedabad",
+  "start_date": "2027-01-22",
+  "end_date": "2027-01-24",
+  "budget_inr": 40000,
+  "num_people": 2,
+  "preferences": [
+   "lakes",
+   "palaces",
+   "romantic"
+  ],
+  "note": "couple trip"
+ },
+ "num_days": 3,
+ "seconds": 40.4,
+ "cached_research": true,
+ "critic_passed": true,
+ "fix_rounds": 0,
+ "remaining_issues": [],
+ "first_draft": {
+  "days_ok": true,
+  "days_found": [
+   1,
+   2,
+   3
+  ],
+  "has_budget": true,
+  "budget_total": 14120.0,
+  "adds_up": true,
+  "within_budget": true,
+  "time_order_ok": true,
+  "season_ok": true,
+  "places_total": 16,
+  "places_verified": 16,
+  "places_pct": 100.0,
+  "unverified_places": [],
+  "places_detail": [
+   {
+    "name": "Hotel Paras Mahal",
+    "status": "in_research"
+   },
+   {
+    "name": "Hotel Ace Plaza",
+    "status": "in_research"
+   },
+   {
+    "name": "Hotel Indra Palace",
+    "status": "in_research"
+   },
+   {
+    "name": "Natraj Dining Hall",
+    "status": "in_research"
+   },
+   {
+    "name": "Lake Pichola",
+    "status": "in_research"
+   },
+   {
+    "name": "Ambrai Ghat",
+    "status": "in_research"
+   },
+   {
+    "name": "Upre Restaurant",
+    "status": "in_research"
+   },
+   {
+    "name": "City Palace",
+    "status": "in_research"
+   },
+   {
+    "name": "Jagdish Temple",
+    "status": "in_research"
+   },
+   {
+    "name": "Bawarchi",
+    "status": "in_research"
+   },
+   {
+    "name": "Saheliyon-Ki-Bari",
+    "status": "in_research"
+   },
+   {
+    "name": "Fateh Sagar Lake",
+    "status": "in_research"
+   },
+   {
+    "name": "Monsoon Palace",
+    "status": "in_research"
+   },
+   {
+    "name": "Krishna Dal Bati Restro",
+    "status": "in_research"
+   },
+   {
+    "name": "Shilpgram",
+    "status": "on_map"
+   },
+   {
+    "name": "Santosh Bhojnalaya",
+    "status": "in_research"
+   }
+  ]
+ },
+ "final": {
+  "days_ok": true,
+  "days_found": [
+   1,
+   2,
+   3
+  ],
+  "has_budget": true,
+  "budget_total": 14120.0,
+  "adds_up": true,
+  "within_budget": true,
+  "time_order_ok": true,
+  "season_ok": true,
+  "places_total": 16,
+  "places_verified": 16,
+  "places_pct": 100.0,
+  "unverified_places": [],
+  "places_detail": [
+   {
+    "name": "Hotel Paras Mahal",
+    "status": "in_research"
+   },
+   {
+    "name": "Hotel Ace Plaza",
+    "status": "in_research"
+   },
+   {
+    "name": "Hotel Indra Palace",
+    "status": "in_research"
+   },
+   {
+    "name": "Natraj Dining Hall",
+    "status": "in_research"
+   },
+   {
+    "name": "Lake Pichola",
+    "status": "in_research"
+   },
+   {
+    "name": "Ambrai Ghat",
+    "status": "in_research"
+   },
+   {
+    "name": "Upre Restaurant",
+    "status": "in_research"
+   },
+   {
+    "name": "City Palace",
+    "status": "in_research"
+   },
+   {
+    "name": "Jagdish Temple",
+    "status": "in_research"
+   },
+   {
+    "name": "Bawarchi",
+    "status": "in_research"
+   },
+   {
+    "name": "Saheliyon-Ki-Bari",
+    "status": "in_research"
+   },
+   {
+    "name": "Fateh Sagar Lake",
+    "status": "in_research"
+   },
+   {
+    "name": "Monsoon Palace",
+    "status": "in_research"
+   },
+   {
+    "name": "Krishna Dal Bati Restro",
+    "status": "in_research"
+   },
+   {
+    "name": "Shilpgram",
+    "status": "on_map"
+   },
+   {
+    "name": "Santosh Bhojnalaya",
+    "status": "in_research"
+   }
+  ]
+ },
+ "itinerary": "# 🌅 Udaipur — 3-Day Trip\n> **Ahmedabad → Udaipur** · 22‑Jan‑2027 to 24‑Jan‑2027 · 2 persons · Budget ₹40,000 · Estimated total ₹14,120\n\n## ✨ At a glance\n- **Getting there:** 3AC train (Ahmedabad → Udaipur) – ₹205 pp, 5 h\n- **Stay:** Hotel Paras Mahal — ₹2,800 / night, 3★, free Wi‑Fi & breakfast, book on Booking.com\n- **Weather:** Cool winter, 12‑22 °C, clear skies\n- **Total cost:** ₹14,120 of ₹40,000 budget (₹25,880 left over)\n\n## ✈️ Getting there & back\n- **Go:** 3AC train 12961, dep 08:30 AM, arr 01:45 PM, ₹205 pp (IRCTC)\n- **Return:** 3AC train 12962, dep 04:00 PM, arr 09:30 PM, ₹205 pp (IRCTC)\n- **Why this option:** Trains are ~₹410 total for two, 5 h comfortable ride, far cheaper than ₹20k flights and leaves budget for experiences.\n\n## 🏨 Where to stay\n1. **Hotel Paras Mahal** — ₹2,800 / night · 3★ · free Wi‑Fi, breakfast, garden pool · book on Booking.com  \n2. **Hotel Ace Plaza** — ₹2,500 / night · 3★ · central location, rooftop lounge, free Wi‑Fi · book on MakeMyTrip  \n3. **Hotel Indra Palace** — ₹3,000 / night · 3★ · rooftop restaurant, complimentary breakfast · book on OYO  \n\n## 🗓️ Day-by-day plan\n### Day 1 — Fri, 22 Jan · Arrival & Lakeside romance\n- **8:30 AM** — Board 3AC train from Ahmedabad Junction (platform 2)  \n- **1:45 PM** — Arrive Udaipur Railway Station, take auto‑rickshaw (₹80) to hotel, check‑in  \n- **2:30 PM** — Light lunch at **Natraj Dining Hall** — Dal Baati Churma thali, ₹300 pp  \n- **4:00 PM** — Walk to **Lake Pichola**; enjoy a **sunset boat ride** (₹500 pp) to Jag Mandir  \n- **6:30 PM** — Stroll along **Ambrai Ghat** for romantic city‑palace views  \n- **8:00 PM** — Dinner at **Upre Restaurant** (rooftop) — Laal Maas, ₹1,200 pp  \n- **9:30 PM** — Return to hotel, relax  \n\n💡 *Tip:* Carry a light shawl; evenings can be chilly.\n\n### Day 2 — Sat, 23 Jan · Palaces & Gardens\n- **8:00 AM** — Breakfast at hotel (included)  \n- **9:00 AM** — Auto to **City Palace** (2 km, 10 min) – entry ₹400 pp, explore museum & courtyards (2 h)  \n- **11:30 AM** — Walk to **Jagdish Temple** (5 min) – free, quick photo stop  \n- **12:30 PM** — Lunch at **Bawarchi** — Gatte Ki Sabzi + Roti, ₹350 pp  \n- **2:00 PM** — Taxi to **Saheliyon‑Ki‑Bari** (3 km, 12 min) – entry ₹200 pp, stroll garden (1 h)  \n- **3:30 PM** – Head to **Fateh Sagar Lake**; rent a paddle‑boat (₹150 pp) for 30 min  \n- **5:00 PM** – Visit **Monsoon Palace** (drive 12 km, 30 min) – entry ₹250 pp, sunset view (1 h)  \n- **7:30 PM** – Dinner at **Krishna Dal Bati Restro** — Rajasthani Thali, ₹400 pp  \n- **9:00 PM** – Return to hotel, optional night‑cap at rooftop lounge  \n\n💡 *Tip:* Carry cash for small entry fees; most sites accept only cash.\n\n### Day 3 — Sun, 24 Jan · Leisure & Return\n- **8:00 AM** — Breakfast at hotel, check‑out (store luggage)  \n- **9:00 AM** – Visit **Shilpgram** (cultural village, 8 km, 20 min) – entry ₹150 pp, browse crafts (1 h)  \n- **11:00 AM** – Early lunch at **Santosh Bhojnalaya** — Rajasthani Thali, ₹300 pp  \n- **12:30 PM** – Return to hotel, collect bags  \n- **1:30 PM** – Auto to railway station (₹80)  \n- **4:00 PM** — Board 3AC train back to Ahmedabad (train 12962)  \n- **9:30 PM** — Arrive Ahmedabad, end of trip  \n\n💡 *Tip:* Keep your train tickets and ID handy for a smooth boarding.\n\n## 🍽️ Food to try\n- **Dal Baati Churma** at Natraj Dining Hall — ₹300 pp  \n- **Laal Maas** at Upre Restaurant — ₹1,200 pp  \n- **Gatte Ki Sabzi** at Bawarchi — ₹350 pp  \n- **Rajasthani Thali** at Krishna Dal Bati Restro — ₹400 pp  \n- **Kachori** from Jagdish Misthan Bhandar — ₹40 each  \n\n## 💰 Budget breakdown\n| Item | Cost |\n|---|---|\n| Transport (train round‑trip) | ₹410 |\n| Stay (2 nights) | ₹5,600 |\n| Food (3 days × 2 pp) | ₹3,200 |\n| Local travel + activities | ₹2,000 |\n| Buffer | ₹2,910 |\n| **Total** | **₹14,120** |\n\n## 🎒 Weather & packing\n- Daytime 12‑22 °C: light sweater or shawl for evenings  \n- Comfortable walking shoes for palace grounds  \n- Sunscreen & sunglasses for lake views  \n\n## 🏧 Useful nearby\n- **ATM:** State Bank of India — near City Palace, 0.5 km  \n- **Petrol:** Indian Oil Pump — near Fateh Sagar, 2 km  \n- **Hospital:** Apex Hospital — Rani Road, 3 km, +91‑291‑242 5555  \n- **Bus stand / Railway station:** Udaipur City Railway Station (Udaipur City)  \n\n## 💡 Local tips\n- Book train tickets 2‑3 weeks in advance on IRCTC to lock ₹205 fare.  \n- Carry small change for entry fees; many sites don’t accept cards.  \n- Respect local customs: cover shoulders when visiting temples.  \n- Use auto‑rickshaws with meter or agree on fare before start.  \n- Sunset boat rides are most romantic; book on‑spot, no advance reservation needed.",
+ "first_draft_text": "# 🌅 Udaipur — 3-Day Trip\n> **Ahmedabad → Udaipur** · 22‑Jan‑2027 to 24‑Jan‑2027 · 2 persons · Budget ₹40,000 · Estimated total ₹14,120\n\n## ✨ At a glance\n- **Getting there:** 3AC train (Ahmedabad → Udaipur) – ₹205 pp, 5 h\n- **Stay:** Hotel Paras Mahal — ₹2,800 / night, 3★, free Wi‑Fi & breakfast, book on Booking.com\n- **Weather:** Cool winter, 12‑22 °C, clear skies\n- **Total cost:** ₹14,120 of ₹40,000 budget (₹25,880 left over)\n\n## ✈️ Getting there & back\n- **Go:** 3AC train 12961, dep 08:30 AM, arr 01:45 PM, ₹205 pp (IRCTC)\n- **Return:** 3AC train 12962, dep 04:00 PM, arr 09:30 PM, ₹205 pp (IRCTC)\n- **Why this option:** Trains are ~₹410 total for two, 5 h comfortable ride, far cheaper than ₹20k flights and leaves budget for experiences.\n\n## 🏨 Where to stay\n1. **Hotel Paras Mahal** — ₹2,800 / night · 3★ · free Wi‑Fi, breakfast, garden pool · book on Booking.com  \n2. **Hotel Ace Plaza** — ₹2,500 / night · 3★ · central location, rooftop lounge, free Wi‑Fi · book on MakeMyTrip  \n3. **Hotel Indra Palace** — ₹3,000 / night · 3★ · rooftop restaurant, complimentary breakfast · book on OYO  \n\n## 🗓️ Day-by-day plan\n### Day 1 — Fri, 22 Jan · Arrival & Lakeside romance\n- **8:30 AM** — Board 3AC train from Ahmedabad Junction (platform 2)  \n- **1:45 PM** — Arrive Udaipur Railway Station, take auto‑rickshaw (₹80) to hotel, check‑in  \n- **2:30 PM** — Light lunch at **Natraj Dining Hall** — Dal Baati Churma thali, ₹300 pp  \n- **4:00 PM** — Walk to **Lake Pichola**; enjoy a **sunset boat ride** (₹500 pp) to Jag Mandir  \n- **6:30 PM** — Stroll along **Ambrai Ghat** for romantic city‑palace views  \n- **8:00 PM** — Dinner at **Upre Restaurant** (rooftop) — Laal Maas, ₹1,200 pp  \n- **9:30 PM** — Return to hotel, relax  \n\n💡 *Tip:* Carry a light shawl; evenings can be chilly.\n\n### Day 2 — Sat, 23 Jan · Palaces & Gardens\n- **8:00 AM** — Breakfast at hotel (included)  \n- **9:00 AM** — Auto to **City Palace** (2 km, 10 min) – entry ₹400 pp, explore museum & courtyards (2 h)  \n- **11:30 AM** — Walk to **Jagdish Temple** (5 min) – free, quick photo stop  \n- **12:30 PM** — Lunch at **Bawarchi** — Gatte Ki Sabzi + Roti, ₹350 pp  \n- **2:00 PM** — Taxi to **Saheliyon‑Ki‑Bari** (3 km, 12 min) – entry ₹200 pp, stroll garden (1 h)  \n- **3:30 PM** – Head to **Fateh Sagar Lake**; rent a paddle‑boat (₹150 pp) for 30 min  \n- **5:00 PM** – Visit **Monsoon Palace** (drive 12 km, 30 min) – entry ₹250 pp, sunset view (1 h)  \n- **7:30 PM** – Dinner at **Krishna Dal Bati Restro** — Rajasthani Thali, ₹400 pp  \n- **9:00 PM** – Return to hotel, optional night‑cap at rooftop lounge  \n\n💡 *Tip:* Carry cash for small entry fees; most sites accept only cash.\n\n### Day 3 — Sun, 24 Jan · Leisure & Return\n- **8:00 AM** — Breakfast at hotel, check‑out (store luggage)  \n- **9:00 AM** – Visit **Shilpgram** (cultural village, 8 km, 20 min) – entry ₹150 pp, browse crafts (1 h)  \n- **11:00 AM** – Early lunch at **Santosh Bhojnalaya** — Rajasthani Thali, ₹300 pp  \n- **12:30 PM** – Return to hotel, collect bags  \n- **1:30 PM** – Auto to railway station (₹80)  \n- **4:00 PM** — Board 3AC train back to Ahmedabad (train 12962)  \n- **9:30 PM** — Arrive Ahmedabad, end of trip  \n\n💡 *Tip:* Keep your train tickets and ID handy for a smooth boarding.\n\n## 🍽️ Food to try\n- **Dal Baati Churma** at Natraj Dining Hall — ₹300 pp  \n- **Laal Maas** at Upre Restaurant — ₹1,200 pp  \n- **Gatte Ki Sabzi** at Bawarchi — ₹350 pp  \n- **Rajasthani Thali** at Krishna Dal Bati Restro — ₹400 pp  \n- **Kachori** from Jagdish Misthan Bhandar — ₹40 each  \n\n## 💰 Budget breakdown\n| Item | Cost |\n|---|---|\n| Transport (train round‑trip) | ₹410 |\n| Stay (2 nights) | ₹5,600 |\n| Food (3 days × 2 pp) | ₹3,200 |\n| Local travel + activities | ₹2,000 |\n| Buffer | ₹2,910 |\n| **Total** | **₹14,120** |\n\n## 🎒 Weather & packing\n- Daytime 12‑22 °C: light sweater or shawl for evenings  \n- Comfortable walking shoes for palace grounds  \n- Sunscreen & sunglasses for lake views  \n\n## 🏧 Useful nearby\n- **ATM:** State Bank of India — near City Palace, 0.5 km  \n- **Petrol:** Indian Oil Pump — near Fateh Sagar, 2 km  \n- **Hospital:** Apex Hospital — Rani Road, 3 km, +91‑291‑242 5555  \n- **Bus stand / Railway station:** Udaipur City Railway Station (Udaipur City)  \n\n## 💡 Local tips\n- Book train tickets 2‑3 weeks in advance on IRCTC to lock ₹205 fare.  \n- Carry small change for entry fees; many sites don’t accept cards.  \n- Respect local customs: cover shoulders when visiting temples.  \n- Use auto‑rickshaws with meter or agree on fare before start.  \n- Sunset boat rides are most romantic; book on‑spot, no advance reservation needed.",
+ "finished_at": "2026-10-13T15:39:16.915101"
+}

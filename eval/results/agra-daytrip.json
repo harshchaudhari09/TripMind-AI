@@ -1,0 +1,118 @@
+{
+ "id": "agra-daytrip",
+ "trip": {
+  "id": "agra-daytrip",
+  "destination": "Agra, Uttar Pradesh",
+  "origin": "Delhi",
+  "start_date": "2026-11-14",
+  "end_date": "2026-11-14",
+  "budget_inr": 5000,
+  "num_people": 1,
+  "preferences": [
+   "taj mahal",
+   "history"
+  ],
+  "note": "edge case: 1-day trip"
+ },
+ "num_days": 1,
+ "seconds": 32.6,
+ "cached_research": true,
+ "critic_passed": true,
+ "fix_rounds": 0,
+ "remaining_issues": [],
+ "first_draft": {
+  "days_ok": true,
+  "days_found": [
+   1
+  ],
+  "has_budget": true,
+  "budget_total": 940.0,
+  "adds_up": true,
+  "within_budget": true,
+  "time_order_ok": true,
+  "season_ok": true,
+  "places_total": 7,
+  "places_verified": 7,
+  "places_pct": 100.0,
+  "unverified_places": [],
+  "places_detail": [
+   {
+    "name": "Hotel Kamal - Near Taj Mahal",
+    "status": "in_research"
+   },
+   {
+    "name": "Zostel Agra",
+    "status": "in_research"
+   },
+   {
+    "name": "Bansi Home Stay",
+    "status": "in_research"
+   },
+   {
+    "name": "Taj Mahal",
+    "status": "in_research"
+   },
+   {
+    "name": "Deviram Sweets & Restaurant",
+    "status": "in_research"
+   },
+   {
+    "name": "Agra Fort",
+    "status": "in_research"
+   },
+   {
+    "name": "Deviram Sweets",
+    "status": "in_research"
+   }
+  ]
+ },
+ "final": {
+  "days_ok": true,
+  "days_found": [
+   1
+  ],
+  "has_budget": true,
+  "budget_total": 940.0,
+  "adds_up": true,
+  "within_budget": true,
+  "time_order_ok": true,
+  "season_ok": true,
+  "places_total": 7,
+  "places_verified": 7,
+  "places_pct": 100.0,
+  "unverified_places": [],
+  "places_detail": [
+   {
+    "name": "Hotel Kamal - Near Taj Mahal",
+    "status": "in_research"
+   },
+   {
+    "name": "Zostel Agra",
+    "status": "in_research"
+   },
+   {
+    "name": "Bansi Home Stay",
+    "status": "in_research"
+   },
+   {
+    "name": "Taj Mahal",
+    "status": "in_research"
+   },
+   {
+    "name": "Deviram Sweets & Restaurant",
+    "status": "in_research"
+   },
+   {
+    "name": "Agra Fort",
+    "status": "in_research"
+   },
+   {
+    "name": "Deviram Sweets",
+    "status": "in_research"
+   }
+  ]
+ },
+ "itinerary": "# 🕌 Agra — 1‑Day Trip\n> **Delhi → Agra** · 14 Nov 2026 – 14 Nov 2026 · 1 person · Budget ₹5,000 · Estimated total ₹940\n\n## ✨ At a glance\n- **Getting there:** Train 14212 Intercity Express, ₹100 one‑way, ≈ 4 h 30 m\n- **Stay:** No overnight stay (day‑trip)\n- **Weather:** Pleasant 15‑22 °C, dry; light jacket recommended\n- **Total cost:** ₹940 of ₹5,000 budget (₹4,060 left over)\n\n## ✈️ Getting there & back\n- **Go:** Delhi (NDLS) → Agra (AGC) – Train 14212 Intercity Express, ₹100, dep 06:00 AM, arr 10:30 AM\n- **Return:** Agra → Delhi – Train 14213 Intercity Express, ₹100, dep 06:30 PM, arr 11:00 PM\n- **Why this option:** Trains are cheapest, reliable, and give you a full day in Agra without the hassle of traffic‑prone road travel.\n\n## 🏨 Where to stay *(optional for future trips)*\n1. **Hotel Kamal – Near Taj Mahal** — ₹1,200 /night · 3★ · Free Wi‑Fi, breakfast · Book on **Booking.com**\n2. **Zostel Agra** — ₹1,100 /night · 3★ · Dormitory, common lounge · Book on **Zostel**\n3. **Bansi Home Stay** — ₹950 /night · 2★ · Homestyle rooms, meals included · Book on **OYO**\n\n## 🗓️ Day‑by‑day plan\n### Day 1 — Sat, 14 Nov · Delhi → Agra → Delhi\n- **6:00 AM** — Board Train 14212 Intercity Express from New Delhi Railway Station (NDLS)  \n- **10:30 AM** — Arrive Agra, take a prepaid auto‑rickshaw (≈ ₹30) to Taj Mahal complex  \n- **11:00 AM** — Entry to **Taj Mahal** – Indian citizen fee **₹50**; spend 2 h exploring the monument & gardens  \n- **1:30 PM** — Lunch at **Deviram Sweets & Restaurant** – *Mughlai Thali*, **₹200** per person  \n- **3:00 PM** — Auto‑rickshaw to **Agra Fort** – Entry **₹40**; 1.5 h tour of the UNESCO‑listed fort  \n- **5:00 PM** – Quick tea & *petha* at a street stall near the fort – **₹100**  \n- **6:30 PM** — Board return Train 14213 Intercity Express from Agra Railway Station  \n- **11:00 PM** — Arrive Delhi, end of day  \n\n💡 *Tip:* Carry a bottle of water and a small umbrella; November evenings can be breezy.\n\n## 🍽️ Food to try\n- **Mughlai Thali** at **Deviram Sweets** — ₹200/person  \n- **Petha (sweet pumpkin candy)** from a street vendor near Agra Fort — ₹30  \n- **Masala Chai** with *jalebi* at a local stall — ₹70  \n\n## 💰 Budget breakdown\n| Item | Cost |\n|---|---|\n| Transport (train round‑trip) | ₹200 |\n| Food (lunch, tea & snacks) | ₹370 |\n| Entry fees (Taj Mahal + Agra Fort) | ₹90 |\n| Local travel (auto‑rickshaws) | ₹80 |\n| Buffer (small souvenirs, extra water) | ₹200 |\n| **Total** | **₹940** |\n\n## 🎒 Weather & packing\n- Light sweater or jacket for early morning & night (15 °C)\n- Comfortable walking shoes (lots of stone steps)\n- Sunscreen & sunglasses for midday sun\n\n## 🏧 Useful nearby\n- **ATM:** State Bank of India – Sadar Bazaar, Agra\n- **Petrol:** Indian Oil – near Agra Railway Station (≈ 2 km)\n- **Hospital:** Mahatma Gandhi Hospital – Sadar Bazaar, phone +91‑562‑222‑2222\n- **Bus stand / Railway station:** Agra Cantt (AGC) – main rail hub\n\n## 💡 Local tips\n- Arrive at Taj Mahal **≥ 30 min** before entry to avoid queues.\n- Use **prepaid auto‑rickshaws** (ask driver to press the meter) for fair rates.\n- Carry **small change** for entry fees and street food.\n- No special permits needed for Taj Mahal or Agra Fort.\n- Keep your **ID** handy; security checks are routine at major monuments.",
+ "first_draft_text": "# 🕌 Agra — 1‑Day Trip\n> **Delhi → Agra** · 14 Nov 2026 – 14 Nov 2026 · 1 person · Budget ₹5,000 · Estimated total ₹940\n\n## ✨ At a glance\n- **Getting there:** Train 14212 Intercity Express, ₹100 one‑way, ≈ 4 h 30 m\n- **Stay:** No overnight stay (day‑trip)\n- **Weather:** Pleasant 15‑22 °C, dry; light jacket recommended\n- **Total cost:** ₹940 of ₹5,000 budget (₹4,060 left over)\n\n## ✈️ Getting there & back\n- **Go:** Delhi (NDLS) → Agra (AGC) – Train 14212 Intercity Express, ₹100, dep 06:00 AM, arr 10:30 AM\n- **Return:** Agra → Delhi – Train 14213 Intercity Express, ₹100, dep 06:30 PM, arr 11:00 PM\n- **Why this option:** Trains are cheapest, reliable, and give you a full day in Agra without the hassle of traffic‑prone road travel.\n\n## 🏨 Where to stay *(optional for future trips)*\n1. **Hotel Kamal – Near Taj Mahal** — ₹1,200 /night · 3★ · Free Wi‑Fi, breakfast · Book on **Booking.com**\n2. **Zostel Agra** — ₹1,100 /night · 3★ · Dormitory, common lounge · Book on **Zostel**\n3. **Bansi Home Stay** — ₹950 /night · 2★ · Homestyle rooms, meals included · Book on **OYO**\n\n## 🗓️ Day‑by‑day plan\n### Day 1 — Sat, 14 Nov · Delhi → Agra → Delhi\n- **6:00 AM** — Board Train 14212 Intercity Express from New Delhi Railway Station (NDLS)  \n- **10:30 AM** — Arrive Agra, take a prepaid auto‑rickshaw (≈ ₹30) to Taj Mahal complex  \n- **11:00 AM** — Entry to **Taj Mahal** – Indian citizen fee **₹50**; spend 2 h exploring the monument & gardens  \n- **1:30 PM** — Lunch at **Deviram Sweets & Restaurant** – *Mughlai Thali*, **₹200** per person  \n- **3:00 PM** — Auto‑rickshaw to **Agra Fort** – Entry **₹40**; 1.5 h tour of the UNESCO‑listed fort  \n- **5:00 PM** – Quick tea & *petha* at a street stall near the fort – **₹100**  \n- **6:30 PM** — Board return Train 14213 Intercity Express from Agra Railway Station  \n- **11:00 PM** — Arrive Delhi, end of day  \n\n💡 *Tip:* Carry a bottle of water and a small umbrella; November evenings can be breezy.\n\n## 🍽️ Food to try\n- **Mughlai Thali** at **Deviram Sweets** — ₹200/person  \n- **Petha (sweet pumpkin candy)** from a street vendor near Agra Fort — ₹30  \n- **Masala Chai** with *jalebi* at a local stall — ₹70  \n\n## 💰 Budget breakdown\n| Item | Cost |\n|---|---|\n| Transport (train round‑trip) | ₹200 |\n| Food (lunch, tea & snacks) | ₹370 |\n| Entry fees (Taj Mahal + Agra Fort) | ₹90 |\n| Local travel (auto‑rickshaws) | ₹80 |\n| Buffer (small souvenirs, extra water) | ₹200 |\n| **Total** | **₹940** |\n\n## 🎒 Weather & packing\n- Light sweater or jacket for early morning & night (15 °C)\n- Comfortable walking shoes (lots of stone steps)\n- Sunscreen & sunglasses for midday sun\n\n## 🏧 Useful nearby\n- **ATM:** State Bank of India – Sadar Bazaar, Agra\n- **Petrol:** Indian Oil – near Agra Railway Station (≈ 2 km)\n- **Hospital:** Mahatma Gandhi Hospital – Sadar Bazaar, phone +91‑562‑222‑2222\n- **Bus stand / Railway station:** Agra Cantt (AGC) – main rail hub\n\n## 💡 Local tips\n- Arrive at Taj Mahal **≥ 30 min** before entry to avoid queues.\n- Use **prepaid auto‑rickshaws** (ask driver to press the meter) for fair rates.\n- Carry **small change** for entry fees and street food.\n- No special permits needed for Taj Mahal or Agra Fort.\n- Keep your **ID** handy; security checks are routine at major monuments.",
+ "finished_at": "2026-10-13T15:44:08.414433"
+}

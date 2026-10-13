@@ -1,0 +1,225 @@
+{
+ "id": "hampi-ruins",
+ "trip": {
+  "id": "hampi-ruins",
+  "destination": "Hampi, Karnataka",
+  "origin": "Bengaluru",
+  "start_date": "2026-12-26",
+  "end_date": "2026-12-28",
+  "budget_inr": 15000,
+  "num_people": 2,
+  "preferences": [
+   "ruins",
+   "history",
+   "cycling"
+  ],
+  "note": "small town, few listings"
+ },
+ "num_days": 3,
+ "seconds": 45.7,
+ "cached_research": true,
+ "critic_passed": true,
+ "fix_rounds": 0,
+ "remaining_issues": [],
+ "first_draft": {
+  "days_ok": true,
+  "days_found": [
+   1,
+   2,
+   3
+  ],
+  "has_budget": true,
+  "budget_total": 10130.0,
+  "adds_up": true,
+  "within_budget": true,
+  "time_order_ok": true,
+  "season_ok": true,
+  "places_total": 19,
+  "places_verified": 17,
+  "places_pct": 89.5,
+  "unverified_places": [
+   "Zostel Hampi",
+   "Royal Enclosure"
+  ],
+  "places_detail": [
+   {
+    "name": "Zostel Hampi",
+    "status": "unverified"
+   },
+   {
+    "name": "Lakshmi Heritage Tourist Home",
+    "status": "in_research"
+   },
+   {
+    "name": "Ayodhya Guest House",
+    "status": "in_research"
+   },
+   {
+    "name": "Hotel Swagath",
+    "status": "in_research"
+   },
+   {
+    "name": "Virupaksha Temple",
+    "status": "in_research"
+   },
+   {
+    "name": "Hampi Bazaar",
+    "status": "on_map"
+   },
+   {
+    "name": "Sagar Hotel",
+    "status": "in_research"
+   },
+   {
+    "name": "Vijaya Vittala Temple",
+    "status": "in_research"
+   },
+   {
+    "name": "Sri Venkateshwara Hotel",
+    "status": "in_research"
+   },
+   {
+    "name": "Matanga Hill",
+    "status": "in_research"
+   },
+   {
+    "name": "Royal Enclosure",
+    "status": "unverified"
+   },
+   {
+    "name": "Yankappa & Laxmamma Chai Point",
+    "status": "in_research"
+   },
+   {
+    "name": "Lotus Mahal",
+    "status": "in_research"
+   },
+   {
+    "name": "Anegundi Village",
+    "status": "on_map"
+   },
+   {
+    "name": "Tibetan Kitchen Restaurant",
+    "status": "in_research"
+   },
+   {
+    "name": "Hemakuta Hill",
+    "status": "on_map"
+   },
+   {
+    "name": "Achyutaraya Temple",
+    "status": "on_map"
+   },
+   {
+    "name": "Sanapur Lake",
+    "status": "in_research"
+   },
+   {
+    "name": "Tibetan Kitchen",
+    "status": "in_research"
+   }
+  ]
+ },
+ "final": {
+  "days_ok": true,
+  "days_found": [
+   1,
+   2,
+   3
+  ],
+  "has_budget": true,
+  "budget_total": 10130.0,
+  "adds_up": true,
+  "within_budget": true,
+  "time_order_ok": true,
+  "season_ok": true,
+  "places_total": 19,
+  "places_verified": 17,
+  "places_pct": 89.5,
+  "unverified_places": [
+   "Zostel Hampi",
+   "Royal Enclosure"
+  ],
+  "places_detail": [
+   {
+    "name": "Zostel Hampi",
+    "status": "unverified"
+   },
+   {
+    "name": "Lakshmi Heritage Tourist Home",
+    "status": "in_research"
+   },
+   {
+    "name": "Ayodhya Guest House",
+    "status": "in_research"
+   },
+   {
+    "name": "Hotel Swagath",
+    "status": "in_research"
+   },
+   {
+    "name": "Virupaksha Temple",
+    "status": "in_research"
+   },
+   {
+    "name": "Hampi Bazaar",
+    "status": "on_map"
+   },
+   {
+    "name": "Sagar Hotel",
+    "status": "in_research"
+   },
+   {
+    "name": "Vijaya Vittala Temple",
+    "status": "in_research"
+   },
+   {
+    "name": "Sri Venkateshwara Hotel",
+    "status": "in_research"
+   },
+   {
+    "name": "Matanga Hill",
+    "status": "in_research"
+   },
+   {
+    "name": "Royal Enclosure",
+    "status": "unverified"
+   },
+   {
+    "name": "Yankappa & Laxmamma Chai Point",
+    "status": "in_research"
+   },
+   {
+    "name": "Lotus Mahal",
+    "status": "in_research"
+   },
+   {
+    "name": "Anegundi Village",
+    "status": "on_map"
+   },
+   {
+    "name": "Tibetan Kitchen Restaurant",
+    "status": "in_research"
+   },
+   {
+    "name": "Hemakuta Hill",
+    "status": "on_map"
+   },
+   {
+    "name": "Achyutaraya Temple",
+    "status": "on_map"
+   },
+   {
+    "name": "Sanapur Lake",
+    "status": "in_research"
+   },
+   {
+    "name": "Tibetan Kitchen",
+    "status": "in_research"
+   }
+  ]
+ },
+ "itinerary": "# 🏞️ Hampi, Karnataka — 3‑Day Trip  \n> **Bengaluru → Hampi** · 26 Dec 2026 – 28 Dec 2026 · 2 people · Budget ₹15,000 · Estimated total ₹10,130  \n\n## ✨ At a glance  \n- **Getting there:** Overnight Hampi Express (Sleeper) ₹215 pp, then local bus ₹15 pp  \n- **Stay:** Zostel Hampi – ₹1,200/night, 3★, breakfast included, book on Booking.com  \n- **Weather:** Cool‑dry, 15‑28 °C, clear skies; evenings can be chilly  \n- **Total cost:** ₹10,130 of ₹15,000 budget (₹4,870 left over)\n\n## ✈️ Getting there & back  \n- **Go:** Train 16592 Hampi Express, dep 9:50 PM Bengaluru, arr 5:30 AM Hosapete, ₹215 pp, bus ₹15 pp to Hampi  \n- **Return:** Same train, dep 9:30 PM Hosapete (after day 3), arr 5:00 AM Bengaluru, ₹215 pp, bus ₹15 pp to station  \n- **Why this option:** Cheapest comfortable overnight link; saves a night’s accommodation and avoids pricey flights.  \n\n## 🏨 Where to stay  \n1. **Zostel Hampi** — ₹1,200/night · 3★ · breakfast, free Wi‑Fi, lockers · book on **Booking.com**  \n2. **Lakshmi Heritage Tourist Home** — ₹1,000/night · 2★ · Wi‑Fi, tea service · book on **MakeMyTrip**  \n3. **Ayodhya Guest House** — ₹900/night · 2★ · complimentary tea, garden view · book on **OYO**  \n\n## 🗓️ Day‑by‑day plan  \n\n### Day 1 — Sat, 26 Dec · Arrival & First Ruins  \n- **5:30 AM** — Arrive Hosapete, board local RTC bus (15 min, ₹15 pp) to Hampi, drop at guesthouse  \n- **6:30 AM** — Check‑in, freshen up, store luggage (early check‑in courtesy of Zostel)  \n- **7:30 AM** — Breakfast at **Hotel Swagath** — Masala dosa, ₹90 pp  \n- **8:30 AM** — Cycle rental (₹200 / day for 2 bikes) – start ride to **Virupaksha Temple** (2 km, 10 min) – Entry ₹2 pp (Indian)  \n- **10:00 AM** — Walk to **Hampi Bazaar** & **Sasivekalu Ganesha** – free  \n- **12:30 PM** — Lunch at **Sagar Hotel** — Ragi mudde & sambar, ₹120 pp  \n- **2:00 PM** — Cycle to **Vijaya Vittala Temple** (8 km, 25 min) – Entry ₹500 pp (foreign) but Indian free; assume free for budget. Explore stone chariot & musical pillars.  \n- **5:00 PM** — Return bikes, relax at guesthouse  \n- **7:30 PM** — Dinner at **Sri Venkateshwara Hotel** — Thali, ₹150 pp  \n- 💡 *Tip:* Carry a water bottle; the site is sunny and there’s limited shade.  \n\n### Day 2 — Sun, 27 Dec · North Hampi & Sunset  \n- **7:00 AM** — Breakfast (included)  \n- **8:00 AM** — Cycle to **Matanga Hill** (4 km, 15 min) – free. Hike to sunrise point, enjoy panoramic view.  \n- **10:30 AM** — Return, head to **Royal Enclosure** (3 km, 12 min) – Entry ₹30 pp (Indian)  \n- **12:30 PM** – Lunch at **Yankappa & Laxmamma Chai Point** — Idli & chutney, ₹80 pp  \n- **2:00 PM** – Visit **Lotus Mahal** & **Elephant Stables** (within Royal Enclosure) – free  \n- **4:00 PM** – Cycle to **Anegundi Village** (6 km, 20 min) – explore ancient granaries, free  \n- **6:30 PM** – Return bikes, freshen up  \n- **7:30 PM** – Dinner at **Tibetan Kitchen Restaurant** — Veg noodle soup, ₹130 pp  \n- 💡 *Tip:* Sunset at **Hemakuta Hill** is spectacular; it’s a short walk from the guesthouse.  \n\n### Day 3 — Mon, 28 Dec · Final Sites & Return  \n- **7:30 AM** — Breakfast (included) and check‑out (store luggage)  \n- **8:30 AM** — Cycle to **Achyutaraya Temple** (2 km, 8 min) – free, admire monolithic Nandi  \n- **10:00 AM** — Visit **Sanapur Lake** (bike ride 5 km, 15 min) – rent a paddle boat (₹150 pp) for 30 min  \n- **12:00 PM** — Lunch at **Hotel Swagath** — Puri bhaji, ₹90 pp  \n- **1:30 PM** — Return bikes, collect luggage  \n- **2:30 PM** — Bus back to Hosapete (₹15 pp)  \n- **3:30 PM** — Arrive Hosapete, board evening train (9:30 PM) – free time at station  \n- **9:30 PM** — Depart for Bengaluru (train)  \n\n## 🍽️ Food to try  \n- **Masala Dosa** at **Hotel Swagath** — ₹90 pp  \n- **Ragi Mudde & Sambar** at **Sagar Hotel** — ₹120 pp  \n- **Thali** at **Sri Venkateshwara Hotel** — ₹150 pp  \n- **Veg Noodle Soup** at **Tibetan Kitchen** — ₹130 pp  \n- **Idli & Chutney** at **Yankappa & Laxmamma Chai Point** — ₹80 pp  \n\n## 💰 Budget breakdown  \n| Item | Cost |\n|---|---|\n| Transport (to/from) | ₹1,000 |\n| Stay (2 nights) | ₹2,400 |\n| Food (3 days × 2 people) | ₹5,400 |\n| Local travel + activities | ₹800 |\n| Buffer | ₹530 |\n| **Total** | **₹10,130** |\n\n## 🎒 Weather & packing  \n- Daytime 20‑28 °C, clear; bring light cotton shirts.  \n- Evening/night 12‑15 °C, pack a warm sweater/jacket.  \n- Comfortable walking shoes, sunscreen, hat.  \n\n## 🏧 Useful nearby  \n- **ATM:** State Bank of India – Hampi Main Road  \n- **Petrol:** No station in Hampi; nearest at Hospet (5 km)  \n- **Hospital:** Govt. Hospital, Hospet – 6 km, phone 0831‑224 5555  \n- **Bus stand:** Hampi Bus Stop (RTC) – within walking distance  \n\n## 💡 Local tips  \n- Rent bicycles from the guesthouse; they offer discounts for 2‑day hire.  \n- Entry fees are lower for Indian nationals; keep ID handy.  \n- Carry cash (₹) as many small eateries don’t accept cards.  \n- Start early for hill climbs to avoid midday heat.  \n- Respect the UNESCO site: no climbing on fragile structures, no littering.  ",
+ "first_draft_text": "# 🏞️ Hampi, Karnataka — 3‑Day Trip  \n> **Bengaluru → Hampi** · 26 Dec 2026 – 28 Dec 2026 · 2 people · Budget ₹15,000 · Estimated total ₹10,130  \n\n## ✨ At a glance  \n- **Getting there:** Overnight Hampi Express (Sleeper) ₹215 pp, then local bus ₹15 pp  \n- **Stay:** Zostel Hampi – ₹1,200/night, 3★, breakfast included, book on Booking.com  \n- **Weather:** Cool‑dry, 15‑28 °C, clear skies; evenings can be chilly  \n- **Total cost:** ₹10,130 of ₹15,000 budget (₹4,870 left over)\n\n## ✈️ Getting there & back  \n- **Go:** Train 16592 Hampi Express, dep 9:50 PM Bengaluru, arr 5:30 AM Hosapete, ₹215 pp, bus ₹15 pp to Hampi  \n- **Return:** Same train, dep 9:30 PM Hosapete (after day 3), arr 5:00 AM Bengaluru, ₹215 pp, bus ₹15 pp to station  \n- **Why this option:** Cheapest comfortable overnight link; saves a night’s accommodation and avoids pricey flights.  \n\n## 🏨 Where to stay  \n1. **Zostel Hampi** — ₹1,200/night · 3★ · breakfast, free Wi‑Fi, lockers · book on **Booking.com**  \n2. **Lakshmi Heritage Tourist Home** — ₹1,000/night · 2★ · Wi‑Fi, tea service · book on **MakeMyTrip**  \n3. **Ayodhya Guest House** — ₹900/night · 2★ · complimentary tea, garden view · book on **OYO**  \n\n## 🗓️ Day‑by‑day plan  \n\n### Day 1 — Sat, 26 Dec · Arrival & First Ruins  \n- **5:30 AM** — Arrive Hosapete, board local RTC bus (15 min, ₹15 pp) to Hampi, drop at guesthouse  \n- **6:30 AM** — Check‑in, freshen up, store luggage (early check‑in courtesy of Zostel)  \n- **7:30 AM** — Breakfast at **Hotel Swagath** — Masala dosa, ₹90 pp  \n- **8:30 AM** — Cycle rental (₹200 / day for 2 bikes) – start ride to **Virupaksha Temple** (2 km, 10 min) – Entry ₹2 pp (Indian)  \n- **10:00 AM** — Walk to **Hampi Bazaar** & **Sasivekalu Ganesha** – free  \n- **12:30 PM** — Lunch at **Sagar Hotel** — Ragi mudde & sambar, ₹120 pp  \n- **2:00 PM** — Cycle to **Vijaya Vittala Temple** (8 km, 25 min) – Entry ₹500 pp (foreign) but Indian free; assume free for budget. Explore stone chariot & musical pillars.  \n- **5:00 PM** — Return bikes, relax at guesthouse  \n- **7:30 PM** — Dinner at **Sri Venkateshwara Hotel** — Thali, ₹150 pp  \n- 💡 *Tip:* Carry a water bottle; the site is sunny and there’s limited shade.  \n\n### Day 2 — Sun, 27 Dec · North Hampi & Sunset  \n- **7:00 AM** — Breakfast (included)  \n- **8:00 AM** — Cycle to **Matanga Hill** (4 km, 15 min) – free. Hike to sunrise point, enjoy panoramic view.  \n- **10:30 AM** — Return, head to **Royal Enclosure** (3 km, 12 min) – Entry ₹30 pp (Indian)  \n- **12:30 PM** – Lunch at **Yankappa & Laxmamma Chai Point** — Idli & chutney, ₹80 pp  \n- **2:00 PM** – Visit **Lotus Mahal** & **Elephant Stables** (within Royal Enclosure) – free  \n- **4:00 PM** – Cycle to **Anegundi Village** (6 km, 20 min) – explore ancient granaries, free  \n- **6:30 PM** – Return bikes, freshen up  \n- **7:30 PM** – Dinner at **Tibetan Kitchen Restaurant** — Veg noodle soup, ₹130 pp  \n- 💡 *Tip:* Sunset at **Hemakuta Hill** is spectacular; it’s a short walk from the guesthouse.  \n\n### Day 3 — Mon, 28 Dec · Final Sites & Return  \n- **7:30 AM** — Breakfast (included) and check‑out (store luggage)  \n- **8:30 AM** — Cycle to **Achyutaraya Temple** (2 km, 8 min) – free, admire monolithic Nandi  \n- **10:00 AM** — Visit **Sanapur Lake** (bike ride 5 km, 15 min) – rent a paddle boat (₹150 pp) for 30 min  \n- **12:00 PM** — Lunch at **Hotel Swagath** — Puri bhaji, ₹90 pp  \n- **1:30 PM** — Return bikes, collect luggage  \n- **2:30 PM** — Bus back to Hosapete (₹15 pp)  \n- **3:30 PM** — Arrive Hosapete, board evening train (9:30 PM) – free time at station  \n- **9:30 PM** — Depart for Bengaluru (train)  \n\n## 🍽️ Food to try  \n- **Masala Dosa** at **Hotel Swagath** — ₹90 pp  \n- **Ragi Mudde & Sambar** at **Sagar Hotel** — ₹120 pp  \n- **Thali** at **Sri Venkateshwara Hotel** — ₹150 pp  \n- **Veg Noodle Soup** at **Tibetan Kitchen** — ₹130 pp  \n- **Idli & Chutney** at **Yankappa & Laxmamma Chai Point** — ₹80 pp  \n\n## 💰 Budget breakdown  \n| Item | Cost |\n|---|---|\n| Transport (to/from) | ₹1,000 |\n| Stay (2 nights) | ₹2,400 |\n| Food (3 days × 2 people) | ₹5,400 |\n| Local travel + activities | ₹800 |\n| Buffer | ₹530 |\n| **Total** | **₹10,130** |\n\n## 🎒 Weather & packing  \n- Daytime 20‑28 °C, clear; bring light cotton shirts.  \n- Evening/night 12‑15 °C, pack a warm sweater/jacket.  \n- Comfortable walking shoes, sunscreen, hat.  \n\n## 🏧 Useful nearby  \n- **ATM:** State Bank of India – Hampi Main Road  \n- **Petrol:** No station in Hampi; nearest at Hospet (5 km)  \n- **Hospital:** Govt. Hospital, Hospet – 6 km, phone 0831‑224 5555  \n- **Bus stand:** Hampi Bus Stop (RTC) – within walking distance  \n\n## 💡 Local tips  \n- Rent bicycles from the guesthouse; they offer discounts for 2‑day hire.  \n- Entry fees are lower for Indian nationals; keep ID handy.  \n- Carry cash (₹) as many small eateries don’t accept cards.  \n- Start early for hill climbs to avoid midday heat.  \n- Respect the UNESCO site: no climbing on fragile structures, no littering.  ",
+ "finished_at": "2026-10-13T15:42:13.427611"
+}

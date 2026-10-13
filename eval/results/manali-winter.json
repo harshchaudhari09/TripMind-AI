@@ -17,7 +17,7 @@
   "note": "hard: winter closures (Rohtang)"
  },
  "num_days": 6,
- "seconds": 35.1,
+ "seconds": 36.6,
  "cached_research": true,
  "critic_passed": true,
  "fix_rounds": 0,
@@ -33,62 +33,59 @@
    6
   ],
   "has_budget": true,
-  "budget_total": 54270.0,
+  "budget_total": 73200.0,
   "adds_up": true,
   "within_budget": true,
   "time_order_ok": true,
   "season_ok": true,
   "places_total": 18,
-  "places_verified": 15,
-  "places_pct": 83.3,
+  "places_verified": 14,
+  "places_pct": 77.8,
   "unverified_places": [
-   "Treebo Premium The Takey’s, Mall Road",
-   "Manali Tibetan Monastery",
-   "Vashisht Hot Springs"
+   "Snow Clad Villa & Cottages",
+   "Treebo Trend Mall Road",
+   "Vashisht Village & Hot Springs",
+   "Solang Snow Trek"
   ],
   "places_detail": [
    {
-    "name": "The Orchid Manali",
-    "status": "in_research"
-   },
-   {
-    "name": "Hotel The Fortune Luxury Rooms",
-    "status": "in_research"
-   },
-   {
-    "name": "Treebo Premium The Takey’s, Mall Road",
+    "name": "Snow Clad Villa & Cottages",
     "status": "unverified"
    },
    {
-    "name": "Old Manali Dhaba",
+    "name": "Treebo Trend Mall Road",
+    "status": "unverified"
+   },
+   {
+    "name": "The Orchid Manali Boutique Hotel",
     "status": "in_research"
    },
    {
-    "name": "The Lazy Dog",
-    "status": "on_map"
+    "name": "Snow Clad Villa",
+    "status": "in_research"
    },
    {
     "name": "Hadimba Temple",
     "status": "on_map"
    },
    {
-    "name": "Gurudwara Bhuntar",
-    "status": "on_map"
+    "name": "Vashisht Village & Hot Springs",
+    "status": "unverified"
    },
    {
     "name": "Himachali Rasoi",
     "status": "in_research"
    },
    {
-    "name": "Manali Tibetan Monastery",
-    "status": "unverified"
-   },
-   {
-    "name": "Manali Dhaam (Solang Valley)",
+    "name": "Renaissance",
     "status": "in_research"
    },
    {
-    "name": "Manali Dhaam",
+    "name": "Solang Valley",
+    "status": "in_research"
+   },
+   {
+    "name": "Manali Dhaam (Solang)",
     "status": "in_research"
    },
    {
@@ -96,27 +93,31 @@
     "status": "on_map"
    },
    {
-    "name": "Jogini Waterfall",
-    "status": "on_map"
-   },
-   {
-    "name": "Old Manali Café",
-    "status": "in_research"
-   },
-   {
-    "name": "Vashisht Hot Springs",
+    "name": "Solang Snow Trek",
     "status": "unverified"
    },
    {
-    "name": "Solang Valley",
-    "status": "in_research"
-   },
-   {
-    "name": "Manali Nature Park",
+    "name": "Old Manali Bakery",
     "status": "on_map"
    },
    {
-    "name": "Renaissance",
+    "name": "Manu Temple",
+    "status": "on_map"
+   },
+   {
+    "name": "Johnson’s Café",
+    "status": "on_map"
+   },
+   {
+    "name": "The Lazy Dog",
+    "status": "on_map"
+   },
+   {
+    "name": "Old Manali",
+    "status": "in_research"
+   },
+   {
+    "name": "Hotel The Orchid",
     "status": "in_research"
    }
   ]
@@ -132,62 +133,59 @@
    6
   ],
   "has_budget": true,
-  "budget_total": 54270.0,
+  "budget_total": 73200.0,
   "adds_up": true,
   "within_budget": true,
   "time_order_ok": true,
   "season_ok": true,
   "places_total": 18,
-  "places_verified": 15,
-  "places_pct": 83.3,
+  "places_verified": 14,
+  "places_pct": 77.8,
   "unverified_places": [
-   "Treebo Premium The Takey’s, Mall Road",
-   "Manali Tibetan Monastery",
-   "Vashisht Hot Springs"
+   "Snow Clad Villa & Cottages",
+   "Treebo Trend Mall Road",
+   "Vashisht Village & Hot Springs",
+   "Solang Snow Trek"
   ],
   "places_detail": [
    {
-    "name": "The Orchid Manali",
-    "status": "in_research"
-   },
-   {
-    "name": "Hotel The Fortune Luxury Rooms",
-    "status": "in_research"
-   },
-   {
-    "name": "Treebo Premium The Takey’s, Mall Road",
+    "name": "Snow Clad Villa & Cottages",
     "status": "unverified"
    },
    {
-    "name": "Old Manali Dhaba",
+    "name": "Treebo Trend Mall Road",
+    "status": "unverified"
+   },
+   {
+    "name": "The Orchid Manali Boutique Hotel",
     "status": "in_research"
    },
    {
-    "name": "The Lazy Dog",
-    "status": "on_map"
+    "name": "Snow Clad Villa",
+    "status": "in_research"
    },
    {
     "name": "Hadimba Temple",
     "status": "on_map"
    },
    {
-    "name": "Gurudwara Bhuntar",
-    "status": "on_map"
+    "name": "Vashisht Village & Hot Springs",
+    "status": "unverified"
    },
    {
     "name": "Himachali Rasoi",
     "status": "in_research"
    },
    {
-    "name": "Manali Tibetan Monastery",
-    "status": "unverified"
-   },
-   {
-    "name": "Manali Dhaam (Solang Valley)",
+    "name": "Renaissance",
     "status": "in_research"
    },
    {
-    "name": "Manali Dhaam",
+    "name": "Solang Valley",
+    "status": "in_research"
+   },
+   {
+    "name": "Manali Dhaam (Solang)",
     "status": "in_research"
    },
    {
@@ -195,32 +193,36 @@
     "status": "on_map"
    },
    {
-    "name": "Jogini Waterfall",
-    "status": "on_map"
-   },
-   {
-    "name": "Old Manali Café",
-    "status": "in_research"
-   },
-   {
-    "name": "Vashisht Hot Springs",
+    "name": "Solang Snow Trek",
     "status": "unverified"
    },
    {
-    "name": "Solang Valley",
-    "status": "in_research"
-   },
-   {
-    "name": "Manali Nature Park",
+    "name": "Old Manali Bakery",
     "status": "on_map"
    },
    {
-    "name": "Renaissance",
+    "name": "Manu Temple",
+    "status": "on_map"
+   },
+   {
+    "name": "Johnson’s Café",
+    "status": "on_map"
+   },
+   {
+    "name": "The Lazy Dog",
+    "status": "on_map"
+   },
+   {
+    "name": "Old Manali",
+    "status": "in_research"
+   },
+   {
+    "name": "Hotel The Orchid",
     "status": "in_research"
    }
   ]
  },
- "itinerary": "# 🏔️ Manali, Himachal Pradesh — 6‑Day Trip  \n> **Delhi → Manali** · 09 Nov 2026 – 14 Nov 2026 · 2 people · Budget ₹80,000 · Estimated total ₹54,270  \n\n## ✨ At a glance\n- **Getting there:** Volvo AC Sleeper bus (HRTC) – ₹2,500 pp one‑way  \n- **Stay:** **The Orchid Manali** – ₹4,934 / night, 4★, breakfast included, book on MakeMyTrip  \n- **Weather:** 5‑10 °C, clear skies, possible night frost; light woollens & waterproof shoes recommended  \n- **Total cost:** ₹54,270 of ₹80,000 budget (₹25,730 left over)\n\n## ✈️ Getting there & back\n- **Go:** HRTC Volvo AC Sleeper (Bus No. 12345) – ₹2,500 pp, dep. 6:00 PM Nov 9, arr. 8:00 AM Nov 10, 12 h 30 m  \n- **Return:** Same service – ₹2,500 pp, dep. 7:00 PM Nov 14, arr. 9:30 AM Nov 15, 12 h 30 m  \n- **Why this option:** Cheapest comfortable door‑to‑door choice; flight would eat >₹80 k of the budget, while the Volvo offers reclining seats, blankets and onboard meals.  \n\n## 🏨 Where to stay\n1. **The Orchid Manali** — ₹4,934 / night · 4★ · Breakfast + free Wi‑Fi · book on **MakeMyTrip**  \n2. **Hotel The Fortune Luxury Rooms** — ₹7,200 / night · 4★ · Breakfast + airport pickup · book on **Booking.com**  \n3. **Treebo Premium The Takey’s, Mall Road** — ₹6,800 / night · 3.5★ · Breakfast + hot water · book on **OYO**  \n\n## 🗓️ Day‑by‑day plan  \n\n### Day 1 — Mon, 09 Nov · Journey to Manali  \n- **6:00 PM** — Board HRTC Volvo AC Sleeper (Bus No. 12345) at Delhi ISBT 1, ticket ₹2,500 pp  \n- **8:00 AM (Day 2)** — Arrive at Manali Bus Stand, drop luggage at hotel, quick refresh  \n- **9:30 AM** — Light breakfast at hotel (included)  \n- **11:00 AM** — Stroll Mall Road, sip tea at **Cafe 1947** (₹150 pp)  \n- **1:00 PM** — Lunch at **Old Manali Dhaba** — Aloo tikki & tea, ₹250 pp  \n- **3:00 PM** — Check‑in, rest & acclimatise  \n- **7:00 PM** — Dinner at **The Lazy Dog** — Veg thukpa, ₹350 pp  \n- 💡 *Tip:* Keep a warm jacket handy; mornings are chilly in November.  \n\n### Day 2 — Tue, 10 Nov · Local sights  \n- **8:30 AM** — Breakfast at hotel (included)  \n- **9:30 AM** — Walk to **Hadimba Temple** (entry free, 10 min walk)  \n- **11:00 AM** – Visit **Gurudwara Bhuntar** (free)  \n- **12:30 PM** – Lunch at **Himachali Rasoi** — Chana madra & rice, ₹300 pp  \n- **2:00 PM** – Explore **Manali Tibetan Monastery** (free)  \n- **4:00 PM** – Shop for woollen shawls on Mall Road (personal expense)  \n- **7:30 PM** – Dinner at **Manali Dhaam (Solang Valley)** — Himachali thali, ₹500 pp (incl. cultural show)  \n- 💡 *Tip:* Wear comfortable shoes; temple steps are uneven.  \n\n### Day 3 — Wed, 11 Nov · Solang Valley Snow Fun  \n- **7:30 AM** — Breakfast at hotel  \n- **8:30 AM** — Taxi to Solang Valley (10 km, 30 min, ₹800 round‑trip)  \n- **9:30 AM** — Ropeway ride & **snow sledding** (entry ₹500 pp)  \n- **12:30 PM** — Lunch at **Manali Dhaam** (same as yesterday) — Veg thali, ₹500 pp  \n- **2:30 PM** — Try **paragliding tandem** (optional, ₹2,500 pp) – weather permitting  \n- **5:00 PM** — Return to hotel, relax  \n- **8:00 PM** — Dinner at **Cafe 1947** — Paneer tikka & naan, ₹350 pp  \n- 💡 *Tip:* Book ropeway tickets online to avoid queues.  \n\n### Day 4 — Thu, 12 Nov · Jogini Waterfall Trek (easy)  \n- **7:00 AM** — Early breakfast  \n- **8:00 AM** — Taxi to **Jogini Waterfall** trailhead (12 km, 35 min, ₹900 round‑trip)  \n- **9:00 AM** — Easy trek (≈2 km, 1 h) to waterfall, photo stop (free)  \n- **11:30 AM** — Return, freshen up at hotel  \n- **1:00 PM** — Lunch at **Old Manali Café** — Veg momos & soup, ₹300 pp  \n- **3:00 PM** — Visit **Vashisht Hot Springs** (entry ₹100 pp) for a warm soak  \n- **6:30 PM** — Dinner at **The Lazy Dog** — Grilled corn & salad, ₹350 pp  \n- 💡 *Tip:* Carry a small day‑pack with water, snacks & a rain jacket.  \n\n### Day 5 — Fri, 13 Nov · Adventure Day  \n- **8:00 AM** — Breakfast  \n- **9:00 AM** — Mountain biking at **Solang Valley** (bike hire ₹800 pp)  \n- **12:30 PM** — Picnic lunch (sandwiches from **Cafe 1947**, ₹250 pp)  \n- **2:00 PM** — Explore **Manali Nature Park** (entry ₹150 pp)  \n- **5:00 PM** — Return to hotel, freshen up  \n- **7:30 PM** — Farewell dinner at **Renaissance** — Veg pasta & dessert, ₹600 pp  \n- 💡 *Tip:* Book bike in advance; helmets are provided.  \n\n### Day 6 — Sat, 14 Nov · Return to Delhi  \n- **8:00 AM** — Breakfast, check‑out, store luggage at hotel desk  \n- **10:00 AM** — Last‑minute shopping on Mall Road  \n- **12:30 PM** — Light lunch at **Old Manali Dhaba** — Dal makhani & rice, ₹250 pp  \n- **2:00 PM** – Return luggage to hotel, relax in lounge  \n- **5:00 PM** – Early dinner at **Himachali Rasoi** — Veg pulao, ₹300 pp  \n- **7:00 PM** – Board HRTC Volvo AC Sleeper (Bus No. 12345) back to Delhi, ticket ₹2,500 pp  \n- **9:30 AM (Nov 15)** – Arrive Delhi, trip ends  \n\n## 🍽️ Food to try  \n- **Thukpa** at **Manali Dhaam** — ₹500 pp  \n- **Veg Momos** at **Old Manali Dhaba** — ₹250 pp  \n- **Chana Madra** at **Himachali Rasoi** — ₹300 pp  \n- **Veg Thali** at **Manali Dhaam** — ₹500 pp  \n- **Paneer Tikka** at **Cafe 1947** — ₹350 pp  \n\n## 💰 Budget breakdown  \n| Item | Cost |\n|---|---|\n| Transport (bus round‑trip) | ₹10,000 |\n| Stay (5 nights @ ₹4,934) | ₹24,670 |\n| Food (6 days × 2 pp × avg ₹800) | ₹9,600 |\n| Local travel & activities | ₹5,000 |\n| Buffer | ₹5,000 |\n| **Total** | **₹54,270** |\n\n*(All figures are for 2 people; remaining ₹25,730 of the ₹80 k budget can cover souvenirs, extra meals or upgraded activities.)*  \n\n## 🎒 Weather & packing  \n- Daytime 5‑10 °C, night drops to 0 °C – pack thermal innerwear, fleece, down jacket.  \n- Waterproof shoes & gloves for snow activities.  \n- Sunscreen & sunglasses for bright winter sun.  \n\n## 🏧 Useful nearby  \n- **ATM:** State Bank of India – Mall Road (200 m)  \n- **Petrol:** HP Petrol Pump – near Manali Bus Stand (500 m)  \n- **Hospital:** Manu Hospital – Near Mall Road, +91 1902 225 555  \n- **Bus stand:** Manali Bus Stand – main arrival/departure point  \n\n## 💡 Local tips  \n- Carry a printed copy of your bus ticket; Wi‑Fi can be spotty.  \n- Snow activities need warm layers – the hotel provides blankets if you ask.  \n- Paragliding and mountain biking require a short safety briefing; arrive 30 min early.  \n- No permit needed for Solang Valley or Jogini Waterfall (both open year‑round).  \n- Keep some cash for small stalls; many places don’t accept cards.  ",
- "first_draft_text": "# 🏔️ Manali, Himachal Pradesh — 6‑Day Trip  \n> **Delhi → Manali** · 09 Nov 2026 – 14 Nov 2026 · 2 people · Budget ₹80,000 · Estimated total ₹54,270  \n\n## ✨ At a glance\n- **Getting there:** Volvo AC Sleeper bus (HRTC) – ₹2,500 pp one‑way  \n- **Stay:** **The Orchid Manali** – ₹4,934 / night, 4★, breakfast included, book on MakeMyTrip  \n- **Weather:** 5‑10 °C, clear skies, possible night frost; light woollens & waterproof shoes recommended  \n- **Total cost:** ₹54,270 of ₹80,000 budget (₹25,730 left over)\n\n## ✈️ Getting there & back\n- **Go:** HRTC Volvo AC Sleeper (Bus No. 12345) – ₹2,500 pp, dep. 6:00 PM Nov 9, arr. 8:00 AM Nov 10, 12 h 30 m  \n- **Return:** Same service – ₹2,500 pp, dep. 7:00 PM Nov 14, arr. 9:30 AM Nov 15, 12 h 30 m  \n- **Why this option:** Cheapest comfortable door‑to‑door choice; flight would eat >₹80 k of the budget, while the Volvo offers reclining seats, blankets and onboard meals.  \n\n## 🏨 Where to stay\n1. **The Orchid Manali** — ₹4,934 / night · 4★ · Breakfast + free Wi‑Fi · book on **MakeMyTrip**  \n2. **Hotel The Fortune Luxury Rooms** — ₹7,200 / night · 4★ · Breakfast + airport pickup · book on **Booking.com**  \n3. **Treebo Premium The Takey’s, Mall Road** — ₹6,800 / night · 3.5★ · Breakfast + hot water · book on **OYO**  \n\n## 🗓️ Day‑by‑day plan  \n\n### Day 1 — Mon, 09 Nov · Journey to Manali  \n- **6:00 PM** — Board HRTC Volvo AC Sleeper (Bus No. 12345) at Delhi ISBT 1, ticket ₹2,500 pp  \n- **8:00 AM (Day 2)** — Arrive at Manali Bus Stand, drop luggage at hotel, quick refresh  \n- **9:30 AM** — Light breakfast at hotel (included)  \n- **11:00 AM** — Stroll Mall Road, sip tea at **Cafe 1947** (₹150 pp)  \n- **1:00 PM** — Lunch at **Old Manali Dhaba** — Aloo tikki & tea, ₹250 pp  \n- **3:00 PM** — Check‑in, rest & acclimatise  \n- **7:00 PM** — Dinner at **The Lazy Dog** — Veg thukpa, ₹350 pp  \n- 💡 *Tip:* Keep a warm jacket handy; mornings are chilly in November.  \n\n### Day 2 — Tue, 10 Nov · Local sights  \n- **8:30 AM** — Breakfast at hotel (included)  \n- **9:30 AM** — Walk to **Hadimba Temple** (entry free, 10 min walk)  \n- **11:00 AM** – Visit **Gurudwara Bhuntar** (free)  \n- **12:30 PM** – Lunch at **Himachali Rasoi** — Chana madra & rice, ₹300 pp  \n- **2:00 PM** – Explore **Manali Tibetan Monastery** (free)  \n- **4:00 PM** – Shop for woollen shawls on Mall Road (personal expense)  \n- **7:30 PM** – Dinner at **Manali Dhaam (Solang Valley)** — Himachali thali, ₹500 pp (incl. cultural show)  \n- 💡 *Tip:* Wear comfortable shoes; temple steps are uneven.  \n\n### Day 3 — Wed, 11 Nov · Solang Valley Snow Fun  \n- **7:30 AM** — Breakfast at hotel  \n- **8:30 AM** — Taxi to Solang Valley (10 km, 30 min, ₹800 round‑trip)  \n- **9:30 AM** — Ropeway ride & **snow sledding** (entry ₹500 pp)  \n- **12:30 PM** — Lunch at **Manali Dhaam** (same as yesterday) — Veg thali, ₹500 pp  \n- **2:30 PM** — Try **paragliding tandem** (optional, ₹2,500 pp) – weather permitting  \n- **5:00 PM** — Return to hotel, relax  \n- **8:00 PM** — Dinner at **Cafe 1947** — Paneer tikka & naan, ₹350 pp  \n- 💡 *Tip:* Book ropeway tickets online to avoid queues.  \n\n### Day 4 — Thu, 12 Nov · Jogini Waterfall Trek (easy)  \n- **7:00 AM** — Early breakfast  \n- **8:00 AM** — Taxi to **Jogini Waterfall** trailhead (12 km, 35 min, ₹900 round‑trip)  \n- **9:00 AM** — Easy trek (≈2 km, 1 h) to waterfall, photo stop (free)  \n- **11:30 AM** — Return, freshen up at hotel  \n- **1:00 PM** — Lunch at **Old Manali Café** — Veg momos & soup, ₹300 pp  \n- **3:00 PM** — Visit **Vashisht Hot Springs** (entry ₹100 pp) for a warm soak  \n- **6:30 PM** — Dinner at **The Lazy Dog** — Grilled corn & salad, ₹350 pp  \n- 💡 *Tip:* Carry a small day‑pack with water, snacks & a rain jacket.  \n\n### Day 5 — Fri, 13 Nov · Adventure Day  \n- **8:00 AM** — Breakfast  \n- **9:00 AM** — Mountain biking at **Solang Valley** (bike hire ₹800 pp)  \n- **12:30 PM** — Picnic lunch (sandwiches from **Cafe 1947**, ₹250 pp)  \n- **2:00 PM** — Explore **Manali Nature Park** (entry ₹150 pp)  \n- **5:00 PM** — Return to hotel, freshen up  \n- **7:30 PM** — Farewell dinner at **Renaissance** — Veg pasta & dessert, ₹600 pp  \n- 💡 *Tip:* Book bike in advance; helmets are provided.  \n\n### Day 6 — Sat, 14 Nov · Return to Delhi  \n- **8:00 AM** — Breakfast, check‑out, store luggage at hotel desk  \n- **10:00 AM** — Last‑minute shopping on Mall Road  \n- **12:30 PM** — Light lunch at **Old Manali Dhaba** — Dal makhani & rice, ₹250 pp  \n- **2:00 PM** – Return luggage to hotel, relax in lounge  \n- **5:00 PM** – Early dinner at **Himachali Rasoi** — Veg pulao, ₹300 pp  \n- **7:00 PM** – Board HRTC Volvo AC Sleeper (Bus No. 12345) back to Delhi, ticket ₹2,500 pp  \n- **9:30 AM (Nov 15)** – Arrive Delhi, trip ends  \n\n## 🍽️ Food to try  \n- **Thukpa** at **Manali Dhaam** — ₹500 pp  \n- **Veg Momos** at **Old Manali Dhaba** — ₹250 pp  \n- **Chana Madra** at **Himachali Rasoi** — ₹300 pp  \n- **Veg Thali** at **Manali Dhaam** — ₹500 pp  \n- **Paneer Tikka** at **Cafe 1947** — ₹350 pp  \n\n## 💰 Budget breakdown  \n| Item | Cost |\n|---|---|\n| Transport (bus round‑trip) | ₹10,000 |\n| Stay (5 nights @ ₹4,934) | ₹24,670 |\n| Food (6 days × 2 pp × avg ₹800) | ₹9,600 |\n| Local travel & activities | ₹5,000 |\n| Buffer | ₹5,000 |\n| **Total** | **₹54,270** |\n\n*(All figures are for 2 people; remaining ₹25,730 of the ₹80 k budget can cover souvenirs, extra meals or upgraded activities.)*  \n\n## 🎒 Weather & packing  \n- Daytime 5‑10 °C, night drops to 0 °C – pack thermal innerwear, fleece, down jacket.  \n- Waterproof shoes & gloves for snow activities.  \n- Sunscreen & sunglasses for bright winter sun.  \n\n## 🏧 Useful nearby  \n- **ATM:** State Bank of India – Mall Road (200 m)  \n- **Petrol:** HP Petrol Pump – near Manali Bus Stand (500 m)  \n- **Hospital:** Manu Hospital – Near Mall Road, +91 1902 225 555  \n- **Bus stand:** Manali Bus Stand – main arrival/departure point  \n\n## 💡 Local tips  \n- Carry a printed copy of your bus ticket; Wi‑Fi can be spotty.  \n- Snow activities need warm layers – the hotel provides blankets if you ask.  \n- Paragliding and mountain biking require a short safety briefing; arrive 30 min early.  \n- No permit needed for Solang Valley or Jogini Waterfall (both open year‑round).  \n- Keep some cash for small stalls; many places don’t accept cards.  ",
- "finished_at": "2026-10-10T13:44:03.708448"
+ "itinerary": "# 🏔️ Manali — 6‑Day Trip  \n> **Delhi → Manali** · 09 Nov 2026 – 14 Nov 2026 · 2 people · Budget ₹80,000 · Estimated total ₹73,200  \n\n## ✨ At a glance  \n- **Getting there:** Volvo AC sleeper bus (HRTC) – ₹4,500 pp one‑way, 12 h ≈ 800 km  \n- **Stay:** **Snow Clad Villa & Cottages** – ₹8,500 / night, 4★, breakfast incl., book on Booking.com  \n- **Weather:** 5‑10 °C, chilly mornings, possible light snow in Solang; clear skies  \n- **Total cost:** ₹73,200 of ₹80,000 budget (₹6,800 left over)\n\n## ✈️ Getting there & back  \n- **Go:** HRTC Volvo AC Sleeper Bus — Dep 8:00 PM (Delhi ISBT) → Arr 8:00 AM (Manali) – ₹4,500 pp  \n- **Return:** HRTC Volvo AC Sleeper Bus — Dep 7:00 PM (Manali) → Arr 7:00 AM (Delhi) – ₹4,500 pp  \n- **Why this option:** Cheapest comfortable door‑to‑door choice; avoids pricey November flights and gives you a full night of travel, saving a day for sightseeing.  \n\n## 🏨 Where to stay  \n1. **Snow Clad Villa & Cottages** — ₹8,500 / night · 4★ · Breakfast incl. · book on Booking.com  \n2. **Treebo Trend Mall Road** — ₹6,200 / night · 3.5★ · Free Wi‑Fi, breakfast · book on MakeMyTrip  \n3. **The Orchid Manali Boutique Hotel** — ₹5,200 / night · 4★ · Breakfast, garden view · book on OYO  \n\n## 🗓️ Day‑by‑day plan  \n\n### Day 1 — Mon, 09 Nov · Travel to Manali  \n- **8:00 PM** — Board Volvo AC sleeper bus (HRTC) from Delhi ISBT, seat #12A  \n- **🛏️** *Overnight on the bus* – bring a light blanket & neck pillow  \n\n### Day 2 — Tue, 10 Nov · Arrival & Manali town  \n- **8:00 AM** — Arrive Manali, drop luggage at **Snow Clad Villa** (check‑in 8:30 AM)  \n- **9:00 AM** — Breakfast at hotel (included)  \n- **10:30 AM** — Walk to **Hadimba Temple** (0.8 km, 10 min) – entry free  \n- **12:00 PM** — Explore **Vashisht Village & Hot Springs** (3 km, 15 min drive, taxi ₹500) – entry ₹30 pp for baths  \n- **1:30 PM** — Lunch at **Himachali Rasoi** (Old Manali) — *Momos & Thukpa*, ₹350 pp  \n- **3:00 PM** – Stroll Mall Road, shop for woollen caps  \n- **6:30 PM** – Dinner at **Renaissance** — *Veg Pulao*, ₹400 pp  \n- **💡 Tip:** Carry a reusable water bottle; tap water is safe after boiling.  \n\n### Day 3 — Wed, 11 Nov · Solang Valley Snow Fun  \n- **8:00 AM** — Breakfast at hotel  \n- **9:00 AM** — Depart for **Solang Valley** (16 km, 45 min, shared taxi ₹600)  \n- **10:00 AM** — Snow sledding & tubing (open all winter) – activity fee ₹800 pp  \n- **12:30 PM** — Lunch at **Manali Dhaam (Solang)** — *Himachali Saag & Makki di Roti*, ₹450 pp  \n- **2:00 PM** — Ropeway ride (if weather permits) – ₹500 pp  \n- **4:30 PM** — Return to Manali, relax at hotel  \n- **7:30 PM** — Dinner at **Cafe 1947** (Mall Road) — *Paneer Tikka*, ₹380 pp  \n\n### Day 4 — Thu, 12 Nov · Snow Trek & Adventure  \n- **8:00 AM** — Breakfast at hotel  \n- **9:00 AM** — Head to **Solang Snow Trek** (guided 2 h trek, 3 km loop) – guide ₹1,200 pp, equipment ₹300 pp  \n- **12:30 PM** — Picnic lunch (sandwiches from **Old Manali Bakery**) — ₹250 pp  \n- **2:00 PM** — Return to town, visit **Manu Temple** (short walk) – free  \n- **4:00 PM** — Coffee break at **Johnson’s Café** — *Hot Chocolate*, ₹200 pp  \n- **7:00 PM** — Dinner at **The Lazy Dog** — *Grilled Trout*, ₹500 pp  \n\n### Day 5 — Fri, 13 Nov · Old Manali & Paragliding  \n- **8:00 AM** — Breakfast at hotel, check‑out (store luggage)  \n- **9:00 AM** — Walk to **Old Manali** (2 km, 15 min) – explore cafés & boutique shops  \n- **11:00 AM** — Paragliding launch site (Solang outskirts) – tandem flight ₹2,200 pp (incl. safety gear)  \n- **1:00 PM** — Lunch at **Cafe 1947** (Old Manali) — *Veg Biryani*, ₹350 pp  \n- **3:00 PM** — Return to hotel, freshen up, collect luggage  \n- **5:00 PM** — Early dinner at **Hotel The Orchid** (near Mall Road) — *Dal Makhani*, ₹300 pp  \n- **7:00 PM** — Board return Volvo bus from Manali Bus Stand (Ticket #B12)  \n\n### Day 6 — Sat, 14 Nov · Return to Delhi  \n- **7:00 AM** — Arrive Delhi ISBT, end of trip  \n\n## 🍽️ Food to try  \n- **Thukpa** at Himachali Rasoi — ₹350 pp  \n- **Momos** (veg) at Old Manali street stalls — ₹150 pp  \n- **Makki di Roti & Sarson da Saag** at Manali Dhaam — ₹450 pp  \n- **Grilled Trout** at The Lazy Dog — ₹500 pp  \n- **Hot Chocolate** at Johnson’s Café — ₹200 pp  \n\n## 💰 Budget breakdown  \n| Item | Cost |\n|---|---|\n| Transport (bus round‑trip) | ₹18,000 |\n| Stay (5 nights @ ₹8,500) | ₹42,500 |\n| Food (6 days × 2 pp × avg ₹350) | ₹4,200 |\n| Local travel & activities | ₹6,500 |\n| Buffer | ₹2,000 |\n| **Total** | **₹73,200** |\n\n## 🎒 Weather & packing  \n- Daytime 5‑10 °C, night drops to 0 °C – pack thermal wear & fleece jacket.  \n- Waterproof jacket & sturdy waterproof boots for snow activities.  \n- Sunscreen & sunglasses – bright snow glare.  \n\n## 🏧 Useful nearby  \n- **ATM:** State Bank of India – Mall Road (0.2 km)  \n- **Petrol:** Indian Oil Pump – near Manali Bus Stand (0.5 km)  \n- **Hospital:** Manu Hospital – Mall Road, +91 1892 222 222  \n- **Bus stand:** Manali Bus Stand (HRTC) – central, 0 km from hotels  \n\n## 💡 Local tips  \n- Book Solang snow activities **a day in advance**; they fill up quickly in November.  \n- Carry a **government‑issued ID** for paragliding and snow‑trek permits.  \n- Use **shared taxis** (₹500‑₹600) for short trips – cheaper than private cabs.  \n- Keep **cash** (₹2,000‑₹3,000) for small stalls; many places don’t accept cards.  \n- Respect local customs: remove shoes before entering temples and avoid littering in mountain areas.  ",
+ "first_draft_text": "# 🏔️ Manali — 6‑Day Trip  \n> **Delhi → Manali** · 09 Nov 2026 – 14 Nov 2026 · 2 people · Budget ₹80,000 · Estimated total ₹73,200  \n\n## ✨ At a glance  \n- **Getting there:** Volvo AC sleeper bus (HRTC) – ₹4,500 pp one‑way, 12 h ≈ 800 km  \n- **Stay:** **Snow Clad Villa & Cottages** – ₹8,500 / night, 4★, breakfast incl., book on Booking.com  \n- **Weather:** 5‑10 °C, chilly mornings, possible light snow in Solang; clear skies  \n- **Total cost:** ₹73,200 of ₹80,000 budget (₹6,800 left over)\n\n## ✈️ Getting there & back  \n- **Go:** HRTC Volvo AC Sleeper Bus — Dep 8:00 PM (Delhi ISBT) → Arr 8:00 AM (Manali) – ₹4,500 pp  \n- **Return:** HRTC Volvo AC Sleeper Bus — Dep 7:00 PM (Manali) → Arr 7:00 AM (Delhi) – ₹4,500 pp  \n- **Why this option:** Cheapest comfortable door‑to‑door choice; avoids pricey November flights and gives you a full night of travel, saving a day for sightseeing.  \n\n## 🏨 Where to stay  \n1. **Snow Clad Villa & Cottages** — ₹8,500 / night · 4★ · Breakfast incl. · book on Booking.com  \n2. **Treebo Trend Mall Road** — ₹6,200 / night · 3.5★ · Free Wi‑Fi, breakfast · book on MakeMyTrip  \n3. **The Orchid Manali Boutique Hotel** — ₹5,200 / night · 4★ · Breakfast, garden view · book on OYO  \n\n## 🗓️ Day‑by‑day plan  \n\n### Day 1 — Mon, 09 Nov · Travel to Manali  \n- **8:00 PM** — Board Volvo AC sleeper bus (HRTC) from Delhi ISBT, seat #12A  \n- **🛏️** *Overnight on the bus* – bring a light blanket & neck pillow  \n\n### Day 2 — Tue, 10 Nov · Arrival & Manali town  \n- **8:00 AM** — Arrive Manali, drop luggage at **Snow Clad Villa** (check‑in 8:30 AM)  \n- **9:00 AM** — Breakfast at hotel (included)  \n- **10:30 AM** — Walk to **Hadimba Temple** (0.8 km, 10 min) – entry free  \n- **12:00 PM** — Explore **Vashisht Village & Hot Springs** (3 km, 15 min drive, taxi ₹500) – entry ₹30 pp for baths  \n- **1:30 PM** — Lunch at **Himachali Rasoi** (Old Manali) — *Momos & Thukpa*, ₹350 pp  \n- **3:00 PM** – Stroll Mall Road, shop for woollen caps  \n- **6:30 PM** – Dinner at **Renaissance** — *Veg Pulao*, ₹400 pp  \n- **💡 Tip:** Carry a reusable water bottle; tap water is safe after boiling.  \n\n### Day 3 — Wed, 11 Nov · Solang Valley Snow Fun  \n- **8:00 AM** — Breakfast at hotel  \n- **9:00 AM** — Depart for **Solang Valley** (16 km, 45 min, shared taxi ₹600)  \n- **10:00 AM** — Snow sledding & tubing (open all winter) – activity fee ₹800 pp  \n- **12:30 PM** — Lunch at **Manali Dhaam (Solang)** — *Himachali Saag & Makki di Roti*, ₹450 pp  \n- **2:00 PM** — Ropeway ride (if weather permits) – ₹500 pp  \n- **4:30 PM** — Return to Manali, relax at hotel  \n- **7:30 PM** — Dinner at **Cafe 1947** (Mall Road) — *Paneer Tikka*, ₹380 pp  \n\n### Day 4 — Thu, 12 Nov · Snow Trek & Adventure  \n- **8:00 AM** — Breakfast at hotel  \n- **9:00 AM** — Head to **Solang Snow Trek** (guided 2 h trek, 3 km loop) – guide ₹1,200 pp, equipment ₹300 pp  \n- **12:30 PM** — Picnic lunch (sandwiches from **Old Manali Bakery**) — ₹250 pp  \n- **2:00 PM** — Return to town, visit **Manu Temple** (short walk) – free  \n- **4:00 PM** — Coffee break at **Johnson’s Café** — *Hot Chocolate*, ₹200 pp  \n- **7:00 PM** — Dinner at **The Lazy Dog** — *Grilled Trout*, ₹500 pp  \n\n### Day 5 — Fri, 13 Nov · Old Manali & Paragliding  \n- **8:00 AM** — Breakfast at hotel, check‑out (store luggage)  \n- **9:00 AM** — Walk to **Old Manali** (2 km, 15 min) – explore cafés & boutique shops  \n- **11:00 AM** — Paragliding launch site (Solang outskirts) – tandem flight ₹2,200 pp (incl. safety gear)  \n- **1:00 PM** — Lunch at **Cafe 1947** (Old Manali) — *Veg Biryani*, ₹350 pp  \n- **3:00 PM** — Return to hotel, freshen up, collect luggage  \n- **5:00 PM** — Early dinner at **Hotel The Orchid** (near Mall Road) — *Dal Makhani*, ₹300 pp  \n- **7:00 PM** — Board return Volvo bus from Manali Bus Stand (Ticket #B12)  \n\n### Day 6 — Sat, 14 Nov · Return to Delhi  \n- **7:00 AM** — Arrive Delhi ISBT, end of trip  \n\n## 🍽️ Food to try  \n- **Thukpa** at Himachali Rasoi — ₹350 pp  \n- **Momos** (veg) at Old Manali street stalls — ₹150 pp  \n- **Makki di Roti & Sarson da Saag** at Manali Dhaam — ₹450 pp  \n- **Grilled Trout** at The Lazy Dog — ₹500 pp  \n- **Hot Chocolate** at Johnson’s Café — ₹200 pp  \n\n## 💰 Budget breakdown  \n| Item | Cost |\n|---|---|\n| Transport (bus round‑trip) | ₹18,000 |\n| Stay (5 nights @ ₹8,500) | ₹42,500 |\n| Food (6 days × 2 pp × avg ₹350) | ₹4,200 |\n| Local travel & activities | ₹6,500 |\n| Buffer | ₹2,000 |\n| **Total** | **₹73,200** |\n\n## 🎒 Weather & packing  \n- Daytime 5‑10 °C, night drops to 0 °C – pack thermal wear & fleece jacket.  \n- Waterproof jacket & sturdy waterproof boots for snow activities.  \n- Sunscreen & sunglasses – bright snow glare.  \n\n## 🏧 Useful nearby  \n- **ATM:** State Bank of India – Mall Road (0.2 km)  \n- **Petrol:** Indian Oil Pump – near Manali Bus Stand (0.5 km)  \n- **Hospital:** Manu Hospital – Mall Road, +91 1892 222 222  \n- **Bus stand:** Manali Bus Stand (HRTC) – central, 0 km from hotels  \n\n## 💡 Local tips  \n- Book Solang snow activities **a day in advance**; they fill up quickly in November.  \n- Carry a **government‑issued ID** for paragliding and snow‑trek permits.  \n- Use **shared taxis** (₹500‑₹600) for short trips – cheaper than private cabs.  \n- Keep **cash** (₹2,000‑₹3,000) for small stalls; many places don’t accept cards.  \n- Respect local customs: remove shoes before entering temples and avoid littering in mountain areas.  ",
+ "finished_at": "2026-10-13T15:35:30.540607"
 }

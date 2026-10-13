@@ -16,10 +16,10 @@
   "note": "hard: tight budget"
  },
  "num_days": 3,
- "seconds": 35.1,
- "cached_research": false,
+ "seconds": 105.6,
+ "cached_research": true,
  "critic_passed": true,
- "fix_rounds": 0,
+ "fix_rounds": 2,
  "remaining_issues": [],
  "first_draft": {
   "days_ok": true,
@@ -29,17 +29,18 @@
    3
   ],
   "has_budget": true,
-  "budget_total": 3690.0,
+  "budget_total": 4190.0,
   "adds_up": true,
   "within_budget": true,
-  "time_order_ok": true,
+  "time_order_ok": false,
   "season_ok": true,
   "places_total": 15,
-  "places_verified": 13,
-  "places_pct": 86.7,
+  "places_verified": 12,
+  "places_pct": 80.0,
   "unverified_places": [
-   "Alamgir Mosque",
-   "Madhurima Café"
+   "Alamgir Mosque & nearby alleys",
+   "Local dhaba near the ghat",
+   "Bharat Bhawan Market"
   ],
   "places_detail": [
    {
@@ -59,15 +60,27 @@
     "status": "in_research"
    },
    {
+    "name": "Kachori & Samosa Lane",
+    "status": "in_research"
+   },
+   {
+    "name": "Kashi Chat Bhandar",
+    "status": "in_research"
+   },
+   {
+    "name": "Alamgir Mosque & nearby alleys",
+    "status": "unverified"
+   },
+   {
+    "name": "Deena Chaat Bhandar",
+    "status": "in_research"
+   },
+   {
+    "name": "Ramnagar Fort",
+    "status": "in_research"
+   },
+   {
     "name": "Assi Ghat",
-    "status": "in_research"
-   },
-   {
-    "name": "Shri Kashi Vishwanath Café",
-    "status": "in_research"
-   },
-   {
-    "name": "Kashi Vishwanath Temple",
     "status": "in_research"
    },
    {
@@ -75,32 +88,20 @@
     "status": "in_research"
    },
    {
-    "name": "Deena Chaat Bhandar",
+    "name": "Narayan Kothi",
     "status": "in_research"
-   },
-   {
-    "name": "Alamgir Mosque",
-    "status": "unverified"
-   },
-   {
-    "name": "Madhurima Café",
-    "status": "unverified"
    },
    {
     "name": "Manikarnika Ghat",
     "status": "on_map"
    },
    {
-    "name": "Kashi Chat Bhandar",
-    "status": "in_research"
+    "name": "Local dhaba near the ghat",
+    "status": "unverified"
    },
    {
-    "name": "Narayan Kothi",
-    "status": "in_research"
-   },
-   {
-    "name": "Kachori & Samosa Lane",
-    "status": "in_research"
+    "name": "Bharat Bhawan Market",
+    "status": "unverified"
    }
   ]
  },
@@ -112,17 +113,16 @@
    3
   ],
   "has_budget": true,
-  "budget_total": 3690.0,
+  "budget_total": 4190.0,
   "adds_up": true,
   "within_budget": true,
   "time_order_ok": true,
   "season_ok": true,
-  "places_total": 15,
-  "places_verified": 13,
-  "places_pct": 86.7,
+  "places_total": 12,
+  "places_verified": 11,
+  "places_pct": 91.7,
   "unverified_places": [
-   "Alamgir Mosque",
-   "Madhurima Café"
+   "local dhaba near the ghat"
   ],
   "places_detail": [
    {
@@ -142,19 +142,19 @@
     "status": "in_research"
    },
    {
+    "name": "Kachori & Samosa Lane",
+    "status": "in_research"
+   },
+   {
+    "name": "Kashi Chat Bhandar",
+    "status": "in_research"
+   },
+   {
+    "name": "Ramnagar Fort",
+    "status": "in_research"
+   },
+   {
     "name": "Assi Ghat",
-    "status": "in_research"
-   },
-   {
-    "name": "Shri Kashi Vishwanath Café",
-    "status": "in_research"
-   },
-   {
-    "name": "Kashi Vishwanath Temple",
-    "status": "in_research"
-   },
-   {
-    "name": "Sarnath",
     "status": "in_research"
    },
    {
@@ -162,32 +162,20 @@
     "status": "in_research"
    },
    {
-    "name": "Alamgir Mosque",
-    "status": "unverified"
-   },
-   {
-    "name": "Madhurima Café",
-    "status": "unverified"
-   },
-   {
     "name": "Manikarnika Ghat",
     "status": "on_map"
    },
    {
-    "name": "Kashi Chat Bhandar",
-    "status": "in_research"
+    "name": "local dhaba near the ghat",
+    "status": "unverified"
    },
    {
-    "name": "Narayan Kothi",
-    "status": "in_research"
-   },
-   {
-    "name": "Kachori & Samosa Lane",
+    "name": "Sarnath",
     "status": "in_research"
    }
   ]
  },
- "itinerary": "# 🕌 Varanasi — 3‑Day Trip  \n> **Kolkata → Varanasi** · 15 Jan 2027 – 17 Jan 2027 · 1 person · Budget ₹12,000 · Estimated total ₹3,690  \n\n## ✨ At a glance\n- **Getting there:** Train 13151 KOAA JAT EXPRESS, Sleeper, ₹395 pp, 15 h  \n- **Stay:** **Vindh Homestay** – ₹800 /night, 3★, free Wi‑Fi & breakfast, book on Booking.com  \n- **Weather:** Cool winter, 8‑20 °C, clear skies  \n- **Total cost:** ₹3,690 of ₹12,000 budget (₹8,310 left over)\n\n## ✈️ Getting there & back\n- **Go:** Train 13151 KOAA JAT EXPRESS, Dep 08:30 AM Kolkata (Howrah), Arr 11:30 PM Varanasi, Sleeper, ₹395 pp  \n- **Return:** Train 13152 JAT EXPRESS, Dep 07:00 AM Varanasi, Arr 10:00 PM Kolkata, Sleeper, ₹395 pp  \n- **Why this option:** Cheapest reliable mode; no extra airport taxes, and you get a night on the train saving a night’s accommodation.\n\n## 🏨 Where to stay\n1. **Vindh Homestay** — ₹800 /night · 3★ · free Wi‑Fi, breakfast, garden view · book on Booking.com  \n2. **Sah Haveli** — ₹950 /night · 3★ · rooftop terrace, complimentary tea/coffee · book on MakeMyTrip  \n3. **Shree Guest House** — ₹542 /night · 2★ · simple rooms, hot water, shared kitchen · book on OYO  \n\n## 🗓️ Day-by-day plan\n### Day 1 — Fri, 15 Jan · Arrival & Evening Aarti  \n- **08:30 AM** — Board Train 13151 at Howrah (Sleeper, ₹395)  \n- **11:30 PM** — Arrive Varanasi Railway Station, take auto‑rickshaw (₹50) to **Vindh Homestay**; check‑in (≈ 2 km, 10 min)  \n- **12:30 AM** — Light snack at **Kachori & Samosa Lane** (near Dashashwamedh) – Kachori, ₹30 pp  \n- **01:30 AM** — Walk to **Dashashwamedh Ghat** for the Ganga Aarti (free, open all night)  \n- 💡 *Tip:* Wear warm layers; the riverfront gets chilly after dark.  \n\n### Day 2 — Sat, 16 Jan · Ghats, Culture & Street Food  \n- **06:00 AM** — Sunrise boat ride from **Assi Ghat** (shared boat, ₹150 pp, 30 min) – view ghats in early light  \n- **07:30 AM** — Breakfast at **Shri Kashi Vishwanath Café** – Kachori Sabzi, ₹40 pp  \n- **09:00 AM** — Walk to **Kashi Vishwanath Temple** (free, dress modestly)  \n- **10:30 AM** — Explore **Sarnath** (bus 30 km, ₹100 pp, entry to Dhamek Stupa ₹50)  \n- **01:00 PM** — Lunch at **Deena Chaat Bhandar** – Tamatar Chaat, ₹50 pp  \n- **02:30 PM** — Return to city, stroll **Alamgir Mosque** & **Ramnagar Fort** (free, ferry ₹70 pp)  \n- **05:00 PM** — Coffee break at **Madhurima Café** – Masala Chai, ₹30 pp  \n- **06:30 PM** — Evening Aarti at **Manikarnika Ghat** (free)  \n- **08:00 PM** – Dinner at **Kashi Chat Bhandar** – Golgappe, ₹40 pp  \n- 💡 *Tip:* Carry a small bottle of water; many ghats have limited drinking water.  \n\n### Day 3 — Sun, 17 Jan · Morning Walk & Return  \n- **05:30 AM** — Walk along **Assi Ghat** for sunrise meditation (free)  \n- **07:00 AM** — Breakfast at **Narayan Kothi** – Sattvik Thali, ₹120 pp  \n- **08:30 AM** — Check‑out, auto‑rickshaw to Varanasi Railway Station (₹50)  \n- **09:00 AM** — Board Train 13152 back to Kolkata (Sleeper, ₹395)  \n- **10:00 PM** — Arrive Howrah, end of trip  \n\n## 🍽️ Food to try\n- **Kachori Sabzi** at **Kachori & Samosa Lane** — ₹30 pp  \n- **Tamatar Chaat** at **Deena Chaat Bhandar** — ₹50 pp  \n- **Golgappe** at **Kashi Chat Bhandar** — ₹40 pp  \n- **Sattvik Thali** at **Narayan Kothi** — ₹120 pp  \n- **Masala Chai** at **Madhurima Café** — ₹30 pp  \n\n## 💰 Budget breakdown\n| Item | Cost |\n|---|---|\n| Transport (train round‑trip) | ₹790 |\n| Stay (2 nights) | ₹1,600 |\n| Food (3 days × 1 person) | ₹900 |\n| Local travel + activities | ₹200 |\n| Buffer | ₹200 |\n| **Total** | **₹3,690** |\n\n## 🎒 Weather & packing\n- Day temps 8‑20 °C; mornings & evenings cold – pack a sweater & light jacket.  \n- Comfortable walking shoes for ghats and narrow alleys.  \n- Small backpack with water bottle, hand sanitizer, and a scarf for temple visits.  \n\n## 🏧 Useful nearby\n- **ATM:** State Bank of India – near Vishwanath Temple  \n- **Petrol:** Indian Oil Pump – 5 km from city centre (for auto‑rickshaws)  \n- **Hospital:** Banaras Hindu University Hospital – 3 km, +91‑542‑236 0000  \n- **Bus stand / Railway station:** Varanasi Junction (BSR) – main rail hub  \n\n## 💡 Local tips\n- Carry exact change (₹10‑₹100) for street vendors.  \n- Dress modestly at temples (shoulders & knees covered).  \n- Use only registered auto‑rickshaws; agree fare before boarding.  \n- Keep a copy of your train ticket (digital or print) for quick verification.  \n- No special permits needed for ghats or Sarnath; just a small entry fee for the stupa.  ",
- "first_draft_text": "# 🕌 Varanasi — 3‑Day Trip  \n> **Kolkata → Varanasi** · 15 Jan 2027 – 17 Jan 2027 · 1 person · Budget ₹12,000 · Estimated total ₹3,690  \n\n## ✨ At a glance\n- **Getting there:** Train 13151 KOAA JAT EXPRESS, Sleeper, ₹395 pp, 15 h  \n- **Stay:** **Vindh Homestay** – ₹800 /night, 3★, free Wi‑Fi & breakfast, book on Booking.com  \n- **Weather:** Cool winter, 8‑20 °C, clear skies  \n- **Total cost:** ₹3,690 of ₹12,000 budget (₹8,310 left over)\n\n## ✈️ Getting there & back\n- **Go:** Train 13151 KOAA JAT EXPRESS, Dep 08:30 AM Kolkata (Howrah), Arr 11:30 PM Varanasi, Sleeper, ₹395 pp  \n- **Return:** Train 13152 JAT EXPRESS, Dep 07:00 AM Varanasi, Arr 10:00 PM Kolkata, Sleeper, ₹395 pp  \n- **Why this option:** Cheapest reliable mode; no extra airport taxes, and you get a night on the train saving a night’s accommodation.\n\n## 🏨 Where to stay\n1. **Vindh Homestay** — ₹800 /night · 3★ · free Wi‑Fi, breakfast, garden view · book on Booking.com  \n2. **Sah Haveli** — ₹950 /night · 3★ · rooftop terrace, complimentary tea/coffee · book on MakeMyTrip  \n3. **Shree Guest House** — ₹542 /night · 2★ · simple rooms, hot water, shared kitchen · book on OYO  \n\n## 🗓️ Day-by-day plan\n### Day 1 — Fri, 15 Jan · Arrival & Evening Aarti  \n- **08:30 AM** — Board Train 13151 at Howrah (Sleeper, ₹395)  \n- **11:30 PM** — Arrive Varanasi Railway Station, take auto‑rickshaw (₹50) to **Vindh Homestay**; check‑in (≈ 2 km, 10 min)  \n- **12:30 AM** — Light snack at **Kachori & Samosa Lane** (near Dashashwamedh) – Kachori, ₹30 pp  \n- **01:30 AM** — Walk to **Dashashwamedh Ghat** for the Ganga Aarti (free, open all night)  \n- 💡 *Tip:* Wear warm layers; the riverfront gets chilly after dark.  \n\n### Day 2 — Sat, 16 Jan · Ghats, Culture & Street Food  \n- **06:00 AM** — Sunrise boat ride from **Assi Ghat** (shared boat, ₹150 pp, 30 min) – view ghats in early light  \n- **07:30 AM** — Breakfast at **Shri Kashi Vishwanath Café** – Kachori Sabzi, ₹40 pp  \n- **09:00 AM** — Walk to **Kashi Vishwanath Temple** (free, dress modestly)  \n- **10:30 AM** — Explore **Sarnath** (bus 30 km, ₹100 pp, entry to Dhamek Stupa ₹50)  \n- **01:00 PM** — Lunch at **Deena Chaat Bhandar** – Tamatar Chaat, ₹50 pp  \n- **02:30 PM** — Return to city, stroll **Alamgir Mosque** & **Ramnagar Fort** (free, ferry ₹70 pp)  \n- **05:00 PM** — Coffee break at **Madhurima Café** – Masala Chai, ₹30 pp  \n- **06:30 PM** — Evening Aarti at **Manikarnika Ghat** (free)  \n- **08:00 PM** – Dinner at **Kashi Chat Bhandar** – Golgappe, ₹40 pp  \n- 💡 *Tip:* Carry a small bottle of water; many ghats have limited drinking water.  \n\n### Day 3 — Sun, 17 Jan · Morning Walk & Return  \n- **05:30 AM** — Walk along **Assi Ghat** for sunrise meditation (free)  \n- **07:00 AM** — Breakfast at **Narayan Kothi** – Sattvik Thali, ₹120 pp  \n- **08:30 AM** — Check‑out, auto‑rickshaw to Varanasi Railway Station (₹50)  \n- **09:00 AM** — Board Train 13152 back to Kolkata (Sleeper, ₹395)  \n- **10:00 PM** — Arrive Howrah, end of trip  \n\n## 🍽️ Food to try\n- **Kachori Sabzi** at **Kachori & Samosa Lane** — ₹30 pp  \n- **Tamatar Chaat** at **Deena Chaat Bhandar** — ₹50 pp  \n- **Golgappe** at **Kashi Chat Bhandar** — ₹40 pp  \n- **Sattvik Thali** at **Narayan Kothi** — ₹120 pp  \n- **Masala Chai** at **Madhurima Café** — ₹30 pp  \n\n## 💰 Budget breakdown\n| Item | Cost |\n|---|---|\n| Transport (train round‑trip) | ₹790 |\n| Stay (2 nights) | ₹1,600 |\n| Food (3 days × 1 person) | ₹900 |\n| Local travel + activities | ₹200 |\n| Buffer | ₹200 |\n| **Total** | **₹3,690** |\n\n## 🎒 Weather & packing\n- Day temps 8‑20 °C; mornings & evenings cold – pack a sweater & light jacket.  \n- Comfortable walking shoes for ghats and narrow alleys.  \n- Small backpack with water bottle, hand sanitizer, and a scarf for temple visits.  \n\n## 🏧 Useful nearby\n- **ATM:** State Bank of India – near Vishwanath Temple  \n- **Petrol:** Indian Oil Pump – 5 km from city centre (for auto‑rickshaws)  \n- **Hospital:** Banaras Hindu University Hospital – 3 km, +91‑542‑236 0000  \n- **Bus stand / Railway station:** Varanasi Junction (BSR) – main rail hub  \n\n## 💡 Local tips\n- Carry exact change (₹10‑₹100) for street vendors.  \n- Dress modestly at temples (shoulders & knees covered).  \n- Use only registered auto‑rickshaws; agree fare before boarding.  \n- Keep a copy of your train ticket (digital or print) for quick verification.  \n- No special permits needed for ghats or Sarnath; just a small entry fee for the stupa.  ",
- "finished_at": "2026-10-10T13:48:27.472088"
+ "itinerary": "# 🕌 Varanasi — 3‑Day Trip\n> **Kolkata → Varanasi** · 15 Jan 2027 – 17 Jan 2027 · 1 person · Budget ₹12,000 · Estimated total ₹4,190\n\n## ✨ At a glance\n- **Getting there:** Sleeper‑class train 13151 KOAA JAT EXPRESS – ₹395 one‑way\n- **Stay:** **Vindh Homestay** – ₹800/night · 2★ · Breakfast included · book on Booking.com\n- **Weather:** Cool winter, 8‑15 °C, clear skies\n- **Total cost:** ₹4,190 of ₹12,000 budget (₹7,810 left over)\n\n## ✈️ Getting there & back\n- **Go:** Train 13151 KOAA JAT EXPRESS, dep. 02:30 PM Kolkata (Howrah) – arr. 05:30 AM Varanasi, ₹395 p.p.  \n- **Return:** Train 13152 JAT KOAA EXPRESS, dep. 09:00 PM Varanasi – arr. 12:00 PM Kolkata, ₹395 p.p.  \n- **Why this option:** Cheapest comfortable choice; overnight run saves a night’s lodging and avoids airport hassle.\n\n## 🏨 Where to stay\n1. **Vindh Homestay** — ₹800/night · 2★ · Breakfast included · book on Booking.com  \n2. **Sah Haveli** — ₹950/night · 2★ · Free Wi‑Fi, rooftop view · book on MakeMyTrip  \n3. **Shree Guest House** — ₹542/night · 1★ · No‑frills, clean rooms · book on OYO  \n\n## 🗓️ Day-by-day plan\n### Day 1 — Fri, 15 Jan · Journey to Varanasi\n- **02:30 PM** — Board train 13151 KOAA JAT EXPRESS at Howrah, Kolkata  \n- **08:00 PM** — Settle in sleeper berth, dinner on board (packed snack, ₹50)  \n- **11:00 PM** — Light stretch & use onboard washroom, lock luggage  \n- 💡 *Tip:* Keep a small bag with toiletries and a change of clothes for the morning arrival.\n\n### Day 2 — Sat, 16 Jan · Arrival, Ghats & Culture\n- **05:30 AM** — Arrive Varanasi Junction, take prepaid auto (₹80) to Vindh Homestay, check‑in, freshen up  \n- **07:00 AM** — Breakfast at homestay (included) – poha & tea  \n- **08:30 AM** — Walk to **Dashashwamedh Ghat** (0.5 km, 5 min) – free, watch morning rituals  \n- **10:30 AM** — Stroll through **Kachori & Samosa Lane** – try Kachori Sabzi, ₹30  \n- **12:00 PM** — Lunch at **Kashi Chat Bhandar** – Tamatar Chaat, ₹80  \n- **01:30 PM** — Auto to **Ramnagar Fort** (5 km, 20 min) – entry ₹30, explore fort & museum  \n- **04:00 PM** — Boat ride back across Ganges (₹150 round) to **Assi Ghat** – free, watch locals yoga  \n- **06:00 PM** — Return to hotel, rest & freshen up  \n- **07:30 PM** — Head to **Dashashwamedh Ghat** for Ganga Aarti (0.5 km, 5 min) – free, best viewed at sunset  \n- **08:30 PM** — Dinner at **Deena Chaat Bhandar** – Golgappe, ₹60  \n- 💡 *Tip:* Wear comfortable shoes; ghats are slippery early morning.\n\n### Day 3 — Sun, 17 Jan · Sarnath, Market & Return\n- **06:30 AM** — Early walk to **Manikarnika Ghat** (0.7 km, 10 min) – free, observe sunrise rituals  \n- **08:00 AM** — Breakfast at a **local dhaba near the ghat** – Aloo Paratha, ₹40  \n- **09:30 AM** — Check‑out, store luggage at reception, board auto to **Sarnath** (20 km, 45 min) – entry to Dhamek Stupa ₹20, museum ₹20  \n- **12:00 PM** — Lunch at **Kachori & Samosa Lane** – Kachori Sabzi, ₹30  \n- **01:30 PM** — Return to Varanasi, collect luggage, auto to Varanasi Railway Station (₹80)  \n- **09:00 PM** — Board train 13152 JAT KOAA EXPRESS, depart Varanasi  \n- **12:00 AM** — Arrive Kolkata, end of trip  \n- 💡 *Tip:* Keep your train ticket on your phone; stations can be crowded.\n\n## 🍽️ Food to try\n- **Kachori Sabzi** at Kachori & Samosa Lane — ₹30  \n- **Tamatar Chaat** at Kashi Chat Bhandar — ₹80  \n- **Golgappe** at Deena Chaat Bhandar — ₹60  \n- **Banarasi Thali** at Narayan Kothi — ₹150 (optional if time permits)  \n- **Aloo Paratha** at local dhaba — ₹40  \n\n## 💰 Budget breakdown\n| Item | Cost |\n|---|---|\n| Transport (train round‑trip) | ₹790 |\n| Stay (2 nights) | ₹1,600 |\n| Food (3 days × 1 person) | ₹560 |\n| Local travel & activities | ₹350 |\n| Buffer | ₹890 |\n| **Total** | **₹4,190** |\n\n## 🎒 Weather & packing\n- Daytime 12‑15 °C, night 8‑10 °C – pack layers, light sweater.  \n- Comfortable walking shoes for ghats and alleys.  \n- Small scarf or shawl for temple visits and modesty.\n\n## 🏧 Useful nearby\n- **ATM:** State Bank of India – near Dashashwamedh Ghat  \n- **Petrol:** Indian Oil Pump – 4 km from hotel, on NH 19  \n- **Hospital:** Banaras Hindu University Hospital – 3 km, +91‑542‑236‑5000  \n- **Bus stand / Railway station:** Varanasi Junction (BSB) – main hub  \n\n## 💡 Local tips\n- Carry exact change for street vendors; many don’t accept cards.  \n- Use prepaid auto‑rickshaws or app‑based rides for safety.  \n- Dress modestly at ghats (shoulders covered).  \n- No special permits needed for the listed attractions.  \n- Keep a copy of your train ticket on phone; stations can be crowded.",
+ "first_draft_text": "# 🕌 Varanasi — 3‑Day Trip\n> **Kolkata → Varanasi** · 15 Jan 2027 – 17 Jan 2027 · 1 person · Budget ₹12,000 · Estimated total ₹4,190\n\n## ✨ At a glance\n- **Getting there:** Sleeper‑class train 13151 KOAA JAT EXPRESS – ₹395 one‑way\n- **Stay:** **Vindh Homestay** – ₹800/night, 2★, breakfast included, book on Booking.com\n- **Weather:** Cool winter, 8‑15 °C, clear skies\n- **Total cost:** ₹4,190 of ₹12,000 budget (₹7,810 left over)\n\n## ✈️ Getting there & back\n- **Go:** Train 13151 KOAA JAT EXPRESS, dep. 02:30 PM Kolkata (Howrah) – arr. 05:30 AM Varanasi, ₹395 p.p.\n- **Return:** Train 13152 JAT KOAA EXPRESS, dep. 09:00 PM Varanasi – arr. 12:00 PM Kolkata, ₹395 p.p.\n- **Why this option:** Cheapest comfortable choice; 15 h overnight saves a night’s accommodation and avoids airport hassle.\n\n## 🏨 Where to stay\n1. **Vindh Homestay** — ₹800/night · 2★ · Breakfast included · book on Booking.com  \n2. **Sah Haveli** — ₹950/night · 2★ · Free Wi‑Fi, rooftop view · book on MakeMyTrip  \n3. **Shree Guest House** — ₹542/night · 1★ · No‑frills, clean rooms · book on OYO  \n\n## 🗓️ Day‑by‑day plan\n### Day 1 — Fri, 15 Jan · Arrival & Ganga Aarti\n- **02:30 PM** — Board train 13151 KOAA JAT EXPRESS at Howrah (Kolkata)  \n- **05:30 AM** — Arrive Varanasi railway station, take prepaid auto (₹80) to Vindh Homestay, check‑in, freshen up  \n- **08:00 AM** — Breakfast at homestay (included) – poha & tea  \n- **09:30 AM** — Walk to **Dashashwamedh Ghat** (0.5 km, 5 min) – free, watch morning rituals  \n- **11:30 AM** – Stroll through **Kachori & Samosa Lane** (near the ghat) – try Kachori Sabzi, ₹30  \n- **01:00 PM** — Lunch at **Kashi Chat Bhandar** – Tamatar Chaat, ₹80  \n- **02:30 PM** — Explore **Alamgir Mosque & nearby alleys** (1 km, 15 min) – free, cultural photos  \n- **04:30 PM** — Return to hotel, rest  \n- **06:00 PM** — Head to **Dashashwamedh Ghat** for Ganga Aarti (0.5 km, 5 min) – free, best viewed at sunset  \n- **08:00 PM** — Dinner at **Deena Chaat Bhandar** – Golgappe, ₹60  \n- 💡 *Tip:* Wear comfortable shoes; ghats are slippery early morning.\n\n### Day 2 — Sat, 16 Jan · Ghats & Heritage\n- **07:30 AM** — Breakfast at homestay (included)  \n- **08:30 AM** — Auto to **Ramnagar Fort** (across the river, 5 km, 20 min) – entry ₹30  \n- **11:00 AM** — Return via boat (₹150 round) to **Assi Ghat** – free, watch locals yoga  \n- **12:30 PM** — Lunch at **Kachori & Samosa Lane** – Kachori Sabzi, ₹30  \n- **02:00 PM** — Visit **Sarnath** (bus ₹100, 30 min) – entry to Dhamek Stupa ₹20, explore museum (₹20)  \n- **05:30 PM** — Back to Varanasi, relax at hotel  \n- **07:00 PM** — Dinner at **Narayan Kothi** – Thali, ₹150  \n- 💡 *Tip:* Carry a small bottle of water; January mornings are crisp.\n\n### Day 3 — Sun, 17 Jan · Morning market & Return\n- **06:30 AM** — Early walk to **Manikarnika Ghat** (0.7 km, 10 min) – free, observe sunrise rituals  \n- **08:00 AM** — Breakfast at **Local dhaba near the ghat** – Aloo Paratha, ₹40  \n- **09:30 AM** — Shop for Banarasi silk at **Bharat Bhawan Market** (1 km, 12 min) – free browsing, set aside ₹200 for souvenirs  \n- **11:00 AM** — Return to hotel, check‑out, store luggage at reception  \n- **12:00 PM** — Light lunch at **Kashi Chat Bhandar** – Pani Puri, ₹70  \n- **01:30 PM** — Auto to Varanasi Railway Station (₹80)  \n- **09:00 PM** — Board train 13152 JAT KOAA EXPRESS, depart Varanasi  \n- **12:00 AM** — Arrive Kolkata, end of trip  \n\n## 🍽️ Food to try\n- **Kachori Sabzi** at Kachori & Samosa Lane — ₹30  \n- **Tamatar Chaat** at Kashi Chat Bhandar — ₹80  \n- **Golgappe** at Deena Chaat Bhandar — ₹60  \n- **Banarasi Thali** at Narayan Kothi — ₹150  \n- **Aloo Paratha** at local dhaba — ₹40  \n\n## 💰 Budget breakdown\n| Item | Cost |\n|---|---|\n| Transport (train round‑trip) | ₹790 |\n| Stay (2 nights) | ₹1,600 |\n| Food (3 days × 1 person) | ₹560 |\n| Local travel & activities | ₹350 |\n| Buffer | ₹890 |\n| **Total** | **₹4,190** |\n\n## 🎒 Weather & packing\n- Daytime 12‑15 °C, night 8‑10 °C – pack layers, light sweater.  \n- Comfortable walking shoes for ghats and alleys.  \n- Small scarf or shawl for temple visits.\n\n## 🏧 Useful nearby\n- **ATM:** State Bank of India – near Dashashwamedh Ghat  \n- **Petrol:** Indian Oil Pump – 4 km from hotel, on NH 19  \n- **Hospital:** Banaras Hindu University Hospital – 3 km, +91‑542‑236‑5000  \n- **Railway station:** Varanasi Junction (BSB) – main hub  \n\n## 💡 Local tips\n- Carry exact change for street vendors; many don’t accept cards.  \n- Use prepaid auto‑rickshaws or app‑based rides for safety.  \n- Dress modestly at ghats (shoulders covered).  \n- No special permits needed for the listed attractions.  \n- Keep a copy of your train ticket on phone; stations can be crowded.",
+ "finished_at": "2026-10-13T15:38:34.860737"
 }

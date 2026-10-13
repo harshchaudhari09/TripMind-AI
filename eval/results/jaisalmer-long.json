@@ -1,0 +1,307 @@
+{
+ "id": "jaisalmer-long",
+ "trip": {
+  "id": "jaisalmer-long",
+  "destination": "Jaisalmer, Rajasthan",
+  "origin": "Jaipur",
+  "start_date": "2027-01-02",
+  "end_date": "2027-01-09",
+  "budget_inr": 150000,
+  "num_people": 3,
+  "preferences": [
+   "desert safari",
+   "forts",
+   "camping"
+  ],
+  "note": "edge case: 8-day trip, 3 people"
+ },
+ "num_days": 8,
+ "seconds": 94.1,
+ "cached_research": true,
+ "critic_passed": true,
+ "fix_rounds": 1,
+ "remaining_issues": [],
+ "first_draft": {
+  "days_ok": true,
+  "days_found": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ],
+  "has_budget": true,
+  "budget_total": 154600.0,
+  "adds_up": true,
+  "within_budget": false,
+  "time_order_ok": true,
+  "season_ok": true,
+  "places_total": 26,
+  "places_verified": 16,
+  "places_pct": 61.5,
+  "unverified_places": [
+   "Patwon Ki Haveli",
+   "Kesar Heritage",
+   "Desert Boy’s",
+   "Sadar Bazaar",
+   "Local dhaba near Kuldhara",
+   "Marriott’s specialty restaurant",
+   "Old City",
+   "Sonar Kothi",
+   "Moti Mahal",
+   "Desert Camp “Desert Rose”"
+  ],
+  "places_detail": [
+   {
+    "name": "Jaisalmer Marriott Resort & Spa",
+    "status": "in_research"
+   },
+   {
+    "name": "Suryagarh Jaisalmer",
+    "status": "in_research"
+   },
+   {
+    "name": "Jaisalmer Heritage Resort",
+    "status": "on_map"
+   },
+   {
+    "name": "Patwon Ki Haveli",
+    "status": "unverified"
+   },
+   {
+    "name": "Hotel’s rooftop restaurant",
+    "status": "in_research"
+   },
+   {
+    "name": "Jaisalmer Fort",
+    "status": "in_research"
+   },
+   {
+    "name": "Kesar Heritage",
+    "status": "unverified"
+   },
+   {
+    "name": "Jain Temples",
+    "status": "in_research"
+   },
+   {
+    "name": "Desert Boy’s",
+    "status": "unverified"
+   },
+   {
+    "name": "Sam Sand Dunes",
+    "status": "in_research"
+   },
+   {
+    "name": "Gadisar Lake",
+    "status": "on_map"
+   },
+   {
+    "name": "Sadar Bazaar",
+    "status": "unverified"
+   },
+   {
+    "name": "Fateh Ki Kachori",
+    "status": "in_research"
+   },
+   {
+    "name": "Salim Singh Ki Haveli",
+    "status": "on_map"
+   },
+   {
+    "name": "The Sunset Café",
+    "status": "on_map"
+   },
+   {
+    "name": "Kuldhara",
+    "status": "in_research"
+   },
+   {
+    "name": "Local dhaba near Kuldhara",
+    "status": "unverified"
+   },
+   {
+    "name": "Bada Bagh",
+    "status": "on_map"
+   },
+   {
+    "name": "Marriott’s specialty restaurant",
+    "status": "unverified"
+   },
+   {
+    "name": "Jaisalmer Museum",
+    "status": "on_map"
+   },
+   {
+    "name": "Old City",
+    "status": "unverified"
+   },
+   {
+    "name": "Sonar Kothi",
+    "status": "unverified"
+   },
+   {
+    "name": "Hotel’s rooftop",
+    "status": "in_research"
+   },
+   {
+    "name": "Moti Mahal",
+    "status": "unverified"
+   },
+   {
+    "name": "Desert Camp “Desert Rose”",
+    "status": "unverified"
+   },
+   {
+    "name": "Jaisalmer",
+    "status": "in_research"
+   }
+  ]
+ },
+ "final": {
+  "days_ok": true,
+  "days_found": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ],
+  "has_budget": true,
+  "budget_total": 144100.0,
+  "adds_up": true,
+  "within_budget": true,
+  "time_order_ok": true,
+  "season_ok": true,
+  "places_total": 26,
+  "places_verified": 16,
+  "places_pct": 61.5,
+  "unverified_places": [
+   "Patwon Ki Haveli",
+   "Kesar Heritage",
+   "Desert Boy’s",
+   "Sadar Bazaar",
+   "Local dhaba near Kuldhara",
+   "Marriott’s specialty restaurant",
+   "Old City",
+   "Sonar Kothi",
+   "Moti Mahal",
+   "Desert Camp “Desert Rose”"
+  ],
+  "places_detail": [
+   {
+    "name": "Jaisalmer Heritage Resort",
+    "status": "on_map"
+   },
+   {
+    "name": "Jaisalmer Marriott Resort & Spa",
+    "status": "in_research"
+   },
+   {
+    "name": "Suryagarh Jaisalmer",
+    "status": "in_research"
+   },
+   {
+    "name": "Patwon Ki Haveli",
+    "status": "unverified"
+   },
+   {
+    "name": "Hotel’s rooftop restaurant",
+    "status": "in_research"
+   },
+   {
+    "name": "Jaisalmer Fort",
+    "status": "in_research"
+   },
+   {
+    "name": "Kesar Heritage",
+    "status": "unverified"
+   },
+   {
+    "name": "Jain Temples",
+    "status": "in_research"
+   },
+   {
+    "name": "Desert Boy’s",
+    "status": "unverified"
+   },
+   {
+    "name": "Sam Sand Dunes",
+    "status": "in_research"
+   },
+   {
+    "name": "Gadisar Lake",
+    "status": "on_map"
+   },
+   {
+    "name": "Sadar Bazaar",
+    "status": "unverified"
+   },
+   {
+    "name": "Fateh Ki Kachori",
+    "status": "in_research"
+   },
+   {
+    "name": "Salim Singh Ki Haveli",
+    "status": "on_map"
+   },
+   {
+    "name": "The Sunset Café",
+    "status": "on_map"
+   },
+   {
+    "name": "Kuldhara",
+    "status": "in_research"
+   },
+   {
+    "name": "Local dhaba near Kuldhara",
+    "status": "unverified"
+   },
+   {
+    "name": "Bada Bagh",
+    "status": "on_map"
+   },
+   {
+    "name": "Marriott’s specialty restaurant",
+    "status": "unverified"
+   },
+   {
+    "name": "Jaisalmer Museum",
+    "status": "on_map"
+   },
+   {
+    "name": "Old City",
+    "status": "unverified"
+   },
+   {
+    "name": "Sonar Kothi",
+    "status": "unverified"
+   },
+   {
+    "name": "Hotel’s rooftop",
+    "status": "in_research"
+   },
+   {
+    "name": "Moti Mahal",
+    "status": "unverified"
+   },
+   {
+    "name": "Desert Camp “Desert Rose”",
+    "status": "unverified"
+   },
+   {
+    "name": "Jaisalmer",
+    "status": "in_research"
+   }
+  ]
+ },
+ "itinerary": "# 🏜️ Jaisalmer — 8‑Day Trip  \n> **Jaipur → Jaisalmer** · 02 Jan 2027 – 09 Jan 2027 · 3 people · Budget ₹150,000 · Estimated total ₹144,100  \n\n## ✨ At a glance\n- **Getting there:** 1AC train (10:10 AM Jaipur → 23:30 PM Jaisalmer, ₹ 400 pp)  \n- **Stay:** **Jaisalmer Heritage Resort** – ₹ 12,500 /night, 4★, free Wi‑Fi + airport pickup, book on **OYO**  \n- **Weather:** Sunny, 5‑20 °C; chilly evenings – perfect for desert nights  \n- **Total cost:** ₹144,100 of ₹150,000 budget (₹5,900 left over)\n\n## ✈️ Getting there & back\n- **Go:** 1AC train # 12495, Jaipur 10:10 AM → Jaisalmer 23:30 PM, ₹ 400 pp  \n- **Return:** 1AC train # 12496, Jaisalmer 08:00 AM → Jaipur 20:30 PM, ₹ 400 pp  \n- **Why this option:** Direct overnight service, air‑conditioned comfort, far cheaper than a flight and saves ₹ ≈ 30,000 per person.\n\n## 🏨 Where to stay\n1. **Jaisalmer Heritage Resort** — ₹ 12,500 /night · 4★ · free Wi‑Fi + airport pickup · book on **OYO**  \n2. **Jaisalmer Marriott Resort & Spa** — ₹ 14,000 /night · 5★ · breakfast included · book on **Booking.com**  \n3. **Suryagarh Jaisalmer** — ₹ 22,000 /night · 5★ · welcome drink + spa credit · book on **MakeMyTrip**  \n\n## 🗓️ Day-by-day plan\n### Day 1 — Sat, 02 Jan · Arrival & Fort lights\n- **10:10 AM** — Board 1AC train at Jaipur Junction  \n- **11:30 AM** — Breakfast on board (included)  \n- **6:00 PM** — Arrive Jaisalmer, taxi (₹ 300) to hotel, check‑in  \n- **7:30 PM** — Walk to **Patwon Ki Haveli** (entry ₹ 100 pp) – sunset photo ops  \n- **9:00 PM** — Dinner at **Hotel’s rooftop restaurant** — Dal Baati Churma, ₹ 600 pp  \n- 💡 *Tip:* Keep a light scarf; evenings drop to 5 °C.  \n\n### Day 2 — Sun, 03 Jan · Jaisalmer Fort & Jain Temples\n- **8:00 AM** — Breakfast at hotel (included)  \n- **9:30 AM** — Taxi to **Jaisalmer Fort** (entry ₹ 100 pp) – explore palace museum  \n- **12:30 PM** — Lunch at **Kesar Heritage** — Gatte Ki Sabzi + Bajra Roti, ₹ 550 pp  \n- **2:00 PM** — Visit **Jain Temples** inside the fort (free with fort ticket)  \n- **4:30 PM** — Return to hotel, relax  \n- **7:30 PM** — Dinner at **Desert Boy’s** — Ker Sangri, ₹ 500 pp  \n- 💡 *Tip:* Wear comfortable shoes; stone steps are uneven.  \n\n### Day 3 — Mon, 04 Jan · Sam Sand Dunes – Evening Safari\n- **7:00 AM** — Breakfast at hotel  \n- **8:00 AM** — Private minivan (₹ 1,200 total) to **Sam Sand Dunes** (≈ 45 km, 1 hr)  \n- **9:30 AM** — Camel ride (₹ 1,200 pp) – short morning trek, photo stop  \n- **12:30 PM** — Picnic lunch (pre‑packed by hotel) – ₹ 400 pp  \n- **2:00 PM** — Return to hotel, rest  \n- **4:30 PM** — Evening desert safari (luxury 4‑WD jeep, ₹ 4,000 pp) – sunset, cultural show, dinner (Rajasthani thali, ₹ 800 pp)  \n- **10:30 PM** — Back to hotel, overnight rest  \n\n### Day 4 — Tue, 05 Jan · Gadisar Lake & Local Bazaar\n- **8:00 AM** — Breakfast  \n- **9:30 AM** — Taxi to **Gadisar Lake** (entry ₹ 20 pp) – boat ride (₹ 150 pp)  \n- **11:30 AM** — Walk to **Sadar Bazaar** – shop for spices, textiles  \n- **1:00 PM** — Lunch at **Fateh Ki Kachori** — Kachori + Aloo Tikki, ₹ 300 pp  \n- **2:30 PM** — Visit **Salim Singh Ki Haveli** (entry ₹ 100 pp)  \n- **4:30 PM** — Return to hotel, spa session (₹ 2,000 for 2 hrs, split)  \n- **7:30 PM** — Dinner at **The Sunset Café** — Laal Maas, ₹ 850 pp  \n- 💡 *Tip:* Bargain in the bazaar; start low and increase gradually.  \n\n### Day 5 — Wed, 06 Jan · Day‑trip to Kuldhara (ghost village)\n- **7:30 AM** — Early breakfast  \n- **8:30 AM** — Hire a shared jeep (₹ 1,500 total) to **Kuldhara** (≈ 90 km, 2 hr)  \n- **10:45 AM** — Guided walk (₹ 500 pp) – explore ruins, learn legends  \n- **12:30 PM** — Lunch at **Local dhaba near Kuldhara** — Dal Pakwan, ₹ 350 pp  \n- **2:00 PM** — Return via **Bada Bagh** (entry ₹ 50 pp) – cenotaphs of Maharajas  \n- **4:30 PM** — Back to hotel, free time  \n- **7:30 PM** — Dinner at **Marriott’s specialty restaurant** — Mutton Rogan Josh, ₹ 950 pp  \n\n### Day 6 — Thu, 07 Jan · Cultural Immersion & Cooking Class\n- **8:00 AM** — Breakfast  \n- **9:30 AM** — Visit **Jaisalmer Museum** (entry ₹ 100 pp)  \n- **11:30 AM** — Rajasthani cooking class (₹ 2,200 pp, includes lunch) – learn Dal Baati Churma  \n- **3:00 PM** — Free time – stroll in **Old City** lanes  \n- **6:30 PM** — Sunset at **Sonar Kothi** (entry ₹ 150 pp)  \n- **8:00 PM** — Dinner at **Hotel’s rooftop** – Gatte Ki Sabzi, ₹ 600 pp  \n\n### Day 7 — Fri, 08 Jan · Leisure & Night‑Camp in Desert\n- **8:00 AM** — Breakfast  \n- **9:30 AM** — Relax at hotel pool, spa (optional)  \n- **12:30 PM** — Lunch at **Moti Mahal** — Ker Sangri + Bajra Roti, ₹ 500 pp  \n- **2:00 PM** — Transfer to **Desert Camp “Desert Rose”** (₹ 5,000 pp, includes transport)  \n- **4:00 PM** — Camel ride to camp, check‑in, sunset over dunes  \n- **7:00 PM** — Traditional Rajasthani dinner (thali, ₹ 800 pp) + folk dance  \n- **10:00 PM** — Campfire, stargazing – lights out by 11 PM  \n\n### Day 8 — Sat, 09 Jan · Return to Jaipur\n- **5:30 AM** — Early breakfast at camp (included)  \n- **6:30 AM** — Camel ride back to **Jaisalmer** (included)  \n- **8:00 AM** — Board 1AC train at Jaisalmer station (08:00 AM)  \n- **8:30 AM** — Light snack on board (bought, ₹ 150 pp)  \n- **8:30 PM** — Arrive Jaipur, taxi home (₹ 300)  \n\n## 🍽️ Food to try\n- **Dal Baati Churma** at Marriott – ₹ 600 pp  \n- **Ker Sangri** at Desert Boy’s – ₹ 500 pp  \n- **Laal Maas** at Sunset Café – ₹ 850 pp  \n- **Gatte Ki Sabzi** at rooftop restaurant – ₹ 600 pp  \n- **Mithai (Ghewar)** at Dhanraj Bhatia – ₹ 200 pp  \n\n## 💰 Budget breakdown\n| Item | Cost |\n|---|---|\n| Transport (train round‑trip) | ₹ 2,400 |\n| Stay (7 nights @ ₹ 12,500) | ₹ 87,500 |\n| Food (21 meals × 3 pp × ≈ ₹ 500) | ₹ 31,500 |\n| Local travel & activities | ₹ 5,000 |\n| Desert camp & safari | ₹ 15,000 |\n| Buffer | ₹ 2,700 |\n| **Total** | **₹144,100** |\n\n## 🎒 Weather & packing\n- Daytime 15‑20 °C, night 4‑8 °C – pack layers, warm jacket.  \n- Light woolen cap & gloves for desert night camp.  \n- Sunscreen, sunglasses, comfortable walking shoes.  \n\n## 🏧 Useful nearby\n- **ATM:** State Bank of India – Main Bazaar  \n- **Petrol:** Indian Oil Pump – Jaisalmer‑Bikaner Rd (≈ 5 km)  \n- **Hospital:** Govt. Hospital, Jaisalmer – Near Railway Station, +91 2974 222 222  \n- **Bus stand:** RSRTC Bus Stand – Jaisalmer (≈ 2 km)  \n- **Railway station:** Jaisalmer Railway Station (JSM)  \n\n## 💡 Local tips\n- Carry a **photo ID** for train tickets and desert camp registration.  \n- **Book desert safari** a day in advance; January is peak season.  \n- **Stay hydrated** – carry a refillable bottle; water is sold cheap.  \n- **Dress modestly** when visiting temples and forts (shoulders covered).  \n- **Permits:** No special permits needed for forts or dunes in winter.  ",
+ "first_draft_text": "# 🏜️ Jaisalmer — 8‑Day Trip  \n> **Jaipur → Jaisalmer** · 02 Jan 2027 – 09 Jan 2027 · 3 people · Budget ₹150,000 · Estimated total ₹154,600  \n\n## ✨ At a glance\n- **Getting there:** 1AC train (10:10 AM Jaipur → 23:30 PM Jaisalmer, ₹ 400 pp)  \n- **Stay:** **Jaisalmer Marriott Resort & Spa** – ₹ 14,000 /night, 5★, breakfast included, book on **Booking.com**  \n- **Weather:** Sunny, 5‑20 °C; chilly evenings – perfect for desert nights  \n- **Total cost:** ₹154,600 of ₹150,000 budget (₹4,600 over budget)\n\n## ✈️ Getting there & back\n- **Go:** 1AC train # 12495, Jaipur 10:10 AM → Jaisalmer 23:30 PM, ₹ 400 pp  \n- **Return:** 1AC train # 12496, Jaisalmer 08:00 AM → Jaipur 20:30 PM, ₹ 400 pp  \n- **Why this option:** Direct overnight service, air‑conditioned comfort, far cheaper than business‑class flight and saves ₹ ≈ 30,000 per person.  \n\n## 🏨 Where to stay\n1. **Jaisalmer Marriott Resort & Spa** — ₹ 14,000 /night · 5★ · breakfast included · book on **Booking.com**  \n2. **Suryagarh Jaisalmer** — ₹ 22,000 /night · 5★ · welcome drink + spa credit · book on **MakeMyTrip**  \n3. **Jaisalmer Heritage Resort** — ₹ 12,500 /night · 4★ · free Wi‑Fi + airport pickup · book on **OYO**  \n\n## 🗓️ Day‑by‑day plan  \n\n### Day 1 — Sat, 02 Jan · Arrival & Fort lights  \n- **10:10 AM** — Board 1AC train at Jaipur Junction  \n- **11:30 AM** — Breakfast on board (included)  \n- **6:00 PM** — Arrive Jaisalmer, taxi (₹ 300) to hotel, check‑in  \n- **7:30 PM** — Walk to **Patwon Ki Haveli** (entry ₹ 100 pp) – sunset photo ops  \n- **9:00 PM** — Dinner at **Hotel’s rooftop restaurant** — Dal Baati Churma, ₹ 600 pp  \n- 💡 *Tip:* Keep a light scarf; evenings drop to 5 °C.  \n\n### Day 2 — Sun, 03 Jan · Jaisalmer Fort & Jain Temples  \n- **8:00 AM** — Breakfast at hotel (included)  \n- **9:30 AM** — Taxi to **Jaisalmer Fort** (entry ₹ 100 pp) – explore palace museum  \n- **12:30 PM** — Lunch at **Kesar Heritage** — Gatte Ki Sabzi + Bajra Roti, ₹ 550 pp  \n- **2:00 PM** — Visit **Jain Temples** inside the fort (free with fort ticket)  \n- **4:30 PM** — Return to hotel, relax  \n- **7:30 PM** — Dinner at **Desert Boy’s** — Ker Sangri, ₹ 500 pp  \n- 💡 *Tip:* Wear comfortable shoes; stone steps are uneven.  \n\n### Day 3 — Mon, 04 Jan · Sam Sand Dunes – Evening Safari  \n- **7:00 AM** — Breakfast at hotel  \n- **8:00 AM** — Private minivan (₹ 1,200 total) to **Sam Sand Dunes** (≈ 45 km, 1 hr)  \n- **9:30 AM** — Camel ride (₹ 1,200 pp) – short morning trek, photo stop  \n- **12:30 PM** — Picnic lunch (pre‑packed by hotel) – ₹ 400 pp  \n- **2:00 PM** — Return to hotel, rest  \n- **4:30 PM** — Evening desert safari (luxury 4‑WD jeep, ₹ 4,000 pp) – sunset, cultural show, dinner (Rajasthani thali, ₹ 800 pp)  \n- **10:30 PM** — Back to hotel, overnight rest  \n\n### Day 4 — Tue, 05 Jan · Gadisar Lake & Local Bazaar  \n- **8:00 AM** — Breakfast  \n- **9:30 AM** – Taxi to **Gadisar Lake** (entry ₹ 20 pp) – boat ride (₹ 150 pp)  \n- **11:30 AM** – Walk to **Sadar Bazaar** – shop for spices, textiles  \n- **1:00 PM** – Lunch at **Fateh Ki Kachori** – Kachori + Aloo Tikki, ₹ 300 pp  \n- **2:30 PM** – Visit **Salim Singh Ki Haveli** (entry ₹ 100 pp)  \n- **4:30 PM** – Return to hotel, spa session (₹ 2,000 for 2 hrs, split)  \n- **7:30 PM** – Dinner at **The Sunset Café** – Laal Maas, ₹ 850 pp  \n- 💡 *Tip:* Bargain in the bazaar; start low and increase gradually.  \n\n### Day 5 — Wed, 06 Jan · Day‑trip to **Kuldhara** (ghost village)  \n- **7:30 AM** — Early breakfast  \n- **8:30 AM** — Hire a shared jeep (₹ 1,500 total) to **Kuldhara** (≈ 90 km, 2 hr)  \n- **10:45 AM** — Guided walk (₹ 500 pp) – explore ruins, learn legends  \n- **12:30 PM** — Lunch at **Local dhaba near Kuldhara** — Dal Pakwan, ₹ 350 pp  \n- **2:00 PM** — Return via **Bada Bagh** (entry ₹ 50 pp) – cenotaphs of Maharajas  \n- **4:30 PM** — Back to hotel, free time  \n- **7:30 PM** — Dinner at **Marriott’s specialty restaurant** — Mutton Rogan Josh, ₹ 950 pp  \n\n### Day 6 — Thu, 07 Jan · Cultural Immersion & Cooking Class  \n- **8:00 AM** — Breakfast  \n- **9:30 AM** — Visit **Jaisalmer Museum** (entry ₹ 100 pp)  \n- **11:30 AM** — Rajasthani cooking class (₹ 2,200 pp, includes lunch) – learn Dal Baati Churma  \n- **3:00 PM** — Free time – stroll in **Old City** lanes  \n- **6:30 PM** — Sunset at **Sonar Kothi** (entry ₹ 150 pp)  \n- **8:00 PM** — Dinner at **Hotel’s rooftop** – Gatte Ki Sabzi, ₹ 600 pp  \n\n### Day 7 — Fri, 08 Jan · Leisure & Night‑Camp in Desert  \n- **8:00 AM** — Breakfast  \n- **9:30 AM** — Relax at hotel pool, spa (optional)  \n- **12:30 PM** — Lunch at **Moti Mahal** — Ker Sangri + Bajra Roti, ₹ 500 pp  \n- **2:00 PM** — Transfer to **Desert Camp “Desert Rose”** (₹ 5,000 pp, includes transport)  \n- **4:00 PM** — Camel ride to camp, check‑in, sunset over dunes  \n- **7:00 PM** — Traditional Rajasthani dinner (thali, ₹ 800 pp) + folk dance  \n- **10:00 PM** — Campfire, stargazing – lights out by 11 PM  \n\n### Day 8 — Sat, 09 Jan · Return to Jaipur  \n- **5:30 AM** — Early breakfast at camp (included)  \n- **6:30 AM** — Camel ride back to **Jaisalmer** (included)  \n- **8:00 AM** — Board 1AC train at Jaisalmer station (08:00 AM)  \n- **8:30 AM** — Light snack on board (bought, ₹ 150 pp)  \n- **8:30 PM** — Arrive Jaipur, taxi home (₹ 300)  \n\n## 🍽️ Food to try  \n- **Dal Baati Churma** at Marriott – ₹ 600 pp  \n- **Ker Sangri** at Desert Boy’s – ₹ 500 pp  \n- **Laal Maas** at Sunset Café – ₹ 850 pp  \n- **Gatte Ki Sabzi** at rooftop restaurant – ₹ 600 pp  \n- **Mithai (Ghewar)** at Dhanraj Bhatia – ₹ 200 pp  \n\n## 💰 Budget breakdown  \n| Item | Cost |\n|---|---|\n| Transport (train round‑trip) | ₹ 2,400 |\n| Stay (7 nights @ ₹ 14,000) | ₹ 98,000 |\n| Food (21 meals × 3 pp × ≈ ₹ 500) | ₹ 31,500 |\n| Local travel & activities | ₹ 5,000 |\n| Desert camp & safari | ₹ 15,000 |\n| Buffer | ₹ 2,700 |\n| **Total** | **₹154,600** |\n\n## 🎒 Weather & packing  \n- Daytime 15‑20 °C, night 4‑8 °C – pack layers, warm jacket.  \n- Light woolen cap & gloves for desert night camp.  \n- Sunscreen, sunglasses, comfortable walking shoes.  \n\n## 🏧 Useful nearby  \n- **ATM:** State Bank of India – Main Bazaar  \n- **Petrol:** Indian Oil Pump – Jaisalmer‑Bikaner Rd (≈ 5 km)  \n- **Hospital:** Govt. Hospital, Jaisalmer – Near Railway Station, +91 2974 222 222  \n- **Bus stand:** RSRTC Bus Stand – Jaisalmer (≈ 2 km)  \n- **Railway station:** Jaisalmer Railway Station (JSM)  \n\n## 💡 Local tips  \n- Carry a **photo ID** for train tickets and desert camp registration.  \n- **Book desert safari** a day in advance; January is peak season.  \n- **Stay hydrated** – carry a refillable bottle; water is sold cheap.  \n- **Dress modestly** when visiting temples and forts (shoulders covered).  \n- **Permits:** No special permits needed for forts or dunes in winter.  ",
+ "finished_at": "2026-10-13T15:46:02.523438"
+}

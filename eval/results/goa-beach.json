@@ -16,13 +16,11 @@
   "note": "classic mid-budget trip"
  },
  "num_days": 4,
- "seconds": 77.3,
+ "seconds": 30.5,
  "cached_research": true,
- "critic_passed": false,
- "fix_rounds": 2,
- "remaining_issues": [
-  "Day 3: The itinerary expects to visit Colva, Palolem, and Cabo de Rama and return to the Calangute hotel by 7:30 PM, which is impossible within the travel times; to fix, stay overnight in South Goa or return to the hotel earlier and store luggage at a local facility."
- ],
+ "critic_passed": true,
+ "fix_rounds": 1,
+ "remaining_issues": [],
  "first_draft": {
   "days_ok": true,
   "days_found": [
@@ -32,23 +30,16 @@
    4
   ],
   "has_budget": true,
-  "budget_total": 33642.0,
+  "budget_total": 15940.0,
   "adds_up": true,
-  "within_budget": false,
+  "within_budget": true,
   "time_order_ok": true,
   "season_ok": true,
-  "places_total": 28,
-  "places_verified": 20,
-  "places_pct": 71.4,
+  "places_total": 10,
+  "places_verified": 9,
+  "places_pct": 90.0,
   "unverified_places": [
-   "Majestic Beach Comfort",
-   "Tito’s Bar, Baga",
-   "Goa Scooters",
-   "Calamari, Calangute",
-   "Lazy Gooze, Anjuna",
-   "Chef Peters Kitchen, Colva",
-   "Infantaria, Panjim",
-   "Gopal Ros Omelet, Inox Circle"
+   "Majestic Beach Comfort"
   ],
   "places_detail": [
    {
@@ -64,103 +55,31 @@
     "status": "unverified"
    },
    {
-    "name": "Calangute Beach",
+    "name": "Fisherman's Wharf",
     "status": "on_map"
    },
    {
-    "name": "German Bakery, Candolim",
+    "name": "German Bakery",
     "status": "in_research"
-   },
-   {
-    "name": "Baga Beach",
-    "status": "in_research"
-   },
-   {
-    "name": "Mum’s Kitchen, Panjim",
-    "status": "on_map"
-   },
-   {
-    "name": "Tito’s Bar, Baga",
-    "status": "unverified"
-   },
-   {
-    "name": "Goa Scooters",
-    "status": "unverified"
-   },
-   {
-    "name": "Fort Aguada",
-    "status": "on_map"
-   },
-   {
-    "name": "Sinquerim Beach",
-    "status": "on_map"
-   },
-   {
-    "name": "Calamari, Calangute",
-    "status": "unverified"
-   },
-   {
-    "name": "Old Goa Churches",
-    "status": "on_map"
-   },
-   {
-    "name": "Anjuna Beach",
-    "status": "on_map"
-   },
-   {
-    "name": "Lazy Gooze, Anjuna",
-    "status": "unverified"
-   },
-   {
-    "name": "Colva Beach",
-    "status": "in_research"
-   },
-   {
-    "name": "Chef Peters Kitchen, Colva",
-    "status": "unverified"
-   },
-   {
-    "name": "Palolem Beach",
-    "status": "on_map"
-   },
-   {
-    "name": "Cabo de Rama Fort",
-    "status": "on_map"
-   },
-   {
-    "name": "Infantaria, Panjim",
-    "status": "unverified"
-   },
-   {
-    "name": "Mickey’s Pub, Panjim",
-    "status": "on_map"
-   },
-   {
-    "name": "Candolim Beach",
-    "status": "on_map"
-   },
-   {
-    "name": "Gopal Ros Omelet, Inox Circle",
-    "status": "unverified"
    },
    {
     "name": "Mum’s Kitchen",
     "status": "in_research"
    },
    {
-    "name": "Lazy Gooze",
+    "name": "Tito’s Bar",
+    "status": "on_map"
+   },
+   {
+    "name": "Martin’s Corner",
     "status": "in_research"
    },
    {
-    "name": "Chef Peters Kitchen",
+    "name": "La Plage",
     "status": "in_research"
    },
    {
-    "name": "Calamari",
-    "status": "in_research"
-   },
-   {
-    "name": "Gopal Ros Omelet",
+    "name": "Cafe Bhonsle",
     "status": "in_research"
    }
   ]
@@ -174,130 +93,61 @@
    4
   ],
   "has_budget": true,
-  "budget_total": 29992.0,
+  "budget_total": 15940.0,
   "adds_up": true,
   "within_budget": true,
   "time_order_ok": true,
   "season_ok": true,
-  "places_total": 26,
-  "places_verified": 20,
-  "places_pct": 76.9,
+  "places_total": 10,
+  "places_verified": 9,
+  "places_pct": 90.0,
   "unverified_places": [
-   "Shree Krishna, Calangute",
-   "Tito’s Bar, Baga",
-   "Goa Scooters",
-   "Calamari, Calangute",
-   "Lazy Gooze, Anjuna",
-   "Chef Peters Kitchen, Colva"
+   "Majestic Beach Comfort"
   ],
   "places_detail": [
    {
-    "name": "Hotel Ocean View",
-    "status": "on_map"
+    "name": "Santana Beach Resort",
+    "status": "in_research"
    },
    {
     "name": "ibis Styles Goa Calangute",
     "status": "in_research"
    },
    {
-    "name": "Hotel Palolem Sea View",
-    "status": "on_map"
-   },
-   {
-    "name": "Calangute Beach",
-    "status": "on_map"
-   },
-   {
-    "name": "Shree Krishna, Calangute",
+    "name": "Majestic Beach Comfort",
     "status": "unverified"
    },
    {
-    "name": "Baga Beach",
+    "name": "Fisherman's Wharf",
+    "status": "on_map"
+   },
+   {
+    "name": "German Bakery",
     "status": "in_research"
    },
    {
-    "name": "Mum’s Kitchen, Panjim",
+    "name": "Britto’s",
     "status": "on_map"
    },
    {
-    "name": "Tito’s Bar, Baga",
-    "status": "unverified"
-   },
-   {
-    "name": "Goa Scooters",
-    "status": "unverified"
-   },
-   {
-    "name": "Fort Aguada",
+    "name": "Tito’s Bar",
     "status": "on_map"
    },
    {
-    "name": "Sinquerim Beach",
-    "status": "on_map"
-   },
-   {
-    "name": "Calamari, Calangute",
-    "status": "unverified"
-   },
-   {
-    "name": "Old Goa Churches",
-    "status": "on_map"
-   },
-   {
-    "name": "Anjuna Beach",
-    "status": "on_map"
-   },
-   {
-    "name": "Lazy Gooze, Anjuna",
-    "status": "unverified"
-   },
-   {
-    "name": "Colva Beach",
+    "name": "Martin’s Corner",
     "status": "in_research"
    },
    {
-    "name": "Chef Peters Kitchen, Colva",
-    "status": "unverified"
-   },
-   {
-    "name": "Palolem Beach",
-    "status": "on_map"
-   },
-   {
-    "name": "Cabo de Rama Fort",
-    "status": "on_map"
-   },
-   {
-    "name": "Agonda Beach",
-    "status": "on_map"
-   },
-   {
-    "name": "Gopal Ros Omelet, Inox Circle (Panjim)",
+    "name": "La Plage",
     "status": "in_research"
    },
    {
-    "name": "Mum’s Kitchen",
-    "status": "in_research"
-   },
-   {
-    "name": "Lazy Gooze",
-    "status": "in_research"
-   },
-   {
-    "name": "Chef Peters Kitchen",
-    "status": "in_research"
-   },
-   {
-    "name": "Calamari",
-    "status": "in_research"
-   },
-   {
-    "name": "Gopal Ros Omelet",
+    "name": "Cafe Bhonsle",
     "status": "in_research"
    }
   ]
  },
- "itinerary": "# 🌴 Goa — 4‑Day Trip  \n> **Mumbai → Goa** · 5 Dec 2026 – 8 Dec 2026 · 2 people · Budget ₹30,000 · Estimated total ₹29,992  \n\n## ✨ At a glance\n- **Getting there:** IndiGo flight 6E — ₹3,548 pp (direct)  \n- **Stay:** **Hotel Ocean View, Calangute** – ₹2,200 /night · 3★ · Breakfast inclusive · book on **Booking.com** (first 2 nights) & **Hotel Palolem Sea View** – ₹2,500 /night · 3★ · Breakfast inclusive · book on **MakeMyTrip** (night 3)  \n- **Weather:** 24‑28 °C day, 20‑22 °C night – light sweater optional  \n- **Total cost:** ₹29,992 of ₹30,000 budget (₹8 left over)\n\n## ✈️ Getting there & back\n- **Go:** IndiGo flight 6E — Dep 06:30 AM (Mumbai) → Arr 08:15 AM (Goa), ₹3,548 pp  \n- **Return:** IndiGo flight 6E — Dep 07:30 PM (Goa) → Arr 09:45 PM (Mumbai), ₹3,548 pp  \n- **Why this option:** Direct 2‑hour flight saves 12 h vs bus/train and fits the tight 4‑day window.\n\n## 🏨 Where to stay\n1. **Hotel Ocean View** — ₹2,200 /night · 3★ · Breakfast & Wi‑Fi · book on **Booking.com**  \n2. **ibis Styles Goa Calangute** — ₹3,500 /night · 3★ · Breakfast & pool · book on **MakeMyTrip**  \n3. **Hotel Palolem Sea View** — ₹2,500 /night · 3★ · Breakfast & sea view · book on **MakeMyTrip**  \n\n## 🗓️ Day-by-day plan\n### Day 1 — Sat, 05 Dec · Arrival & North‑Goa Beach Hop\n- **06:30 AM** — Flight departs Mumbai (see above).  \n- **08:15 AM** — Arrive Goa, prepaid airport taxi (₹800) to **Hotel Ocean View**, check‑in, drop bags.  \n- **10:00 AM** — Walk to **Calangute Beach** (1 km, 5 min). Free beach time.  \n- **12:30 PM** — Lunch at **Shree Krishna, Calangute** — Fish Fry, ₹300 pp.  \n- **02:00 PM** — Head to **Baga Beach** (2 km, 7 min). Sun & relax.  \n- **04:30 PM** — Return to hotel, freshen up.  \n- **07:00 PM** — Dinner at **Mum’s Kitchen, Panjim** — Goan Fish Curry + Rice, ₹450 pp.  \n- **09:00 PM** — Explore **Tito’s Bar, Baga** for nightlife (no cover, drinks extra).  \n- 💡 *Tip:* Keep e‑ticket on phone; airport taxi fares are fixed for the airport‑hotel corridor.\n\n### Day 2 — Sun, 06 Dec · Heritage & Sunset\n- **08:00 AM** — Breakfast at hotel (included).  \n- **09:00 AM** — Rent a scooter (₹350 day) from **Goa Scooters** near hotel.  \n- **09:30 AM** — Drive to **Fort Aguada** (12 km, 30 min). Entry ₹20 pp.  \n- **11:30 AM** — Quick dip at **Sinquerim Beach** (2 km, 5 min).  \n- **01:00 PM** — Lunch at **Calamari, Calangute** — Grilled Prawns, ₹350 pp.  \n- **02:30 PM** — Visit **Old Goa Churches** (Basilica of Bom Jesus, Se Cathedral) – free entry, 8 km, 20 min drive.  \n- **05:00 PM** — Return to hotel, freshen up.  \n- **07:00 PM** — Sunset at **Anjuna Beach** (6 km, 15 min).  \n- **08:30 PM** — Dinner at **Lazy Gooze, Anjuna** — Prawn Balchão, ₹400 pp.  \n- **10:00 PM** — Optional beach‑shack music vibe; head back to hotel.  \n- 💡 *Tip:* Carry a water bottle; December sun is strong but evenings cool.\n\n### Day 3 — Mon, 07 Dec · South‑Goa Exploration & Overnight South\n- **08:00 AM** — Breakfast, check‑out, store luggage at reception.  \n- **09:00 AM** — Ride scooter to **Colva Beach** (45 km, 1 h 15 min). Free beach time.  \n- **12:00 PM** — Lunch at **Chef Peters Kitchen, Colva** — Xacuti Chicken, ₹450 pp.  \n- **02:00 PM** — Continue to **Palolem Beach** (30 km, 45 min). Relax on the golden sand.  \n- **04:30 PM** — Check‑in at **Hotel Palolem Sea View**, drop bags, freshen up.  \n- **05:30 PM** — Sunset at **Cabo de Rama Fort** (20 km, 40 min). Entry ₹30 pp.  \n- **07:30 PM** — Return to hotel, dinner at the hotel restaurant (included).  \n- **09:30 PM** — Night stroll on Palolem promenade; low‑key beach bars.  \n- 💡 *Tip:* South‑Goa evenings are cooler; bring a light jacket.\n\n### Day 4 — Tue, 08 Dec · Departure\n- **08:00 AM** — Breakfast at hotel (included).  \n- **09:30 AM** — Quick dip at **Agonda Beach** (10 km, 20 min).  \n- **11:30 AM** — Return scooter, settle dues.  \n- **12:30 PM** – Lunch at **Gopal Ros Omelet, Inox Circle (Panjim)** — Omelet Wrap, ₹250 pp.  \n- **01:30 PM** — Prepaid taxi (₹1,200) to Goa Airport.  \n- **04:00 PM** — Arrive airport, relax, board flight.  \n- **07:30 PM** — Flight departs Goa (see above).  \n- **09:45 PM** — Arrive Mumbai.  \n- 💡 *Tip:* Arrive at airport 2 h early; December evenings can be foggy, allow extra travel time.\n\n## 🍽️ Food to try\n- **Goan Fish Curry** at **Mum’s Kitchen** — ₹450 pp  \n- **Prawn Balchão** at **Lazy Gooze** — ₹400 pp  \n- **Xacuti Chicken** at **Chef Peters Kitchen** — ₹450 pp  \n- **Grilled Prawns** at **Calamari** — ₹350 pp  \n- **Omelet Wrap** at **Gopal Ros Omelet** — ₹250 pp  \n\n## 💰 Budget breakdown\n| Item | Cost |\n|---|---|\n| Transport (flights × 2 pp) | ₹14,192 |\n| Airport taxis (both ways) | ₹2,000 |\n| Hotel (3 nights) | ₹6,900 |\n| Food (4 days × 2 pp) | ₹5,500 |\n| Scooter rental (2 days) | ₹700 |\n| Entry fees & activities | ₹500 |\n| Buffer | ₹200 |\n| **Total** | **₹29,992** |\n\n## 🎒 Weather & packing\n- Daytime 24‑28 °C, night 20‑22 °C – light sweater.  \n- Light rain possible early mornings – pack a compact rain jacket.  \n- Sunscreen SPF 30+, sunglasses, hat.  \n- Comfortable sandals + one pair of closed shoes for forts.\n\n## 🏧 Useful nearby\n- **ATM:** State Bank of India – Calangute Market  \n- **Petrol:** Indian Oil, Candolim (≈2 km from hotel)  \n- **Hospital:** Dr. Reddy’s Hospital, Panjim – 8 km, +91 832 222 5555  \n- **Bus stand / Railway station:** Goa Bus Stand, Panjim; Madgaon Railway Station (South Goa)\n\n## 💡 Local tips\n- Book scooter in advance; carry your driving licence.  \n- Most beach shacks accept cash only – keep small notes.  \n- Nightlife venues close around 2 AM; plan transport back before then.  \n- Keep a copy of your hotel receipt for any police checks (common in tourist spots).  \n- No special permits needed for beaches or forts in December.  ",
- "first_draft_text": "# 🌴 Goa — 4‑Day Trip  \n> **Mumbai → Goa** · 5 Dec 2026 – 8 Dec 2026 · 2 people · Budget ₹30,000 · Estimated total ₹33,642  \n\n## ✨ At a glance  \n- **Getting there:** IndiGo flight 6E — ₹3,548 pp (economy)  \n- **Stay:** **Santana Beach Resort** – ₹3,200 /night, 3‑star, breakfast inclusive, book on **Booking.com**  \n- **Weather:** 24‑28 °C, pleasant evenings, light sweater optional  \n- **Total cost:** ₹33,642 of ₹30,000 budget (₹3,642 over budget)\n\n## ✈️ Getting there & back  \n- **Go:** IndiGo flight 6E — Dep 06:30 AM (Mumbai) → Arr 08:15 AM (Goa), ₹3,548 pp  \n- **Return:** IndiGo flight 6E — Dep 07:30 PM (Goa) → Arr 09:45 PM (Mumbai), ₹3,548 pp  \n- **Why this option:** Direct 2‑hour flight saves 12 h vs bus/train and fits the tight 4‑day window.\n\n## 🏨 Where to stay  \n1. **Santana Beach Resort** — ₹3,200 /night · 3★ · Breakfast & Wi‑Fi · book on **Booking.com**  \n2. **ibis Styles Goa Calangute** — ₹3,500 /night · 3★ · Breakfast & pool · book on **MakeMyTrip**  \n3. **Majestic Beach Comfort** — ₹2,900 /night · 3★ · Breakfast & garden view · book on **OYO**  \n\n## 🗓️ Day‑by‑day plan  \n\n### Day 1 — Sat, 05 Dec · Arrival & North‑Goa Beach Hop  \n- **06:30 AM** — Flight departs Mumbai (see above).  \n- **08:15 AM** — Arrive Goa, collect luggage, take prepaid airport taxi (₹800) to hotel, check‑in (bags drop).  \n- **10:00 AM** — Walk to **Calangute Beach** (1 km, 5 min). Free beach time.  \n- **12:30 PM** — Lunch at **German Bakery, Candolim** — Avocado Toast + Fresh Juice, ₹350 pp.  \n- **02:00 PM** — Head to **Baga Beach** (2 km, 7 min). Sun & optional parasailing (₹1,200 pp, skip if budget tight).  \n- **04:30 PM** — Return to hotel, relax.  \n- **07:00 PM** – Dinner at **Mum’s Kitchen, Panjim** — Goan Fish Curry + Rice, ₹450 pp.  \n- **09:00 PM** – Explore **Tito’s Bar, Baga** for nightlife (no cover, drinks extra).  \n- 💡 *Tip:* Keep a copy of your e‑ticket on phone; airport taxi fares are fixed for the airport‑hotel corridor.\n\n### Day 2 — Sun, 06 Dec · Heritage & Sunset  \n- **08:00 AM** — Breakfast at hotel (included).  \n- **09:00 AM** — Rent a scooter (₹350 day) from **Goa Scooters** near hotel.  \n- **09:30 AM** — Drive to **Fort Aguada** (12 km, 30 min). Entry ₹20 pp.  \n- **11:30 AM** — Head to **Sinquerim Beach** (2 km, 5 min) for a quick dip.  \n- **01:00 PM** — Lunch at **Calamari, Calangute** — Grilled Prawns, ₹500 pp.  \n- **02:30 PM** — Visit **Old Goa Churches** (Basilica of Bom Jesus, Se Cathedral) – free entry, 8 km, 20 min drive.  \n- **05:00 PM** — Return to hotel, freshen up.  \n- **07:00 PM** — Sunset at **Anjuna Beach** (6 km, 15 min).  \n- **08:30 PM** — Dinner at **Lazy Gooze, Anjuna** — Prawn Balchão, ₹450 pp.  \n- **10:00 PM** — Optional beach shack music vibe; head back to hotel.  \n- 💡 *Tip:* Carry a water bottle; December sun is strong but evenings cool.\n\n### Day 3 — Mon, 07 Dec · South‑Goa Chill & Night Market  \n- **08:00 AM** — Breakfast at hotel.  \n- **09:00 AM** — Check out, store luggage at reception.  \n- **09:30 AM** — Drive to **Colva Beach** (45 km, 1 h 15 min). Free beach time.  \n- **12:00 PM** — Lunch at **Chef Peters Kitchen, Colva** — Xacuti Chicken, ₹550 pp.  \n- **02:00 PM** — Continue to **Palolem Beach** (30 km, 45 min). Relax, optional kayaking (₹300 pp).  \n- **05:30 PM** — Return north, stop at **Cabo de Rama Fort** for sunset view (20 km, 40 min). Entry ₹30 pp.  \n- **07:30 PM** — Drop luggage at hotel, freshen up.  \n- **08:30 PM** — Dinner at **Infantaria, Panjim** — Goan Prawn Curry, ₹500 pp.  \n- **10:00 PM** — Explore **Mickey’s Pub, Panjim** for live music (no cover).  \n- 💡 *Tip:* Keep sunscreen for midday; South‑Goa beaches are less crowded in December.\n\n### Day 4 — Tue, 08 Dec · Departure  \n- **08:00 AM** — Breakfast, check‑out, collect luggage.  \n- **09:00 AM** — Quick dip at **Candolim Beach** (2 km, 5 min).  \n- **11:00 AM** — Return scooter, settle any dues.  \n- **12:00 PM** — Lunch at **Gopal Ros Omelet, Inox Circle** — Omelet Wrap, ₹250 pp.  \n- **01:30 PM** — Taxi to Goa Airport (₹800).  \n- **04:00 PM** — Arrive airport, relax, board flight.  \n- **07:30 PM** — Flight departs Goa (see above).  \n- **09:45 PM** — Arrive Mumbai.  \n- 💡 *Tip:* Arrive at airport 2 h early; December evenings can be foggy, allow extra travel time.\n\n## 🍽️ Food to try  \n- **Goan Fish Curry** at **Mum’s Kitchen** — ₹450 pp  \n- **Prawn Balchão** at **Lazy Gooze** — ₹450 pp  \n- **Xacuti Chicken** at **Chef Peters Kitchen** — ₹550 pp  \n- **Grilled Prawns** at **Calamari** — ₹500 pp  \n- **Omelet Wrap** at **Gopal Ros Omelet** — ₹250 pp  \n\n## 💰 Budget breakdown  \n| Item | Cost |\n|---|---|\n| Transport (flights × 2 pp) | ₹14,192 |\n| Airport taxis (both ways) | ₹1,600 |\n| Hotel (3 nights) | ₹9,600 |\n| Food (4 days × 2 pp) | ₹6,400 |\n| Scooter rental (3 days) | ₹1,050 |\n| Entry fees & activities | ₹600 |\n| Buffer | ₹200 |\n| **Total** | **₹33,642** |\n\n## 🎒 Weather & packing  \n- Daytime 24‑28 °C, evenings 20‑22 °C – light sweater.  \n- Light rain possible early mornings – pack a compact rain jacket.  \n- Sunscreen SPF 30+, sunglasses, hat.  \n- Comfortable sandals + one pair of closed shoes for forts.\n\n## 🏧 Useful nearby  \n- **ATM:** State Bank of India – Calangute Market  \n- **Petrol:** Indian Oil, Candolim (≈2 km from hotel)  \n- **Hospital:** Dr. Reddy’s Hospital, Panjim – 8 km, +91 832 222 5555  \n- **Bus stand:** Goa Bus Stand, Panjim  \n- **Railway station:** Madgaon (South Goa) – 45 km, 1 h 15 min drive  \n\n## 💡 Local tips  \n- Book scooter in advance; carry your driving licence.  \n- Most beach shacks accept cash only – keep small notes.  \n- Nightlife venues close around 2 AM; plan transport back before then.  \n- Carry a copy of your hotel receipt for any police checks (common in tourist spots).  \n- No special permits needed for beaches or forts in December.  ",
- "finished_at": "2026-10-10T13:43:02.032832"
+ "itinerary": "# 🌴 Goa — 4‑Day Trip  \n> **Mumbai → Goa** · 5 Dec 2026 – 8 Dec 2026 · 2 people · Budget ₹30,000 · Estimated total ₹15,940  \n\n## ✨ At a glance\n- **Getting there:** 2nd Sitting on Jan Shatabdi Express (5:10 AM → 4:40 PM) – ₹310 pp each way  \n- **Stay:** **Santana Beach Resort** (Calangute) – ₹2,500 /night, 3‑star, breakfast included – book on **Booking.com**  \n- **Weather:** Pleasant 22‑28 °C, low humidity, occasional evening breeze – perfect for beach evenings  \n- **Total cost:** ₹15,940 of ₹30,000 budget (₹14,060 left over)\n\n## ✈️ Getting there & back\n- **Go:** Jan Shatabdi Express 12051, 5:10 AM departure Mumbai CST, 4:40 PM arrival Madgaon (GOI). 2nd Sitting ₹310 pp.  \n- **Return:** Jan Shatabdi Express 12052, 5:55 PM departure Madgaon, 7:30 PM arrival Mumbai CST. Same fare.  \n- **Why this option:** Cheapest reliable public‑transport; saves ~₹13,800 vs flight and still arrives same evening, giving full Day 1 for Goa.\n\n## 🏨 Where to stay\n1. **Santana Beach Resort** — ₹2,500 /night · 3★ · breakfast & free Wi‑Fi · book on **Booking.com**  \n2. **ibis Styles Goa Calangute** — ₹3,200 /night · 3★ · breakfast & pool · book on **MakeMyTrip**  \n3. **Majestic Beach Comfort** — ₹4,800 /night · 4★ · breakfast, sea view, airport shuttle · book on **OYO**  \n\n## 🗓️ Day-by-day plan\n### Day 1 — Sat, 05 Dec · Arrival & Beach‑side unwind\n- **4:40 PM** — Arrive Madgaon, take prepaid airport taxi (₹350) to Santana Beach Resort, Calangute (12 km, 30 min).  \n- **5:30 PM** — Check‑in, freshen up.  \n- **6:30 PM** — Stroll on Calangute Beach, sunset photo‑ops.  \n- **8:00 PM** — Dinner at **Fisherman's Wharf** (Calangute) — Goan fish curry with rice, ₹650 pp.  \n- **10:00 PM** — Return to hotel, relax on the beachside lounge.  \n- 💡 *Tip:* Keep a light rain‑coat; December evenings can be breezy.\n\n### Day 2 — Sun, 06 Dec · North‑Goa Beach Hop & Nightlife\n- **8:00 AM** — Breakfast at hotel (included).  \n- **9:00 AM** — Rent a scooter (₹350 day) from nearby rental shop; head to Baga Beach (5 km, 10 min).  \n- **9:30 AM** — Relax on Baga, optional jet‑ski (₹1,200 pp) – skip if budgeting tight.  \n- **12:00 PM** — Lunch at **German Bakery** (Candolim) — Veg sandwich & coffee, ₹500 pp.  \n- **1:30 PM** — Drive to Vagator (7 km, 15 min); explore Chapora Fort (entry free).  \n- **4:00 PM** — Return to Calangute, freshen up.  \n- **7:30 PM** — Dinner at **Britto’s** (Baga) — Prawn balchão with rice, ₹750 pp.  \n- **9:30 PM** — Night out at **Tito’s Bar** (Baga) – drinks & live music (₹300 pp).  \n- **11:00 PM** — Head back to hotel.  \n\n### Day 3 — Mon, 07 Dec · South‑Goa Serenity & Seafood Feast\n- **8:00 AM** — Breakfast at hotel.  \n- **9:00 AM** — Check out, store luggage at reception. Drive to Palolem Beach (45 km, 1 h 15 min).  \n- **10:30 AM** — Beach walk, optional dolphin‑watch boat (₹1,000 pp).  \n- **12:30 PM** — Lunch at **Martin’s Corner** (Betalbatim) — Goan crab xacuti, ₹800 pp.  \n- **2:30 PM** — Visit Colva Beach, relax.  \n- **4:30 PM** — Return to Calangute, collect luggage.  \n- **6:00 PM** — Dinner at **La Plage** (Candolim) — Grilled fish thali, ₹850 pp.  \n- **8:30 PM** — Evening walk on the promenade, enjoy street performers.  \n- **10:30 PM** — Back to hotel, pack for departure.  \n\n### Day 4 — Tue, 08 Dec · Departure\n- **8:00 AM** — Breakfast, check‑out, store bags at hotel lobby.  \n- **9:30 AM** — Quick dip at Calangute Beach, souvenir shopping at local stalls.  \n- **11:30 AM** — Lunch at **Cafe Bhonsle** (Calangute) — Chicken vindaloo with naan, ₹550 pp.  \n- **1:00 PM** — Return scooter, take prepaid taxi (₹350) to Madgaon station.  \n- **5:55 PM** — Board Jan Shatabdi Express back to Mumbai.  \n\n## 🍽️ Food to try\n- **Fish Curry** at Fisherman's Wharf — ₹650 pp  \n- **Prawn Balchão** at Britto’s — ₹750 pp  \n- **Crab Xacuti** at Martin’s Corner — ₹800 pp  \n- **Grilled Fish Thali** at La Plage — ₹850 pp  \n- **Chicken Vindaloo** at Cafe Bhonsle — ₹550 pp  \n\n## 💰 Budget breakdown\n| Item | Cost |\n|---|---|\n| Transport (train round‑trip + airport taxis) | ₹1,240 |\n| Stay (3 nights @ ₹2,500) | ₹7,500 |\n| Food (4 days × 2 people) | ₹4,800 |\n| Local travel (scooter 4 days + fuel) | ₹1,400 |\n| Buffer | ₹1,000 |\n| **Total** | **₹15,940** |\n\n## 🎒 Weather & packing\n- Daytime 22‑28 °C: pack light cotton shirts, shorts, swimwear.  \n- Evening breeze: bring a light jacket or shawl.  \n- Sunscreen, sunglasses, and a reusable water bottle.  \n\n## 🏧 Useful nearby\n- **ATM:** State Bank of India — Calangute market area.  \n- **Petrol:** Indian Oil Pump — near Calangute Beach (0.5 km).  \n- **Hospital:** Dr. D. R. G. Hospital, Calangute — 2 km, +91 832 222 5555.  \n- **Bus stand / Railway station:** Calangute Bus Depot — 1 km.  \n\n## 💡 Local tips\n- Book the Jan Shatabdi tickets at least 7 days in advance to lock the ₹310 fare.  \n- Carry small change for beach shacks; many accept only cash.  \n- Scooter helmets are mandatory – rental shops provide them.  \n- Keep an eye on tide timings for Palolem; low tide is best for swimming.  \n- Nightlife venues close by 1 AM; plan transport accordingly.  ",
+ "first_draft_text": "# 🌴 Goa — 4‑Day Trip  \n> **Mumbai → Goa** · 5 Dec 2026 – 8 Dec 2026 · 2 people · Budget ₹30,000 · Estimated total ₹15,940  \n\n## ✨ At a glance\n- **Getting there:** 2nd Sitting on Jan Shatabdi Express (5:10 AM → 4:40 PM) – ₹310 pp each way  \n- **Stay:** **Santana Beach Resort** (Calangute) – ₹2,500 /night, 3‑star, breakfast included – book on **Booking.com**  \n- **Weather:** Pleasant 22‑28 °C, low humidity, occasional evening breeze – perfect for beach evenings  \n- **Total cost:** ₹15,940 of ₹30,000 budget (₹14,060 left over)\n\n## ✈️ Getting there & back  \n- **Go:** Jan Shatabdi Express 12051, 5:10 AM departure Mumbai CST, 4:40 PM arrival Madgaon (GOI). 2nd Sitting ₹310 pp.  \n- **Return:** Jan Shatabdi Express 12052, 5:55 PM departure Madgaon, 7:30 PM arrival Mumbai CST. Same fare.  \n- **Why this option:** Cheapest reliable public‑transport; saves ~₹13,800 vs flight and still arrives same evening, giving full Day 1 for Goa.\n\n## 🏨 Where to stay  \n1. **Santana Beach Resort** — ₹2,500 /night · 3★ · breakfast & free Wi‑Fi · book on **Booking.com**  \n2. **ibis Styles Goa Calangute** — ₹3,200 /night · 3★ · breakfast & pool · book on **MakeMyTrip**  \n3. **Majestic Beach Comfort** — ₹4,800 /night · 4★ · breakfast, sea view, airport shuttle · book on **OYO**  \n\n## 🗓️ Day‑by‑day plan  \n\n### Day 1 — Sat, 05 Dec · Arrival & Beach‑side unwind  \n- **4:40 PM** — Arrive Madgaon, take prepaid airport taxi (₹350) to Santana Beach Resort, Calangute (12 km, 30 min).  \n- **5:30 PM** — Check‑in, freshen up.  \n- **6:30 PM** – Stroll on Calangute Beach, sunset photo‑ops.  \n- **8:00 PM** – Dinner at **Fisherman's Wharf** (Calangute) — Goan fish curry with rice, ₹650 pp.  \n- **10:00 PM** – Return to hotel, relax on the beachside lounge.  \n- 💡 *Tip:* Keep a light rain‑coat; December evenings can be breezy.\n\n### Day 2 — Sun, 06 Dec · North‑Goa Beach Hop & Nightlife  \n- **8:00 AM** — Breakfast at hotel (included).  \n- **9:00 AM** — Rent a scooter (₹350 day) from nearby rental shop; head to Baga Beach (5 km, 10 min).  \n- **9:30 AM** — Relax on Baga, optional jet‑ski (₹1,200 pp) – skip if budgeting tight.  \n- **12:00 PM** — Lunch at **German Bakery** (Candolim) — Veg sandwich & coffee, ₹500 pp.  \n- **1:30 PM** — Drive to Vagator (7 km, 15 min); explore Chapora Fort (entry free).  \n- **4:00 PM** — Return to Calangute, freshen up.  \n- **7:30 PM** — Dinner at **Mum’s Kitchen** (Panaji) — Prawn balchão with appam, ₹750 pp.  \n- **9:30 PM** — Night out at **Tito’s Bar** (Baga) – drinks & live music (₹300 pp).  \n- **11:00 PM** — Head back to hotel.  \n\n### Day 3 — Mon, 07 Dec · South‑Goa Serenity & Seafood Feast  \n- **8:00 AM** — Breakfast at hotel.  \n- **9:00 AM** — Check out, store luggage at reception. Drive to Palolem Beach (45 km, 1 h 15 min).  \n- **10:30 AM** — Beach walk, optional dolphin‑watch boat (₹1,000 pp).  \n- **12:30 PM** — Lunch at **Martin’s Corner** (Betalbatim) — Goan crab xacuti, ₹800 pp.  \n- **2:30 PM** — Visit Colva Beach, relax.  \n- **4:30 PM** — Return to Calangute, collect luggage.  \n- **6:00 PM** — Dinner at **La Plage** (Candolim) — Grilled fish thali, ₹850 pp.  \n- **8:30 PM** — Evening walk on the promenade, enjoy street performers.  \n- **10:30 PM** — Back to hotel, pack for departure.  \n\n### Day 4 — Tue, 08 Dec · Departure  \n- **8:00 AM** — Breakfast, check‑out, store bags at hotel lobby.  \n- **9:30 AM** — Quick dip at Calangute Beach, souvenir shopping at local stalls.  \n- **11:30 AM** — Lunch at **Cafe Bhonsle** (Calangute) — Chicken vindaloo with naan, ₹550 pp.  \n- **1:00 PM** — Return scooter, take prepaid taxi (₹350) to Madgaon station.  \n- **5:55 PM** — Board Jan Shatabdi Express back to Mumbai.  \n\n## 🍽️ Food to try  \n- **Fish Curry** at Fisherman's Wharf — ₹650 pp  \n- **Prawn Balchão** at Mum’s Kitchen — ₹750 pp  \n- **Crab Xacuti** at Martin’s Corner — ₹800 pp  \n- **Grilled Fish Thali** at La Plage — ₹850 pp  \n- **Chicken Vindaloo** at Cafe Bhonsle — ₹550 pp  \n\n## 💰 Budget breakdown  \n| Item | Cost |\n|---|---|\n| Transport (train round‑trip + airport taxis) | ₹1,240 |\n| Stay (3 nights @ ₹2,500) | ₹7,500 |\n| Food (4 days × 2 people) | ₹4,800 |\n| Local travel (scooter 4 days + fuel) | ₹1,400 |\n| Buffer | ₹1,000 |\n| **Total** | **₹15,940** |\n\n## 🎒 Weather & packing  \n- Daytime 22‑28 °C: pack light cotton shirts, shorts, swimwear.  \n- Evening breeze: bring a light jacket or shawl.  \n- Sunscreen, sunglasses, and a reusable water bottle.  \n\n## 🏧 Useful nearby  \n- **ATM:** State Bank of India — Calangute market area.  \n- **Petrol:** Indian Oil Pump — near Calangute Beach (0.5 km).  \n- **Hospital:** Dr. D. R. G. Hospital, Calangute — 2 km, +91 832 222 5555.  \n- **Bus stand:** Calangute Bus Depot — 1 km.  \n\n## 💡 Local tips  \n- Book the Jan Shatabdi tickets at least 7 days in advance to lock the ₹310 fare.  \n- Carry small change for beach shacks; many accept only cash.  \n- Scooter helmets are mandatory – rental shops provide them.  \n- Keep an eye on tide timings for Palolem; low tide is best for swimming.  \n- Nightlife venues close by 1 AM; plan transport accordingly.  ",
+ "finished_at": "2026-10-13T15:33:26.499774"
 }

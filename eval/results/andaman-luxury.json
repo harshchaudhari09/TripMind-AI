@@ -1,0 +1,223 @@
+{
+ "id": "andaman-luxury",
+ "trip": {
+  "id": "andaman-luxury",
+  "destination": "Havelock Island, Andaman",
+  "origin": "Chennai",
+  "start_date": "2027-01-08",
+  "end_date": "2027-01-12",
+  "budget_inr": 90000,
+  "num_people": 2,
+  "preferences": [
+   "beaches",
+   "scuba diving",
+   "relaxing"
+  ],
+  "note": "island: flight + ferry"
+ },
+ "num_days": 5,
+ "seconds": 38.6,
+ "cached_research": true,
+ "critic_passed": true,
+ "fix_rounds": 0,
+ "remaining_issues": [],
+ "first_draft": {
+  "days_ok": true,
+  "days_found": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "has_budget": true,
+  "budget_total": 85600.0,
+  "adds_up": true,
+  "within_budget": true,
+  "time_order_ok": true,
+  "season_ok": true,
+  "places_total": 18,
+  "places_verified": 15,
+  "places_pct": 83.3,
+  "unverified_places": [
+   "SeaShell Havelock",
+   "Sea Turtle Dive Centre",
+   "Havelock Island market"
+  ],
+  "places_detail": [
+   {
+    "name": "Silver Sand Beach Resort",
+    "status": "in_research"
+   },
+   {
+    "name": "Barefoot at Havelock",
+    "status": "in_research"
+   },
+   {
+    "name": "SeaShell Havelock",
+    "status": "unverified"
+   },
+   {
+    "name": "Full Moon Café",
+    "status": "in_research"
+   },
+   {
+    "name": "Vijay Nagar Beach",
+    "status": "in_research"
+   },
+   {
+    "name": "Radhanagar Beach",
+    "status": "in_research"
+   },
+   {
+    "name": "Something Different",
+    "status": "in_research"
+   },
+   {
+    "name": "Sea Turtle Dive Centre",
+    "status": "unverified"
+   },
+   {
+    "name": "Nemo Reef",
+    "status": "in_research"
+   },
+   {
+    "name": "Anju Coco Resto",
+    "status": "in_research"
+   },
+   {
+    "name": "Neil’s Cove",
+    "status": "in_research"
+   },
+   {
+    "name": "Fat Martin’s",
+    "status": "in_research"
+   },
+   {
+    "name": "Kalapathar Beach",
+    "status": "in_research"
+   },
+   {
+    "name": "Havelock Island market",
+    "status": "unverified"
+   },
+   {
+    "name": "Sea Dragon Restaurant",
+    "status": "in_research"
+   },
+   {
+    "name": "Andaman FlyAir",
+    "status": "in_research"
+   },
+   {
+    "name": "Barefoot B3",
+    "status": "in_research"
+   },
+   {
+    "name": "Vijay Nagar",
+    "status": "in_research"
+   }
+  ]
+ },
+ "final": {
+  "days_ok": true,
+  "days_found": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "has_budget": true,
+  "budget_total": 85600.0,
+  "adds_up": true,
+  "within_budget": true,
+  "time_order_ok": true,
+  "season_ok": true,
+  "places_total": 18,
+  "places_verified": 15,
+  "places_pct": 83.3,
+  "unverified_places": [
+   "SeaShell Havelock",
+   "Sea Turtle Dive Centre",
+   "Havelock Island market"
+  ],
+  "places_detail": [
+   {
+    "name": "Silver Sand Beach Resort",
+    "status": "in_research"
+   },
+   {
+    "name": "Barefoot at Havelock",
+    "status": "in_research"
+   },
+   {
+    "name": "SeaShell Havelock",
+    "status": "unverified"
+   },
+   {
+    "name": "Full Moon Café",
+    "status": "in_research"
+   },
+   {
+    "name": "Vijay Nagar Beach",
+    "status": "in_research"
+   },
+   {
+    "name": "Radhanagar Beach",
+    "status": "in_research"
+   },
+   {
+    "name": "Something Different",
+    "status": "in_research"
+   },
+   {
+    "name": "Sea Turtle Dive Centre",
+    "status": "unverified"
+   },
+   {
+    "name": "Nemo Reef",
+    "status": "in_research"
+   },
+   {
+    "name": "Anju Coco Resto",
+    "status": "in_research"
+   },
+   {
+    "name": "Neil’s Cove",
+    "status": "in_research"
+   },
+   {
+    "name": "Fat Martin’s",
+    "status": "in_research"
+   },
+   {
+    "name": "Kalapathar Beach",
+    "status": "in_research"
+   },
+   {
+    "name": "Havelock Island market",
+    "status": "unverified"
+   },
+   {
+    "name": "Sea Dragon Restaurant",
+    "status": "in_research"
+   },
+   {
+    "name": "Andaman FlyAir",
+    "status": "in_research"
+   },
+   {
+    "name": "Barefoot B3",
+    "status": "in_research"
+   },
+   {
+    "name": "Vijay Nagar",
+    "status": "in_research"
+   }
+  ]
+ },
+ "itinerary": "# 🏝️ Havelock Island, Andaman — 5‑Day Trip  \n> **Chennai → Havelock Island** · 8 Jan 2027 – 12 Jan 2027 · 2 people · Budget ₹90,000 · Estimated total ₹85,600  \n\n## ✨ At a glance  \n- **Getting there:** IndiGo flight Chennai‑Port Blair (~₹6,500 pp) + Makruzz ferry Port Blair‑Havelock (~₹1,800 pp)  \n- **Stay:** **Silver Sand Beach Resort** – beachfront, breakfast included, ₹5,500/night, book on **Booking.com**  \n- **Weather:** Sunny, 27‑31 °C, light sea breeze – perfect for beach & diving  \n- **Total cost:** ₹85,600 of ₹90,000 budget (₹4,400 left over)\n\n## ✈️ Getting there & back  \n- **Go:** IndiGo 6E – Chennai (06:30 AM) → Port Blair (08:45 AM) – ₹6,500 pp; then Makruzz ferry PB‑Havelock (10:30 AM) – ₹1,800 pp  \n- **Return:** Makruzz ferry Havelock‑Port Blair (02:00 PM) – ₹1,800 pp; IndiGo 6E – Port Blair (04:30 PM) → Chennai (07:00 PM) – ₹6,500 pp  \n- **Why this option:** Cheapest combo that lands you on the island the same day, saving a night‑away and keeping the comfort level high.  \n\n## 🏨 Where to stay  \n1. **Silver Sand Beach Resort** — ₹5,500 /night · 4‑star · Breakfast + Wi‑Fi · book on **Booking.com**  \n2. **Barefoot at Havelock** — ₹6,500 /night · 4‑star · Beachfront, dinner option · book on **MakeMyTrip**  \n3. **SeaShell Havelock** — ₹5,800 /night · 3‑star · Pool, free airport‑ferry pick‑up · book on **OYO**  \n\n## 🗓️ Day‑by‑day plan  \n\n### Day 1 — Fri, 08 Jan · Arrival & settle  \n- **6:30 AM** — Flight departs Chennai (IndiGo 6E)  \n- **8:45 AM** — Arrive Port Blair, collect ferry tickets at the terminal  \n- **10:30 AM** — Board Makruzz ferry to Havelock (≈2 h 30 m)  \n- **1:00 PM** — Arrive Havelock, taxi (₹300) to **Silver Sand Beach Resort**, check‑in  \n- **1:30 PM** — Lunch at **Full Moon Café** — Grilled reef fish thali, ₹850 pp  \n- **3:00 PM** — Beach walk on **Vijay Nagar Beach** (free) – unwind after travel  \n- **6:30 PM** — Sunset at **Radhanagar Beach** (entry free, 15 min walk)  \n- **8:00 PM** — Dinner at **Something Different** — Prawn curry with rice, ₹950 pp  \n- 💡 *Tip:* Carry cash for ferry & beach‑side vendors; ATMs are at Port Blair only.  \n\n### Day 2 — Sat, 09 Jan · Scuba diving & island sights  \n- **7:00 AM** — Breakfast at hotel (included)  \n- **8:00 AM** — Pick‑up by **Sea Turtle Dive Centre** for 2‑dive package (₹3,500 pp) – dive at **Nemo Reef** (2 h)  \n- **12:30 PM** — Return, freshen up  \n- **1:30 PM** — Lunch at **Anju Coco Resto** — Crab masala, ₹1,050 pp  \n- **3:00 PM** – Visit **Neil’s Cove** (entry free) – snorkeling spot, 30 min walk  \n- **5:30 PM** – Relax on **Radhanagar Beach** (sunset)  \n- **7:30 PM** – Dinner at **Fat Martin’s** — Lobster garlic butter, ₹1,200 pp  \n- 💡 *Tip:* Bring a reef‑safe sunscreen; diving gear is provided by the centre.  \n\n### Day 3 — Sun, 10 Jan · Beach day & local culture  \n- **8:00 AM** — Breakfast (included)  \n- **9:00 AM** — Private boat to **Kalapathar Beach** (₹1,200 for 2) – swim & photo ops  \n- **12:30 PM** — Picnic lunch (sandwiches & fruit, pre‑bought from resort shop, ₹400 pp)  \n- **2:00 PM** — Return, nap or spa (optional, ₹1,500 for couple)  \n- **4:30 PM** — Explore **Havelock Island market** – buy souvenirs, shells  \n- **7:00 PM** — Dinner at **Sea Dragon Restaurant** — Fish wrapped in banana leaf, ₹950 pp  \n- 💡 *Tip:* Keep an eye on tide times; Kalapathar is best at low tide.  \n\n### Day 4 — Mon, 11 Jan · Leisure & optional activity  \n- **8:00 AM** — Breakfast (included)  \n- **9:30 AM** — Optional parasailing with **Andaman FlyAir** (₹2,200 pp) – 15 min flight, or free morning at resort pool  \n- **12:30 PM** — Lunch at **Barefoot B3** — Veg thali, ₹800 pp  \n- **2:00 PM** — Kayak rental (₹600 pp) around the lagoon, or simply lounge on **Vijay Nagar**  \n- **5:30 PM** — Sunset cocktail at resort bar (₹500 pp)  \n- **7:30 PM** — Farewell dinner at **3 Brothers Seafood** — Signature prawn curry, ₹1,100 pp  \n- 💡 *Tip:* Book parasailing early; slots fill fast in January.  \n\n### Day 5 — Tue, 12 Jan · Return to Chennai  \n- **8:00 AM** — Breakfast, check‑out, store luggage at resort  \n- **9:30 AM** — Quick dip at **Vijay Nagar** (free)  \n- **11:00 AM** — Taxi to Havelock jetty (₹300) – board Makruzz ferry (02:00 PM)  \n- **4:30 PM** — Arrive Port Blair, catch IndiGo flight to Chennai (07:00 PM)  \n- **7:30 PM** — Arrive Chennai, end of trip  \n\n## 🍽️ Food to try  \n- **Grilled reef fish thali** – Full Moon Café — ₹850 pp  \n- **Crab masala** – Anju Coco Resto — ₹1,050 pp  \n- **Lobster garlic butter** – Fat Martin’s — ₹1,200 pp  \n- **Fish in banana leaf** – Sea Dragon — ₹950 pp  \n- **Prawn curry** – 3 Brothers Seafood — ₹1,100 pp  \n\n## 💰 Budget breakdown  \n| Item | Cost |\n|---|---|\n| Transport (flights + ferry) | ₹29,600 |\n| Stay (4 nights @ ₹5,500) | ₹22,000 |\n| Food (5 days × 2 pp) | ₹20,000 |\n| Local travel & activities | ₹9,000 |\n| Buffer | ₹5,000 |\n| **Total** | **₹85,600** |\n\n## 🎒 Weather & packing  \n- Sunny, 27‑31 °C – pack light cotton shirts, shorts, swimwear.  \n- Light rain possible early Jan – carry a compact rain jacket.  \n- Reef‑safe sunscreen (SPF 30+), hat, sunglasses.  \n\n## 🏧 Useful nearby  \n- **ATM:** State Bank of India – Port Blair (main town)  \n- **Petrol:** No stations on Havelock; fuel only needed on mainland.  \n- **Hospital:** G.B. Pant Hospital – Port Blair, +91 319 233 0000  \n- **Ferry terminal:** Havelock Jetty (Port Blair‑Havelock)  \n- **Airport:** Veer Savarkar Airport, Port Blair  \n\n## 💡 Local tips  \n- Book ferry tickets **24 h** in advance; seats fill fast in January.  \n- Scuba diving requires a basic health declaration – carry a copy of your ID.  \n- Carry cash (₹) for small vendors; card acceptance is limited on the island.  \n- Respect coral – no touching or standing on reefs while snorkeling.  \n- Sunsets are best viewed from Radhanagar; arrive 15 min early for a good spot.  ",
+ "first_draft_text": "# 🏝️ Havelock Island, Andaman — 5‑Day Trip  \n> **Chennai → Havelock Island** · 8 Jan 2027 – 12 Jan 2027 · 2 people · Budget ₹90,000 · Estimated total ₹85,600  \n\n## ✨ At a glance  \n- **Getting there:** IndiGo flight Chennai‑Port Blair (~₹6,500 pp) + Makruzz ferry Port Blair‑Havelock (~₹1,800 pp)  \n- **Stay:** **Silver Sand Beach Resort** – beachfront, breakfast included, ₹5,500/night, book on **Booking.com**  \n- **Weather:** Sunny, 27‑31 °C, light sea breeze – perfect for beach & diving  \n- **Total cost:** ₹85,600 of ₹90,000 budget (₹4,400 left over)\n\n## ✈️ Getting there & back  \n- **Go:** IndiGo 6E – Chennai (06:30 AM) → Port Blair (08:45 AM) – ₹6,500 pp; then Makruzz ferry PB‑Havelock (10:30 AM) – ₹1,800 pp  \n- **Return:** Makruzz ferry Havelock‑Port Blair (02:00 PM) – ₹1,800 pp; IndiGo 6E – Port Blair (04:30 PM) → Chennai (07:00 PM) – ₹6,500 pp  \n- **Why this option:** Cheapest combo that lands you on the island the same day, saving a night‑away and keeping the comfort level high.  \n\n## 🏨 Where to stay  \n1. **Silver Sand Beach Resort** — ₹5,500 /night · 4‑star · Breakfast + Wi‑Fi · book on **Booking.com**  \n2. **Barefoot at Havelock** — ₹6,500 /night · 4‑star · Beachfront, dinner option · book on **MakeMyTrip**  \n3. **SeaShell Havelock** — ₹5,800 /night · 3‑star · Pool, free airport‑ferry pick‑up · book on **OYO**  \n\n## 🗓️ Day‑by‑day plan  \n\n### Day 1 — Fri, 08 Jan · Arrival & settle  \n- **6:30 AM** — Flight departs Chennai (IndiGo 6E)  \n- **8:45 AM** — Arrive Port Blair, collect ferry tickets at the terminal  \n- **10:30 AM** — Board Makruzz ferry to Havelock (≈2 h 30 m)  \n- **1:00 PM** — Arrive Havelock, taxi (₹300) to **Silver Sand Beach Resort**, check‑in  \n- **1:30 PM** — Lunch at **Full Moon Café** — Grilled reef fish thali, ₹850 pp  \n- **3:00 PM** — Beach walk on **Vijay Nagar Beach** (free) – unwind after travel  \n- **6:30 PM** — Sunset at **Radhanagar Beach** (entry free, 15 min walk)  \n- **8:00 PM** — Dinner at **Something Different** — Prawn curry with rice, ₹950 pp  \n- 💡 *Tip:* Carry cash for ferry & beach‑side vendors; ATMs are at Port Blair only.  \n\n### Day 2 — Sat, 09 Jan · Scuba diving & island sights  \n- **7:00 AM** — Breakfast at hotel (included)  \n- **8:00 AM** — Pick‑up by **Sea Turtle Dive Centre** for 2‑dive package (₹3,500 pp) – dive at **Nemo Reef** (2 h)  \n- **12:30 PM** — Return, freshen up  \n- **1:30 PM** — Lunch at **Anju Coco Resto** — Crab masala, ₹1,050 pp  \n- **3:00 PM** – Visit **Neil’s Cove** (entry free) – snorkeling spot, 30 min walk  \n- **5:30 PM** – Relax on **Radhanagar Beach** (sunset)  \n- **7:30 PM** – Dinner at **Fat Martin’s** — Lobster garlic butter, ₹1,200 pp  \n- 💡 *Tip:* Bring a reef‑safe sunscreen; diving gear is provided by the centre.  \n\n### Day 3 — Sun, 10 Jan · Beach day & local culture  \n- **8:00 AM** — Breakfast (included)  \n- **9:00 AM** — Private boat to **Kalapathar Beach** (₹1,200 for 2) – swim & photo ops  \n- **12:30 PM** — Picnic lunch (sandwiches & fruit, pre‑bought from resort shop, ₹400 pp)  \n- **2:00 PM** — Return, nap or spa (optional, ₹1,500 for couple)  \n- **4:30 PM** — Explore **Havelock Island market** – buy souvenirs, shells  \n- **7:00 PM** — Dinner at **Sea Dragon Restaurant** — Fish wrapped in banana leaf, ₹950 pp  \n- 💡 *Tip:* Keep an eye on tide times; Kalapathar is best at low tide.  \n\n### Day 4 — Mon, 11 Jan · Leisure & optional activity  \n- **8:00 AM** — Breakfast (included)  \n- **9:30 AM** — Optional parasailing with **Andaman FlyAir** (₹2,200 pp) – 15 min flight, or free morning at resort pool  \n- **12:30 PM** — Lunch at **Barefoot B3** — Veg thali, ₹800 pp  \n- **2:00 PM** — Kayak rental (₹600 pp) around the lagoon, or simply lounge on **Vijay Nagar**  \n- **5:30 PM** — Sunset cocktail at resort bar (₹500 pp)  \n- **7:30 PM** — Farewell dinner at **3 Brothers Seafood** — Signature prawn curry, ₹1,100 pp  \n- 💡 *Tip:* Book parasailing early; slots fill fast in January.  \n\n### Day 5 — Tue, 12 Jan · Return to Chennai  \n- **8:00 AM** — Breakfast, check‑out, store luggage at resort  \n- **9:30 AM** — Quick dip at **Vijay Nagar** (free)  \n- **11:00 AM** — Taxi to Havelock jetty (₹300) – board Makruzz ferry (02:00 PM)  \n- **4:30 PM** — Arrive Port Blair, catch IndiGo flight to Chennai (07:00 PM)  \n- **7:30 PM** — Arrive Chennai, end of trip  \n\n## 🍽️ Food to try  \n- **Grilled reef fish thali** – Full Moon Café — ₹850 pp  \n- **Crab masala** – Anju Coco Resto — ₹1,050 pp  \n- **Lobster garlic butter** – Fat Martin’s — ₹1,200 pp  \n- **Fish in banana leaf** – Sea Dragon — ₹950 pp  \n- **Prawn curry** – 3 Brothers Seafood — ₹1,100 pp  \n\n## 💰 Budget breakdown  \n| Item | Cost |\n|---|---|\n| Transport (flights + ferry) | ₹29,600 |\n| Stay (4 nights @ ₹5,500) | ₹22,000 |\n| Food (5 days × 2 pp) | ₹20,000 |\n| Local travel & activities | ₹9,000 |\n| Buffer | ₹5,000 |\n| **Total** | **₹85,600** |\n\n## 🎒 Weather & packing  \n- Sunny, 27‑31 °C – pack light cotton shirts, shorts, swimwear.  \n- Light rain possible early Jan – carry a compact rain jacket.  \n- Reef‑safe sunscreen (SPF 30+), hat, sunglasses.  \n\n## 🏧 Useful nearby  \n- **ATM:** State Bank of India – Port Blair (main town)  \n- **Petrol:** No stations on Havelock; fuel only needed on mainland.  \n- **Hospital:** G.B. Pant Hospital – Port Blair, +91 319 233 0000  \n- **Ferry terminal:** Havelock Jetty (Port Blair‑Havelock)  \n- **Airport:** Veer Savarkar Airport, Port Blair  \n\n## 💡 Local tips  \n- Book ferry tickets **24 h** in advance; seats fill fast in January.  \n- Scuba diving requires a basic health declaration – carry a copy of your ID.  \n- Carry cash (₹) for small vendors; card acceptance is limited on the island.  \n- Respect coral – no touching or standing on reefs while snorkeling.  \n- Sunsets are best viewed from Radhanagar; arrive 15 min early for a good spot.  ",
+ "finished_at": "2026-10-13T15:41:23.877945"
+}

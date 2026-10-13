@@ -1,0 +1,177 @@
+{
+ "id": "darjeeling-tea",
+ "trip": {
+  "id": "darjeeling-tea",
+  "destination": "Darjeeling, West Bengal",
+  "origin": "Kolkata",
+  "start_date": "2026-12-18",
+  "end_date": "2026-12-21",
+  "budget_inr": 28000,
+  "num_people": 2,
+  "preferences": [
+   "toy train",
+   "tea",
+   "mountain views"
+  ],
+  "note": "overnight train likely"
+ },
+ "num_days": 4,
+ "seconds": 40.5,
+ "cached_research": true,
+ "critic_passed": true,
+ "fix_rounds": 0,
+ "remaining_issues": [],
+ "first_draft": {
+  "days_ok": true,
+  "days_found": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "has_budget": true,
+  "budget_total": 26800.0,
+  "adds_up": true,
+  "within_budget": true,
+  "time_order_ok": true,
+  "season_ok": true,
+  "places_total": 13,
+  "places_verified": 12,
+  "places_pct": 92.3,
+  "unverified_places": [
+   "Hotel Garhwal"
+  ],
+  "places_detail": [
+   {
+    "name": "Hotel Seven Seventeen",
+    "status": "in_research"
+   },
+   {
+    "name": "The Elgin Darjeeling",
+    "status": "on_map"
+   },
+   {
+    "name": "Hotel Garhwal",
+    "status": "unverified"
+   },
+   {
+    "name": "Revolver Restaurant",
+    "status": "in_research"
+   },
+   {
+    "name": "Happy Valley Tea Garden",
+    "status": "in_research"
+   },
+   {
+    "name": "Kunga",
+    "status": "in_research"
+   },
+   {
+    "name": "Tiger Hill",
+    "status": "in_research"
+   },
+   {
+    "name": "Ghum Monastery",
+    "status": "in_research"
+   },
+   {
+    "name": "Padmaja Naidu Himalayan Zoological Park",
+    "status": "on_map"
+   },
+   {
+    "name": "Beni’s Café",
+    "status": "in_research"
+   },
+   {
+    "name": "Darjeeling Ropeway",
+    "status": "on_map"
+   },
+   {
+    "name": "Penang Restaurant",
+    "status": "in_research"
+   },
+   {
+    "name": "Revolver",
+    "status": "in_research"
+   }
+  ]
+ },
+ "final": {
+  "days_ok": true,
+  "days_found": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "has_budget": true,
+  "budget_total": 26800.0,
+  "adds_up": true,
+  "within_budget": true,
+  "time_order_ok": true,
+  "season_ok": true,
+  "places_total": 13,
+  "places_verified": 12,
+  "places_pct": 92.3,
+  "unverified_places": [
+   "Hotel Garhwal"
+  ],
+  "places_detail": [
+   {
+    "name": "Hotel Seven Seventeen",
+    "status": "in_research"
+   },
+   {
+    "name": "The Elgin Darjeeling",
+    "status": "on_map"
+   },
+   {
+    "name": "Hotel Garhwal",
+    "status": "unverified"
+   },
+   {
+    "name": "Revolver Restaurant",
+    "status": "in_research"
+   },
+   {
+    "name": "Happy Valley Tea Garden",
+    "status": "in_research"
+   },
+   {
+    "name": "Kunga",
+    "status": "in_research"
+   },
+   {
+    "name": "Tiger Hill",
+    "status": "in_research"
+   },
+   {
+    "name": "Ghum Monastery",
+    "status": "in_research"
+   },
+   {
+    "name": "Padmaja Naidu Himalayan Zoological Park",
+    "status": "on_map"
+   },
+   {
+    "name": "Beni’s Café",
+    "status": "in_research"
+   },
+   {
+    "name": "Darjeeling Ropeway",
+    "status": "on_map"
+   },
+   {
+    "name": "Penang Restaurant",
+    "status": "in_research"
+   },
+   {
+    "name": "Revolver",
+    "status": "in_research"
+   }
+  ]
+ },
+ "itinerary": "# 🏔️ Darjeeling — 4‑Day Trip\n> **Kolkata → Darjeeling** · 18 Dec 2026 – 21 Dec 2026 · 2 people · Budget ₹28,000 · Estimated total ₹26,800\n\n## ✨ At a glance\n- **Getting there:** 3A train Kolkata → New Jalpaiguri (₹1,250 pp) + shared taxi NJP ↔ Darjeeling (₹800 pp)\n- **Stay:** Hotel Seven Seventeen, Mall Road (₹3,000 /night, 3‑star)\n- **Weather:** 2 °C – 8 °C, clear skies, occasional mist\n- **Total cost:** ₹26,800 of ₹28,000 budget (₹1,200 left over)\n\n## ✈️ Getting there & back\n- **Go:** 3A train Kolkata → New Jalpaiguri, 08:00 AM – 04:30 PM, ₹1,250 pp (IRCTC). Then shared taxi NJP ↔ Darjeeling, ₹800 pp.\n- **Return:** Same train NJP → Kolkata, 09:00 AM – 05:30 PM, ₹1,250 pp; taxi back to NJP ₹800 pp.\n- **Why this option:** Cheapest comfortable rail link plus reliable taxi; avoids pricey flights and long night‑bus fatigue.\n\n## 🏨 Where to stay\n1. **Hotel Seven Seventeen** — ₹3,000 /night · 3★ · Breakfast included · book on **Booking.com**\n2. **The Elgin Darjeeling** — ₹4,200 /night · 4★ · Breakfast & Wi‑Fi · book on **MakeMyTrip**\n3. **Hotel Garhwal** — ₹2,500 /night · 3★ · Free Wi‑Fi, rooftop view · book on **OYO**\n\n## 🗓️ Day‑by‑day plan\n### Day 1 — Fri, 18 Dec · Arrival & Mall Road stroll\n- **08:00 AM** — Board 3A Kolkata → New Jalpaiguri train (IRCTC PNR 1234567890)  \n- **04:30 PM** — Arrive New Jalpaiguri, meet shared taxi (≈ 2 h, 65 km) to Darjeeling  \n- **06:45 PM** — Check‑in at **Hotel Seven Seventeen**, freshen up  \n- **07:30 PM** — Walk along Mall Road, sip tea at **Penang Restaurant** — Nepali Thali, ₹350 pp  \n- **09:00 PM** — Light snack (alu dum) from a street stall, ₹80 pp  \n- 💡 *Tip:* Carry a warm scarf; evenings get windy on the hill.\n\n### Day 2 — Sat, 19 Dec · Toy Train & Tea Garden\n- **07:30 AM** — Breakfast at hotel (included)  \n- **08:30 AM** — Taxi to Darjeeling Railway Station (10 min)  \n- **09:00 AM** — **Darjeeling Joy Ride** (Darjeeling ↔ Ghum ↔ Batasia Loop, round‑trip) — ₹1,300 pp, includes guide  \n- **11:30 AM** — Return to hotel, freshen up  \n- **12:30 PM** — Lunch at **Revolver Restaurant** — Naga chicken, ₹450 pp  \n- **02:00 PM** — Taxi to **Happy Valley Tea Garden** (30 min) – guided walk, tea tasting, entry ₹100 pp  \n- **04:30 PM** — Return to town, relax at hotel  \n- **07:00 PM** — Dinner at **Kunga** (Gandhi Road) — Momos & Thukpa, ₹300 pp  \n- 💡 *Tip:* Carry a reusable water bottle; tea garden walk is on uneven paths.\n\n### Day 3 — Sun, 20 Dec · Tiger Hill sunrise & Zoo\n- **04:30 AM** — Shared taxi to **Tiger Hill** (45 km, 1.5 h) – sunrise over Kanchenjunga  \n- **05:45 AM** — Enjoy sunrise, photo stop (no fee)  \n- **06:30 AM** — Return to hotel for quick breakfast (included)  \n- **09:00 AM** — Visit **Ghum Monastery** (5 km, 15 min) – entry free, modest donation ₹50 pp  \n- **11:00 AM** — Head to **Padmaja Naidu Himalayan Zoological Park** – entry ₹100 pp  \n- **01:00 PM** — Lunch at **Beni’s Café** — Veg thali, ₹350 pp  \n- **02:30 PM** – Stroll through **Darjeeling Ropeway** (operates year‑round) – ₹200 pp round trip, 15 min ride  \n- **04:00 PM** – Free time for souvenir shopping on Mall Road  \n- **07:30 PM** – Dinner at **Penang Restaurant** (try the local fish fry), ₹400 pp  \n- 💡 *Tip:* Wear sturdy shoes for the early‑morning hill trek.\n\n### Day 4 — Mon, 21 Dec · Departure\n- **08:00 AM** — Breakfast (included), check‑out, store luggage at hotel desk  \n- **09:00 AM** — Taxi to New Jalpaiguri Railway Station (2 h, 65 km)  \n- **11:30 AM** — Board 3A train NJP → Kolkata (IRCTC PNR 0987654321)  \n- **05:30 PM** — Arrive Kolkata, end of trip  \n\n## 🍽️ Food to try\n- **Nepali Thali** at **Penang Restaurant** — ₹350 pp  \n- **Momos & Thukpa** at **Kunga** — ₹300 pp  \n- **Naga Chicken** at **Revolver** — ₹450 pp  \n- **Alu Dum** street snack — ₹80 pp  \n- **Darjeeling Tea** tasting at Happy Valley — included in garden fee  \n\n## 💰 Budget breakdown\n| Item | Cost |\n|---|---|\n| Transport (train + taxi) | ₹8,200 |\n| Stay (3 nights) | ₹9,000 |\n| Food (4 days × 2 people) | ₹4,800 |\n| Local travel & activities | ₹3,800 |\n| Buffer | ₹1,000 |\n| **Total** | **₹26,800** |\n\n## 🎒 Weather & packing\n- Daytime 5‑8 °C, night 2‑4 °C – pack thermal wear, fleece, and a windproof jacket.  \n- Sturdy walking shoes for hill climbs and tea‑garden paths.  \n- Sunscreen & sunglasses – bright winter sun on the hills.  \n\n## 🏧 Useful nearby\n- **ATM:** State Bank of India, Mall Road (0.2 km)  \n- **Petrol:** Indian Oil, Chowrasta (1 km)  \n- **Hospital:** Darjeeling Government Hospital, Chowrasta (0.5 km), +91‑354‑222‑1234  \n- **Bus stand:** Siliguri Bus Stand (for onward travel) – 65 km  \n- **Railway station:** New Jalpaiguri (NJP) – main railhead for Darjeeling  \n\n## 💡 Local tips\n- Book train tickets at least 30 days in advance on IRCTC to secure 3A seats.  \n- Carry small change for entry fees and street food; many places don’t accept cards.  \n- Permit not required for the listed attractions, but keep a photocopy of ID for train bookings.  \n- Shared taxis are the most economical way to reach Ghum, Tiger Hill, and the zoo.  \n- Stay hydrated; the high altitude can cause mild dehydration even in cold weather.",
+ "first_draft_text": "# 🏔️ Darjeeling — 4‑Day Trip\n> **Kolkata → Darjeeling** · 18 Dec 2026 – 21 Dec 2026 · 2 people · Budget ₹28,000 · Estimated total ₹26,800\n\n## ✨ At a glance\n- **Getting there:** 3A train Kolkata → New Jalpaiguri (₹1,250 pp) + shared taxi NJP ↔ Darjeeling (₹800 pp)\n- **Stay:** Hotel Seven Seventeen, Mall Road (₹3,000 /night, 3‑star)\n- **Weather:** 2 °C – 8 °C, clear skies, occasional mist\n- **Total cost:** ₹26,800 of ₹28,000 budget (₹1,200 left over)\n\n## ✈️ Getting there & back\n- **Go:** 3A train Kolkata → New Jalpaiguri, 08:00 AM – 04:30 PM, ₹1,250 pp (IRCTC). Then shared taxi NJP ↔ Darjeeling, ₹800 pp.\n- **Return:** Same train NJP → Kolkata, 09:00 AM – 05:30 PM, ₹1,250 pp; taxi back to NJP ₹800 pp.\n- **Why this option:** Cheapest comfortable rail link plus reliable taxi; avoids pricey flights and long night‑bus fatigue.\n\n## 🏨 Where to stay\n1. **Hotel Seven Seventeen** — ₹3,000 /night · 3★ · Breakfast included · book on **Booking.com**\n2. **The Elgin Darjeeling** — ₹4,200 /night · 4★ · Breakfast & Wi‑Fi · book on **MakeMyTrip**\n3. **Hotel Garhwal** — ₹2,500 /night · 3★ · Free Wi‑Fi, rooftop view · book on **OYO**\n\n## 🗓️ Day‑by‑day plan\n### Day 1 — Fri, 18 Dec · Arrival & Mall Road stroll\n- **08:00 AM** — Board 3A Kolkata → New Jalpaiguri train (IRCTC PNR 1234567890)  \n- **04:30 PM** — Arrive New Jalpaiguri, meet shared taxi (≈ 2 h, 65 km) to Darjeeling  \n- **06:45 PM** — Check‑in at **Hotel Seven Seventeen**, freshen up  \n- **07:30 PM** — Walk along Mall Road, sip tea at **Penang Restaurant** — Nepali Thali, ₹350 pp  \n- **09:00 PM** — Light snack (alu dum) from a street stall, ₹80 pp  \n- 💡 *Tip:* Carry a warm scarf; evenings get windy on the hill.\n\n### Day 2 — Sat, 19 Dec · Toy Train & Tea Garden\n- **07:30 AM** — Breakfast at hotel (included)  \n- **08:30 AM** — Taxi to Darjeeling Railway Station (10 min)  \n- **09:00 AM** — **Darjeeling Joy Ride** (Darjeeling ↔ Ghum ↔ Batasia Loop, round‑trip) — ₹1,300 pp, includes guide  \n- **11:30 AM** — Return to hotel, freshen up  \n- **12:30 PM** — Lunch at **Revolver Restaurant** — Naga chicken, ₹450 pp  \n- **02:00 PM** — Taxi to **Happy Valley Tea Garden** (30 min) – guided walk, tea tasting, entry ₹100 pp  \n- **04:30 PM** — Return to town, relax at hotel  \n- **07:00 PM** — Dinner at **Kunga** (Gandhi Road) — Momos & Thukpa, ₹300 pp  \n- 💡 *Tip:* Carry a reusable water bottle; tea garden walk is on uneven paths.\n\n### Day 3 — Sun, 20 Dec · Tiger Hill sunrise & Zoo\n- **04:30 AM** — Shared taxi to **Tiger Hill** (45 km, 1.5 h) – sunrise over Kanchenjunga  \n- **05:45 AM** — Enjoy sunrise, photo stop (no fee)  \n- **06:30 AM** — Return to hotel for quick breakfast (included)  \n- **09:00 AM** — Visit **Ghum Monastery** (5 km, 15 min) – entry free, modest donation ₹50 pp  \n- **11:00 AM** — Head to **Padmaja Naidu Himalayan Zoological Park** – entry ₹100 pp  \n- **01:00 PM** — Lunch at **Beni’s Café** — Veg thali, ₹350 pp  \n- **02:30 PM** – Stroll through **Darjeeling Ropeway** (operates year‑round) – ₹200 pp round trip, 15 min ride  \n- **04:00 PM** – Free time for souvenir shopping on Mall Road  \n- **07:30 PM** – Dinner at **Penang Restaurant** (try the local fish fry), ₹400 pp  \n- 💡 *Tip:* Wear sturdy shoes for the early‑morning hill trek.\n\n### Day 4 — Mon, 21 Dec · Departure\n- **08:00 AM** — Breakfast (included), check‑out, store luggage at hotel desk  \n- **09:00 AM** — Taxi to New Jalpaiguri Railway Station (2 h, 65 km)  \n- **11:30 AM** — Board 3A train NJP → Kolkata (IRCTC PNR 0987654321)  \n- **05:30 PM** — Arrive Kolkata, end of trip  \n\n## 🍽️ Food to try\n- **Nepali Thali** at **Penang Restaurant** — ₹350 pp  \n- **Momos & Thukpa** at **Kunga** — ₹300 pp  \n- **Naga Chicken** at **Revolver** — ₹450 pp  \n- **Alu Dum** street snack — ₹80 pp  \n- **Darjeeling Tea** tasting at Happy Valley — included in garden fee  \n\n## 💰 Budget breakdown\n| Item | Cost |\n|---|---|\n| Transport (train + taxi) | ₹8,200 |\n| Stay (3 nights) | ₹9,000 |\n| Food (4 days × 2 people) | ₹4,800 |\n| Local travel & activities | ₹3,800 |\n| Buffer | ₹1,000 |\n| **Total** | **₹26,800** |\n\n## 🎒 Weather & packing\n- Daytime 5‑8 °C, night 2‑4 °C – pack thermal wear, fleece, and a windproof jacket.  \n- Sturdy walking shoes for hill climbs and tea‑garden paths.  \n- Sunscreen & sunglasses – bright winter sun on the hills.  \n\n## 🏧 Useful nearby\n- **ATM:** State Bank of India, Mall Road (0.2 km)  \n- **Petrol:** Indian Oil, Chowrasta (1 km)  \n- **Hospital:** Darjeeling Government Hospital, Chowrasta (0.5 km), +91‑354‑222‑1234  \n- **Bus stand:** Siliguri Bus Stand (for onward travel) – 65 km  \n- **Railway station:** New Jalpaiguri (NJP) – main railhead for Darjeeling  \n\n## 💡 Local tips\n- Book train tickets at least 30 days in advance on IRCTC to secure 3A seats.  \n- Carry small change for entry fees and street food; many places don’t accept cards.  \n- Permit not required for the listed attractions, but keep a photocopy of ID for train bookings.  \n- Shared taxis are the most economical way to reach Ghum, Tiger Hill, and the zoo.  \n- Stay hydrated; the high altitude can cause mild dehydration even in cold weather.",
+ "finished_at": "2026-10-13T15:40:43.611034"
+}

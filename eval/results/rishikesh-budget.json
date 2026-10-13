@@ -1,0 +1,175 @@
+{
+ "id": "rishikesh-budget",
+ "trip": {
+  "id": "rishikesh-budget",
+  "destination": "Rishikesh, Uttarakhand",
+  "origin": "Delhi",
+  "start_date": "2027-02-05",
+  "end_date": "2027-02-07",
+  "budget_inr": 10000,
+  "num_people": 1,
+  "preferences": [
+   "yoga",
+   "rafting",
+   "cafes"
+  ],
+  "note": "hard: very low budget"
+ },
+ "num_days": 3,
+ "seconds": 40.6,
+ "cached_research": true,
+ "critic_passed": true,
+ "fix_rounds": 0,
+ "remaining_issues": [],
+ "first_draft": {
+  "days_ok": true,
+  "days_found": [
+   1,
+   2,
+   3
+  ],
+  "has_budget": true,
+  "budget_total": 5880.0,
+  "adds_up": true,
+  "within_budget": true,
+  "time_order_ok": true,
+  "season_ok": true,
+  "places_total": 13,
+  "places_verified": 12,
+  "places_pct": 92.3,
+  "unverified_places": [
+   "The Sitting Elephant"
+  ],
+  "places_detail": [
+   {
+    "name": "Back Stayz Hostel",
+    "status": "in_research"
+   },
+   {
+    "name": "Yatram Hostel",
+    "status": "in_research"
+   },
+   {
+    "name": "Veda Inn By Casa Ekam",
+    "status": "in_research"
+   },
+   {
+    "name": "Little Buddha Café",
+    "status": "in_research"
+   },
+   {
+    "name": "Yoga And Smiles",
+    "status": "in_research"
+   },
+   {
+    "name": "Chotiwala Restaurant",
+    "status": "in_research"
+   },
+   {
+    "name": "Beatles Ashram",
+    "status": "in_research"
+   },
+   {
+    "name": "Triveni Ghat",
+    "status": "in_research"
+   },
+   {
+    "name": "Purple Dhaba",
+    "status": "in_research"
+   },
+   {
+    "name": "Soda Sikanji",
+    "status": "in_research"
+   },
+   {
+    "name": "The Sitting Elephant",
+    "status": "unverified"
+   },
+   {
+    "name": "Parmarth Niketan",
+    "status": "in_research"
+   },
+   {
+    "name": "Geeta Bhawan Canteen",
+    "status": "in_research"
+   }
+  ]
+ },
+ "final": {
+  "days_ok": true,
+  "days_found": [
+   1,
+   2,
+   3
+  ],
+  "has_budget": true,
+  "budget_total": 5880.0,
+  "adds_up": true,
+  "within_budget": true,
+  "time_order_ok": true,
+  "season_ok": true,
+  "places_total": 13,
+  "places_verified": 12,
+  "places_pct": 92.3,
+  "unverified_places": [
+   "The Sitting Elephant"
+  ],
+  "places_detail": [
+   {
+    "name": "Back Stayz Hostel",
+    "status": "in_research"
+   },
+   {
+    "name": "Yatram Hostel",
+    "status": "in_research"
+   },
+   {
+    "name": "Veda Inn By Casa Ekam",
+    "status": "in_research"
+   },
+   {
+    "name": "Little Buddha Café",
+    "status": "in_research"
+   },
+   {
+    "name": "Yoga And Smiles",
+    "status": "in_research"
+   },
+   {
+    "name": "Chotiwala Restaurant",
+    "status": "in_research"
+   },
+   {
+    "name": "Beatles Ashram",
+    "status": "in_research"
+   },
+   {
+    "name": "Triveni Ghat",
+    "status": "in_research"
+   },
+   {
+    "name": "Purple Dhaba",
+    "status": "in_research"
+   },
+   {
+    "name": "Soda Sikanji",
+    "status": "in_research"
+   },
+   {
+    "name": "The Sitting Elephant",
+    "status": "unverified"
+   },
+   {
+    "name": "Parmarth Niketan",
+    "status": "in_research"
+   },
+   {
+    "name": "Geeta Bhawan Canteen",
+    "status": "in_research"
+   }
+  ]
+ },
+ "itinerary": "# 🧘‍♀️ Rishikesh — 3‑Day Trip  \n> **Delhi → Rishikesh** · 5 Feb 2027 – 7 Feb 2027 · 1 person · Budget ₹10,000 · Estimated total ₹5,880  \n\n## ✨ At a glance  \n- **Getting there:** 19609 UDZ YNRK EXP – ₹190 one‑way, 06 h 13 m ride  \n- **Stay:** **Back Stayz Hostel** – ₹997 /night, 3‑star, free Wi‑Fi & breakfast, book on **Booking.com**  \n- **Weather:** Cool & crisp, 12‑18 °C, light sweater needed  \n- **Total cost:** ₹5,880 of ₹10,000 budget (₹4,120 left over)\n\n## ✈️ Getting there & back  \n- **Go:** 19609 UDZ YNRK EXP, dep 03:15 AM → arr 09:28 AM, ₹190 pp  \n- **Return:** 18477 UTKAL EXP, dep 13:20 PM → arr 20:56 PM, ₹190 pp  \n- **Why this option:** Cheapest comfortable sleeper train; avoids pricey flights and saves ₹4,000 for activities & food.  \n\n## 🏨 Where to stay  \n1. **Back Stayz Hostel** — ₹997 /night · 3★ · free Wi‑Fi, breakfast, common lounge · book on **Booking.com**  \n2. **Yatram Hostel** — ₹785 /night · 2.5★ · shared kitchen, rooftop view · book on **OYO**  \n3. **Veda Inn By Casa Ekam** — ₹1,285 /night · 3★ · garden, complimentary tea/coffee · book on **MakeMyTrip**  \n\n## 🗓️ Day‑by‑day plan  \n\n### Day 1 — Fri, 05 Feb · Arrival & Yoga  \n- **3:15 AM** — Board 19609 UDZ YNRK EXP (Delhi NDLS)  \n- **9:28 AM** — Arrive Rishikesh RWL, take auto‑rickshaw (₹30) to **Back Stayz Hostel**, check‑in, drop bags  \n- **10:15 AM** — Light breakfast at **Little Buddha Café** — Avocado toast, chai, ₹150 pp  \n- **11:30 AM** — Yoga session @ **Yoga And Smiles** (30 min intro + 60 min class), ₹200 pp  \n- **1:00 PM** — Lunch at **Chotiwala Restaurant** — Aloo paratha + curd, ₹200 pp  \n- **2:30 PM** — Visit **Beatles Ashram** (Maharishi Mahesh Yogi Ashram), entry ₹100 pp, 1.5 h walk  \n- **4:30 PM** — Stroll along Laxman Jhula, sip coffee at **Ramana’s Organic Café** (espresso, ₹120 pp)  \n- **6:30 PM** — Ganga Aarti at **Triveni Ghat**, free, watch sunset  \n- **8:00 PM** – Dinner at **Purple Dhaba** — Palak paneer + roti, ₹250 pp  \n- 💡 *Tip:* Carry a small towel for the Aarti crowd; the riverbank gets chilly after sunset.  \n\n### Day 2 — Sat, 06 Feb · Rafting & Chill  \n- **7:00 AM** — Breakfast at hostel (included)  \n- **8:00 AM** — Transfer (auto‑rickshaw, ₹50) to **Rishikesh Rafting Centre**  \n- **9:00 AM** — White‑water rafting (Grade III, 2 hrs), includes safety gear & guide, ₹500 pp  \n- **11:30 AM** — Return, freshen up at hostel  \n- **12:30 PM** — Lunch at **Soda Sikanji** — Aloo tikki, pani puri, ₹120 pp  \n- **2:00 PM** – Café break at **The Sitting Elephant** – Veg wrap, cold brew, ₹180 pp  \n- **3:30 PM** – Guided meditation & gentle yoga @ **Parmarth Niketan** (donation ₹100)  \n- **5:30 PM** – Free time: explore local market, shop for incense & yoga mats  \n- **7:30 PM** – Dinner at **Little Buddha Café** – Veg pizza, salad, ₹300 pp  \n- 💡 *Tip:* Book rafting a day in advance; the operator provides a pick‑up point near the hostel.  \n\n### Day 3 — Sun, 07 Feb · Departure  \n- **8:00 AM** — Breakfast at hostel (included)  \n- **9:30 AM** – Check‑out, store luggage at reception  \n- **10:00 AM** – Brunch at **Geeta Bhawan Canteen** – Chole bhature, lassi, ₹150 pp  \n- **11:30 AM** – Walk to **Rishikesh Railway Station**, auto‑rickshaw ₹30, collect luggage  \n- **13:20 PM** — Board 18477 UTKAL EXP (Rishikesh RWL)  \n- **20:56 PM** — Arrive Delhi NDLS, home sweet home!  \n\n## 🍽️ Food to try  \n- **Aloo tikki** at **Soda Sikanji** — ₹70 pp  \n- **Palak paneer** at **Purple Dhaba** — ₹180 pp  \n- **Chole bhature** at **Geeta Bhawan Canteen** — ₹120 pp  \n- **Avocado toast** at **Little Buddha Café** — ₹150 pp  \n- **Veg pizza** at **Little Buddha Café** — ₹300 pp  \n\n## 💰 Budget breakdown  \n| Item | Cost |\n|---|---|\n| Transport (train round‑trip) | ₹380 |\n| Stay (2 nights @ Back Stayz) | ₹1,994 |\n| Food (3 days × 1 person) | ₹1,560 |\n| Local travel + activities (auto, rafting, yoga, entry fees) | ₹1,470 |\n| Buffer (souvenirs, extra snacks) | ₹476 |\n| **Total** | **₹5,880** |\n\n## 🎒 Weather & packing  \n- Daytime 12‑18 °C, evenings 8‑12 °C – pack a light sweater & jacket.  \n- Light rain possible; carry a compact raincoat or poncho.  \n- Comfortable walking shoes for riverbank & ashram walks.  \n\n## 🏧 Useful nearby  \n- **ATM:** State Bank of India – Main Market, Rishikesh  \n- **Petrol:** Indian Oil Pump – near Laxman Jhula (≈2 km)  \n- **Hospital:** Govt. Medical College Hospital – Tapovan, phone +91‑139‑236 5555  \n- **Bus stand / Railway station:** Rishikesh Railway Station (RWL)  \n\n## 💡 Local tips  \n- Book the sleeper train seat **lower‑berth** for a quieter night.  \n- Carry a **dry bag** for electronics during rafting.  \n- Dress modestly (shoulders covered) when visiting ashrams.  \n- Carry **cash** (₹500‑₹2,000) for small cafés; many don’t accept cards.  \n- The Ganga Aarti gets crowded; arrive 15 min early for a good spot.  ",
+ "first_draft_text": "# 🧘‍♀️ Rishikesh — 3‑Day Trip  \n> **Delhi → Rishikesh** · 5 Feb 2027 – 7 Feb 2027 · 1 person · Budget ₹10,000 · Estimated total ₹5,880  \n\n## ✨ At a glance  \n- **Getting there:** 19609 UDZ YNRK EXP – ₹190 one‑way, 06 h 13 m ride  \n- **Stay:** **Back Stayz Hostel** – ₹997 /night, 3‑star, free Wi‑Fi & breakfast, book on **Booking.com**  \n- **Weather:** Cool & crisp, 12‑18 °C, light sweater needed  \n- **Total cost:** ₹5,880 of ₹10,000 budget (₹4,120 left over)\n\n## ✈️ Getting there & back  \n- **Go:** 19609 UDZ YNRK EXP, dep 03:15 AM → arr 09:28 AM, ₹190 pp  \n- **Return:** 18477 UTKAL EXP, dep 13:20 PM → arr 20:56 PM, ₹190 pp  \n- **Why this option:** Cheapest comfortable sleeper train; avoids pricey flights and saves ₹4,000 for activities & food.  \n\n## 🏨 Where to stay  \n1. **Back Stayz Hostel** — ₹997 /night · 3★ · free Wi‑Fi, breakfast, common lounge · book on **Booking.com**  \n2. **Yatram Hostel** — ₹785 /night · 2.5★ · shared kitchen, rooftop view · book on **OYO**  \n3. **Veda Inn By Casa Ekam** — ₹1,285 /night · 3★ · garden, complimentary tea/coffee · book on **MakeMyTrip**  \n\n## 🗓️ Day‑by‑day plan  \n\n### Day 1 — Fri, 05 Feb · Arrival & Yoga  \n- **3:15 AM** — Board 19609 UDZ YNRK EXP (Delhi NDLS)  \n- **9:28 AM** — Arrive Rishikesh RWL, take auto‑rickshaw (₹30) to **Back Stayz Hostel**, check‑in, drop bags  \n- **10:15 AM** — Light breakfast at **Little Buddha Café** — Avocado toast, chai, ₹150 pp  \n- **11:30 AM** — Yoga session @ **Yoga And Smiles** (30 min intro + 60 min class), ₹200 pp  \n- **1:00 PM** — Lunch at **Chotiwala Restaurant** — Aloo paratha + curd, ₹200 pp  \n- **2:30 PM** — Visit **Beatles Ashram** (Maharishi Mahesh Yogi Ashram), entry ₹100 pp, 1.5 h walk  \n- **4:30 PM** — Stroll along Laxman Jhula, sip coffee at **Ramana’s Organic Café** (espresso, ₹120 pp)  \n- **6:30 PM** — Ganga Aarti at **Triveni Ghat**, free, watch sunset  \n- **8:00 PM** – Dinner at **Purple Dhaba** — Palak paneer + roti, ₹250 pp  \n- 💡 *Tip:* Carry a small towel for the Aarti crowd; the riverbank gets chilly after sunset.  \n\n### Day 2 — Sat, 06 Feb · Rafting & Chill  \n- **7:00 AM** — Breakfast at hostel (included)  \n- **8:00 AM** — Transfer (auto‑rickshaw, ₹50) to **Rishikesh Rafting Centre**  \n- **9:00 AM** — White‑water rafting (Grade III, 2 hrs), includes safety gear & guide, ₹500 pp  \n- **11:30 AM** — Return, freshen up at hostel  \n- **12:30 PM** — Lunch at **Soda Sikanji** — Aloo tikki, pani puri, ₹120 pp  \n- **2:00 PM** – Café break at **The Sitting Elephant** – Veg wrap, cold brew, ₹180 pp  \n- **3:30 PM** – Guided meditation & gentle yoga @ **Parmarth Niketan** (donation ₹100)  \n- **5:30 PM** – Free time: explore local market, shop for incense & yoga mats  \n- **7:30 PM** – Dinner at **Little Buddha Café** – Veg pizza, salad, ₹300 pp  \n- 💡 *Tip:* Book rafting a day in advance; the operator provides a pick‑up point near the hostel.  \n\n### Day 3 — Sun, 07 Feb · Departure  \n- **8:00 AM** — Breakfast at hostel (included)  \n- **9:30 AM** – Check‑out, store luggage at reception  \n- **10:00 AM** – Brunch at **Geeta Bhawan Canteen** – Chole bhature, lassi, ₹150 pp  \n- **11:30 AM** – Walk to **Rishikesh Railway Station**, auto‑rickshaw ₹30, collect luggage  \n- **13:20 PM** — Board 18477 UTKAL EXP (Rishikesh RWL)  \n- **20:56 PM** — Arrive Delhi NDLS, home sweet home!  \n\n## 🍽️ Food to try  \n- **Aloo tikki** at **Soda Sikanji** — ₹70 pp  \n- **Palak paneer** at **Purple Dhaba** — ₹180 pp  \n- **Chole bhature** at **Geeta Bhawan Canteen** — ₹120 pp  \n- **Avocado toast** at **Little Buddha Café** — ₹150 pp  \n- **Veg pizza** at **Little Buddha Café** — ₹300 pp  \n\n## 💰 Budget breakdown  \n| Item | Cost |\n|---|---|\n| Transport (train round‑trip) | ₹380 |\n| Stay (2 nights @ Back Stayz) | ₹1,994 |\n| Food (3 days × 1 person) | ₹1,560 |\n| Local travel + activities (auto, rafting, yoga, entry fees) | ₹1,470 |\n| Buffer (souvenirs, extra snacks) | ₹476 |\n| **Total** | **₹5,880** |\n\n## 🎒 Weather & packing  \n- Daytime 12‑18 °C, evenings 8‑12 °C – pack a light sweater & jacket.  \n- Light rain possible; carry a compact raincoat or poncho.  \n- Comfortable walking shoes for riverbank & ashram walks.  \n\n## 🏧 Useful nearby  \n- **ATM:** State Bank of India – Main Market, Rishikesh  \n- **Petrol:** Indian Oil Pump – near Laxman Jhula (≈2 km)  \n- **Hospital:** Govt. Medical College Hospital – Tapovan, phone +91‑139‑236 5555  \n- **Bus stand / Railway station:** Rishikesh Railway Station (RWL)  \n\n## 💡 Local tips  \n- Book the sleeper train seat **lower‑berth** for a quieter night.  \n- Carry a **dry bag** for electronics during rafting.  \n- Dress modestly (shoulders covered) when visiting ashrams.  \n- Carry **cash** (₹500‑₹2,000) for small cafés; many don’t accept cards.  \n- The Ganga Aarti gets crowded; arrive 15 min early for a good spot.  ",
+ "finished_at": "2026-10-13T15:39:59.370289"
+}

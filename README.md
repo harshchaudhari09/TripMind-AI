@@ -83,12 +83,24 @@ is graded automatically by plain Python (no AI), **before** and **after** the cr
 | Check | First draft | After the critic |
 |---|---|---|
 | Correct number of days | 100% | 100% |
-| Within budget | 83% | **100%** |
+| Within budget | 93% | **100%** |
+| Times in order (incl. overnight journeys, nothing after midnight) | 93% | **100%** |
 | No places closed that season | 100% | 100% |
-| Named places verified (in research data or on OpenStreetMap) | 82% | 84% |
-| **Passes every check** | 67% | **83%** |
+| Named places verified (in research data or on OpenStreetMap)* | 84% | 85% |
+| **Passes every check** | 87% | **100%** |
 
-_First 6 of 15 trips; the full run is in progress. Details: [eval/results/REPORT.md](eval/results/REPORT.md)._
+- The critic approved **15 of 15** plans, needing only **0.3 fix rounds** on average;
+  a trip takes **~48 seconds**.
+- An earlier version (before moving maths and season checks into code) passed every check
+  on only **50%** of first drafts — see [eval/results/REPORT_before_3b.md](eval/results/REPORT_before_3b.md).
+
+\* A lower bound: many "unverified" names are real places that OpenStreetMap lists under another
+name or that lie just outside the search area (e.g. Diskit Monastery, Hampi's Royal Enclosure).
+Full details: [eval/results/REPORT.md](eval/results/REPORT.md).
+
+**What the numbers do and don't show:** the day, budget, time and season checks are the same
+rules the critic enforces, so "100% after the critic" mainly proves the loop reliably catches
+and fixes what it's built to catch. The place check is independent of the critic.
 
 ---
 

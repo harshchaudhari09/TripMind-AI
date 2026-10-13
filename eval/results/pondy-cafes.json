@@ -1,0 +1,217 @@
+{
+ "id": "pondy-cafes",
+ "trip": {
+  "id": "pondy-cafes",
+  "destination": "Puducherry",
+  "origin": "Chennai",
+  "start_date": "2026-11-27",
+  "end_date": "2026-11-29",
+  "budget_inr": 14000,
+  "num_people": 2,
+  "preferences": [
+   "cafes",
+   "beach",
+   "french quarter"
+  ],
+  "note": "short road trip"
+ },
+ "num_days": 3,
+ "seconds": 38.1,
+ "cached_research": true,
+ "critic_passed": true,
+ "fix_rounds": 0,
+ "remaining_issues": [],
+ "first_draft": {
+  "days_ok": true,
+  "days_found": [
+   1,
+   2,
+   3
+  ],
+  "has_budget": true,
+  "budget_total": 10880.0,
+  "adds_up": true,
+  "within_budget": true,
+  "time_order_ok": true,
+  "season_ok": true,
+  "places_total": 17,
+  "places_verified": 11,
+  "places_pct": 64.7,
+  "unverified_places": [
+   "Café Des Arts",
+   "Paradise Beach",
+   "Famous Masala & Pani Puri Chaat Centre",
+   "Baker Street Café",
+   "Pondicherry Museum",
+   "Le Café"
+  ],
+  "places_detail": [
+   {
+    "name": "RMA Joliday Inn",
+    "status": "in_research"
+   },
+   {
+    "name": "Citynest Residency",
+    "status": "in_research"
+   },
+   {
+    "name": "Lumina Auro Resort",
+    "status": "in_research"
+   },
+   {
+    "name": "New Banana Café",
+    "status": "in_research"
+   },
+   {
+    "name": "French Quarter",
+    "status": "in_research"
+   },
+   {
+    "name": "Café Des Arts",
+    "status": "unverified"
+   },
+   {
+    "name": "Promenade Beach",
+    "status": "in_research"
+   },
+   {
+    "name": "Surguru Spot",
+    "status": "in_research"
+   },
+   {
+    "name": "Aurobindo Ashram",
+    "status": "in_research"
+   },
+   {
+    "name": "Paradise Beach",
+    "status": "unverified"
+   },
+   {
+    "name": "Famous Masala & Pani Puri Chaat Centre",
+    "status": "unverified"
+   },
+   {
+    "name": "Baker Street Café",
+    "status": "unverified"
+   },
+   {
+    "name": "Pondicherry Museum",
+    "status": "unverified"
+   },
+   {
+    "name": "Rock Beach",
+    "status": "in_research"
+   },
+   {
+    "name": "Coromandel Café",
+    "status": "in_research"
+   },
+   {
+    "name": "Sunday Market",
+    "status": "in_research"
+   },
+   {
+    "name": "Le Café",
+    "status": "unverified"
+   }
+  ]
+ },
+ "final": {
+  "days_ok": true,
+  "days_found": [
+   1,
+   2,
+   3
+  ],
+  "has_budget": true,
+  "budget_total": 10880.0,
+  "adds_up": true,
+  "within_budget": true,
+  "time_order_ok": true,
+  "season_ok": true,
+  "places_total": 17,
+  "places_verified": 11,
+  "places_pct": 64.7,
+  "unverified_places": [
+   "Café Des Arts",
+   "Paradise Beach",
+   "Famous Masala & Pani Puri Chaat Centre",
+   "Baker Street Café",
+   "Pondicherry Museum",
+   "Le Café"
+  ],
+  "places_detail": [
+   {
+    "name": "RMA Joliday Inn",
+    "status": "in_research"
+   },
+   {
+    "name": "Citynest Residency",
+    "status": "in_research"
+   },
+   {
+    "name": "Lumina Auro Resort",
+    "status": "in_research"
+   },
+   {
+    "name": "New Banana Café",
+    "status": "in_research"
+   },
+   {
+    "name": "French Quarter",
+    "status": "in_research"
+   },
+   {
+    "name": "Café Des Arts",
+    "status": "unverified"
+   },
+   {
+    "name": "Promenade Beach",
+    "status": "in_research"
+   },
+   {
+    "name": "Surguru Spot",
+    "status": "in_research"
+   },
+   {
+    "name": "Aurobindo Ashram",
+    "status": "in_research"
+   },
+   {
+    "name": "Paradise Beach",
+    "status": "unverified"
+   },
+   {
+    "name": "Famous Masala & Pani Puri Chaat Centre",
+    "status": "unverified"
+   },
+   {
+    "name": "Baker Street Café",
+    "status": "unverified"
+   },
+   {
+    "name": "Pondicherry Museum",
+    "status": "unverified"
+   },
+   {
+    "name": "Rock Beach",
+    "status": "in_research"
+   },
+   {
+    "name": "Coromandel Café",
+    "status": "in_research"
+   },
+   {
+    "name": "Sunday Market",
+    "status": "in_research"
+   },
+   {
+    "name": "Le Café",
+    "status": "unverified"
+   }
+  ]
+ },
+ "itinerary": "# 🌊 Puducherry — 3‑Day Trip\n> **Chennai → Puducherry** · 27 Nov 2026 – 29 Nov 2026 · 2 people · Budget ₹14,000 · Estimated total ₹10,880\n\n## ✨ At a glance\n- **Getting there:** Ordinary semi‑deluxe bus, 4 h 30 m, ₹350 pp\n- **Stay:** **RMA Joliday Inn** – ₹1,200 /night, 3★, free Wi‑Fi & breakfast, book on Booking.com\n- **Weather:** Pleasant – max 28 °C, min 22 °C, light breeze\n- **Total cost:** ₹10,880 of ₹14,000 budget (₹3,120 left over)\n\n## ✈️ Getting there & back\n- **Go:** RedBus ordinary semi‑deluxe bus — Chennai (MGR Bus Stand) → Puducherry (MGR Bus Stand), ₹350 pp, dep 7:30 AM, arr 12:00 PM\n- **Return:** Same operator, dep 5:30 PM, arr 10:00 PM\n- **Why this option:** Cheapest comfortable choice; no airport hassle and drops you at the city centre, saving extra local transport.\n\n## 🏨 Where to stay\n1. **RMA Joliday Inn** — ₹1,200 /night · 3★ · free Wi‑Fi, breakfast included · book on Booking.com  \n2. **Citynest Residency** — ₹1,300 /night · 3★ · rooftop cafe, free Wi‑Fi · book on MakeMyTrip  \n3. **Lumina Auro Resort** — ₹1,150 /night · 3★ · garden view, complimentary breakfast · book on OYO  \n\n## 🗓️ Day‑by‑day plan\n### Day 1 — Fri, 27 Nov · Arrival & French Quarter stroll\n- **7:30 AM** — Board RedBus semi‑deluxe bus from Chennai MGR Bus Stand  \n- **12:00 PM** — Arrive Puducherry, drop at bus stand, take auto‑rickshaw (₹80) to **RMA Joliday Inn**, check‑in, freshen up  \n- **1:00 PM** — Lunch at **New Banana Café** — Veg French toast, ₹250 pp  \n- **2:30 PM** — Walk to **French Quarter** (0.5 km, 5 min) – admire colonial villas, pastel façades, and street art (free)  \n- **4:00 PM** — Coffee break at **Café Des Arts** — Espresso & croissant, ₹180 pp  \n- **5:30 PM** — Stroll along **Promenade Beach** (1 km, 15 min) – sunset view, street performers (free)  \n- **7:30 PM** — Dinner at **Surguru Spot** — Masala dosa & coconut chutney, ₹220 pp  \n- **9:00 PM** — Return to hotel, relax  \n\n💡 *Tip:* Carry a small bottle of water; auto‑rickshaws accept cash only.\n\n### Day 2 — Sat, 28 Nov · Beaches, cafés & heritage\n- **8:00 AM** — Breakfast at hotel (included)  \n- **9:00 AM** – Auto‑rickshaw to **Aurobindo Ashram** (2 km, 10 min) – entry free, quiet meditation spot  \n- **10:30 AM** – Head to **Paradise Beach** (boat from Chunnambar, ₹300 pp round‑trip, 30 min) – swim & relax (free beach)  \n- **1:00 PM** – Lunch at **Famous Masala & Pani Puri Chaat Centre** – Pani puri & samosa, ₹150 pp  \n- **2:30 PM** – Return by boat, then auto to **Baker Street Café** (French Quarter) – try the **Macaron** platter, ₹200 pp  \n- **4:00 PM** – Visit **Pondicherry Museum** (1 km, 5 min walk) – entry ₹30 pp  \n- **6:00 PM** – Evening walk on **Rock Beach** (free) – great for photos at golden hour  \n- **7:30 PM** – Dinner at **Coromandel Café** — Pasta alla Puttanesca, ₹350 pp  \n- **9:30 PM** – Back to hotel, optional nightcap at hotel bar (₹120 pp)  \n\n💡 *Tip:* Boat schedule runs every hour; buy tickets early to avoid queues.\n\n### Day 3 — Sun, 29 Nov · Market & Return\n- **8:00 AM** — Breakfast at hotel (included)  \n- **9:00 AM** — Walk to **Sunday Market** (near Bharati Park, 1 km, 12 min) – browse handicrafts, souvenirs (budget ₹300)  \n- **11:00 AM** — Light snack at **Surguru Spot** – Idli & sambar, ₹120 pp  \n- **12:00 PM** — Check‑out, store luggage at hotel reception  \n- **12:30 PM** – Lunch at **Le Café** (French Quarter) — Chicken Caesar salad, ₹300 pp  \n- **2:00 PM** – Auto‑rickshaw back to bus stand, collect luggage  \n- **5:30 PM** — Board return bus to Chennai  \n- **10:00 PM** — Arrive Chennai, end of trip  \n\n💡 *Tip:* Keep your bus ticket handy for quick boarding; the last bus departs at 5:30 PM.\n\n## 🍽️ Food to try\n- **Veg French Toast** – New Banana Café — ₹250 pp  \n- **Masala Dosa** – Surguru Spot — ₹220 pp  \n- **Macarons** – Baker Street Café — ₹200 pp  \n- **Pani Puri** – Famous Masala & Pani Puri — ₹150 pp  \n- **Pasta alla Puttanesca** – Coromandel Café — ₹350 pp  \n\n## 💰 Budget breakdown\n| Item | Cost |\n|---|---|\n| Transport (bus round‑trip) | ₹1,400 |\n| Stay (2 nights) | ₹2,400 |\n| Food (3 days × 2 people) | ₹4,800 |\n| Local travel (autos, boat) | ₹1,200 |\n| Activities & entry fees | ₹260 |\n| Buffer | ₹820 |\n| **Total** | **₹10,880** |\n\n## 🎒 Weather & packing\n- Light cotton shirts, shorts & a pair of jeans for evenings  \n- Sunscreen, sunglasses, and a hat for beach time  \n- Light sweater for breezy evenings on the promenade  \n\n## 🏧 Useful nearby\n- **ATM:** State Bank of India — Near MGR Bus Stand  \n- **Petrol:** Indian Oil Pump — 2 km from hotel (on NH‑45A)  \n- **Hospital:** Jawaharlal Institute of Post‑Graduate Medical Education & Research (JIPMER) — 3 km, +91‑44‑2227 8000  \n- **Bus stand:** MGR Bus Stand (Puducherry) — main hub for city & intercity buses  \n\n## 💡 Local tips\n- Book the semi‑deluxe bus a day early on RedBus for the best price.  \n- Carry small change for auto‑rickshaws; they rarely have change for large notes.  \n- Beach entry is free, but parking fees (₹30 pp) apply if you drive.  \n- Sunday market is cash‑only; negotiate for a better price on souvenirs.  \n- No special permits needed for the listed attractions in November.  ",
+ "first_draft_text": "# 🌊 Puducherry — 3‑Day Trip\n> **Chennai → Puducherry** · 27 Nov 2026 – 29 Nov 2026 · 2 people · Budget ₹14,000 · Estimated total ₹10,880\n\n## ✨ At a glance\n- **Getting there:** Ordinary semi‑deluxe bus, 4 h 30 m, ₹350 pp\n- **Stay:** **RMA Joliday Inn** – ₹1,200 /night, 3★, free Wi‑Fi & breakfast, book on Booking.com\n- **Weather:** Pleasant – max 28 °C, min 22 °C, light breeze\n- **Total cost:** ₹10,880 of ₹14,000 budget (₹3,120 left over)\n\n## ✈️ Getting there & back\n- **Go:** RedBus ordinary semi‑deluxe bus — Chennai (MGR Bus Stand) → Puducherry (MGR Bus Stand), ₹350 pp, dep 7:30 AM, arr 12:00 PM\n- **Return:** Same operator, dep 5:30 PM, arr 10:00 PM\n- **Why this option:** Cheapest comfortable choice; no airport hassle and drops you at the city centre, saving extra local transport.\n\n## 🏨 Where to stay\n1. **RMA Joliday Inn** — ₹1,200 /night · 3★ · free Wi‑Fi, breakfast included · book on Booking.com  \n2. **Citynest Residency** — ₹1,300 /night · 3★ · rooftop cafe, free Wi‑Fi · book on MakeMyTrip  \n3. **Lumina Auro Resort** — ₹1,150 /night · 3★ · garden view, complimentary breakfast · book on OYO  \n\n## 🗓️ Day‑by‑day plan\n### Day 1 — Fri, 27 Nov · Arrival & French Quarter stroll\n- **7:30 AM** — Board RedBus semi‑deluxe bus from Chennai MGR Bus Stand  \n- **12:00 PM** — Arrive Puducherry, drop at bus stand, take auto‑rickshaw (₹80) to **RMA Joliday Inn**, check‑in, freshen up  \n- **1:00 PM** — Lunch at **New Banana Café** — Veg French toast, ₹250 pp  \n- **2:30 PM** — Walk to **French Quarter** (0.5 km, 5 min) – admire colonial villas, pastel façades, and street art (free)  \n- **4:00 PM** — Coffee break at **Café Des Arts** — Espresso & croissant, ₹180 pp  \n- **5:30 PM** — Stroll along **Promenade Beach** (1 km, 15 min) – sunset view, street performers (free)  \n- **7:30 PM** — Dinner at **Surguru Spot** — Masala dosa & coconut chutney, ₹220 pp  \n- **9:00 PM** — Return to hotel, relax  \n\n💡 *Tip:* Carry a small bottle of water; auto‑rickshaws accept cash only.\n\n### Day 2 — Sat, 28 Nov · Beaches, cafés & heritage\n- **8:00 AM** — Breakfast at hotel (included)  \n- **9:00 AM** – Auto‑rickshaw to **Aurobindo Ashram** (2 km, 10 min) – entry free, quiet meditation spot  \n- **10:30 AM** – Head to **Paradise Beach** (boat from Chunnambar, ₹300 pp round‑trip, 30 min) – swim & relax (free beach)  \n- **1:00 PM** – Lunch at **Famous Masala & Pani Puri Chaat Centre** – Pani puri & samosa, ₹150 pp  \n- **2:30 PM** – Return by boat, then auto to **Baker Street Café** (French Quarter) – try the **Macaron** platter, ₹200 pp  \n- **4:00 PM** – Visit **Pondicherry Museum** (1 km, 5 min walk) – entry ₹30 pp  \n- **6:00 PM** – Evening walk on **Rock Beach** (free) – great for photos at golden hour  \n- **7:30 PM** – Dinner at **Coromandel Café** — Pasta alla Puttanesca, ₹350 pp  \n- **9:30 PM** – Back to hotel, optional nightcap at hotel bar (₹120 pp)  \n\n💡 *Tip:* Boat schedule runs every hour; buy tickets early to avoid queues.\n\n### Day 3 — Sun, 29 Nov · Market & Return\n- **8:00 AM** — Breakfast at hotel (included)  \n- **9:00 AM** — Walk to **Sunday Market** (near Bharati Park, 1 km, 12 min) – browse handicrafts, souvenirs (budget ₹300)  \n- **11:00 AM** — Light snack at **Surguru Spot** – Idli & sambar, ₹120 pp  \n- **12:00 PM** — Check‑out, store luggage at hotel reception  \n- **12:30 PM** – Lunch at **Le Café** (French Quarter) — Chicken Caesar salad, ₹300 pp  \n- **2:00 PM** – Auto‑rickshaw back to bus stand, collect luggage  \n- **5:30 PM** — Board return bus to Chennai  \n- **10:00 PM** — Arrive Chennai, end of trip  \n\n💡 *Tip:* Keep your bus ticket handy for quick boarding; the last bus departs at 5:30 PM.\n\n## 🍽️ Food to try\n- **Veg French Toast** – New Banana Café — ₹250 pp  \n- **Masala Dosa** – Surguru Spot — ₹220 pp  \n- **Macarons** – Baker Street Café — ₹200 pp  \n- **Pani Puri** – Famous Masala & Pani Puri — ₹150 pp  \n- **Pasta alla Puttanesca** – Coromandel Café — ₹350 pp  \n\n## 💰 Budget breakdown\n| Item | Cost |\n|---|---|\n| Transport (bus round‑trip) | ₹1,400 |\n| Stay (2 nights) | ₹2,400 |\n| Food (3 days × 2 people) | ₹4,800 |\n| Local travel (autos, boat) | ₹1,200 |\n| Activities & entry fees | ₹260 |\n| Buffer | ₹820 |\n| **Total** | **₹10,880** |\n\n## 🎒 Weather & packing\n- Light cotton shirts, shorts & a pair of jeans for evenings  \n- Sunscreen, sunglasses, and a hat for beach time  \n- Light sweater for breezy evenings on the promenade  \n\n## 🏧 Useful nearby\n- **ATM:** State Bank of India — Near MGR Bus Stand  \n- **Petrol:** Indian Oil Pump — 2 km from hotel (on NH‑45A)  \n- **Hospital:** Jawaharlal Institute of Post‑Graduate Medical Education & Research (JIPMER) — 3 km, +91‑44‑2227 8000  \n- **Bus stand:** MGR Bus Stand (Puducherry) — main hub for city & intercity buses  \n\n## 💡 Local tips\n- Book the semi‑deluxe bus a day early on RedBus for the best price.  \n- Carry small change for auto‑rickshaws; they rarely have change for large notes.  \n- Beach entry is free, but parking fees (₹30 pp) apply if you drive.  \n- Sunday market is cash‑only; negotiate for a better price on souvenirs.  \n- No special permits needed for the listed attractions in November.  ",
+ "finished_at": "2026-10-13T15:42:55.518659"
+}

@@ -1,0 +1,171 @@
+{
+ "id": "coorg-group",
+ "trip": {
+  "id": "coorg-group",
+  "destination": "Coorg, Karnataka",
+  "origin": "Bengaluru",
+  "start_date": "2027-02-12",
+  "end_date": "2027-02-14",
+  "budget_inr": 25000,
+  "num_people": 4,
+  "preferences": [
+   "coffee estates",
+   "waterfalls",
+   "nature"
+  ],
+  "note": "group of 4: per-person costs"
+ },
+ "num_days": 3,
+ "seconds": 38.6,
+ "cached_research": true,
+ "critic_passed": true,
+ "fix_rounds": 0,
+ "remaining_issues": [],
+ "first_draft": {
+  "days_ok": true,
+  "days_found": [
+   1,
+   2,
+   3
+  ],
+  "has_budget": true,
+  "budget_total": 18600.0,
+  "adds_up": true,
+  "within_budget": true,
+  "time_order_ok": true,
+  "season_ok": true,
+  "places_total": 12,
+  "places_verified": 9,
+  "places_pct": 75.0,
+  "unverified_places": [
+   "Beans & Brews Café",
+   "Kaveri River Viewpoint",
+   "Madikeri Market"
+  ],
+  "places_detail": [
+   {
+    "name": "JS Planters Inn",
+    "status": "in_research"
+   },
+   {
+    "name": "Le Embera Hotel Rooms",
+    "status": "in_research"
+   },
+   {
+    "name": "Collection O Coorg",
+    "status": "in_research"
+   },
+   {
+    "name": "Coorg Cuisine",
+    "status": "in_research"
+   },
+   {
+    "name": "Abbey Falls",
+    "status": "in_research"
+   },
+   {
+    "name": "Raja’s Seat",
+    "status": "in_research"
+   },
+   {
+    "name": "Raintree",
+    "status": "in_research"
+   },
+   {
+    "name": "Beans & Brews Café",
+    "status": "unverified"
+   },
+   {
+    "name": "Dubare Elephant Camp",
+    "status": "in_research"
+   },
+   {
+    "name": "Kaveri River Viewpoint",
+    "status": "unverified"
+   },
+   {
+    "name": "Madikeri Club",
+    "status": "on_map"
+   },
+   {
+    "name": "Madikeri Market",
+    "status": "unverified"
+   }
+  ]
+ },
+ "final": {
+  "days_ok": true,
+  "days_found": [
+   1,
+   2,
+   3
+  ],
+  "has_budget": true,
+  "budget_total": 18600.0,
+  "adds_up": true,
+  "within_budget": true,
+  "time_order_ok": true,
+  "season_ok": true,
+  "places_total": 12,
+  "places_verified": 9,
+  "places_pct": 75.0,
+  "unverified_places": [
+   "Beans & Brews Café",
+   "Kaveri River Viewpoint",
+   "Madikeri Market"
+  ],
+  "places_detail": [
+   {
+    "name": "JS Planters Inn",
+    "status": "in_research"
+   },
+   {
+    "name": "Le Embera Hotel Rooms",
+    "status": "in_research"
+   },
+   {
+    "name": "Collection O Coorg",
+    "status": "in_research"
+   },
+   {
+    "name": "Coorg Cuisine",
+    "status": "in_research"
+   },
+   {
+    "name": "Abbey Falls",
+    "status": "in_research"
+   },
+   {
+    "name": "Raja’s Seat",
+    "status": "in_research"
+   },
+   {
+    "name": "Raintree",
+    "status": "in_research"
+   },
+   {
+    "name": "Beans & Brews Café",
+    "status": "unverified"
+   },
+   {
+    "name": "Dubare Elephant Camp",
+    "status": "in_research"
+   },
+   {
+    "name": "Kaveri River Viewpoint",
+    "status": "unverified"
+   },
+   {
+    "name": "Madikeri Club",
+    "status": "on_map"
+   },
+   {
+    "name": "Madikeri Market",
+    "status": "unverified"
+   }
+  ]
+ },
+ "itinerary": "# 🌄 Coorg — 3‑Day Trip  \n> **Bengaluru → Coorg** · 12 Feb 2027 – 14 Feb 2027 · 4 people · Budget ₹25,000 · Estimated total ₹18,600  \n\n## ✨ At a glance\n- **Getting there:** KSRTC semi‑deluxe bus, ₹500 pp each way  \n- **Stay:** JS Planters Inn, Madikeri – 2 rooms, ₹1,800 / night each  \n- **Weather:** Pleasant 15‑22 °C, light mornings, clear skies  \n- **Total cost:** ₹18,600 of ₹25,000 budget (₹6,400 left over)\n\n## ✈️ Getting there & back\n- **Go:** KSRTC Semi‑Deluxe Bus # KD‑12, ₹500 pp, dep. 7:00 AM, 4 h 30 m ride  \n- **Return:** KSRTC Semi‑Deluxe Bus # KD‑21, ₹500 pp, dep. 5:30 PM, 4 h 30 m ride  \n- **Why this option:** Cheapest comfortable option; avoids airport hassle and gives scenic road views.\n\n## 🏨 Where to stay\n1. **JS Planters Inn** — ₹1,800 / night · 3★ · Breakfast included · book on **Booking.com**  \n2. **Le Embera Hotel Rooms** — ₹2,250 / night · 3★ · Breakfast & Wi‑Fi · book on **MakeMyTrip**  \n3. **Collection O Coorg** — ₹2,900 / night · 3★ · Breakfast + airport shuttle · book on **OYO**  \n\n*(We’ll book 2 rooms at JS Planters Inn for the 2 nights = ₹7,200 total.)*\n\n## 🗓️ Day-by-day plan\n### Day 1 — Fri, 12 Feb · Journey & Madikeri town\n- **7:00 AM** — Board KSRTC semi‑deluxe bus from Bengaluru (pick‑up at Majestic)  \n- **11:30 AM** — Arrive in Madikeri, drop bags at JS Planters Inn, freshen up  \n- **12:30 PM** — Lunch at **Coorg Cuisine** — Chicken Koli Curry, ₹260 pp  \n- **2:00 PM** — Visit **Abbey Falls** (2 km, 10 min drive) – Entry ₹50 pp, explore 1 h  \n- **4:00 PM** — Stroll to **Raja’s Seat** – free, sunset view, 45 min  \n- **6:30 PM** — Dinner at **Raintree** — Pork Curry & Rice, ₹300 pp  \n- **8:30 PM** — Return to hotel, relax  \n\n💡 *Tip:* Carry a light raincoat; waterfalls can be misty in Feb.\n\n### Day 2 — Sat, 13 Feb · Coffee estates & Dubare\n- **8:00 AM** — Breakfast at hotel (included)  \n- **9:00 AM** — Depart for **Coorg Coffee Plantation Tour** (15 km, 30 min) – Entry ₹150 pp, guided walk 2 h, coffee tasting  \n- **12:00 PM** — Lunch at **Beans & Brews Café** (on the estate) — Veg Thali, ₹250 pp  \n- **1:30 PM** — Drive to **Dubare Elephant Camp** (30 km, 1 h) – Entry ₹200 pp, interact & river ride, 2 h  \n- **4:30 PM** — Return to Madikeri, stop at **Kaveri River Viewpoint** for photos (free)  \n- **6:30 PM** — Dinner at **Madikeri Club** — Mutton Fry, ₹320 pp  \n- **9:00 PM** — Back to hotel, early night  \n\n💡 *Tip:* Wear comfortable shoes for plantation walk; bring sunscreen.\n\n### Day 3 — Sun, 14 Feb · Local market & Return\n- **8:00 AM** — Breakfast at hotel  \n- **9:00 AM** — Check‑out, store luggage at reception  \n- **9:30 AM** — Explore **Madikeri Market** – buy coffee beans & spices (optional)  \n- **11:30 AM** — Light snack at a local dhaba – Masala Vada, ₹80 pp  \n- **12:00 PM** — Return to hotel, collect luggage  \n- **12:30 PM** — Depart for bus stand, board KSRTC bus # KD‑21  \n- **5:00 PM** — Arrive Bengaluru, end of trip  \n\n💡 *Tip:* Keep receipts for any purchases; they’re useful for customs if you fly later.\n\n## 🍽️ Food to try\n- **Chicken Koli Curry** at Coorg Cuisine — ₹260 pp  \n- **Pork Curry** at Raintree — ₹300 pp  \n- **Mutton Fry** at Madikeri Club — ₹320 pp  \n- **Veg Thali** at Beans & Brews Café — ₹250 pp  \n- **Masala Vada** at local dhaba — ₹80 pp  \n\n## 💰 Budget breakdown\n| Item | Cost |\n|---|---|\n| Transport (bus round‑trip) | ₹4,000 |\n| Stay (2 rooms × 2 nights) | ₹7,200 |\n| Food (3 days × 4 pp) | ₹4,800 |\n| Local travel + activities | ₹1,600 |\n| Buffer | ₹1,000 |\n| **Total** | **₹18,600** |\n\n## 🎒 Weather & packing\n- Light sweater for cool evenings (≈15 °C)  \n- Comfortable walking shoes for estates & waterfalls  \n- Sunscreen, hat, and a small raincoat  \n\n## 🏧 Useful nearby\n- **ATM:** State Bank of India — Madikeri Main Road  \n- **Petrol:** Indian Oil Pump — 2 km from hotel, near Kaveri Bridge  \n- **Hospital:** Coorg District Hospital — 3 km, +91 8224‑222 222  \n- **Bus stand:** KSRTC Bus Stand, Madikeri  \n\n## 💡 Local tips\n- Book the KSRTC bus tickets 2 days in advance on the KSRTC app.  \n- Abbey Falls entry fee is per adult; children under 12 free.  \n- Carry cash for small shops; many cafés accept cards but not all.  \n- Respect coffee plantation rules – no littering, stay on marked paths.  \n- Keep a copy of your hotel receipt for any emergency assistance.  ",
+ "first_draft_text": "# 🌄 Coorg — 3‑Day Trip  \n> **Bengaluru → Coorg** · 12 Feb 2027 – 14 Feb 2027 · 4 people · Budget ₹25,000 · Estimated total ₹18,600  \n\n## ✨ At a glance\n- **Getting there:** KSRTC semi‑deluxe bus, ₹500 pp each way  \n- **Stay:** JS Planters Inn, Madikeri – 2 rooms, ₹1,800 / night each  \n- **Weather:** Pleasant 15‑22 °C, light mornings, clear skies  \n- **Total cost:** ₹18,600 of ₹25,000 budget (₹6,400 left over)\n\n## ✈️ Getting there & back\n- **Go:** KSRTC Semi‑Deluxe Bus # KD‑12, ₹500 pp, dep. 7:00 AM, 4 h 30 m ride  \n- **Return:** KSRTC Semi‑Deluxe Bus # KD‑21, ₹500 pp, dep. 5:30 PM, 4 h 30 m ride  \n- **Why this option:** Cheapest comfortable option; avoids airport hassle and gives scenic road views.\n\n## 🏨 Where to stay\n1. **JS Planters Inn** — ₹1,800 / night · 3★ · Breakfast included · book on **Booking.com**  \n2. **Le Embera Hotel Rooms** — ₹2,250 / night · 3★ · Breakfast & Wi‑Fi · book on **MakeMyTrip**  \n3. **Collection O Coorg** — ₹2,900 / night · 3★ · Breakfast + airport shuttle · book on **OYO**  \n\n*(We’ll book 2 rooms at JS Planters Inn for the 2 nights = ₹7,200 total.)*\n\n## 🗓️ Day-by-day plan\n### Day 1 — Fri, 12 Feb · Journey & Madikeri town\n- **7:00 AM** — Board KSRTC semi‑deluxe bus from Bengaluru (pick‑up at Majestic)  \n- **11:30 AM** — Arrive in Madikeri, drop bags at JS Planters Inn, freshen up  \n- **12:30 PM** — Lunch at **Coorg Cuisine** — Chicken Koli Curry, ₹260 pp  \n- **2:00 PM** — Visit **Abbey Falls** (2 km, 10 min drive) – Entry ₹50 pp, explore 1 h  \n- **4:00 PM** — Stroll to **Raja’s Seat** – free, sunset view, 45 min  \n- **6:30 PM** — Dinner at **Raintree** — Pork Curry & Rice, ₹300 pp  \n- **8:30 PM** — Return to hotel, relax  \n\n💡 *Tip:* Carry a light raincoat; waterfalls can be misty in Feb.\n\n### Day 2 — Sat, 13 Feb · Coffee estates & Dubare\n- **8:00 AM** — Breakfast at hotel (included)  \n- **9:00 AM** — Depart for **Coorg Coffee Plantation Tour** (15 km, 30 min) – Entry ₹150 pp, guided walk 2 h, coffee tasting  \n- **12:00 PM** — Lunch at **Beans & Brews Café** (on the estate) — Veg Thali, ₹250 pp  \n- **1:30 PM** — Drive to **Dubare Elephant Camp** (30 km, 1 h) – Entry ₹200 pp, interact & river ride, 2 h  \n- **4:30 PM** — Return to Madikeri, stop at **Kaveri River Viewpoint** for photos (free)  \n- **6:30 PM** — Dinner at **Madikeri Club** — Mutton Fry, ₹320 pp  \n- **9:00 PM** — Back to hotel, early night  \n\n💡 *Tip:* Wear comfortable shoes for plantation walk; bring sunscreen.\n\n### Day 3 — Sun, 14 Feb · Local market & Return\n- **8:00 AM** — Breakfast at hotel  \n- **9:00 AM** — Check‑out, store luggage at reception  \n- **9:30 AM** — Explore **Madikeri Market** – buy coffee beans & spices (optional)  \n- **11:30 AM** — Light snack at a local dhaba – Masala Vada, ₹80 pp  \n- **12:00 PM** — Return to hotel, collect luggage  \n- **12:30 PM** — Depart for bus stand, board KSRTC bus # KD‑21  \n- **5:00 PM** — Arrive Bengaluru, end of trip  \n\n💡 *Tip:* Keep receipts for any purchases; they’re useful for customs if you fly later.\n\n## 🍽️ Food to try\n- **Chicken Koli Curry** at Coorg Cuisine — ₹260 pp  \n- **Pork Curry** at Raintree — ₹300 pp  \n- **Mutton Fry** at Madikeri Club — ₹320 pp  \n- **Veg Thali** at Beans & Brews Café — ₹250 pp  \n- **Masala Vada** at local dhaba — ₹80 pp  \n\n## 💰 Budget breakdown\n| Item | Cost |\n|---|---|\n| Transport (bus round‑trip) | ₹4,000 |\n| Stay (2 rooms × 2 nights) | ₹7,200 |\n| Food (3 days × 4 pp) | ₹4,800 |\n| Local travel + activities | ₹1,600 |\n| Buffer | ₹1,000 |\n| **Total** | **₹18,600** |\n\n## 🎒 Weather & packing\n- Light sweater for cool evenings (≈15 °C)  \n- Comfortable walking shoes for estates & waterfalls  \n- Sunscreen, hat, and a small raincoat  \n\n## 🏧 Useful nearby\n- **ATM:** State Bank of India — Madikeri Main Road  \n- **Petrol:** Indian Oil Pump — 2 km from hotel, near Kaveri Bridge  \n- **Hospital:** Coorg District Hospital — 3 km, +91 8224‑222 222  \n- **Bus stand:** KSRTC Bus Stand, Madikeri  \n\n## 💡 Local tips\n- Book the KSRTC bus tickets 2 days in advance on the KSRTC app.  \n- Abbey Falls entry fee is per adult; children under 12 free.  \n- Carry cash for small shops; many cafés accept cards but not all.  \n- Respect coffee plantation rules – no littering, stay on marked paths.  \n- Keep a copy of your hotel receipt for any emergency assistance.  ",
+ "finished_at": "2026-10-13T15:43:35.815146"
+}
