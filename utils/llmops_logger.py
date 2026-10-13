@@ -1,10 +1,14 @@
 """
 utils/llmops_logger.py  – LLMOps observability layer
 
-Stage 1: LangSmith (free, zero-config)
-Stage 2: ELK Stack (Elasticsearch + Kibana dashboards)
+Stage 1: LangSmith — every graph run is traced automatically (each research node,
+         the writer, the critic, every LLM call with its tokens and timing).
+         Turn it on with LANGSMITH_TRACING=true + LANGSMITH_API_KEY in .env.
+Stage 2: ELK Stack (Elasticsearch + Kibana dashboards) — optional, via log_run().
 
-Usage: wrap any LangChain call with log_run()
+Usage:
+    from utils.llmops_logger import trace_config
+    final = travel_graph.invoke(state, config=trace_config(state, source="api"))
 """
 from __future__ import annotations
 
@@ -15,8 +19,50 @@ import uuid
 from datetime import datetime, timezone
 from typing import Any, Dict, Optional
 
-# ── LangSmith (Stage 1, free) ─────────────────────────────────────────────────
-LANGSMITH_ENABLED = os.getenv("LANGCHAIN_TRACING_V2", "false").lower() == "true"
+# Importing settings loads .env FIRST, so the checks below see its values.
+# (Reading os.getenv before .env was loaded made tracing look "off" when it was on.)
+import config.settings  # noqa: F401
+
+
+# ── LangSmith (Stage 1, free tier) ────────────────────────────────────────────
+def langsmith_enabled() -> bool:
+    """True if tracing is switched on (new LANGSMITH_* names or legacy LANGCHAIN_* names)."""
+    flag = os.getenv("LANGSMITH_TRACING") or os.getenv("LANGCHAIN_TRACING_V2") or "false"
+    key = os.getenv("LANGSMITH_API_KEY") or os.getenv("LANGCHAIN_API_KEY")
+    return flag.lower() == "true" and bool(key)
+
+
+def langsmith_project() -> str:
+    return os.getenv("LANGSMITH_PROJECT") or os.getenv("LANGCHAIN_PROJECT") or "tripmind"
+
+
+def trace_config(trip: Dict[str, Any], source: str) -> Dict[str, Any]:
+    """
+    Run config for travel_graph.invoke(). LangGraph sends the run to LangSmith on its
+    own when tracing is on; this just gives the trace a readable name, tags you can
+    filter by in the LangSmith UI, and the trip details as searchable metadata.
+    Harmless when tracing is off.
+    """
+    return {
+        "run_name": f"Plan trip: {trip.get('origin', '?')} → {trip.get('destination', '?')}",
+        "tags": ["tripmind", source],
+        "metadata": {
+            "destination": trip.get("destination"),
+            "origin":      trip.get("origin"),
+            "start_date":  trip.get("start_date"),
+            "end_date":    trip.get("end_date"),
+            "budget_inr":  trip.get("budget_inr"),
+            "num_people":  trip.get("num_people"),
+            "source":      source,          # api / cli / eval
+        },
+    }
+
+
+def tracing_status() -> str:
+    if langsmith_enabled():
+        return f"LangSmith tracing ON → project '{langsmith_project()}' at https://smith.langchain.com"
+    return "LangSmith tracing off (set LANGSMITH_TRACING=true and LANGSMITH_API_KEY to enable)"
+
 
 # ── ELK (Stage 2) ─────────────────────────────────────────────────────────────
 ELK_ENABLED   = bool(os.getenv("ELASTICSEARCH_URL"))
@@ -40,8 +86,8 @@ def log_run(
     metadata:    Optional[Dict] = None,
 ) -> None:
     """
-    Log an LLM/tool run to ELK (if configured) and stdout.
-    LangSmith logging happens automatically via env vars — no code needed.
+    Log a run summary to stdout and ELK (if configured).
+    Detailed step-by-step tracing goes to LangSmith automatically — see trace_config().
     """
     doc = {
         "run_id":     str(uuid.uuid4()),
@@ -56,7 +102,8 @@ def log_run(
 
     # Stdout (always)
     status = "ERROR" if error else "OK"
-    print(f"  [OPS] {run_type} | {latency_ms:.0f}ms | {status}")
+    extra = " | " + ", ".join(f"{k}={v}" for k, v in outputs.items()) if outputs else ""
+    print(f"  [OPS] {run_type} | {latency_ms:.0f}ms | {status}{extra}")
 
     # ELK
     if ELK_ENABLED and _es:
@@ -122,4 +169,5 @@ def setup_elk_index():
 
 
 if __name__ == "__main__":
+    print(tracing_status())
     setup_elk_index()

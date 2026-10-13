@@ -12,6 +12,7 @@ Examples:
 - "Reduce the budget by 20000"
 """
 from __future__ import annotations
+import re
 from utils.llm_factory import get_llm
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 
@@ -33,6 +34,9 @@ Rules:
 - Always be conversational and friendly
 - If the change affects the budget, recalculate and show updated cost breakdown
 - Keep hotel names, flight names and specific details — only change what the user asked for
+- Keep the same layout: the same "## " section headings, one "### Day N — ..." heading per day,
+  bold times, and the "| Item | Cost |" budget table (its Total is recalculated by code,
+  so just keep each line item accurate)
 
 Always respond in this format:
 - First: acknowledge what the user wants in 1 line
@@ -87,7 +91,7 @@ class ChatAgent:
         messages.append(HumanMessage(content=context))
 
         # Get response
-        response = self.llm.invoke(messages)
+        response = self.llm.invoke(messages, config={"run_name": "chat: refine itinerary"})
         assistant_reply = response.content if hasattr(response, "content") else str(response)
 
         # Update conversation history
@@ -107,26 +111,77 @@ class ChatAgent:
 
 
 # ── Simple function version for API use ──────────────────────────────────────
+_DAY_HEADING = re.compile(r"^#{2,4}\s*Day\s*\d+", re.MULTILINE)
+MAX_HISTORY_MESSAGES = 6
+
+
+def _split_reply(reply: str) -> tuple[str, str | None]:
+    """'Sure — made Day 2 cheaper.\n# 🏔️ Manali ...' → (acknowledgement, itinerary or None)."""
+    lines = reply.splitlines()
+    first_heading = next((i for i, l in enumerate(lines) if l.lstrip().startswith("#")), None)
+    if first_heading is None or not _DAY_HEADING.search(reply):
+        return reply.strip(), None                     # a plain answer, not a rewritten plan
+    ack = "\n".join(lines[:first_heading]).strip()
+    return ack, "\n".join(lines[first_heading:]).strip() + "\n"
+
+
+def review_edit(itinerary: str, trip_details: dict) -> dict:
+    """
+    Run a chat-edited itinerary through the SAME checks as a new plan: code recalculates
+    the budget totals, the critic reviews it, and if it finds problems the writer gets
+    one fix round (chat edits are cheaper to keep at one round). The better of the two
+    versions is returned with the critic's verdict.
+    """
+    from agents import critic
+    from agents.budget import recompute_totals
+    from agents.graph import node_init, _revise_itinerary
+
+    trip = {
+        "destination": str(trip_details["destination"]), "origin": str(trip_details["origin"]),
+        "start_date": str(trip_details["start_date"]), "end_date": str(trip_details["end_date"]),
+        "budget_inr": float(trip_details["budget_inr"]), "num_people": int(trip_details.get("num_people", 1)),
+        "preferences": list(trip_details.get("preferences") or []),
+    }
+    state = {**trip, **node_init(trip)}
+    itinerary, _ = recompute_totals(itinerary, trip["budget_inr"])
+    result = critic.review(itinerary, state)
+    issues = result["rule_issues"] + result["llm_issues"]
+    revisions = 0
+    if issues:
+        fixed = _revise_itinerary({**state, "itinerary": itinerary, "critique": issues,
+                                   "issue_log": issues, "revision_count": 0})
+        result2 = critic.review(fixed["itinerary"], state, earlier_issues=issues)
+        issues2 = result2["rule_issues"] + result2["llm_issues"]
+        revisions = 1
+        if len(issues2) <= len(issues):               # keep the fix unless it made things worse
+            itinerary, issues = fixed["itinerary"], issues2
+    return {"itinerary": itinerary, "critic_passed": not issues,
+            "revisions": revisions, "remaining_issues": issues}
+
+
 def refine_itinerary(
     user_message:        str,
     current_itinerary:   str,
     trip_details:        dict,
     conversation_history: list,
-) -> tuple[str, list]:
+) -> tuple[str, list, dict | None]:
     """
     Stateless version for API use.
-    Takes conversation history as input, returns response + updated history.
 
-    Returns:
-        (assistant_response, updated_conversation_history)
+    Returns (reply, updated_history, review). `review` is None when the reply is a plain
+    answer; when the plan was rewritten it holds the checked itinerary and critic verdict.
+
+    History only keeps short messages: the full current itinerary is sent every time
+    anyway, and resending old full itineraries would push the request past Groq's
+    8,000-token limit after two or three edits.
     """
-    llm = get_llm(temperature=0.5)
+    from agents.graph import _fit_max_tokens
 
     context = f"""
 ## Trip Details
 - Destination: {trip_details.get('destination', '')}
 - Dates: {trip_details.get('start_date', '')} to {trip_details.get('end_date', '')}
-- Budget: ₹{trip_details.get('budget_inr', 0):,.0f}
+- Budget: ₹{float(trip_details.get('budget_inr', 0)):,.0f}
 - People: {trip_details.get('num_people', 1)}
 
 ## Current Itinerary
@@ -137,21 +192,25 @@ def refine_itinerary(
 """
 
     messages = [SystemMessage(content=CHAT_SYSTEM_PROMPT)]
-
-    for msg in conversation_history:
-        if msg["role"] == "user":
-            messages.append(HumanMessage(content=msg["content"]))
-        else:
-            messages.append(AIMessage(content=msg["content"]))
-
+    for msg in conversation_history[-MAX_HISTORY_MESSAGES:]:
+        content = str(msg.get("content", ""))[:600]
+        messages.append(HumanMessage(content=content) if msg.get("role") == "user" else AIMessage(content=content))
     messages.append(HumanMessage(content=context))
 
-    response     = llm.invoke(messages)
-    reply        = response.content if hasattr(response, "content") else str(response)
+    llm = get_llm(temperature=0.5, max_tokens=_fit_max_tokens(messages, 4000), reasoning_effort="low")
+    response = llm.invoke(messages, config={"run_name": "chat: refine itinerary"})
+    reply    = response.content if hasattr(response, "content") else str(response)
+
+    ack, new_itinerary = _split_reply(reply)
+    review = None
+    if new_itinerary:
+        review = review_edit(new_itinerary, trip_details)
+        if review["revisions"]:
+            ack = (ack + " " if ack else "") + "The critic found a problem with that change and fixed it."
+        reply = ack or "Updated the itinerary."
 
     updated_history = conversation_history + [
         {"role": "user",      "content": user_message},
-        {"role": "assistant", "content": reply},
+        {"role": "assistant", "content": reply if review else reply[:600]},
     ]
-
-    return reply, updated_history
+    return reply, updated_history, review

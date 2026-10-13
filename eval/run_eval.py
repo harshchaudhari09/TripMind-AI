@@ -76,7 +76,10 @@ def plan_trip(trip: dict) -> tuple[dict, float, bool]:
                                    "budget_inr", "num_people", "preferences")}
     t0 = time.time()
     try:
-        final = build_graph(nodes).invoke(inputs)
+        from utils.llmops_logger import trace_config
+        config = trace_config(inputs, source="eval")
+        config["tags"].append(trip["id"])
+        final = build_graph(nodes).invoke(inputs, config=config)
     finally:
         expected = {k for keys in NODE_KEYS.values() for k in keys}
         if not cached and expected <= collected.keys():

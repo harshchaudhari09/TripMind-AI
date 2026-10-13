@@ -19,6 +19,7 @@ from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field, field_validator, model_validator
 from typing import List, Dict, Any, Optional
 
+from utils.llmops_logger import trace_config, log_run, tracing_status
 from config.settings import (GROQ_API_KEY, TAVILY_API_KEY, PLANS_PER_IP_PER_DAY,
                              CHATS_PER_IP_PER_DAY, DAILY_PLAN_LIMIT)
 
@@ -96,6 +97,10 @@ class ChatResponse(BaseModel):
     reply:                 str
     updated_itinerary:     Optional[str] = None
     conversation_history:   List[Dict[str, str]]
+    # Critic verdict on the edited itinerary (only when the plan was rewritten)
+    critic_passed:    Optional[bool] = None
+    revisions:        int            = 0
+    remaining_issues: List[str]      = Field(default_factory=list)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -150,6 +155,7 @@ def check_keys():
         )
     else:
         logger.info("API keys loaded. TripMind is ready.")
+    logger.info(tracing_status())
 
 
 @app.get("/health")
@@ -196,10 +202,15 @@ def plan_trip(req: TripRequest, request: Request):
         # imported lazily so a missing/invalid key fails via the check above,
         # not at module import time
         from agents.graph import travel_graph
-        final = travel_graph.invoke(initial_state)
+        final = travel_graph.invoke(initial_state, config=trace_config(initial_state, source="api"))
     except Exception as e:
         logger.exception("Trip planning failed")
+        log_run("plan", {"destination": req.destination}, {}, (time.perf_counter() - t0) * 1000, error=str(e))
         raise HTTPException(status_code=500, detail=str(e))
+
+    log_run("plan", {"destination": req.destination},
+            {"critic_passed": final.get("critic_passed"), "fix_rounds": final.get("revision_count", 0)},
+            (time.perf_counter() - t0) * 1000)
 
     return TripResponse(
         itinerary=final["itinerary"],
@@ -221,7 +232,7 @@ def chat(req: ChatRequest, request: Request):
 
     try:
         from agents.chat_agent import refine_itinerary
-        reply, updated_history = refine_itinerary(
+        reply, updated_history, review = refine_itinerary(
             user_message=req.message,
             current_itinerary=req.current_itinerary,
             trip_details=req.trip_details,
@@ -231,13 +242,14 @@ def chat(req: ChatRequest, request: Request):
         logger.exception("Chat refinement failed")
         raise HTTPException(status_code=500, detail=str(e))
 
-    # chat_agent returns the full updated itinerary in `reply` when it rewrote one
-    updated_itinerary = reply if ("## Day" in reply or "**Day" in reply) else None
-
+    # When the plan was rewritten, `review` holds the checked itinerary + critic verdict.
     return ChatResponse(
         reply=reply,
-        updated_itinerary=updated_itinerary,
+        updated_itinerary=review["itinerary"] if review else None,
         conversation_history=updated_history,
+        critic_passed=review["critic_passed"] if review else None,
+        revisions=review["revisions"] if review else 0,
+        remaining_issues=review["remaining_issues"] if review else [],
     )
 
 

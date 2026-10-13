@@ -27,6 +27,12 @@ services:
       - key: PLANS_PER_IP_PER_DAY
         value: "2"
       - key: CHATS_PER_IP_PER_DAY
-        value: "10"
+        value: "4"                  # each chat edit = writer + critic (+ a fix) LLM calls
       - key: DAILY_PLAN_LIMIT
         value: "5"                  # whole site; ~9 Tavily credits per trip
+      # LangSmith tracing (optional): to turn it on, add LANGSMITH_API_KEY in the Render
+      # dashboard (Environment tab) and change LANGSMITH_TRACING to "true".
+      - key: LANGSMITH_TRACING
+        value: "false"
+      - key: LANGSMITH_PROJECT
+        value: tripmind-live

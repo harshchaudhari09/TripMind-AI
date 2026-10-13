@@ -280,7 +280,7 @@ def llm_review(itinerary: str, trip: dict, earlier_issues: List[str] | None = No
     # Small models occasionally reply without valid JSON, so allow one retry.
     for attempt in (1, 2):
         try:
-            response = llm.invoke(messages)
+            response = llm.invoke(messages, config={"run_name": "critic: AI review"})
             raw = response.content if hasattr(response, "content") else str(response)
             match = re.search(r"\{.*\}", raw, re.DOTALL)
             if not match:

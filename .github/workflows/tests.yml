@@ -1,0 +1,19 @@
+# Runs the test suite on every push and pull request. The tests are fully offline
+# (fake AI models, no API keys), so they're free and need no secrets.
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements-dev.txt
+      - run: python -m pytest -q

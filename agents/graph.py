@@ -464,7 +464,7 @@ The total cost must stay within ₹{state['budget_inr']:,.0f}.
     ]
 
     llm = get_llm(temperature=0.4, max_tokens=_fit_max_tokens(messages, 4000), reasoning_effort="low")
-    response  = llm.invoke(messages)
+    response  = llm.invoke(messages, config={"run_name": "writer: first draft"})
     itinerary = response.content if hasattr(response, "content") else str(response)
     itinerary, _ = recompute_totals(itinerary, state["budget_inr"])
 
@@ -500,7 +500,7 @@ and keep the budget table's line items accurate.
 """
     messages = [SystemMessage(content=ITINERARY_SYSTEM_PROMPT), HumanMessage(content=user_message)]
     llm = get_llm(temperature=0.3, max_tokens=_fit_max_tokens(messages, 3500), reasoning_effort="low")
-    response = llm.invoke(messages)
+    response = llm.invoke(messages, config={"run_name": f"writer: fix round {attempt}"})
     itinerary = response.content if hasattr(response, "content") else str(response)
     itinerary, _ = recompute_totals(itinerary, state["budget_inr"])
     return {"itinerary": itinerary, "messages": messages + [response], "revision_count": attempt}

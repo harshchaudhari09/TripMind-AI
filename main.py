@@ -63,6 +63,7 @@ def run_cli():
 
     from agents.graph import travel_graph
     from config.settings import budget_profile
+    from utils.llmops_logger import trace_config, tracing_status
 
     console = Console()
     console.print(Panel.fit(
@@ -100,11 +101,12 @@ def run_cli():
         "itinerary": "", "messages": [],
     }
 
+    console.print(f"[dim]{tracing_status()}[/dim]")
     console.print("\n[bold]Running parallel research pipeline...[/bold]\n")
 
     with Progress(SpinnerColumn(), TextColumn("{task.description}"), console=console) as p:
         task = p.add_task("Planning your trip...", total=None)
-        final = travel_graph.invoke(initial_state)
+        final = travel_graph.invoke(initial_state, config=trace_config(initial_state, source="cli"))
         p.update(task, description="[green]Done![/green]")
 
     # No surrounding Panel: the border steals width and squashes the text.

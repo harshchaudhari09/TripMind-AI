@@ -6,6 +6,8 @@ reviews every plan before you see it, and sends it back to be fixed** when somet
 
 > This is the part of TripMind that's truly agentic: it judges its own work and decides what to do next.
 
+[![tests](https://github.com/harshchaudhari09/TripMind-AI/actions/workflows/tests.yml/badge.svg)](https://github.com/harshchaudhari09/TripMind-AI/actions/workflows/tests.yml)
+
 🔗 **Live demo: [tripmind-ai-y4g3.onrender.com](https://tripmind-ai-y4g3.onrender.com/)** · 💻 Built with LangGraph, Groq, Tavily, OpenStreetMap and FastAPI
 
 _Free hosting: the first visit after a quiet spell takes ~1 minute to wake up. Click an example trip to see a plan instantly; each visitor can plan 2 trips a day._
@@ -26,7 +28,8 @@ TripMind then:
    plan back with notes. Up to 2 rounds of fixes.
 4. **Shows the result** with the critic's verdict: ✅ approved, or ⚠️ what to double-check.
 
-You can then ask for changes in a chat box ("make day 2 cheaper", "add a waterfall").
+You can then ask for changes in a chat box ("make day 2 cheaper", "add a waterfall") —
+and every edited plan goes through the same critic before it's shown.
 
 ---
 
@@ -102,6 +105,17 @@ Full details: [eval/results/REPORT.md](eval/results/REPORT.md).
 rules the critic enforces, so "100% after the critic" mainly proves the loop reliably catches
 and fixes what it's built to catch. The place check is independent of the critic.
 
+### Automated tests
+
+43 offline tests ([tests/](tests/)) cover every rule check (using the real mistakes above as
+test cases), the budget maths, the writer ⇄ critic loop with fake AI models, chat edits, the
+public-demo limits, and that every published example trip passes all checks. They run on every
+push via GitHub Actions — no API keys needed:
+
+```bash
+pip install -r requirements-dev.txt && python -m pytest -q
+```
+
 ---
 
 ## What I learned building it
@@ -143,6 +157,7 @@ config/
   settings.py      Models, limits, budget tiers
   seasonal_facts.py  Hand-checked seasonal closures (Rohtang, Khardung La, …)
 eval/              15 test trips, automatic grading, reports
+tests/             43 offline tests (pytest)
 static/index.html  Web interface
 api.py · main.py   Web server and launcher
 ```

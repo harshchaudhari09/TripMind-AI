@@ -783,7 +783,7 @@ function showResult(data, trip, isExample){
       <div class="meta-chip">${people} traveller${people > 1 ? 's' : ''}</div>
       ${isExample ? '' : `<div class="meta-chip">${(data.latency_ms / 1000).toFixed(0)} s</div>`}
     </div>
-    ${criticBadge(data)}
+    <div id="criticSlot">${criticBadge(data)}</div>
     <div class="itinerary-md" id="itineraryMd"></div>
   `;
   renderItinerary(currentItinerary);
@@ -1006,6 +1006,9 @@ async function sendChat(){
       bubble.textContent = (first ? first + '\n' : '') + '✓ Updated the itinerary above.';
       currentItinerary = data.updated_itinerary;
       renderItinerary(currentItinerary);
+      // The edited plan went through the critic too — show its fresh verdict.
+      const slot = document.getElementById('criticSlot');
+      if (slot && data.critic_passed !== null && data.critic_passed !== undefined) slot.innerHTML = criticBadge(data);
     } else {
       bubble.textContent = data.reply;
     }
