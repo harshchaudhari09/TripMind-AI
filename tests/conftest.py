@@ -7,6 +7,11 @@ import sys
 
 import pytest
 
+# Tests must never send traces to LangSmith, even when .env switches tracing on for real
+# use. Set before anything loads .env (python-dotenv doesn't override existing values).
+os.environ["LANGSMITH_TRACING"] = "false"
+os.environ["LANGCHAIN_TRACING_V2"] = "false"
+
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
