@@ -256,7 +256,9 @@ def chat(req: ChatRequest, request: Request):
 # ─────────────────────────────────────────────────────────────────────────────
 # Static UI — mounted last so /health, /plan, /chat above take priority
 # ─────────────────────────────────────────────────────────────────────────────
-@app.get("/")
+# HEAD too: link-preview crawlers (LinkedIn, Slack…) check the page with HEAD
+# first and give up on a 405.
+@app.api_route("/", methods=["GET", "HEAD"])
 def serve_ui():
     return FileResponse(os.path.join(STATIC_DIR, "index.html"))
 

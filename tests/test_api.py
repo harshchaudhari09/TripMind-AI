@@ -61,6 +61,13 @@ def test_site_wide_limit(client, monkeypatch):
     assert codes == [200, 200, 429]
 
 
+def test_home_page_answers_head_for_link_previews(client):
+    # LinkedIn's preview crawler sends HEAD before GET and fails on a 405
+    _, c = client
+    assert c.head("/").status_code == 200
+    assert c.get("/").status_code == 200
+
+
 def test_published_example_trips_pass_every_rule_check():
     from agents import critic
     path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "static", "examples.json")
