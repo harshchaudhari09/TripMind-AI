@@ -32,6 +32,7 @@ TAVILY_SEARCH_DEPTH  = os.getenv("TAVILY_SEARCH_DEPTH", "advanced")
 PLANS_PER_IP_PER_DAY = int(os.getenv("PLANS_PER_IP_PER_DAY", "0"))
 CHATS_PER_IP_PER_DAY = int(os.getenv("CHATS_PER_IP_PER_DAY", "0"))
 DAILY_PLAN_LIMIT     = int(os.getenv("DAILY_PLAN_LIMIT", "0"))
+VOICE_COMMANDS_PER_IP_PER_DAY = int(os.getenv("VOICE_COMMANDS_PER_IP_PER_DAY", "0"))
 
 
 def budget_profile(total_inr: float, num_days: int = 1, num_people: int = 1) -> dict:

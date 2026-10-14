@@ -31,6 +31,12 @@ TripMind then:
 You can then ask for changes in a chat box ("make day 2 cheaper", "add a waterfall") —
 and every edited plan goes through the same critic before it's shown.
 
+**🎤 Or just talk to it.** Tap the mic and say *"3 days in Goa from Mumbai next weekend, me and my
+wife, budget 30k"* — TripMind fills in the form and starts planning. With a plan open, say
+*"make day two cheaper"* and it edits the plan (critic-checked) and reads the change back to you.
+Speech-to-text runs in the browser (Chrome, Edge, Safari); a small model works out whether you
+want a new trip or a change, and code validates every date, budget and group size it extracts.
+
 ---
 
 ## Why a critic agent?
@@ -107,8 +113,8 @@ and fixes what it's built to catch. The place check is independent of the critic
 
 ### Automated tests
 
-43 offline tests ([tests/](tests/)) cover every rule check (using the real mistakes above as
-test cases), the budget maths, the writer ⇄ critic loop with fake AI models, chat edits, the
+53 offline tests ([tests/](tests/)) cover every rule check (using the real mistakes above as
+test cases), the budget maths, the writer ⇄ critic loop with fake AI models, chat edits, the voice assistant, the
 public-demo limits, and that every published example trip passes all checks. They run on every
 push via GitHub Actions — no API keys needed:
 
@@ -151,13 +157,14 @@ agents/
   graph.py         LangGraph workflow: parallel research → writer ⇄ critic loop
   critic.py        Critic agent: rule checks + AI review
   budget.py        Recalculates budget totals in code
-  chat_agent.py    Chat-based changes to a finished plan
+  chat_agent.py    Chat-based changes to a finished plan (only changed parts are merged in)
+  voice_intent.py  Voice assistant: understands spoken requests (new trip vs. edit)
 tools/             Tavily, OpenStreetMap, weather and Wikipedia tools
 config/
   settings.py      Models, limits, budget tiers
   seasonal_facts.py  Hand-checked seasonal closures (Rohtang, Khardung La, …)
 eval/              15 test trips, automatic grading, reports
-tests/             43 offline tests (pytest)
+tests/             53 offline tests (pytest)
 static/index.html  Web interface
 api.py · main.py   Web server and launcher
 ```

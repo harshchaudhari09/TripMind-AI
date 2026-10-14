@@ -353,6 +353,22 @@
   .chat-input-row button:hover{background:var(--ink-3);}
   .chat-input-row button:disabled{opacity:0.5;cursor:wait;}
 
+  /* Voice assistant */
+  .voice-bar{display:flex;gap:12px;align-items:center;margin:2px 0 16px;}
+  .voice-bar[hidden], .mic-btn[hidden]{display:none !important;}
+  .mic-btn{flex:none;width:44px;height:44px;border-radius:50%;border:1px solid var(--brass);background:transparent;color:var(--brass-bright);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:background .2s, color .2s;}
+  .mic-btn:hover{background:rgba(201,138,62,0.15);}
+  .mic-btn.listening{background:#c0392b;border-color:#c0392b;color:#fff;animation:micPulse 1.2s ease-out infinite;}
+  @keyframes micPulse{0%{box-shadow:0 0 0 0 rgba(192,57,43,.55);}100%{box-shadow:0 0 0 14px rgba(192,57,43,0);}}
+  .voice-hint{font-family:'Inter',sans-serif;font-size:12.5px;line-height:1.45;color:var(--muted);}
+  .voice-hint.err{color:#e07a5f;}
+  .chat-input-row .mic-btn{width:42px;height:auto;min-height:42px;padding:0;border-radius:10px;background:transparent;color:var(--ink);border:1px solid rgba(15,27,36,0.2);}
+  .chat-input-row .mic-btn:hover{background:rgba(15,27,36,0.06);}
+  .chat-input-row .mic-btn.listening{background:#c0392b;border-color:#c0392b;color:#fff;}
+  #chatVoiceStatus{color:rgba(27,36,30,0.6);margin-top:6px;min-height:1em;}
+  #chatVoiceStatus.err{color:#a8432f;}
+  @media (prefers-reduced-motion: reduce){ .mic-btn.listening{animation:none;} }
+
   /* ── Footer ── */
   footer{border-top:1px solid var(--line);margin-top:40px;padding:46px 0 60px;}
   footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center;}
@@ -579,6 +595,10 @@
       <div class="ticket">
         <div class="stub-label">Passenger details</div>
         <h3>Where to?</h3>
+        <div class="voice-bar" id="voiceBar" hidden>
+          <button type="button" class="mic-btn" id="voicePlanBtn" aria-label="Plan a trip by voice" title="Plan by voice"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></button>
+          <div class="voice-hint" id="voiceStatus">Or just say it: <em>“3 days in Goa from Mumbai next weekend, 2 people, budget 30k.”</em></div>
+        </div>
         <form id="tripForm">
           <div class="row2">
             <div class="field"><label for="origin">From</label><input id="origin" type="text" value="Delhi" required></div>
@@ -627,8 +647,10 @@
           <div id="chatLog"></div>
           <div class="chat-input-row">
             <input id="chatInput" type="text" placeholder="e.g. make day 2 more budget friendly, add a waterfall visit…">
+            <button type="button" class="mic-btn" id="chatMic" aria-label="Say a change" title="Speak a change" hidden><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></button>
             <button id="chatSend">Send</button>
           </div>
+          <div class="voice-hint" id="chatVoiceStatus" aria-live="polite"></div>
         </div>
       </div>
     </div>
@@ -960,8 +982,14 @@ form.addEventListener('submit', async (e) => {
     const data = await res.json();
     if (!res.ok){ const err = new Error(errorText(data)); err.status = res.status; throw err; }
     showResult(data, { destination, origin, start_date, end_date, budget_inr, num_people, preferences }, false);
+    if (speakNext){
+      speakNext = false;
+      say(`Your ${data.num_days}-day ${destination.split(',')[0]} plan is ready. ` +
+          (data.critic_passed ? 'The critic checked and approved it.' : 'The critic flagged a few things to double-check.'));
+    }
   }catch(err){
     stopWorking();
+    if (speakNext){ speakNext = false; say("Sorry, I couldn't plan that trip."); }
     passStamp.textContent = 'ERROR';
     // 4xx = the request or a usage limit (message says what to do); 5xx = server/API problem.
     const hint = (err.status && err.status < 500) ? '' :
@@ -1013,6 +1041,7 @@ async function sendChat(){
     if (data.updated_itinerary){
       const first = (data.reply.split('\n').find(l => l.trim() && !l.trim().startsWith('#')) || '').trim();
       bubble.textContent = (first ? first + '\n' : '') + '✓ Updated the itinerary above.';
+      if (speakNext) say((first || 'Done.') + ' The itinerary is updated.');
       currentItinerary = data.updated_itinerary;
       renderItinerary(currentItinerary);
       // The edited plan went through the critic too — show its fresh verdict.
@@ -1020,11 +1049,14 @@ async function sendChat(){
       if (slot && data.critic_passed !== null && data.critic_passed !== undefined) slot.innerHTML = criticBadge(data);
     } else {
       bubble.textContent = data.reply;
+      if (speakNext) say(data.reply.slice(0, 400));
     }
     conversationHistory = data.conversation_history;
   }catch(err){
     document.getElementById(thinkingId).textContent = 'Error: ' + err.message;
+    if (speakNext) say("Sorry, that didn't work.");
   }finally{
+    speakNext = false;
     chatSend.disabled = false;
     chatLog.scrollTop = chatLog.scrollHeight;
   }
@@ -1032,6 +1064,127 @@ async function sendChat(){
 
 chatSend.addEventListener('click', sendChat);
 chatInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') sendChat(); });
+
+// ── Voice assistant ──────────────────────────────────────────────────────────
+// The browser turns speech into text (free; Chrome, Edge, Safari). The server's
+// /voice/intent works out whether it's a new trip (and fills the form) or a change
+// to the open itinerary (sent to the chat, so the critic checks it). Replies are
+// spoken aloud only when the request came by voice.
+const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
+const voicePlanBtn = document.getElementById('voicePlanBtn');
+const chatMic = document.getElementById('chatMic');
+let recognizer = null, activeStatus = null, speakNext = false;
+
+if (SpeechRec){
+  document.getElementById('voiceBar').hidden = false;
+  chatMic.hidden = false;
+  voicePlanBtn.addEventListener('click', () => listen(voicePlanBtn, document.getElementById('voiceStatus'), null));
+  chatMic.addEventListener('click', () => listen(chatMic, document.getElementById('chatVoiceStatus'), chatInput));
+}
+
+function ymd(dt){ return `${dt.getFullYear()}-${String(dt.getMonth() + 1).padStart(2, '0')}-${String(dt.getDate()).padStart(2, '0')}`; }
+function addDays(iso, n){ const [y, m, d] = iso.split('-').map(Number); return ymd(new Date(y, m - 1, d + n)); }
+
+function say(text){
+  if (!('speechSynthesis' in window) || !text) return;
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'en-IN';
+  speechSynthesis.speak(u);
+}
+
+function setStatus(text, isError){
+  if (!activeStatus) return;
+  activeStatus.textContent = text;
+  activeStatus.classList.toggle('err', !!isError);
+}
+
+function listen(btn, statusEl, liveInput){
+  if (recognizer){ recognizer.stop(); return; }          // second tap = stop listening
+  if ('speechSynthesis' in window) speechSynthesis.cancel();
+  activeStatus = statusEl;
+  let finalText = '';
+  recognizer = new SpeechRec();
+  recognizer.lang = 'en-IN';
+  recognizer.interimResults = true;
+  btn.classList.add('listening');
+  setStatus('Listening… speak now (tap the mic again to stop).');
+  recognizer.onresult = (e) => {
+    let interim = '';
+    for (let i = e.resultIndex; i < e.results.length; i++){
+      const t = e.results[i][0].transcript;
+      if (e.results[i].isFinal) finalText += t; else interim += t;
+    }
+    const shown = (finalText + ' ' + interim).trim();
+    if (liveInput) liveInput.value = shown; else setStatus(`“${shown}”`);
+  };
+  recognizer.onerror = (e) => {
+    const msg = e.error === 'not-allowed' || e.error === 'service-not-allowed'
+      ? 'Microphone access is blocked. Allow it from the icon in the address bar, then try again.'
+      : e.error === 'no-speech' ? "I didn't hear anything. Tap the mic and try again."
+      : `Voice input stopped (${e.error}). You can type instead.`;
+    setStatus(msg, true);
+  };
+  recognizer.onend = () => {
+    btn.classList.remove('listening');
+    recognizer = null;
+    const text = finalText.trim();
+    if (text) handleVoice(text);
+  };
+  recognizer.start();
+}
+
+async function handleVoice(text){
+  setStatus(`Heard “${text}”. Working out what you mean…`);
+  try{
+    const res = await fetch(API_BASE + '/voice/intent', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ text, has_itinerary: !!currentItinerary, today: ymd(new Date()), current_trip: tripDetails })
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(errorText(data));
+
+    if (data.action === 'new_trip'){
+      if (!data.destination){
+        setStatus('Where would you like to go? Tap the mic and say a destination.', true);
+        say('Where would you like to go?');
+        return;
+      }
+      if (planBtn.disabled){ setStatus('Please wait for the current plan to finish.', true); return; }
+      fillForm(data);
+      activeStatus = document.getElementById('voiceStatus');
+      setStatus(`✓ ${data.message || 'Planning your trip'}. Check the details below; planning now…`);
+      say(data.message || 'Planning your trip.');
+      speakNext = true;
+      scrollToEl('.planner');
+      form.requestSubmit();                               // runs the normal planner (form checks included)
+    } else {
+      setStatus('');
+      chatInput.value = data.message || text;
+      speakNext = true;
+      sendChat();                                         // same path as typing: the critic checks edits
+    }
+  }catch(err){
+    setStatus(err.message, true);
+    say("Sorry, I couldn't do that.");
+  }
+}
+
+function fillForm(d){
+  const set = (id, v) => { if (v !== null && v !== undefined && v !== '') document.getElementById(id).value = v; };
+  set('destination', d.destination);
+  set('origin', d.origin);
+  set('budget', d.budget_inr);
+  set('people', d.num_people);
+  if (d.preferences && d.preferences.length) set('prefs', d.preferences.join(', '));
+  if (d.start_date) set('startDate', d.start_date);
+  if (d.end_date) set('endDate', d.end_date);
+  else if (d.num_days){
+    const start = document.getElementById('startDate').value;
+    if (start) set('endDate', addDays(start, d.num_days - 1));
+  }
+}
 </script>
 </body>
 </html>

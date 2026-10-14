@@ -28,6 +28,8 @@ services:
         value: "2"
       - key: CHATS_PER_IP_PER_DAY
         value: "4"                  # each chat edit = writer + critic (+ a fix) LLM calls
+      - key: VOICE_COMMANDS_PER_IP_PER_DAY
+        value: "20"                 # small model, ~1k tokens each
       - key: DAILY_PLAN_LIMIT
         value: "5"                  # whole site; ~9 Tavily credits per trip
       # LangSmith tracing (optional): to turn it on, add LANGSMITH_API_KEY in the Render

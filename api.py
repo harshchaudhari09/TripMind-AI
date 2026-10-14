@@ -21,7 +21,7 @@ from typing import List, Dict, Any, Optional
 
 from utils.llmops_logger import trace_config, log_run, tracing_status
 from config.settings import (GROQ_API_KEY, TAVILY_API_KEY, PLANS_PER_IP_PER_DAY,
-                             CHATS_PER_IP_PER_DAY, DAILY_PLAN_LIMIT)
+                             CHATS_PER_IP_PER_DAY, DAILY_PLAN_LIMIT, VOICE_COMMANDS_PER_IP_PER_DAY)
 
 MAX_TRIP_DAYS = 10   # longer trips use too many tokens for the free tier
 
@@ -251,6 +251,33 @@ def chat(req: ChatRequest, request: Request):
         revisions=review["revisions"] if review else 0,
         remaining_issues=review["remaining_issues"] if review else [],
     )
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Voice assistant — the browser turns speech into text; this works out what it means
+# ─────────────────────────────────────────────────────────────────────────────
+class VoiceRequest(BaseModel):
+    text:          str  = Field(..., min_length=1, max_length=400)
+    has_itinerary: bool = False
+    today:         Optional[str] = None               # the visitor's local date (YYYY-MM-DD)
+    current_trip:  Optional[Dict[str, Any]] = None
+
+
+@app.post("/voice/intent")
+def voice_intent(req: VoiceRequest, request: Request):
+    if not GROQ_API_KEY:
+        raise HTTPException(status_code=503, detail="Missing GROQ_API_KEY. Add it to .env and restart.")
+    _take_quota("voice command", _client_ip(request), VOICE_COMMANDS_PER_IP_PER_DAY)
+    try:
+        today = date.fromisoformat(req.today) if req.today else date.today()
+    except ValueError:
+        today = date.today()
+    try:
+        from agents.voice_intent import parse_voice_command
+        return parse_voice_command(req.text.strip(), req.has_itinerary, today, req.current_trip)
+    except Exception as e:
+        logger.exception("Voice intent failed")
+        raise HTTPException(status_code=500, detail="Sorry, I couldn't understand that. Please try again.") from e
 
 
 # ─────────────────────────────────────────────────────────────────────────────
