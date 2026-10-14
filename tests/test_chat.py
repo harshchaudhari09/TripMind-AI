@@ -47,3 +47,34 @@ def test_long_chat_history_is_trimmed(monkeypatch, fake_llm):
     history_part = sent["messages"][1:-1]
     assert len(history_part) <= C.MAX_HISTORY_MESSAGES
     assert all(len(m.content) <= 600 for m in history_part)
+
+
+# ── Merging partial edits (the "says updated but doesn't" bug) ────────────────
+def test_only_the_changed_day_and_budget_are_replaced():
+    current = make_plan(3)
+    reply = ("**Got it – I've trimmed Day 2.**\n\n---\n\n## 🗓️ Day‑by‑day plan (updated)\n\n"
+             "### Day 2 — Tue, 02 Nov · Cheaper day\n- **9:00 AM** — Free walking tour\n\n"
+             "## 💰 Budget breakdown\n| Item | Cost |\n|---|---|\n| Stay | ₹8,000 |\n| **Total** | **₹8,000** |\n")
+    ack, parts = C._split_reply(reply)
+    merged, replaced = C.merge_edit(current, parts)
+    assert ack == "Got it – I've trimmed Day 2."
+    assert replaced == ["Day 2", "budget breakdown"]
+    assert "Free walking tour" in merged and "Cheaper day" in merged
+    assert merged.count("### Day") == 3                      # days 1 and 3 are still there
+    assert "| Stay | ₹8,000 |" in merged and "| Food | ₹5,000 |" not in merged
+
+
+def test_edit_with_unknown_headings_changes_nothing():
+    current = make_plan(2)
+    merged, replaced = C.merge_edit(current, "## Something unrelated\nSome text\n")
+    assert replaced == [] and merged == current
+
+
+def test_partial_chat_reply_keeps_the_full_plan(monkeypatch, fake_llm):
+    partial = "Made Day 2 cheaper.\n### Day 2 — Tue, 02 Nov · Budget day\n- **9:00 AM** — Free museum\n"
+    monkeypatch.setattr(C, "get_llm", fake_llm([partial]))
+    monkeypatch.setattr(critic, "get_llm", fake_llm([APPROVE] * 2))
+    reply, _, review = C.refine_itinerary("make day 2 cheaper", make_plan(2), TRIP, [])
+    assert reply == "Made Day 2 cheaper."
+    assert review["critic_passed"] and review["revisions"] == 0
+    assert "### Day 1" in review["itinerary"] and "Free museum" in review["itinerary"]

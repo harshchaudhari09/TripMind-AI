@@ -23,7 +23,7 @@ Your job is to:
 1. Understand what change the user wants
 2. Modify ONLY the relevant parts of the itinerary
 3. Keep everything else exactly the same
-4. Return the COMPLETE updated itinerary in Markdown format
+4. Return ONLY the parts you changed (code merges them into the full plan)
 
 Rules:
 - If user says "make it cheaper" → suggest lower priced hotels/transport, remove expensive activities
@@ -39,8 +39,13 @@ Rules:
   so just keep each line item accurate)
 
 Always respond in this format:
-- First: acknowledge what the user wants in 1 line
-- Then: provide the updated itinerary OR answer their question
+- First: ONE short plain sentence saying what you changed (no heading, no bold).
+- Then: ONLY the changed parts, each under its ORIGINAL heading, written in full:
+  - a changed day → the whole "### Day N — ..." section (all its bullets)
+  - a changed section → the whole "## ..." section, e.g. "## 🏨 Where to stay"
+  - if any cost changed → also the whole "## 💰 Budget breakdown" table with updated line items
+- Do NOT repeat parts that didn't change.
+- If the user only asked a question, just answer it in a few sentences — no headings.
 """
 
 
@@ -116,13 +121,70 @@ MAX_HISTORY_MESSAGES = 6
 
 
 def _split_reply(reply: str) -> tuple[str, str | None]:
-    """'Sure — made Day 2 cheaper.\n# 🏔️ Manali ...' → (acknowledgement, itinerary or None)."""
+    """'Made Day 2 cheaper.\n### Day 2 — ...' → (acknowledgement, edited parts or None)."""
     lines = reply.splitlines()
     first_heading = next((i for i, l in enumerate(lines) if l.lstrip().startswith("#")), None)
-    if first_heading is None or not _DAY_HEADING.search(reply):
-        return reply.strip(), None                     # a plain answer, not a rewritten plan
-    ack = "\n".join(lines[:first_heading]).strip()
+    if first_heading is None:
+        return reply.strip(), None                     # a plain answer, not an edit
+    ack_lines = [l.strip().strip("*").strip() for l in lines[:first_heading]]
+    ack = " ".join(l for l in ack_lines if l and not re.fullmatch(r"[-*_]{3,}", l))
     return ack, "\n".join(lines[first_heading:]).strip() + "\n"
+
+
+def _section_key(heading: str) -> str:
+    """'## 🗓️ Day‑by‑day plan (updated)' → 'day by day plan' (emoji, notes and dashes ignored)."""
+    text = re.sub(r"\(.*?\)", "", heading.lstrip("#")).lower()
+    words = [w for w in re.findall(r"[a-z]+", text) if w not in ("updated", "revised", "new")]
+    return " ".join(words)
+
+
+def _blocks(md: str) -> tuple[list[tuple[str, str, str]], str]:
+    """
+    Split an itinerary into ordered blocks. Returns ([(kind, key, text)], preamble)
+    where kind is "h2" (a '## ' section without its day sections) or "day"
+    (a '### Day N' section, key = N). Everything before the first '## ' is the preamble.
+    """
+    lines = md.splitlines(keepends=True)
+    blocks, preamble, cur = [], [], None
+    for line in lines:
+        day = re.match(r"^#{3,4}\s*Day\W*(\d+)", line)
+        if day:
+            cur = ["day", day.group(1), [line]]
+            blocks.append(cur)
+        elif re.match(r"^##\s", line):
+            cur = ["h2", _section_key(line), [line]]
+            blocks.append(cur)
+        elif cur is None:
+            preamble.append(line)
+        else:
+            cur[2].append(line)
+    return [(k, key, "".join(t)) for k, key, t in blocks], "".join(preamble)
+
+
+def merge_edit(current: str, edit: str) -> tuple[str, list[str]]:
+    """
+    Put the changed sections from `edit` into `current`. Returns (merged plan, names of
+    what was replaced). A changed '### Day N' replaces that day; a changed '## Section'
+    replaces the section with the same name. Unchanged parts stay exactly as written.
+    """
+    cur_blocks, preamble = _blocks(current)
+    new_blocks, _ = _blocks(edit)
+    new_days = {key: text for kind, key, text in new_blocks if kind == "day"}
+    # A '## ' block that only wraps day sections (e.g. "Day-by-day plan (updated)") is just a
+    # container — the days themselves are merged above.
+    new_sections = {key: text for kind, key, text in new_blocks
+                    if kind == "h2" and len(text.strip().splitlines()) > 1}
+    replaced, merged = [], []
+    for kind, key, text in cur_blocks:
+        if kind == "day" and key in new_days:
+            new = new_days[key].rstrip("\n") + "\n\n"
+            merged.append(new); replaced.append(f"Day {key}")
+        elif kind == "h2" and key in new_sections:
+            new = new_sections[key].rstrip("\n") + "\n\n"
+            merged.append(new); replaced.append(key)
+        else:
+            merged.append(text)
+    return preamble + "".join(merged), replaced
 
 
 def review_edit(itinerary: str, trip_details: dict) -> dict:
@@ -201,13 +263,17 @@ def refine_itinerary(
     response = llm.invoke(messages, config={"run_name": "chat: refine itinerary"})
     reply    = response.content if hasattr(response, "content") else str(response)
 
-    ack, new_itinerary = _split_reply(reply)
+    ack, edited_parts = _split_reply(reply)
     review = None
-    if new_itinerary:
-        review = review_edit(new_itinerary, trip_details)
-        if review["revisions"]:
-            ack = (ack + " " if ack else "") + "The critic found a problem with that change and fixed it."
-        reply = ack or "Updated the itinerary."
+    if edited_parts:
+        merged, replaced = merge_edit(current_itinerary, edited_parts)
+        if replaced:
+            review = review_edit(merged, trip_details)
+            if review["revisions"]:
+                ack = (ack + " " if ack else "") + "The critic found a problem with that change and fixed it."
+            reply = ack or "Updated the itinerary."
+        else:
+            reply = ack or reply                       # headings didn't match anything: show as text
 
     updated_history = conversation_history + [
         {"role": "user",      "content": user_message},
