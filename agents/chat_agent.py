@@ -34,6 +34,9 @@ Rules:
 - Always be conversational and friendly
 - If the change affects the budget, recalculate and show updated cost breakdown
 - Keep hotel names, flight names and specific details — only change what the user asked for
+- Make the change COMPLETE and obvious: apply it to every relevant item in the part the user
+  named. E.g. "make day 2 more expensive" → upgrade that day's meals, transport AND activities
+  (not just one of them); "cheaper" → cut costs across the whole day; keep timings realistic.
 - Keep the same layout: the same "## " section headings, one "### Day N — ..." heading per day,
   bold times, and the "| Item | Cost |" budget table (its Total is recalculated by code,
   so just keep each line item accurate)
@@ -292,6 +295,7 @@ def refine_itinerary(
         merged, replaced = merge_edit(current_itinerary, edited_parts)
         if replaced:
             review = review_edit(merged, trip_details)
+            review["changed_sections"] = replaced
             if review["revisions"]:
                 ack = (ack + " " if ack else "") + "The critic found a problem with that change and fixed it."
             reply = ack or "Updated the itinerary."

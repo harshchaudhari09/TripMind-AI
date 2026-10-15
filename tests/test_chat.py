@@ -78,6 +78,7 @@ def test_partial_chat_reply_keeps_the_full_plan(monkeypatch, fake_llm):
     assert reply == "Made Day 2 cheaper."
     assert review["critic_passed"] and review["revisions"] == 0
     assert "### Day 1" in review["itinerary"] and "Free museum" in review["itinerary"]
+    assert review["changed_sections"] == ["Day 2"]           # the page highlights these
 
 
 # ── A new budget changes the trip (found in a real LangSmith trace) ───────────

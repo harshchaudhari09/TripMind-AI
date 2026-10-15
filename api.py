@@ -102,6 +102,7 @@ class ChatResponse(BaseModel):
     revisions:        int            = 0
     remaining_issues: List[str]      = Field(default_factory=list)
     trip_details:     Optional[Dict[str, Any]] = None   # updated if the user set a new budget
+    changed_sections: List[str]      = Field(default_factory=list)   # e.g. ["Day 2", "budget breakdown"]
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -252,6 +253,7 @@ def chat(req: ChatRequest, request: Request):
         revisions=review["revisions"] if review else 0,
         remaining_issues=review["remaining_issues"] if review else [],
         trip_details=review.get("trip_details") if review else None,
+        changed_sections=review.get("changed_sections", []) if review else [],
     )
 
 

@@ -353,6 +353,10 @@
   .chat-input-row button:hover{background:var(--ink-3);}
   .chat-input-row button:disabled{opacity:0.5;cursor:wait;}
 
+  /* Highlight what a chat/voice edit changed */
+  .itinerary-md li.changed, .itinerary-md tr.changed td{background:rgba(201,138,62,0.22);border-radius:4px;box-shadow:-6px 0 0 rgba(201,138,62,0.22);}
+  .upd-tag{display:inline-block;margin-left:8px;padding:2px 8px;border-radius:999px;background:var(--brass);color:var(--ink);font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.06em;text-transform:uppercase;vertical-align:middle;}
+
   /* Voice assistant */
   .voice-bar{display:flex;gap:12px;align-items:center;margin:2px 0 16px;}
   .voice-bar[hidden], .mic-btn[hidden]{display:none !important;}
@@ -1040,10 +1044,15 @@ async function sendChat(){
     const bubble = document.getElementById(thinkingId);
     if (data.updated_itinerary){
       const first = (data.reply.split('\n').find(l => l.trim() && !l.trim().startsWith('#')) || '').trim();
-      bubble.textContent = (first ? first + '\n' : '') + '✓ Updated the itinerary above.';
-      if (speakNext) say((first || 'Done.') + ' The itinerary is updated.');
+      const what = describeChanges(data.changed_sections);
+      bubble.textContent = (first ? first + '\n' : '') + `✓ Updated ${what || 'the itinerary'}: changes are highlighted above.`;
+      // Spoken reply stays short: what changed, not the whole description.
+      if (speakNext) say(`Done. I updated ${what || 'the itinerary'}. The changes are highlighted.` +
+                         (data.revisions ? ' The critic also fixed a problem.' : ''));
+      const oldLines = lineSet(currentItinerary);
       currentItinerary = data.updated_itinerary;
       renderItinerary(currentItinerary);
+      highlightChanges(oldLines);
       // "My budget is 60000" changes the trip itself — keep the page in sync.
       if (data.trip_details && data.trip_details.budget_inr !== tripDetails.budget_inr){
         tripDetails = data.trip_details;
@@ -1071,6 +1080,45 @@ async function sendChat(){
 
 chatSend.addEventListener('click', sendChat);
 chatInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') sendChat(); });
+
+// ── Showing what an edit changed ─────────────────────────────────────────────
+const cleanText = (el) => el.textContent.replace(/\s+/g, ' ').trim();
+
+function lineSet(md){
+  const tmp = document.createElement('div');
+  tmp.innerHTML = renderMarkdown(md || '');
+  return new Set(Array.from(tmp.querySelectorAll('li, tr')).map(cleanText));
+}
+
+// Marks every bullet / table row that wasn't in the previous version, labels the
+// day or section it's in as "Updated", and scrolls to the first change.
+function highlightChanges(oldLines){
+  const box = document.getElementById('itineraryMd');
+  let first = null;
+  box.querySelectorAll('li, tr').forEach(el => {
+    if (el.closest('thead')) return;
+    const t = cleanText(el);
+    if (!t || oldLines.has(t)) return;
+    el.classList.add('changed');
+    first = first || el;
+    const part = el.closest('.day-ticket') || el.closest('.it-sec');
+    const head = part && part.querySelector('h2, h3');
+    if (head && !head.querySelector('.upd-tag')) head.insertAdjacentHTML('beforeend', '<span class="upd-tag">Updated</span>');
+  });
+  if (first){
+    first.closest('.slide')?.classList.add('in');
+    setTimeout(() => first.scrollIntoView({ behavior: 'smooth', block: 'center' }), 150);
+  }
+}
+
+// ["Day 2", "budget breakdown"] → "Day 2 and the budget"
+function describeChanges(list){
+  const names = { 'budget breakdown': 'the budget', 'where to stay': 'the hotels', 'getting there back': 'the travel plan',
+                  'food to try': 'the food list', 'at a glance': 'the summary', 'local tips': 'the tips',
+                  'weather packing': 'the packing list', 'useful nearby': 'the nearby places' };
+  const parts = (list || []).map(k => names[k] || (k.startsWith('Day') ? k : 'the ' + k));
+  return parts.length <= 1 ? (parts[0] || '') : parts.slice(0, -1).join(', ') + ' and ' + parts[parts.length - 1];
+}
 
 // ── Voice assistant ──────────────────────────────────────────────────────────
 // The browser turns speech into text (free; Chrome, Edge, Safari). The server's
