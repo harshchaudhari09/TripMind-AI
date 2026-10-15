@@ -1,95 +1,206 @@
 """
-tools/overpass_tool.py
+tools/overpass_tool.py — nearby facilities (petrol pumps, ATMs, hospitals, bus and
+railway stations) from OpenStreetMap.
 
-Uses OpenStreetMap Overpass API (completely free, no key needed)
-to find petrol pumps, ATMs, hospitals, bus stations and train stations
-near any destination.
+History: this used the public Overpass API. LangSmith traces showed every lookup in
+every trip failing — "406 Not Acceptable" or a 30-second read timeout — so each trip
+waited ~32 s for nothing and the "Useful nearby" section had no real data. The public
+Overpass servers also block cloud hosts (where the live demo runs).
+
+Now it uses Nominatim (OpenStreetMap's search service) instead:
+  • one search per category, bounded to a ~13 km box around the destination
+  • Nominatim's usage policy is respected: an identifying User-Agent, at most one
+    request per second (shared across the whole app), and results are cached
+  • results are cached per destination for 30 days (in memory + on disk), so popular
+    destinations are instant and repeat trips cost no requests at all
+  • short timeouts: if the service is unavailable the trip continues within seconds,
+    with an explicit "unavailable" note so the writer doesn't invent names
 """
-import requests
+from __future__ import annotations
+
 import json
+import math
+import os
 import threading
+import time
+
+import requests
 from langchain.tools import tool
 
-OVERPASS_URL = "https://overpass-api.de/api/interpreter"
+NOMINATIM_URL = "https://nominatim.openstreetmap.org/search"
+USER_AGENT = "TripMindAI/1.0 (+https://github.com/harshchaudhari09/TripMind-AI)"
+CACHE_FILE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), ".cache", "nearby_places.json")
+CACHE_DAYS = 30
+SEARCH_BOX_DEG = 0.12          # ≈ 13 km each way around the destination
 
-# Geocoding cache. The graph runs research nodes in parallel, so several tools
-# ask for the same city's coordinates at the same moment. Nominatim allows
-# ~1 request/second, so we look each place up once and share the answer.
+# What to search for, and which OpenStreetMap tags count as a match.
+CATEGORIES = {
+    "petrol_pumps":          {"q": "fuel",            "keep": {("amenity", "fuel")},                                   "limit": 5},
+    "atms":                  {"q": "atm",             "keep": {("amenity", "atm"), ("amenity", "bank")},              "limit": 6},
+    "hospitals_and_clinics": {"q": "hospital",        "keep": {("amenity", "hospital"), ("amenity", "clinic"),
+                                                               ("healthcare", "hospital"), ("building", "hospital")},  "limit": 5},
+    "bus_stations":          {"q": "bus station",     "keep": {("amenity", "bus_station"), ("highway", "bus_stop")},   "limit": 5},
+    "railway_stations":      {"q": "railway station", "keep": {("railway", "station"), ("railway", "halt"),
+                                                               ("building", "train_station")},                         "limit": 5},
+}
+
+_request_lock = threading.Lock()   # one Nominatim request at a time, ≥1 s apart
+_last_request = [0.0]
 _geocode_cache: dict = {}
-_geocode_lock = threading.Lock()
+_places_cache: dict = {}
+_places_locks: dict = {}
+_places_locks_guard = threading.Lock()
 
 
-def _query_overpass(lat: float, lon: float, amenity: str, radius_m: int = 5000, limit: int = 5) -> list:
-    """
-    Core function to query Overpass API for any amenity near lat/lon.
-    """
-    query = f"""
-    [out:json][timeout:25];
-    (
-      node["{amenity}"](around:{radius_m},{lat},{lon});
-      way["{amenity}"](around:{radius_m},{lat},{lon});
-    );
-    out center {limit};
-    """
-    try:
-        resp = requests.post(OVERPASS_URL, data={"data": query}, timeout=30)
-        resp.raise_for_status()
-        data = resp.json()
-        results = []
-        for el in data.get("elements", []):
-            tags = el.get("tags", {})
-            # get coordinates
-            if el["type"] == "node":
-                elat, elon = el.get("lat"), el.get("lon")
-            else:
-                center = el.get("center", {})
-                elat, elon = center.get("lat"), center.get("lon")
-
-            # calculate rough distance in km
-            if elat and elon:
-                dist_km = round(((elat - lat)**2 + (elon - lon)**2)**0.5 * 111, 2)
-            else:
-                dist_km = None
-
-            results.append({
-                "name":    tags.get("name") or tags.get("operator") or tags.get("brand") or "Unnamed",
-                "address": tags.get("addr:full") or tags.get("addr:street") or tags.get("addr:city") or "",
-                "phone":   tags.get("phone") or tags.get("contact:phone") or "",
-                "opening_hours": tags.get("opening_hours") or "Not available",
-                "distance_km": dist_km,
-            })
-        # sort by distance
-        results.sort(key=lambda x: x["distance_km"] or 999)
-        return results[:limit]
-    except Exception as e:
-        return [{"error": str(e)}]
+def _nominatim(params: dict, timeout: float = 8) -> list:
+    """GET Nominatim with the policy-required User-Agent and ≥1.1 s between requests."""
+    with _request_lock:
+        wait = 1.1 - (time.time() - _last_request[0])
+        if wait > 0:
+            time.sleep(wait)
+        try:
+            resp = requests.get(NOMINATIM_URL, params={**params, "format": "jsonv2"},
+                                headers={"User-Agent": USER_AGENT}, timeout=timeout)
+            resp.raise_for_status()
+            return resp.json()
+        finally:
+            _last_request[0] = time.time()
 
 
 def _geocode(place_name: str) -> tuple:
-    """
-    Convert place name to lat/lon using Nominatim (free OpenStreetMap geocoder).
-    Successful lookups are cached; failures are not, so a later call can retry.
-    """
+    """Place name → (lat, lon). Successful lookups are cached; failures are retried later."""
     key = place_name.strip().lower()
-    # The lock makes parallel callers wait for the first lookup instead of
-    # all hitting Nominatim at once.
-    with _geocode_lock:
-        if key in _geocode_cache:
-            return _geocode_cache[key]
-        try:
-            url = "https://nominatim.openstreetmap.org/search"
-            params = {"q": place_name, "format": "json", "limit": 1}
-            headers = {"User-Agent": "TripMindAI/1.0 travel-planner-student-project"}
-            resp = requests.get(url, params=params, headers=headers, timeout=10)
-            resp.raise_for_status()
-            data = resp.json()
-            if data:
-                coords = float(data[0]["lat"]), float(data[0]["lon"])
-                _geocode_cache[key] = coords
-                return coords
-            return None, None
-        except Exception:
-            return None, None
+    if key in _geocode_cache:
+        return _geocode_cache[key]
+    try:
+        data = _nominatim({"q": place_name, "limit": 1})
+    except Exception:
+        return None, None
+    if not data:
+        return None, None
+    coords = float(data[0]["lat"]), float(data[0]["lon"])
+    _geocode_cache[key] = coords
+    return coords
+
+
+def _km(lat1, lon1, lat2, lon2) -> float:
+    """Straight-line distance in km (good enough at city scale)."""
+    dx = (lon2 - lon1) * 111.32 * math.cos(math.radians((lat1 + lat2) / 2))
+    dy = (lat2 - lat1) * 110.57
+    return round(math.hypot(dx, dy), 1)
+
+
+def _describe(item: dict, lat: float, lon: float) -> dict:
+    addr = item.get("address") or {}
+    extra = item.get("extratags") or {}
+    name = (item.get("name") or "").strip()
+    area = addr.get("road") or addr.get("suburb") or addr.get("neighbourhood") or addr.get("city_district") or ""
+    generic = not name or name.lower() in {"atm", "hospital", "railway station", "bus stand", "bus station", "petrol pump"}
+    # The place's own name first ("Jaipur Junction"); brand/operator only for generic ones
+    # ("ATM" → "SBI"), otherwise every station would be called "NWR" (the railway operator).
+    label = (name if not generic else None) or extra.get("brand") or extra.get("operator") or name \
+        or item.get("type", "").replace("_", " ").title()
+    if generic and area:
+        label = f"{label} — {area}"          # "ATM — MI Road" instead of just "ATM"
+    return {
+        "name":          label,
+        "address":       ", ".join(p for p in [area, addr.get("city") or addr.get("town") or addr.get("village")] if p),
+        "phone":         extra.get("phone") or extra.get("contact:phone") or "",
+        "opening_hours": extra.get("opening_hours") or "",
+        "distance_km":   _km(lat, lon, float(item["lat"]), float(item["lon"])),
+    }
+
+
+def _is_excluded(item: dict) -> bool:
+    """Metro stations and railway offices are tagged like railway stations — skip them."""
+    extra = item.get("extratags") or {}
+    name = (item.get("name") or "").lower()
+    return (extra.get("station") in ("subway", "light_rail", "monorail") or "metro" in name
+            or extra.get("office") is not None or name in {"nwr", "ncr", "wr", "cr", "nr"})
+
+
+def _search_category(spec: dict, lat: float, lon: float) -> list:
+    box = SEARCH_BOX_DEG
+    items = _nominatim({"q": spec["q"], "limit": 25, "bounded": 1, "addressdetails": 1, "extratags": 1,
+                        "viewbox": f"{lon - box},{lat + box},{lon + box},{lat - box}"})
+    matches = [i for i in items if (i.get("category"), i.get("type")) in spec["keep"]
+               and not _is_excluded(i)]
+    places = sorted((_describe(i, lat, lon) for i in matches), key=lambda p: p["distance_km"])
+    seen, unique = set(), []
+    for p in places:                         # the same place can appear as node + building
+        if p["name"].lower() not in seen:
+            seen.add(p["name"].lower())
+            unique.append(p)
+    return unique[: spec["limit"]]
+
+
+def _load_disk_cache() -> dict:
+    try:
+        with open(CACHE_FILE) as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return {}
+
+
+def _save_disk_cache(key: str, value: dict) -> None:
+    try:
+        os.makedirs(os.path.dirname(CACHE_FILE), exist_ok=True)
+        data = _load_disk_cache()
+        data[key] = value
+        with open(CACHE_FILE, "w") as f:
+            json.dump(data, f, ensure_ascii=False)
+    except OSError:
+        pass                                  # caching is a speed-up, never a requirement
+
+
+def nearby_places(destination: str) -> dict:
+    """
+    All five facility lists for a destination, fetched once and shared: the graph's two
+    facility nodes run in parallel, so the second waits for the first instead of
+    repeating the same searches.
+    """
+    key = destination.strip().lower()
+    with _places_locks_guard:
+        lock = _places_locks.setdefault(key, threading.Lock())
+    with lock:
+        fresh = lambda v: v and time.time() - v.get("fetched_at", 0) < CACHE_DAYS * 86400
+        if fresh(_places_cache.get(key)):
+            return _places_cache[key]
+        disk = _load_disk_cache().get(key)
+        if fresh(disk):
+            _places_cache[key] = disk
+            return disk
+
+        lat, lon = _geocode(destination)
+        if not lat:
+            return {"error": f"Could not find location: {destination}"}
+        result, failed = {"coordinates": {"lat": lat, "lon": lon}}, []
+        for category, spec in CATEGORIES.items():
+            try:
+                result[category] = _search_category(spec, lat, lon)
+            except Exception:
+                result[category] = []
+                failed.append(category)
+        result["fetched_at"] = time.time()
+        if failed:
+            result["unavailable"] = failed     # don't cache a partial failure
+        else:
+            _places_cache[key] = result
+            _save_disk_cache(key, result)
+        return result
+
+
+def _tool_output(destination: str, category: str, extra: dict | None = None) -> str:
+    data = nearby_places(destination)
+    if "error" in data:
+        return json.dumps({"error": data["error"]})
+    places = data.get(category, [])
+    note = "Data from OpenStreetMap. Distances are straight-line and approximate."
+    if category in data.get("unavailable", []):
+        note = "Live map data was unavailable — do not name specific places for this category."
+    elif not places:
+        note = "No places of this type are mapped nearby — do not invent names."
+    return json.dumps({"destination": destination, category: places, **(extra or {}), "note": note}, indent=2)
 
 
 @tool
@@ -97,19 +208,9 @@ def get_petrol_pumps(destination: str) -> str:
     """
     Find petrol pumps / fuel stations near a travel destination.
     Input: destination name e.g. "Manali, Himachal Pradesh"
-    Returns JSON with list of nearby petrol pumps with names, addresses, distances.
+    Returns JSON with nearby petrol pumps (names, areas, distances).
     """
-    lat, lon = _geocode(destination)
-    if not lat:
-        return json.dumps({"error": f"Could not find location: {destination}"})
-
-    results = _query_overpass(lat, lon, amenity="fuel", radius_m=10000, limit=5)
-    return json.dumps({
-        "destination": destination,
-        "coordinates": {"lat": lat, "lon": lon},
-        "petrol_pumps": results,
-        "note": "Data from OpenStreetMap. Distances are approximate.",
-    }, indent=2)
+    return _tool_output(destination, "petrol_pumps")
 
 
 @tool
@@ -117,73 +218,32 @@ def get_atms(destination: str) -> str:
     """
     Find ATMs near a travel destination.
     Input: destination name e.g. "Jaisalmer, Rajasthan"
-    Returns JSON with list of nearby ATMs.
+    Returns JSON with nearby ATMs and banks.
     """
-    lat, lon = _geocode(destination)
-    if not lat:
-        return json.dumps({"error": f"Could not find location: {destination}"})
-
-    results = _query_overpass(lat, lon, amenity="atm", radius_m=5000, limit=8)
-    return json.dumps({
-        "destination": destination,
-        "atms": results,
-        "note": "Data from OpenStreetMap.",
-    }, indent=2)
+    return _tool_output(destination, "atms")
 
 
 @tool
 def get_hospitals(destination: str) -> str:
     """
-    Find hospitals and medical facilities near a travel destination.
+    Find hospitals and clinics near a travel destination.
     Input: destination name e.g. "Srinagar, Kashmir"
-    Returns JSON with list of nearby hospitals.
+    Returns JSON with nearby hospitals and clinics.
     """
-    lat, lon = _geocode(destination)
-    if not lat:
-        return json.dumps({"error": f"Could not find location: {destination}"})
-
-    results = _query_overpass(lat, lon, amenity="hospital", radius_m=15000, limit=5)
-    # also check for clinics if hospitals list is small
-    if len(results) < 3:
-        clinics = _query_overpass(lat, lon, amenity="clinic", radius_m=10000, limit=3)
-        results.extend(clinics)
-
-    return json.dumps({
-        "destination": destination,
-        "hospitals_and_clinics": results,
-        "emergency_number": "112 (India universal emergency)",
-        "note": "Data from OpenStreetMap.",
-    }, indent=2)
+    return _tool_output(destination, "hospitals_and_clinics",
+                        {"emergency_number": "112 (India universal emergency)"})
 
 
 @tool
 def get_bus_stations(destination: str) -> str:
     """
-    Find bus stations and bus stops near a travel destination.
+    Find bus stations near a travel destination.
     Input: destination name e.g. "Shimla, Himachal Pradesh"
-    Returns JSON with list of nearby bus stations.
+    Returns JSON with nearby bus stations.
     """
-    lat, lon = _geocode(destination)
-    if not lat:
-        return json.dumps({"error": f"Could not find location: {destination}"})
-
-    # query both bus_station and bus_stop
-    stations = _query_overpass(lat, lon, amenity="bus_station", radius_m=5000, limit=5)
-    if len(stations) < 3:
-        stops = _query_overpass(lat, lon, amenity="bus_stop", radius_m=3000, limit=5)
-        stations.extend(stops)
-
-    return json.dumps({
-        "destination": destination,
-        "bus_stations": stations[:6],
-        "booking_links": {
-            "HRTC (Himachal)": "https://www.hrtchp.com",
-            "JKSRTC (J&K)":    "https://jksrtc.co.in",
-            "RSRTC (Rajasthan)": "https://rsrtc.rajasthan.gov.in",
-            "Redbus":           "https://www.redbus.in",
-        },
-        "note": "Data from OpenStreetMap.",
-    }, indent=2)
+    return _tool_output(destination, "bus_stations", {"booking_links": {
+        "HRTC (Himachal)": "https://www.hrtchp.com", "JKSRTC (J&K)": "https://jksrtc.co.in",
+        "RSRTC (Rajasthan)": "https://rsrtc.rajasthan.gov.in", "Redbus": "https://www.redbus.in"}})
 
 
 @tool
@@ -191,51 +251,14 @@ def get_train_stations(destination: str) -> str:
     """
     Find railway stations near a travel destination.
     Input: destination name e.g. "Jaipur, Rajasthan"
-    Returns JSON with list of nearby railway stations.
+    Returns JSON with nearby railway stations.
     """
-    lat, lon = _geocode(destination)
-    if not lat:
-        return json.dumps({"error": f"Could not find location: {destination}"})
-
-    # use railway=station tag in Overpass
-    query = f"""
-    [out:json][timeout:25];
-    (
-      node["railway"="station"](around:20000,{lat},{lon});
-      node["railway"="halt"](around:20000,{lat},{lon});
-    );
-    out 6;
-    """
-    try:
-        resp = requests.post(OVERPASS_URL, data={"data": query}, timeout=30)
-        data = resp.json()
-        stations = []
-        for el in data.get("elements", []):
-            tags = el.get("tags", {})
-            dist_km = round(((el.get("lat", lat) - lat)**2 + (el.get("lon", lon) - lon)**2)**0.5 * 111, 2)
-            stations.append({
-                "name":         tags.get("name") or "Unknown Station",
-                "station_code": tags.get("ref") or tags.get("uic_ref") or "N/A",
-                "distance_km":  dist_km,
-                "address":      tags.get("addr:city") or "",
-            })
-        stations.sort(key=lambda x: x["distance_km"])
-
-        return json.dumps({
-            "destination": destination,
-            "railway_stations": stations[:5],
-            "booking_links": {
-                "IRCTC": "https://www.irctc.co.in",
-                "RailYatri": "https://www.railyatri.in",
-                "ConfirmTkt": "https://www.confirmtkt.com",
-            },
-            "note": "Data from OpenStreetMap.",
-        }, indent=2)
-    except Exception as e:
-        return json.dumps({"error": str(e)})
+    return _tool_output(destination, "railway_stations", {"booking_links": {
+        "IRCTC": "https://www.irctc.co.in", "RailYatri": "https://www.railyatri.in",
+        "ConfirmTkt": "https://www.confirmtkt.com"}})
 
 
-# Export all Overpass tools
+# Export all map tools
 OVERPASS_TOOLS = [
     get_petrol_pumps,
     get_atms,

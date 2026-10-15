@@ -280,8 +280,12 @@ Write a SPECIFIC, PRACTICAL day-by-day itinerary that a normal traveller can rea
 ## 🏧 Useful nearby
 - **ATM:** name — area
 - **Petrol:** name — distance
-- **Hospital:** name — area, phone if known
+- **Hospital:** name — area, phone only if it is in the data
 - **Bus stand / Railway station:** names
+- **Emergency:** 112
+(Use ONLY names from the ATMs / PETROL / HOSPITALS / STATIONS data. If a list is empty, give a
+practical tip instead, e.g. "ATMs are easy to find around the main market" — never invent a
+name, address or phone number here.)
 
 ## 💡 Local tips
 - 5 short tips, including permits and safety
@@ -322,6 +326,15 @@ def _fit_max_tokens(messages: list, wanted: int) -> int:
     enc = tiktoken.get_encoding("o200k_base")       # same tokenizer family as gpt-oss
     prompt = sum(len(enc.encode(m.content)) + 8 for m in messages) + 60
     return max(1500, min(wanted, GROQ_TOKENS_PER_MINUTE - 100 - prompt))
+
+
+def _places_block(label: str, places) -> str:
+    """Compact facility list for the writer: 'Hospitals: SMS Hospital (1.1 km, ph 0141…); …'."""
+    good = [p for p in (places or []) if isinstance(p, dict) and p.get("name") and not p.get("error")][:3]
+    if not good:
+        return f"- {label}: none found"
+    fmt = lambda p: p["name"] + f" ({p.get('distance_km')} km" + (f", ph {p['phone']}" if p.get("phone") else "") + ")"
+    return f"- {label}: " + "; ".join(fmt(p) for p in good)
 
 
 def _trip_block(state: TravelState) -> str:
@@ -429,28 +442,12 @@ def node_generate_itinerary(state: TravelState) -> dict:
 
 ---
 
-## PETROL PUMPS NEAR {state['destination'].upper()}
-{_prompt_data(json.dumps(petrol_parsed.get('petrol_pumps', []), indent=2), 700)}
-
----
-
-## ATMs NEAR {state['destination'].upper()}
-{_prompt_data(json.dumps(atm_parsed.get('atms', []), indent=2), 700)}
-
----
-
-## HOSPITALS NEAR {state['destination'].upper()}
-{_prompt_data(json.dumps(hospital_parsed.get('hospitals_and_clinics', []), indent=2), 700)}
-
----
-
-## BUS STATIONS
-{_prompt_data(json.dumps(bus_st_parsed.get('bus_stations', []), indent=2), 700)}
-
----
-
-## RAILWAY STATIONS
-{_prompt_data(json.dumps(train_st_parsed.get('railway_stations', []), indent=2), 700)}
+## NEARBY FACILITIES (OpenStreetMap; "none found" = do not name any)
+{_places_block("Petrol pumps", petrol_parsed.get('petrol_pumps'))}
+{_places_block("ATMs / banks", atm_parsed.get('atms'))}
+{_places_block("Hospitals / clinics", hospital_parsed.get('hospitals_and_clinics'))}
+{_places_block("Bus stations", bus_st_parsed.get('bus_stations'))}
+{_places_block("Railway stations", train_st_parsed.get('railway_stations'))}
 
 ---
 

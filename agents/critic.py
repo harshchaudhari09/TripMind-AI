@@ -248,7 +248,8 @@ SEASONS: do NOT report seasonal closures at all — code already checks them aga
 list. Treat every place as open unless VERIFIED SEASON FACTS marks it CLOSED. Never write that
 something "is closed", "may be closed" or "is likely closed".
 
-Do NOT report (these are not blocking): style or wording, prices, budget arithmetic, hotel
+Do NOT report (these are not blocking, or code already checks them): time left before a
+departing bus/train/flight (code checks this), style or wording, prices, budget arithmetic, hotel
 check-in times, weather contingencies or "consider a backup", travel estimates that are off by
 less than ~30 minutes, general altitude advice below 3,500 m, or suggestions to make a good plan
 nicer. An overnight bus/train that departs in the evening and arrives next morning is fine.

@@ -13,3 +13,6 @@ output/*.md
 
 # Evaluation caches (research results, map lookups)
 eval/cache/
+
+# Local caches (nearby places, etc.)
+.cache/
