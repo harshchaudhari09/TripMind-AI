@@ -78,3 +78,23 @@ def test_partial_chat_reply_keeps_the_full_plan(monkeypatch, fake_llm):
     assert reply == "Made Day 2 cheaper."
     assert review["critic_passed"] and review["revisions"] == 0
     assert "### Day 1" in review["itinerary"] and "Free museum" in review["itinerary"]
+
+
+# ── A new budget changes the trip (found in a real LangSmith trace) ───────────
+def test_new_budget_is_understood():
+    assert C.new_budget_in("my budget is 60000") == 60000
+    assert C.new_budget_in("can you make it fit a 45k budget") == 45000
+    assert C.new_budget_in("change the total budget to ₹1,20,000 and adjust") == 120000
+    assert C.new_budget_in("budget 1.5 lakh") == 150000
+    assert C.new_budget_in("make day 2 cheaper") is None
+    assert C.new_budget_in("my budget is 5") is None                 # not a real budget
+
+
+def test_new_budget_is_used_by_the_critic(monkeypatch, fake_llm):
+    # Plan costs ₹15,000. Lowering the budget to ₹10,000 must make the critic flag it.
+    monkeypatch.setattr(C, "get_llm", fake_llm(["Adjusted for the new budget.\n" + make_plan(2)]))
+    monkeypatch.setattr(G, "get_llm", fake_llm([make_plan(2)]))
+    monkeypatch.setattr(critic, "get_llm", fake_llm([APPROVE] * 4))
+    reply, _, review = C.refine_itinerary("my budget is 10000", make_plan(2), TRIP, [])
+    assert review["trip_details"]["budget_inr"] == 10000
+    assert any("Over budget" in i for i in review["remaining_issues"])

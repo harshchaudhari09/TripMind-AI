@@ -221,6 +221,22 @@ def review_edit(itinerary: str, trip_details: dict) -> dict:
             "revisions": revisions, "remaining_issues": issues}
 
 
+_BUDGET_SAID = re.compile(
+    r"budget[^\d₹]{0,30}(?:₹|rs\.?|inr)?\s*(\d[\d,]*(?:\.\d+)?)\s*(k|thousand|lakh|lakhs|lac|l)?\b", re.I)
+
+
+def new_budget_in(message: str) -> float | None:
+    """'my budget is 60000' / 'make it fit a 45k budget' / 'budget ₹1.2 lakh' → 60000 / 45000 / 120000."""
+    m = _BUDGET_SAID.search(message) or re.search(
+        r"(\d[\d,]*(?:\.\d+)?)\s*(k|thousand|lakh|lakhs|lac|l)?\s*(?:rupees|rs|inr)?\s*budget", message, re.I)
+    if not m:
+        return None
+    value = float(m.group(1).replace(",", ""))
+    unit = (m.group(2) or "").lower()
+    value *= 1000 if unit in ("k", "thousand") else 100000 if unit in ("lakh", "lakhs", "lac", "l") else 1
+    return value if 1000 <= value <= 10_000_000 else None
+
+
 def refine_itinerary(
     user_message:        str,
     current_itinerary:   str,
@@ -238,6 +254,13 @@ def refine_itinerary(
     8,000-token limit after two or three edits.
     """
     from agents.graph import _fit_max_tokens
+
+    # A new total budget ("my budget is 60000") changes the trip itself: the writer, the
+    # budget totals and the critic must all use the new amount, not the original one.
+    budget = new_budget_in(user_message)
+    if budget:
+        trip_details = {**trip_details, "budget_inr": budget}
+        user_message += f" (New total budget: ₹{budget:,.0f}. Adjust the plan and budget table to fit it.)"
 
     context = f"""
 ## Trip Details
@@ -279,4 +302,6 @@ def refine_itinerary(
         {"role": "user",      "content": user_message},
         {"role": "assistant", "content": reply if review else reply[:600]},
     ]
+    if review is not None:
+        review["trip_details"] = trip_details          # lets the page show the new budget
     return reply, updated_history, review

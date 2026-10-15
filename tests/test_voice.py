@@ -57,3 +57,8 @@ def test_voice_endpoint_and_limit(monkeypatch, fake_llm):
     codes = [c.post("/voice/intent", json=body).status_code for _ in range(3)]
     assert codes == [200, 200, 429]
     assert c.post("/voice/intent", json={"text": ""}).status_code == 422
+
+
+def test_incomplete_request_asks_a_question():
+    out = clean_intent({"action": "clarify", "message": "What's your new budget?"}, TODAY, True)
+    assert out == {"action": "clarify", "message": "What's your new budget?"}

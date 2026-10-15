@@ -30,9 +30,15 @@ Choose the action:
 - "new_trip": they want a NEW trip planned (e.g. "plan a trip to Goa", "I want to go to Manali").
 - "edit": they want to change the itinerary that is currently open.
 - "question": they are asking something about the current trip.
+- "clarify": the request is missing the key detail (e.g. "my budget now is…" with no amount,
+  or "change the dates" without new dates). "message" = the short question to ask them.
+
+Saying a new budget, group size or dates for the open trip ("my budget is 60000") is an "edit",
+not a question. Its "message" must include the value, e.g. "Change the total budget to ₹60,000
+and adjust the plan to fit".
 
 Reply with JSON only:
-{{"action": "new_trip" | "edit" | "question",
+{{"action": "new_trip" | "edit" | "question" | "clarify",
   "destination": string or null, "origin": string or null,
   "start_date": "YYYY-MM-DD" or null, "end_date": "YYYY-MM-DD" or null,
   "num_days": integer or null, "budget_inr": number or null, "num_people": integer or null,
@@ -64,7 +70,7 @@ def _iso(value) -> date | None:
 def clean_intent(data: dict, today: date, has_itinerary: bool) -> dict:
     """Validate what the model extracted. Anything doubtful becomes None (the form keeps its value)."""
     action = data.get("action")
-    if action not in ("new_trip", "edit", "question"):
+    if action not in ("new_trip", "edit", "question", "clarify"):
         action = "edit" if has_itinerary else "new_trip"
     if action in ("edit", "question") and not has_itinerary:
         action = "new_trip"                          # nothing to edit yet

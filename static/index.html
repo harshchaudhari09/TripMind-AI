@@ -1044,6 +1044,13 @@ async function sendChat(){
       if (speakNext) say((first || 'Done.') + ' The itinerary is updated.');
       currentItinerary = data.updated_itinerary;
       renderItinerary(currentItinerary);
+      // "My budget is 60000" changes the trip itself — keep the page in sync.
+      if (data.trip_details && data.trip_details.budget_inr !== tripDetails.budget_inr){
+        tripDetails = data.trip_details;
+        const amount = '₹' + Number(tripDetails.budget_inr).toLocaleString('en-IN');
+        document.querySelectorAll('#passBody .meta-chip').forEach(c => { if (c.textContent.trim().startsWith('₹')) c.textContent = amount; });
+        document.getElementById('budget').value = tripDetails.budget_inr;
+      }
       // The edited plan went through the critic too — show its fresh verdict.
       const slot = document.getElementById('criticSlot');
       if (slot && data.critic_passed !== null && data.critic_passed !== undefined) slot.innerHTML = criticBadge(data);
@@ -1145,6 +1152,12 @@ async function handleVoice(text){
     const data = await res.json();
     if (!res.ok) throw new Error(errorText(data));
 
+    if (data.action === 'clarify'){                     // something key was missing: ask
+      const q = data.message || 'Could you say that again with a little more detail?';
+      setStatus(q, true);
+      say(q);
+      return;
+    }
     if (data.action === 'new_trip'){
       if (!data.destination){
         setStatus('Where would you like to go? Tap the mic and say a destination.', true);
